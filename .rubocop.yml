@@ -88,3 +88,6 @@ Lint/MissingSuper:
 
 Style/OptionalBooleanParameter:
     Enabled: false
+
+Capybara/ClickLinkOrButtonStyle:
+    Enabled: false
