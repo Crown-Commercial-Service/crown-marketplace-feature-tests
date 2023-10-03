@@ -17,4 +17,4 @@ Feature: Management Consultancy - Start pages
     When I click on 'Start now'
     Then I am on the 'Sign in to your management consultancy account' page
     Then I sign in
-    Then I am on the 'Important changes to how you access Management Consultancy Framework Three' page
+    Then I am on the 'Select the lot you need' page

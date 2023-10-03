@@ -3,8 +3,6 @@ Feature: Management Consultancy - Results
 
   Background: Navigate to the select lot page
     Given I sign in and navigate to the start page for the 'RM6187' framework in 'management consultancy'
-    And I click on 'Continue'
-    Then I am on the 'Select the lot you need' page
 
   @file-download @smoulder
   Scenario: Can view results of the services - Lot 1 - Business
