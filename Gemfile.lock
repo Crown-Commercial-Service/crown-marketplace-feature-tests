@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.1.0)
+    activesupport (7.1.1)
       base64
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -171,7 +171,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activesupport (~> 7.1.0)
+  activesupport (~> 7.1.1)
   axe-core-capybara (>= 4.2.1)
   axe-core-cucumber (>= 4.2.1)
   byebug (~> 11.1)
