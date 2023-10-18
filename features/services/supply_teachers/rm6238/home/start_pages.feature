@@ -19,3 +19,12 @@ Feature: Supply Teachers - Start pages
     Then I click on 'Sign in with CCS'
     Then I sign in
     Then I am on the 'What is your school looking for?' page
+
+  @smoulder
+  Scenario: I can reach the DfE Sign in Page
+    When I go to the 'supply teachers' start page for 'RM6238'
+    Then I am on the 'Find supply teachers and agency workers' page
+    When I click on 'Start now'
+    Then I am on the 'Sign in to find supply teachers and agency workers' page
+    Then I click on 'Sign in with DfE Sign-in'
+    Then I am on the 'Department for Education Sign-in' page
