@@ -8,7 +8,7 @@ ruby '3.2.1'
 gem 'capybara', '~> 3.39.2'
 gem 'cucumber', '~> 9.0.2'
 gem 'rspec', '~> 3.12.0'
-gem 'selenium-webdriver', '~> 4.14.0'
+gem 'selenium-webdriver', '~> 4.15.0'
 gem 'site_prism', '~> 4.0'
 
 gem 'axe-core-capybara', '>= 4.2.1'
