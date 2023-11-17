@@ -81,7 +81,7 @@ When('I remove the following items from the facilities management basket:') do |
 end
 
 Given('I click on the service specification for {string}') do |service_name|
-  facilities_management_page.find('label', text: service_name).find('a').click
+  facilities_management_page.find('label', text: service_name).find(:xpath, '../div/a').click
 end
 
 Then('the page sub title is {string}') do |sub_title|

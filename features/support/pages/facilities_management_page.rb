@@ -33,10 +33,10 @@ module Pages
     end
 
     section :quick_view, '#main-content' do
-      section :basket, '.basket' do
+      section :basket, '#css-list-basket' do
         elements :selection, 'ul > li > div:nth-of-type(2)'
         element :selection_count, 'h3'
-        element :remove_all, 'a[aria-label="Remove all"]'
+        element :remove_all, '#removeAll'
       end
 
       element :annual_contract_value, '#annual_contract_value'

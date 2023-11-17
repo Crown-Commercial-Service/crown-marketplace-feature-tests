@@ -8,7 +8,7 @@ Feature: Forgot my password - Legal Services - RM6240 - Validations
     When I click on 'I’ve forgotten my password'
     Then I am on the 'Reset password' page
     And I enter the following details into the form:
-      | email | <value> |
+      | Email address | <value> |
     And I click on 'Send reset email'
     Then I should see the following error messages:
       | Enter your email address in the correct format, like name@example.com |

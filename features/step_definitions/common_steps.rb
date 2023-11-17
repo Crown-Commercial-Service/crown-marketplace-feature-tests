@@ -55,9 +55,9 @@ When('I click on {string}') do |button_text|
 end
 
 Then('I sign in') do
-  fill_in 'email', with: current_user.email
-  fill_in 'password', with: current_user.password
-  click_on 'Sign in'
+  fill_in 'Email address', with: current_user.email
+  fill_in 'Password', with: current_user.password
+  click_button 'Sign in'
 end
 
 Then('I should see the following error messages:') do |table|
@@ -90,7 +90,7 @@ Given('I click on the {string} back link') do |link_text|
 end
 
 Then('I click on the {string} button') do |button_text|
-  page.find('.govuk-button', text: button_text).click
+  page.click_button(button_text, class: 'govuk-button')
 end
 
 Then('the file {string} is downloaded with the {string} extension') do |filename, file_extension|

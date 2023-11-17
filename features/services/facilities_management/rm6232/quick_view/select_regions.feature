@@ -15,7 +15,7 @@ Feature: Facilities Management - RM6232 - Select regions
     And the remove all link should not be visible
     When I check 'Tees Valley and Durham'
     Then the facilities management basket should say '1 region selected'
-    And the remove all link should not be visible
+    And the remove all link should be visible
     And the following items should appear in the facilities management basket:
       | Tees Valley and Durham (UKC1) |
     When I check the following items:

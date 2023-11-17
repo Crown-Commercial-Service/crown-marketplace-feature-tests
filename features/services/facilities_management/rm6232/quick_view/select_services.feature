@@ -11,7 +11,7 @@ Feature: Facilities Management - RM6232 - Select services
     And the remove all link should not be visible
     When I check 'Building Management System (BMS) maintenance'
     Then the facilities management basket should say '1 service selected'
-    And the remove all link should not be visible
+    And the remove all link should be visible
     And the following items should appear in the facilities management basket:
       | Building Management System (BMS) maintenance  |
     When I check the following items:
