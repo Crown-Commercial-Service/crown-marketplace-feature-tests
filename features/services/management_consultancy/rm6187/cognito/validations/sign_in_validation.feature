@@ -8,7 +8,7 @@ Feature: Sign in to my account - Management Consultancy - RM6187 - Validations
 
   @smoulder
   Scenario: I sign in to my account - missing parameters
-    And I click on 'Sign in'
+    And I click on the 'Sign in' button
     Then I should see the following error messages:
       | You must provide your email address in the correct format, like name@example.com  |
       | You must provide your password                                                    |
@@ -17,7 +17,7 @@ Feature: Sign in to my account - Management Consultancy - RM6187 - Validations
     And I enter the following details into the form:
       | Email     | <email>  |
       | Password  | ValidPassword1! |
-    And I click on 'Sign in'
+    And I click on the 'Sign in' button
     Then I should see the following error messages:
       | You must provide your email address in the correct format, like name@example.com  |
 
@@ -32,6 +32,6 @@ Feature: Sign in to my account - Management Consultancy - RM6187 - Validations
     And I enter the following details into the form:
       | Email     | test@email.com  |
       | Password  | ValidPassword1! |
-    And I click on 'Sign in'
+    And I click on the 'Sign in' button
     Then I should see the following error messages:
       | Your browser must have cookies enabled  |

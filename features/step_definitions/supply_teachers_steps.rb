@@ -459,7 +459,7 @@ Then('the {string} is {string} for the {string} branch') do |contact_detail, val
 end
 
 Then('the address for the {string} branch is:') do |branch, address|
-  expect(supply_teachers_page.agency_details.branches_table.find { |branch_element| branch_element.Branch.text.include?(branch) }.Address).to have_content address.raw.flatten.join(' ')
+  expect(supply_teachers_page.agency_details.branches_table.find { |branch_element| branch_element.Branch.text.include?(branch) }.Address).to have_content address.raw.flatten.join
 end
 
 Then('the agency has the following rates:') do |raw_rates|
@@ -502,6 +502,10 @@ Then('the resultant information includes:') do |information|
   information.raw.flatten.each do |piece_of_info|
     expect(supply_teachers_page.temp_to_perm_result.information).to have_content piece_of_info
   end
+end
+
+Then 'I click on the Back to start button' do
+  page.find_by_id('main-content').click_on('Back to start')
 end
 
 def date_options(date)
