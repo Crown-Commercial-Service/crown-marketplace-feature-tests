@@ -1,4 +1,4 @@
-name: "Analyse code with Rubocop"
+name: "Analyse code with Rubocop and do a dry run"
 
 on:
   push:
@@ -22,3 +22,17 @@ jobs:
 
       - name: Run rubocop
         run: bundle exec rubocop
+      
+      - name: Create test config
+        run: |
+          cp config/environment.test.yml config/environment.preview.yml
+          cp config/environment.test.yml config/environment.production.yml
+
+      - name: Run cucumber tests - Non production
+        run:  TEST_ENV=preview bundle exec cucumber features/services --dry-run
+
+      - name: Run cucumber tests - Production
+        run:  TEST_ENV=production bundle exec cucumber features/services/ --dry-run
+
+      - name: Run cucumber tests - Accessibility
+        run:  TEST_ENV=preview bundle exec cucumber -p accessibility features/accessibility/ --dry-run
