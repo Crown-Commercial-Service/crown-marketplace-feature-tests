@@ -97,7 +97,7 @@ Then('there {string} generic requirements') do |option|
   when 'are'
     expect(facilities_management_page).to have_css('details.govuk-details')
   when 'are not'
-    expect(facilities_management_page).not_to have_css('details.govuk-details')
+    expect(facilities_management_page).to have_no_css('details.govuk-details')
   end
 end
 
