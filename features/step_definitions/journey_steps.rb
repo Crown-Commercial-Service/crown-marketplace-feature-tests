@@ -84,7 +84,7 @@ Then('the supplier {string} an SME') do |option|
   when 'is'
     expect(journey_page.find('h1')).to have_content('SME')
   when 'is not'
-    expect(journey_page.find('h1')).not_to have_content('SME')
+    expect(journey_page.find('h1')).to have_no_content('SME')
   end
 end
 
