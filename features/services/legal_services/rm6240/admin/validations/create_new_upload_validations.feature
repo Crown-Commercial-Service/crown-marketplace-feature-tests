@@ -39,7 +39,7 @@ Feature: Legal Services - Admin - Create new upload - Validations
     And I click on 'Upload data'
     Then I am on the 'Upload session' page
     And I wait no longer than 20 seconds for the upload to finish
-    And the status of the upload is 'failed'
+    And the status of the upload is 'Failed'
     And the details for the failed upload are:
       | The 'Supplier details' file is missing sheets                 | The 'Supplier details' file should have 1 sheet named 'All Suppliers'                       |
       | The 'Supplier rate cards' file is missing sheets              | The 'Supplier rate cards' file should have 7 sheets with the following names:               |

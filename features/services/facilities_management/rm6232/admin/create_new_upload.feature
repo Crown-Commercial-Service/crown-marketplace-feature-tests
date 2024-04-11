@@ -23,7 +23,7 @@ Feature: Facilities Management - RM6232 - Admin - Create new upload
     And I click on 'Upload data'
     Then I am on the 'Upload session' page
     And I wait no longer than 40 seconds for the upload to finish
-    And the status of the upload is 'published on live'
+    And the status of the upload is 'Published on live'
 
   @file-download
   Scenario Outline: Download files on dashboard
@@ -42,9 +42,9 @@ Feature: Facilities Management - RM6232 - Admin - Create new upload
   Scenario Outline: Download files on upload
     And I click on "Return to 'Manage supplier data'"
     Then I am on the 'Manage supplier data' page
-    And I click on the first upload session with status 'published on live'
+    And I click on the first upload session with status 'Published on live'
     Then I am on the 'Upload session' page
-    And the status of the upload is 'published on live'
+    And the status of the upload is 'Published on live'
     When I download the '<filename>' file
     Then the file '<filename>' is downloaded with the 'xlsx' extension
     And I click on "Return to 'Manage supplier data'"

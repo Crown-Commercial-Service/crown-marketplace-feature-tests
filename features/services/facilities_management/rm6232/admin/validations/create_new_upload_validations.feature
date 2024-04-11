@@ -35,7 +35,7 @@ Feature: Facilities Management - RM6232 - Admin - Create new upload - Validation
     And I click on 'Upload data'
     Then I am on the 'Upload session' page
     And I wait no longer than 20 seconds for the upload to finish
-    And the status of the upload is 'failed'
+    And the status of the upload is 'Failed'
     And the details for the failed upload are:
       | The 'Supplier details' file is missing sheets   | The 'Supplier details' file should have 1 sheet named 'RM6232 Suppliers Details'          |
       | The 'Supplier services' file is missing sheets  | The 'Supplier services' file should have 9 sheets with the following names:               |
