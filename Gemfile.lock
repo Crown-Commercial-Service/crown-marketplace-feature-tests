@@ -145,7 +145,7 @@ GEM
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.19.0)
+    selenium-webdriver (4.20.1)
       base64 (~> 0.2)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -185,7 +185,7 @@ DEPENDENCIES
   rspec (~> 3.13.0)
   rubocop (~> 1.63)
   rubocop-rspec (~> 2.29)
-  selenium-webdriver (~> 4.19.0)
+  selenium-webdriver (~> 4.20.1)
   site_prism (~> 5.0)
 
 RUBY VERSION
