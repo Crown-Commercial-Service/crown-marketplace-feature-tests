@@ -4,7 +4,7 @@ end
 
 Then('I wait no longer than {int} seconds for the upload to finish') do |number_of_seconds|
   Timeout.timeout(number_of_seconds) do
-    sleep 1 until admin_page.upload_status.text != 'in progress'
+    sleep 1 until admin_page.upload_status.text != 'In progress'
   end
 end
 

@@ -20,5 +20,5 @@ Feature: Management Consultancy - Admin - Accessibility
 
     Examples:
       | status            |
-      | failed            |
-      | published on live |
+      | Failed            |
+      | Published on live |

@@ -20,5 +20,5 @@ Feature: Legal Services - Admin - Accessibility
 
     Examples:
       | status            |
-      | failed            |
-      | published on live |
+      | Failed            |
+      | Published on live |
