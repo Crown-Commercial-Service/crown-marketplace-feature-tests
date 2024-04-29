@@ -25,4 +25,4 @@ gem 'rubocop', '~> 1.63'
 gem 'rubocop-rspec', '~> 2.29'
 
 # For running tests in parallel
-gem 'parallel_tests', '~> 4.6.1'
+gem 'parallel_tests', '~> 4.7.1'
