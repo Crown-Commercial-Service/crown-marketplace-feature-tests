@@ -1,12 +1,40 @@
 ---
 require:
-  - rubocop-rspec
-  - rubocop-capybara
+    - rubocop-rspec
+    - rubocop-capybara
 
 AllCops:
     NewCops: enable
-    TargetRubyVersion: 3.2
+    TargetRubyVersion: 3.3
 
+# Capyabara rubocop config
+Capybara:
+    Enabled: true
+
+Capybara/ClickLinkOrButtonStyle:
+    Enabled: false
+
+# RSpec rubocop config
+RSpec:
+    Enabled: true
+
+RSpec/MultipleExpectations:
+    Max: 3
+    Exclude:
+        - "spec/features/**/*"
+
+RSpec/ExampleLength:
+    Max: 10
+    Exclude:
+        - "spec/features/**/*"
+
+RSpec/MultipleMemoizedHelpers:
+    Enabled: false
+
+RSpec/VariableName:
+    Enabled: false
+
+# Standard rubocop config
 Style/Alias:
     Enabled: false
 
@@ -38,7 +66,7 @@ Style/ClassAndModuleChildren:
     Enabled: false
 
 Layout/EndOfLine:
-   EnforcedStyle: lf
+    EnforcedStyle: lf
 
 Layout/TrailingEmptyLines:
     Enabled: true
@@ -60,26 +88,6 @@ Metrics/AbcSize:
 Metrics/BlockLength:
     Max: 40
 
-RSpec/Capybara:
-    Exclude:
-        - 'spec/features/**/*'
-
-RSpec/MultipleExpectations:
-    Max: 3
-    Exclude:
-        - 'spec/features/**/*'
-
-RSpec/ExampleLength:
-    Max: 10
-    Exclude:
-        - 'spec/features/**/*'
-
-RSpec/MultipleMemoizedHelpers:
-    Enabled: false
-
-RSpec/VariableName:
-    Enabled: false
-
 Naming/VariableNumber:
     Enabled: false
 
@@ -87,7 +95,4 @@ Lint/MissingSuper:
     Enabled: false
 
 Style/OptionalBooleanParameter:
-    Enabled: false
-
-Capybara/ClickLinkOrButtonStyle:
     Enabled: false
