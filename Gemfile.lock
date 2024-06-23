@@ -81,6 +81,7 @@ GEM
     ice_nine (0.11.2)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
+    logger (1.6.0)
     matrix (0.4.2)
     mini_mime (1.1.5)
     minitest (5.23.1)
@@ -137,8 +138,9 @@ GEM
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
-    selenium-webdriver (4.21.1)
+    selenium-webdriver (4.22.0)
       base64 (~> 0.2)
+      logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -180,7 +182,7 @@ DEPENDENCIES
   rubocop (~> 1.64)
   rubocop-capybara (~> 2.20)
   rubocop-rspec (~> 3.0)
-  selenium-webdriver (~> 4.21.1)
+  selenium-webdriver (~> 4.22.0)
   site_prism (~> 5.0)
 
 RUBY VERSION
