@@ -11,9 +11,7 @@ This is a ruby project which uses [Cucumber][] BDD framework and [Capybara][] to
 This guide assumes you have Homebrew installed.
 
 #### Check the Ruby version
-> **_NOTE:_** The project currently runs on 3.2.1 (March 2023)
-
-Ensure that a ruby version manager (e.g. rvm or rbenv) is installed and set up properly, using 3.2.1 as the Ruby version before trying anything else. 
+Ensure that a ruby version manager (e.g. rvm or rbenv) is installed and set up properly, using 3.3.0 as the Ruby version before trying anything else. 
 
 #### Software requirements
 
@@ -45,18 +43,7 @@ The Crown Marketplace application requires users to be logged in when using it s
 For obvious reasons we do not store this config in this public repo so you will need to make your own config files in the `config/` folder.
 
 The filename should be `environment.<TEST_ENV>.yml`, for example the config file for the cmpdev environment would be named `environment.cmpdev.yml`.
-The file should then contain the following keys which you need to fill in
-
-```yml
----
-users:
-  buyer:
-    email:
-    password:
-  admin:
-    email:
-    password:
-```
+You can use [`config/environment.example.yml`](config/environment.example.yml) as base to fill in.
 
 If you do not have any authentication details, speak to a developer on the project and they should be able to provide you with some.
 
@@ -70,40 +57,40 @@ We use [tags][] to make sure that only features that do not require test data ar
 
 ## Running the features
 
-To run all the tests use the command
+I have created the `bin/run-cucumber` script to help with running the test.
+This script will run the tests in the specified environment with the specified options and then build the test report.
+
+To run all the tests use the `bin/run-cucumber` command and pass the environment to run the tests in
 
 ```shell
-bundle exec cucumber
-```
-
-To run the tests in specific environment preface the command with the `TEST_ENV` environment, for example
-
-```shell
-TEST_ENV=cmpdev bundle exec cucumber
+bin/run-cucumber <env>
 ```
 
 To run a specific test add the file path after the command
 
 ```shell
-bundle exec features/path/to/feature.feature
+bin/run-cucumber <env> features/path/to/feature.feature
 ```
 
-To run the tests in parallel, run the command
+To run the tests using a different profile, pass the profile argument
 
 ```shell
-bin/parallel_cucumber.rb <profile> <test_env> <number_of_processes>
+bin/run-cucumber <env> -p <profile>
+```
+
+To run the tests in parallel, pass the number of process you wish to use
+
+```shell
+bin/run-cucumber <env> -n <number_of_processes>
 ```
 
 > Note, I have found this to be a little bit flakey so use at your own risk
 
-To run the tests for each service in parallel, run the command
+You can view the other options for the script with
 
 ```shell
-bin/parallel_cucumber.mac.rb <profile> <test_env>
+bin/run-cucumber -h
 ```
-
-Separate terminals will open up for each service where the tests will then be run.
-> Note, this only works on a Mac OS.
 
 ### Profiles and Tags
 
@@ -132,7 +119,7 @@ We use [Axe Cucumber][] to in our accessibility tests.
 To run an accessibility feature  you need to use the `accessibility` profile as accessibility are ignored by the default profile
 
 ```shell
-bundle exec -p accessibility features/path/to/feature.feature
+bin/run-cucumber <env> -p accessibility features/path/to/feature.feature
 ```
 
 ## Linting

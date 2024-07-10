@@ -23,10 +23,11 @@ jobs:
       - name: Run rubocop
         run: bundle exec rubocop
       
-      - name: Create test config
+      - name: Create test config and reprot directory
         run: |
           cp config/environment.test.yml config/environment.preview.yml
           cp config/environment.test.yml config/environment.production.yml
+          mkdir reports
 
       - name: Run cucumber tests - Non production
         run:  TEST_ENV=preview bundle exec cucumber features/services --dry-run

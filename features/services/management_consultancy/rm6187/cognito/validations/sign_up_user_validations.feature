@@ -1,4 +1,4 @@
-Feature: Management Consultancy - Sign up user
+Feature: Management Consultancy - RM6187 - Sign up user - Validations
 
   Background: navigate to create an account page
     Given I go to the 'management consultancy' start page for 'RM6187'

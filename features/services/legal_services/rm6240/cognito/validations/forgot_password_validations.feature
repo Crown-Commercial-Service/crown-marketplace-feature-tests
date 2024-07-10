@@ -1,4 +1,4 @@
-Feature: Forgot my password - Legal Services - RM6240 - Validations
+Feature: Legal Services - RM6240 - Forgot my password - Validations
 
   Scenario Outline: I forgot my password - email invalid
     When I go to the 'legal services' start page for 'RM6240'

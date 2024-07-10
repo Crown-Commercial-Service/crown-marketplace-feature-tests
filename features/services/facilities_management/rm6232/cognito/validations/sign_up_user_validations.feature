@@ -1,4 +1,4 @@
-Feature: Sign up user - Facilities Management - RM6232 - Validations
+Feature: Facilities Management - RM6232 - Sign up user - Validations
 
   Background: navigate to create an account page
     When I go to the 'facilities management' start page for 'RM6232'

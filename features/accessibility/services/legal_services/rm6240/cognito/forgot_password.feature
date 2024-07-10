@@ -1,5 +1,5 @@
 @accessibility
-Feature: Forgot my password - Legal Services - RM6240 - Accessibility
+Feature: Legal Services - RM6240 - Forgot my password - Accessibility
 
   Scenario: Reset password page
     When I go to the 'legal services' start page for 'RM6240'

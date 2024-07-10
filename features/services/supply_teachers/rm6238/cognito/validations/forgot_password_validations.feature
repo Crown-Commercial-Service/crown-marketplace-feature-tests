@@ -1,4 +1,4 @@
-Feature: Forgot my password - Supply Teachers - RM6238 - Validations
+Feature: Supply Teachers - RM6238 - Forgot my password - Validations
 
   Scenario Outline: I forgot my password - email invalid
     When I go to the 'supply teachers' start page for 'RM6238'

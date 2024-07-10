@@ -180,3 +180,6 @@ build-iPhoneSimulator/
 config/environment.*
 !config/environment.shared.yml
 !config/environment.test.yml
+!config/environment.example.yml
+
+reports/*

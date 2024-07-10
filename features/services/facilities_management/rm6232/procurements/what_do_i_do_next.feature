@@ -1,4 +1,4 @@
-Feature: What do I do next
+Feature: Facilities Management - What do I do next
 
   Background: I navigate to the What do I do next page
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
