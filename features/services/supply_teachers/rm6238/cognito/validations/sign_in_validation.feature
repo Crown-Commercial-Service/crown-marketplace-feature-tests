@@ -1,4 +1,4 @@
-Feature: Sign in to my account - Supply Teachers - RM6238 - Validations
+Feature: Supply Teachers - RM6238 - Sign in to my account - Validations
 
   Background: Navigate to the sign in page
     When I go to the 'supply teachers' start page for 'RM6238'

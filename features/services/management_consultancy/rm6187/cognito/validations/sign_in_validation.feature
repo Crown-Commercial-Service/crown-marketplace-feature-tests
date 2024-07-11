@@ -1,4 +1,4 @@
-Feature: Sign in to my account - Management Consultancy - RM6187 - Validations
+Feature: Management Consultancy - RM6187 - Sign in to my account - Validations
 
   Background: Navigate to the sign in page
     When I go to the 'management consultancy' start page for 'RM6187'

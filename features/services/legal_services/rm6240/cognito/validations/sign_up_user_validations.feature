@@ -1,4 +1,4 @@
-Feature: Sign up user - Legal Services - RM6240 - Validations
+Feature: Legal Services - RM6240 - Sign up user - Validations
 
   Background: navigate to create an account page
     When I go to the 'legal services' start page for 'RM6240'

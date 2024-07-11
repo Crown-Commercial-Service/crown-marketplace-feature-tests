@@ -1,5 +1,5 @@
 @accessibility
-Feature: Sign in to my account - Supply Teachers - RM6238 - Accessibility
+Feature: Supply Teachers - RM6238 - Sign in to my account - Accessibility
 
   Scenario: Sign in page
     When I go to the 'supply teachers' start page for 'RM6238'

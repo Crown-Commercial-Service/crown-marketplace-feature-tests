@@ -1,5 +1,5 @@
 @accessibility
-Feature: Sign in to my account - Legal Services - RM6240 - Accessibility
+Feature: Legal Services - RM6240 - Sign in to my account - Accessibility
 
   Scenario: Sign in page
     When I go to the 'legal services' start page for 'RM6240'

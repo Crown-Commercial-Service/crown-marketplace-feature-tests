@@ -5,7 +5,7 @@ Feature: Facilities Management - Navigation links when signed in - without buyer
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
-    Given I am a user without buyer details
+    Given I am a 'no details' user
     Then I sign in
     And I am on the 'Manage your details' page
 

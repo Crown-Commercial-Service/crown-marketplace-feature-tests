@@ -1,4 +1,4 @@
-Feature: Forgot my password - Management Consultancy - RM6187 - Validations
+Feature: Management Consultancy - RM6187 - Forgot my password - Validations
 
   Scenario Outline: I forgot my password - email invalid
     When I go to the 'management consultancy' start page for 'RM6187'

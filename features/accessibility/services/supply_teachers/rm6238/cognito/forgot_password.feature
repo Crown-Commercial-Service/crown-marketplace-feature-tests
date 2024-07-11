@@ -1,5 +1,5 @@
 @accessibility
-Feature: Forgot my password - Supply Teachers - RM6238 - Accessibility
+Feature: Supply Teachers - RM6238 - Forgot my password - Accessibility
 
   Scenario: I forgot my password
     When I go to the 'supply teachers' start page for 'RM6238'

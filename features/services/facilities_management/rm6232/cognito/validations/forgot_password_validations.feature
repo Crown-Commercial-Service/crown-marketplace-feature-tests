@@ -1,4 +1,4 @@
-Feature: Forgot my password - Facilities Management - RM6232 - Validations
+Feature: Facilities Management - RM6232 - Forgot my password - Validations
 
   Scenario Outline: I forgot my password - email invalid
     When I go to the 'facilities management' start page for 'RM6232'

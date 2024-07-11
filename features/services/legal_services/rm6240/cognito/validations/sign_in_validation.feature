@@ -1,4 +1,4 @@
-Feature: Sign in to my account - Legal Services - RM6240 - Validations
+Feature: Legal Services - RM6240 - Sign in to my account - Validations
 
   Background: Navigate to the sign in page
     When I go to the 'legal services' start page for 'RM6240'

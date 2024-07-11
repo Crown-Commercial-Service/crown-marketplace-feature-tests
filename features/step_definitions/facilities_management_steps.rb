@@ -1,7 +1,7 @@
 Given('I sign in and navigate to the start page for the {string} framework in {string} without details') do |framework, service|
   visit "/#{service.gsub(' ', '-')}/#{framework}/sign-in"
   update_banner_cookie(true)
-  step 'I am a user without buyer details'
+  step "I am a 'no details' user"
   step 'I sign in'
   step "I am on the 'Manage your details' page"
 end
@@ -184,7 +184,8 @@ end
 
 Then('the facilities management file for {string} is downloaded with the {string} extension') do |contract_name, file_extension|
   download_file_name = DownloadHelpers.download_file_name
-  filename = "Supplier shortlist (#{contract_name} #{@contract_name_id})"
+  # The file name is truncated when it is downloaded for some reason
+  filename = "Supplier shortlist (#{contract_name} #{@contract_name_id})"[..64]
 
   expect(download_file_name).to start_with(filename)
   expect(download_file_name).to end_with(".#{file_extension}")

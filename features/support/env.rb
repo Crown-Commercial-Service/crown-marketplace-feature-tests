@@ -40,12 +40,17 @@ raise MissingConfigFileError, config_filename unless File.file?(config_filename)
 
 config = YAML.load_file('config/environment.shared.yml')[test_env].merge(YAML.load_file("config/environment.#{test_env}.yml"))
 
-ENV['BUYER_EMAIL']                ||= config.dig('users', 'buyer', 'email')
-ENV['BUYER_PASSWORD']             ||= config.dig('users', 'buyer', 'password')
-ENV['BUYER_NO_DETAILS_EMAIL']     ||= config.dig('users', 'buyer_no_details', 'email')
-ENV['BUYER_NO_DETAILS_PASSWORD']  ||= config.dig('users', 'buyer_no_details', 'password')
-ENV['ADMIN_EMAIL']                ||= config.dig('users', 'admin', 'email')
-ENV['ADMIN_PASSWORD']             ||= config.dig('users', 'admin', 'password')
+services = ['facilities_management', 'management_consultancy', 'legal_services', 'supply_teachers']
+
+services.each do |service|
+  ENV["BUYER_EMAIL_#{service.upcase}"]    ||= config.dig('users', 'buyer', service, 'email')
+  ENV["BUYER_PASSWORD_#{service.upcase}"] ||= config.dig('users', 'buyer', service, 'password')
+  ENV["ADMIN_EMAIL_#{service.upcase}"]    ||= config.dig('users', 'admin', service, 'email')
+  ENV["ADMIN_PASSWORD_#{service.upcase}"] ||= config.dig('users', 'admin', service, 'password')
+end
+
+ENV['BUYER_EMAIL_NO_DETAILS']     ||= config.dig('users', 'buyer', 'no_details', 'email')
+ENV['BUYER_PASSWORD_NO_DETAILS']  ||= config.dig('users', 'buyer', 'no_details', 'password')
 
 ENV['TEST_RUN_ID'] = SecureRandom.uuid
 

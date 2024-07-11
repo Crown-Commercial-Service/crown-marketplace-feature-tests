@@ -1,0 +1,48 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+require 'optparse'
+
+options = {
+  profile: 'default',
+  number_of_processes: '1',
+  cucumber_format: 'progress'
+}
+
+OptionParser.new do |opts|
+  opts.banner = 'Usage: bin/run-cucumber <env> [options] <features>'
+
+  opts.on('-pPROFILE', '--profile=PROFILE', 'Set cucumber profile [default: default]') do |profile|
+    options[:profile] = profile
+  end
+
+  opts.on('-nNUMBER_OF_PROCESSES', '--number-of-processes=NUMBER_OF_PROCESSES', 'Set the number of proccesses to use in parallel [default: 1]') do |number_of_processes|
+    options[:number_of_processes] = number_of_processes
+  end
+
+  opts.on('-fCUCUMBER_FORMAT', '--cucumber-format=CUCUMBER_FORMAT', 'Set the cucumber format [default: progress]') do |cucumber_format|
+    options[:cucumber_format] = cucumber_format
+  end
+end.parse!
+
+options[:env]             = ARGV[0]
+options[:additional_args] = ARGV[1..].join(' ')
+
+# Clean the reports directory
+FileUtils.rm_rf 'reports'
+FileUtils.mkdir_p 'reports'
+
+# Run the cucumber tests
+cucumber_command = if options[:number_of_processes] == '1'
+                     "cucumber -p #{options[:profile]} #{options[:additional_args]}"
+                   else
+                     "parallel_cucumber -n #{options[:number_of_processes]} -o '-p parallel_#{options[:profile]} #{options[:additional_args]}'"
+                   end
+
+result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
+
+# Re run tests if we get any failures
+system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun") unless result
+
+# Build the report
+system("bundle exec report_builder -s 'reports' -o 'reports/index' -f html -T 'Functional Test Results - #{options[:profile].capitalize}'")

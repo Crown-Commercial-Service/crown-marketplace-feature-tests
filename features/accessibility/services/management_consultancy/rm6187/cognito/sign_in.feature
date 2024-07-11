@@ -1,5 +1,5 @@
 @accessibility
-Feature: Sign in to my account - Management Consultancy - RM6187 - Accessibility
+Feature: Management Consultancy - RM6187 - Sign in to my account - Accessibility
 
   Scenario: Sign in page
     When I go to the 'management consultancy' start page for 'RM6187'

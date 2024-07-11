@@ -1,5 +1,5 @@
 @accessibility
-Feature: Forgot my password - Management Consultancy - RM6187 - Accessibility
+Feature: Management Consultancy - RM6187 - Forgot my password - Accessibility
 
   Scenario: I forgot my password
     When I go to the 'management consultancy' start page for 'RM6187'
