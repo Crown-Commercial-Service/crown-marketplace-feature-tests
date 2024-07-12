@@ -17,7 +17,6 @@ Feature: Supply Teachers - Start pages
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
     Then I click on 'Sign in with CCS'
-    Given I am a 'supply teachers' user
     Then I sign in
     Then I am on the 'What is your school looking for?' page
 

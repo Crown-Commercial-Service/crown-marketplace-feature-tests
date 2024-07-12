@@ -17,6 +17,10 @@ end
 require 'byebug'
 require 'active_support/all'
 
+# Include our utilities
+require_relative '../../utils/errors'
+require_relative '../../utils/config_helper'
+
 # Allows us to use site prism in our tests
 require_relative '../support/pages'
 
@@ -26,31 +30,22 @@ World(Pages)
 Time.zone = 'London'
 
 # We can set the config from the environments.<ENV>.yml file
-test_env = ENV.fetch('TEST_ENV', 'local')
+config = ConfigHelper.get_config(ENV.fetch('TEST_ENV', 'local'))
 
-config_filename = "config/environment.#{test_env}.yml"
+test_number = (ENV.fetch('TEST_ENV_NUMBER', '').blank? ? '1' : ENV.fetch('TEST_ENV_NUMBER')).to_i - 1
 
-class MissingConfigFileError < StandardError
-  def initialize(missing_file_name)
-    super("Could not find config file with name: '#{missing_file_name}'")
-  end
+[
+  ['buyer', test_number],
+  ['admin', test_number],
+  ['no_details', 0]
+].each do |role, index|
+  crednetials = config.dig('users', role, index)
+
+  raise MissingCredentialsError, { role:, index: } unless crednetials
+
+  ENV["#{role.upcase}_EMAIL"]     ||= crednetials['email']
+  ENV["#{role.upcase}_PASSWORD"]  ||= crednetials['password']
 end
-
-raise MissingConfigFileError, config_filename unless File.file?(config_filename)
-
-config = YAML.load_file('config/environment.shared.yml')[test_env].merge(YAML.load_file("config/environment.#{test_env}.yml"))
-
-services = ['facilities_management', 'management_consultancy', 'legal_services', 'supply_teachers']
-
-services.each do |service|
-  ENV["BUYER_EMAIL_#{service.upcase}"]    ||= config.dig('users', 'buyer', service, 'email')
-  ENV["BUYER_PASSWORD_#{service.upcase}"] ||= config.dig('users', 'buyer', service, 'password')
-  ENV["ADMIN_EMAIL_#{service.upcase}"]    ||= config.dig('users', 'admin', service, 'email')
-  ENV["ADMIN_PASSWORD_#{service.upcase}"] ||= config.dig('users', 'admin', service, 'password')
-end
-
-ENV['BUYER_EMAIL_NO_DETAILS']     ||= config.dig('users', 'buyer', 'no_details', 'email')
-ENV['BUYER_PASSWORD_NO_DETAILS']  ||= config.dig('users', 'buyer', 'no_details', 'password')
 
 ENV['TEST_RUN_ID'] = SecureRandom.uuid
 

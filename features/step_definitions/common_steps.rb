@@ -15,7 +15,6 @@ SERVICE_TO_ADMIN_PAGE_TITLE = {
 Given('I sign in and navigate to the start page for the {string} framework in {string}') do |framework, service|
   visit "/#{service.gsub(' ', '-')}/#{framework}/sign-in"
   update_banner_cookie(true)
-  current_user(service)
   step 'I sign in'
   step "I am on the '#{SERVICE_TO_START_PAGE_TITLE.fetch(service)}' page"
 end
@@ -27,14 +26,14 @@ end
 Given('I sign in as an admin for the {string} framework in {string}') do |framework, service|
   visit "/#{service.gsub(' ', '-')}/#{framework}/admin/sign-in"
   update_banner_cookie(true)
-  current_user(service, 'admin')
+  current_user(role: 'admin')
 
   step 'I sign in'
   step "I am on the '#{SERVICE_TO_ADMIN_PAGE_TITLE.fetch(service)}' page"
 end
 
-Then('I am a {string} user') do |service|
-  current_user(service)
+Then('I am a no details user') do
+  current_user(role: 'no_details')
 end
 
 When('I go to {string}') do |uri|
@@ -56,8 +55,8 @@ When('I click on {string}') do |button_text|
 end
 
 Then('I sign in') do
-  fill_in 'Email address', with: @current_user.email
-  fill_in 'Password', with: @current_user.password
+  fill_in 'Email address', with: current_user.email
+  fill_in 'Password', with: current_user.password
   click_button 'Sign in'
 end
 

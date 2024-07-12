@@ -1,7 +1,7 @@
 Given('I sign in and navigate to the start page for the {string} framework in {string} without details') do |framework, service|
   visit "/#{service.gsub(' ', '-')}/#{framework}/sign-in"
   update_banner_cookie(true)
-  step "I am a 'no details' user"
+  step 'I am a no details user'
   step 'I sign in'
   step "I am on the 'Manage your details' page"
 end
