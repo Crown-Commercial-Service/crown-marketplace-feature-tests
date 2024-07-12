@@ -1,15 +1,14 @@
 class CurrentUser
   attr_reader :email, :password
 
-  def initialize(role, service)
+  def initialize(role)
     formatted_role = role.upcase
-    formatted_service = service.upcase.gsub(' ', '_')
 
-    @email = ENV.fetch("#{formatted_role}_EMAIL_#{formatted_service}")
-    @password = ENV.fetch("#{formatted_role}_PASSWORD_#{formatted_service}")
+    @email = ENV.fetch("#{formatted_role}_EMAIL")
+    @password = ENV.fetch("#{formatted_role}_PASSWORD")
   end
 end
 
-def current_user(service, role = 'buyer')
-  @current_user ||= CurrentUser.new(role, service)
+def current_user(role: 'buyer')
+  @current_user ||= CurrentUser.new(role)
 end

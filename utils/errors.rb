@@ -1,0 +1,2 @@
+require_relative 'errors/missing_config_file_error'
+require_relative 'errors/missing_credentials_error'

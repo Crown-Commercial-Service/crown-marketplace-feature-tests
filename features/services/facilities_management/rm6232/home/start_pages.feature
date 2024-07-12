@@ -15,7 +15,7 @@ Feature: Facilities Management - Start pages
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
-    Given I am a 'no details' user
+    Given I am a no details user
     Then I sign in
     And I am on the 'Manage your details' page
 
@@ -24,7 +24,6 @@ Feature: Facilities Management - Start pages
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
-    Given I am a 'facilities management' user
     Then I sign in
     And I am on the 'Your account' page
 
@@ -34,7 +33,6 @@ Feature: Facilities Management - Start pages
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
-    Given I am a 'facilities management' user
     Then I sign in
     And I am on the 'Your account' page
     Then the following content should be displayed on the page:

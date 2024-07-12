@@ -3,6 +3,9 @@
 require 'fileutils'
 require 'optparse'
 
+require_relative '../utils/errors'
+require_relative '../utils/config_helper'
+
 options = {
   profile: 'default',
   number_of_processes: '1',
@@ -28,6 +31,17 @@ end.parse!
 options[:env]             = ARGV[0]
 options[:additional_args] = ARGV[1..].join(' ')
 
+# Check we have enough users for the number of process
+puts 'Checking enough users are available'
+
+config = ConfigHelper.get_config(options[:env])
+
+%w[buyer admin].each do |role|
+  raise MissingCredentialsError, { role:, index: options[:number_of_processes] } unless config.dig('users', role).length >= options[:number_of_processes].to_i
+end
+
+puts 'Enough users found!'
+
 # Clean the reports directory
 FileUtils.rm_rf 'reports'
 FileUtils.mkdir_p 'reports'
@@ -42,7 +56,23 @@ cucumber_command = if options[:number_of_processes] == '1'
 result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
 
 # Re run tests if we get any failures
-system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun") unless result
+unless result
+  # Clean up rerun file
+  rerun_file = 'reports/rerun.txt'
+
+  new_rerun_content = File.readlines(rerun_file).map do |line|
+    line.scan(/(?::\d+features)/).map { |match_data| [match_data, "#{match_data[..-9]}\n#{match_data[-8..]}"] }.each do |find_arg, replace_arg|
+      line.gsub!(find_arg, replace_arg)
+    end
+
+    line
+  end.join
+
+  File.write(rerun_file, new_rerun_content)
+
+  # Re run the failed tests
+  system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
+end
 
 # Build the report
 system("bundle exec report_builder -s 'reports' -o 'reports/index' -f html -T 'Functional Test Results - #{options[:profile].capitalize}'")

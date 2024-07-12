@@ -16,6 +16,5 @@ Feature: Management Consultancy - Start pages
     Then I am on the 'Find management consultants' page
     When I click on 'Start now'
     Then I am on the 'Sign in to your management consultancy account' page
-    Given I am a 'management consultancy' user
     Then I sign in
     Then I am on the 'Select the lot you need' page

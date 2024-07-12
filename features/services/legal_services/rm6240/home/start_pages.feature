@@ -16,6 +16,5 @@ Feature: Legal Services - Start pages
     Then I am on the 'Find legal services for the wider public sector' page
     When I click on 'Start now'
     Then I am on the 'Sign in to your legal services account' page
-    Given I am a 'legal services' user
     Then I sign in
     Then I am on the 'Do you work for central government?' page

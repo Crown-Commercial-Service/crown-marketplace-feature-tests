@@ -1,31 +1,11 @@
 ---
 users:
   admin:
-    facilities_management:
-      email:
-      password:
-    management_consultancy:
-      email:
-      password:
-    legal_services:
-      email:
-      password:
-    supply_teachers:
-      email:
+    - email:
       password:
   buyer:
-    facilities_management:
-      email:
+    - email:
       password:
-    management_consultancy:
-      email:
-      password:
-    legal_services:
-      email:
-      password:
-    supply_teachers:
-      email:
-      password:
-    no_details:
-      email:
+  no_details:
+    - email:
       password:
