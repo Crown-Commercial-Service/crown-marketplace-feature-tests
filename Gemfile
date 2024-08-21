@@ -2,8 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.3.3'
-
+ruby '3.3.4'
 # Cucumber
 gem 'capybara', '~> 3.40.0'
 gem 'cucumber', '~> 9.2.0'
