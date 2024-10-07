@@ -22,7 +22,7 @@ gem 'byebug', '~> 11.1'
 # For linting
 gem 'rubocop', '~> 1.66'
 gem 'rubocop-capybara', '~> 2.20'
-gem 'rubocop-rspec', '~> 3.0'
+gem 'rubocop-rspec', '~> 3.1'
 
 # For running tests in parallel
 gem 'parallel_tests', '~> 4.7.2'
