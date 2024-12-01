@@ -21,7 +21,7 @@ gem 'activesupport', '~> 8.0.0'
 gem 'byebug', '~> 11.1'
 
 # For linting
-gem 'rubocop', '~> 1.68'
+gem 'rubocop', '~> 1.69'
 gem 'rubocop-capybara', '~> 2.20'
 gem 'rubocop-rspec', '~> 3.2'
 
