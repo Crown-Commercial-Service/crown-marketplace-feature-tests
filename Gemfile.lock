@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (8.0.0)
+    activesupport (8.0.1)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -87,10 +87,10 @@ GEM
     ice_nine (0.11.2)
     json (2.9.0)
     language_server-protocol (3.17.0.3)
-    logger (1.6.1)
+    logger (1.6.3)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    minitest (5.25.1)
+    minitest (5.25.4)
     multi_test (1.1.0)
     nokogiri (1.16.7-x86_64-darwin)
       racc (~> 1.4)
@@ -144,7 +144,7 @@ GEM
       rubocop (~> 1.61)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
-    securerandom (0.3.1)
+    securerandom (0.4.0)
     selenium-webdriver (4.27.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -164,7 +164,7 @@ GEM
     unicode-display_width (3.1.2)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
-    uri (1.0.1)
+    uri (1.0.2)
     virtus (2.0.0)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -181,7 +181,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activesupport (~> 8.0.0)
+  activesupport (~> 8.0.1)
   axe-core-capybara (>= 4.2.1)
   axe-core-cucumber (>= 4.2.1)
   byebug (~> 11.1)
