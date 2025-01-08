@@ -11,7 +11,7 @@ This is a ruby project which uses [Cucumber][] BDD framework and [Capybara][] to
 This guide assumes you have Homebrew installed.
 
 #### Check the Ruby version
-Ensure that a ruby version manager (e.g. rvm or rbenv) is installed and set up properly, using 3.3.6 as the Ruby version before trying anything else. 
+Ensure that a ruby version manager (e.g. rvm or rbenv) is installed and set up properly, using 3.4.1 as the Ruby version before trying anything else. 
 
 #### Software requirements
 
