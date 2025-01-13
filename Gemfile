@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.3.6'
+ruby '3.4.1'
 
 # Cucumber
 gem 'capybara', '~> 3.40.0'
