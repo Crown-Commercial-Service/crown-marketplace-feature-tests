@@ -71,7 +71,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by location - P
       | Search distance: 50 miles       |
 
   Scenario: Changing location changes the results
-    And I enter 'L3 4AA' for the 'postcode'
+    And I enter 'L3 9PP' for the 'postcode'
     And I click on 'Continue'
     Then I am on the 'Agency results' page
     And there are multiple agencies and I record them
@@ -79,7 +79,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by location - P
       | Looking for: Individual worker  |
       | Worker type: Supplied by agency |
       | Payroll provider: School        |
-      | Postcode: L3 4AA                |
+      | Postcode: L3 9PP                |
       | Search distance: 25 miles       |
     Then I click on 'Back'
     Then I am on the 'What is your school’s postcode?' page
