@@ -21,7 +21,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Validations - Productio
     And I enter '1234' for the 'salary'
     And I click on 'Continue'
     Then I am on the 'What is your school’s postcode?' page
-    And I enter 'L3 4AA' for the 'postcode'
+    And I enter 'L3 9PP' for the 'postcode'
     And I click on 'Continue'
     Then I am on the 'Agency results' page
     And there are multiple agencies and I count them
@@ -55,7 +55,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Validations - Productio
   Scenario: Rate validations - multiple agencies
     And I enter the rate '-1' for supplier number 1
     And I enter the rate 'Sena' for supplier number 2
-    And I enter the rate 'L3 4AA' for supplier number 3
+    And I enter the rate 'L3 9PP' for supplier number 3
     Then I should see the error message 'Annual salary is invalid' for supplier number 1
     Then I should see the error message 'Annual salary is invalid' for supplier number 2
     Then I should see the error message 'Annual salary is invalid' for supplier number 3
