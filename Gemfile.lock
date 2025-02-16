@@ -194,7 +194,7 @@ DEPENDENCIES
   parallel_tests (~> 4.9.0)
   report_builder (~> 1.9)
   rspec (~> 3.13.0)
-  rubocop (~> 1.71)
+  rubocop (~> 1.72)
   rubocop-capybara (~> 2.20)
   rubocop-rspec (~> 3.5)
   selenium-webdriver (~> 4.28.0)
