@@ -183,3 +183,5 @@ config/environment.*
 !config/environment.example.yml
 
 reports/*
+
+data/**/~$*
