@@ -18,7 +18,7 @@ gem 'axe-core-cucumber', '>= 4.2.1'
 gem 'activesupport', '~> 8.0.2'
 
 # For debugging
-gem 'byebug', '~> 11.1'
+gem 'byebug', '~> 12.0'
 
 # For linting
 gem 'rubocop', '~> 1.74'
