@@ -1,8 +1,6 @@
 ---
 plugins:
     - rubocop-rspec
-
-require:
     - rubocop-capybara
 
 AllCops:

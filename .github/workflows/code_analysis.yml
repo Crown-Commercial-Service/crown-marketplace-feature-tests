@@ -30,7 +30,7 @@ jobs:
           mkdir reports
 
       - name: Run cucumber tests - Non production
-        run:  TEST_ENV=preview bundle exec cucumber features/services --dry-run
+        run:  TEST_ENV=preview bundle exec cucumber features/services/ --dry-run
 
       - name: Run cucumber tests - Production
         run:  TEST_ENV=production bundle exec cucumber features/services/ --dry-run
