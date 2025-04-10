@@ -11,7 +11,7 @@ end
 
 Before do
   # We only what the tests to run if RM6309 is live which wont be until later
-  skip_this_scenario if @framework == 'RM6309' && ['local'].exclude?(ENV.fetch('TEST_ENV', 'local'))
+  skip_this_scenario if @framework == 'RM6309' && ['local', 'cmpdev'].exclude?(ENV.fetch('TEST_ENV', 'local'))
 end
 
 Before('@mobile') do
