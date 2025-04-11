@@ -78,6 +78,12 @@ To run the tests using a different profile, pass the profile argument
 bin/run-cucumber <env> -p <profile>
 ```
 
+By default the test run in a headless browser, to see the browser, pass the headless argument with a value of false
+
+```shell
+bin/run-cucumber <env> -h false
+```
+
 To run the tests in parallel, pass the number of process you wish to use
 
 ```shell
