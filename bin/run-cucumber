@@ -9,7 +9,8 @@ require_relative '../utils/config_helper'
 options = {
   profile: 'default',
   number_of_processes: '1',
-  cucumber_format: 'progress'
+  cucumber_format: 'progress',
+  headless: 'true'
 }
 
 OptionParser.new do |opts|
@@ -25,6 +26,10 @@ OptionParser.new do |opts|
 
   opts.on('-fCUCUMBER_FORMAT', '--cucumber-format=CUCUMBER_FORMAT', 'Set the cucumber format [default: progress]') do |cucumber_format|
     options[:cucumber_format] = cucumber_format
+  end
+
+  opts.on('-fHEADLESS', '--headless=HEADLESS', 'Set the headless mode to run the test in [default: true]') do |headless|
+    options[:headless] = headless
   end
 end.parse!
 
@@ -53,7 +58,7 @@ cucumber_command = if options[:number_of_processes] == '1'
                      "parallel_cucumber -n #{options[:number_of_processes]} -o '-p parallel_#{options[:profile]} #{options[:additional_args]}'"
                    end
 
-result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
+result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
 
 # Re run tests if we get any failures
 unless result
@@ -71,7 +76,7 @@ unless result
   File.write(rerun_file, new_rerun_content)
 
   # Re run the failed tests
-  system("CUCUMBER_FORMAT=#{options[:cucumber_format]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
+  system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
 end
 
 # Build the report
