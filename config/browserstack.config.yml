@@ -1,0 +1,43 @@
+server: hub-cloud.browserstack.com
+user: 
+key: 
+
+common_caps:
+ build: "capybara-browserstack"
+ project: "capybara-browserstack"
+ browserstack.debug: true
+ browserstack.local: true
+ browserstack.networkLogs: true
+ browserstack.console: "errors"
+ browserstack.idleTimeout: 300
+ browserstack.timezone: "UTC"
+ browserstack.selenium_version: "4.0.0"
+
+
+browser_caps:
+#  - browser: "chrome"
+#    os: "Windows"
+#    os_version: "10"
+#    browser_version: "latest"
+#    resolution: "1920x1080"
+  
+#  - browser: "firefox"
+#    os: "Windows"
+#    os_version: "10"
+#    browser_version: "latest"
+#    resolution: "1920x1080"
+  
+ - browser: "edge"
+   os: "Windows"
+   os_version: "11"
+   browser_version: "latest"
+   resolution: "1920x1080"
+  
+#  - browser: "safari"
+#    os: "OS X"
+#    os_version: "Monterey"
+#    browser_version: "latest"
+#    resolution: "1920x1080"
+
+
+

@@ -185,3 +185,7 @@ config/environment.*
 reports/*
 
 data/**/~$*
+
+screenshots/
+
+local.log

@@ -13,6 +13,7 @@ gem 'site_prism', '~> 5.1'
 
 gem 'axe-core-capybara', '>= 4.2.1'
 gem 'axe-core-cucumber', '>= 4.2.1'
+gem 'securerandom'
 
 # For Time zones and manipulating dates
 gem 'activesupport', '~> 8.0.2'
@@ -26,5 +27,9 @@ gem 'rubocop-capybara', '~> 2.22'
 gem 'rubocop-rspec', '~> 3.5'
 
 # For running tests in parallel
+gem 'allure-cucumber'
 gem 'parallel_tests', '~> 5.1.0'
-gem 'report_builder', '~> 1.9'
+
+
+# For running tests on Browserstack
+gem 'browserstack-local'

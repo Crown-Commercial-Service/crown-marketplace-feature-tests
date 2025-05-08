@@ -11,12 +11,13 @@ restricted_tags = [
 std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags 'not #{restricted_tags}' --publish-quiet "
 accessibility_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags '@accessibility' --publish-quiet CUCUMBER_ACCESSIBILITY=true "
 smoulder_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags '@smoulder#{' and not @skip-production' if ENV['TEST_ENV'] == 'production'}' --publish-quiet "
-std_report_opts = "--format json --out reports/report#{ENV['TEST_ENV_NUMBER']}.json --format rerun --out reports/rerun.txt "
-parallel_report_opts = "--format json --out reports/report#{ENV['TEST_ENV_NUMBER']}.json --format ParallelTests::Cucumber::FailuresLogger --out reports/rerun.txt "
+std_report_opts = "--format json --out reports/report#{ENV['TEST_ENV_NUMBER']}.json --format rerun --out reports/rerun.txt --format AllureCucumber::CucumberFormatter --out reports/allure-results "
+parallel_report_opts = "--format json --out reports/report#{ENV['TEST_ENV_NUMBER']}.json --format ParallelTests::Cucumber::FailuresLogger --out reports/rerun.txt --format AllureCucumber::CucumberFormatter --out reports/allure-results "
+rerun_report_opts = "--format rerun --out rerun.txt --format AllureCucumber::CucumberFormatter --out reports/allure-results "
 %>
 default: <%= std_opts %> <%= std_report_opts %> features
 wip: --tags @wip:3 --wip features --publish-quiet
-rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags 'not @wip'
+rerun: <%= rerun_opts %> <%= rerun_report_opts %> --strict --tags 'not @wip'
 accessibility: <%= accessibility_opts %> <%= std_report_opts %> features/accessibility
 smoulder: <%= smoulder_opts %> <%= std_report_opts %> features
 parallel_default: <%= std_opts %> <%= parallel_report_opts %> features
