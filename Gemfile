@@ -30,6 +30,5 @@ gem 'rubocop-rspec', '~> 3.5'
 gem 'allure-cucumber'
 gem 'parallel_tests', '~> 5.1.0'
 
-
 # For running tests on Browserstack
 gem 'browserstack-local'
