@@ -9,8 +9,9 @@ require_relative '../utils/config_helper'
 options = {
   profile: 'default',
   number_of_processes: '1',
-  cucumber_format: 'progress',
-  headless: 'true'
+  cucumber_format: 'pretty',
+  headless: 'true',
+  browser: 'firefox',
 }
 
 OptionParser.new do |opts|
@@ -31,6 +32,10 @@ OptionParser.new do |opts|
   opts.on('-fHEADLESS', '--headless=HEADLESS', 'Set the headless mode to run the test in [default: true]') do |headless|
     options[:headless] = headless
   end
+
+  opts.on('-bBROWSER', '--browser=BROWSER', 'Browser to use for tests (firefox, chrome, edge, safari) [default: firefox]') do |browser|
+    options[:browser] = browser
+  end
 end.parse!
 
 options[:env]             = ARGV[0]
@@ -49,16 +54,18 @@ puts 'Enough users found!'
 
 # Clean the reports directory
 FileUtils.rm_rf 'reports'
-FileUtils.mkdir_p 'reports'
+FileUtils.mkdir_p 'reports/allure-results'
+
+allure_formatter = ' --format AllureCucumber::CucumberFormatter --out reports/allure-results'
 
 # Run the cucumber tests
 cucumber_command = if options[:number_of_processes] == '1'
                      "cucumber -p #{options[:profile]} #{options[:additional_args]}"
                    else
-                     "parallel_cucumber -n #{options[:number_of_processes]} -o '-p parallel_#{options[:profile]} #{options[:additional_args]}'"
+                     "parallel_cucumber -n #{options[:number_of_processes]} -o '-p parallel_#{options[:profile]}#{allure_formatter} #{options[:additional_args]}'"
                    end
 
-result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
+result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} BROWSER=#{options[:browser]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
 
 # Re run tests if we get any failures
 unless result
@@ -75,9 +82,7 @@ unless result
 
   File.write(rerun_file, new_rerun_content)
 
-  # Re run the failed tests
-  system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
+  system("CUCUMBER_FORMAT=pretty TEST_ENV=#{options[:env]} HEADLESS=#{options[:headless]} BROWSER=#{options[:browser]} bundle exec cucumber -p rerun#{allure_formatter}")
 end
 
-# Build the report
-system("bundle exec report_builder -s 'reports' -o 'reports/index' -f html -T 'Functional Test Results - #{options[:profile].capitalize}'")
+system('bundle exec allure generate reports/allure-results -o reports/allure-report --clean --single-file')
