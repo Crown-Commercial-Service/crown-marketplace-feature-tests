@@ -152,7 +152,7 @@ GEM
     ruby-progressbar (1.13.0)
     rubyzip (2.4.1)
     securerandom (0.4.1)
-    selenium-webdriver (4.31.0)
+    selenium-webdriver (4.32.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
@@ -200,7 +200,7 @@ DEPENDENCIES
   rubocop (~> 1.75)
   rubocop-capybara (~> 2.22)
   rubocop-rspec (~> 3.6)
-  selenium-webdriver (~> 4.31.0)
+  selenium-webdriver (~> 4.32.0)
   site_prism (~> 5.1)
 
 RUBY VERSION
