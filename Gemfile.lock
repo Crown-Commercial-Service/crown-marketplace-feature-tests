@@ -100,7 +100,7 @@ GEM
       racc (~> 1.4)
     ostruct (0.6.1)
     parallel (1.27.0)
-    parallel_tests (5.1.0)
+    parallel_tests (5.2.0)
       parallel
     parser (3.3.8.0)
       ast (~> 2.4.1)
@@ -194,7 +194,7 @@ DEPENDENCIES
   byebug (~> 12.0)
   capybara (~> 3.40.0)
   cucumber (~> 9.2.1)
-  parallel_tests (~> 5.1.0)
+  parallel_tests (~> 5.2.0)
   report_builder (~> 1.9)
   rspec (~> 3.13.0)
   rubocop (~> 1.75)
