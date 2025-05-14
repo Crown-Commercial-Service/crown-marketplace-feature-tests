@@ -5,6 +5,18 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
+
+    # Group packages into shared PR
+    groups:
+      rubocop:
+        patterns:
+          - 'rubocop'
+          - 'rubocop-*'
+
+      axe:
+        patterns:
+          - 'axe*'
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
