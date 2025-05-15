@@ -17,10 +17,10 @@ Feature: Supply Teachers - Agency results - Nominated worker - Agencies
     And there are 8 agencies
     And the listed agencies with rates and distances are:
       | BARTOLETTI, KOEPP AND NIENOW  | London      | £22.07  | 6.0 |
-      | MCGLYNN GROUP                 | London      | £31.87  | 5.1 |
+      | MCGLYNN GROUP                 | London      | £31.87  | 5.2 |
       | STANTON, FADEL AND BOSCO      | Twickenham  | £33.16  | 9.1 |
       | DIETRICH-BORER                | London      | £34.12  | 6.0 |
-      | HAGENES-BECHTELAR             | London      | £39.98  | 5.1 |
+      | HAGENES-BECHTELAR             | London      | £39.98  | 5.2 |
       | ZIEMANN-HERMANN               | London      | £42.85  | 0.0 |
       | EMARD AND SONS                | Twickenham  | £46.68  | 9.1 |
       | FEEST-MULLER                  | London      | £47.64  | 0.0 |

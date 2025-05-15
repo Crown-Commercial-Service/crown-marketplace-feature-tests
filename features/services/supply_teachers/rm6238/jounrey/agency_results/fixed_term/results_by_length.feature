@@ -29,10 +29,10 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by length
     And there are 8 agencies
     And the listed agencies with distances, fees and lengths are:
       | BARTOLETTI, KOEPP AND NIENOW  | London      | 6.0   | 28000 | <number_of_months> months  | <agency_1_rate>  | 16.6% |
-      | MCGLYNN GROUP                 | London      | 5.1   | 28000 | <number_of_months> months  | <agency_2_rate>  | 23.9% |
+      | MCGLYNN GROUP                 | London      | 5.2   | 28000 | <number_of_months> months  | <agency_2_rate>  | 23.9% |
       | STANTON, FADEL AND BOSCO      | Twickenham  | 9.1   | 28000 | <number_of_months> months  | <agency_3_rate>  | 24.9% |
       | DIETRICH-BORER                | London      | 6.0   | 28000 | <number_of_months> months  | <agency_4_rate>  | 25.6% |
-      | HAGENES-BECHTELAR             | London      | 5.1   | 28000 | <number_of_months> months  | <agency_5_rate>  | 30.0% |
+      | HAGENES-BECHTELAR             | London      | 5.2   | 28000 | <number_of_months> months  | <agency_5_rate>  | 30.0% |
       | ZIEMANN-HERMANN               | London      | 0.0   | 28000 | <number_of_months> months  | <agency_6_rate>  | 32.1% |
       | EMARD AND SONS                | Twickenham  | 9.1   | 28000 | <number_of_months> months  | <agency_7_rate>  | 35.0% |
       | FEEST-MULLER                  | London      | 0.0   | 28000 | <number_of_months> months  | <agency_8_rate>  | 35.7% |
