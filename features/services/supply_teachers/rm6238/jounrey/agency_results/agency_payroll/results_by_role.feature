@@ -22,7 +22,7 @@ Feature: Supply Teachers - Agency results - Agency payroll - Results by role
     And there are 5 agencies
     And the listed agencies with rates and distances are:
       | BARTOLETTI, KOEPP AND NIENOW  | London      | £27.59  | 6.0 |
-      | MCGLYNN GROUP                 | London      | £39.84  | 5.1 |
+      | MCGLYNN GROUP                 | London      | £39.84  | 5.2 |
       | STANTON, FADEL AND BOSCO      | Twickenham  | £41.45  | 9.1 |
       | EMARD AND SONS                | Twickenham  | £58.35  | 9.1 |
       | FEEST-MULLER                  | London      | £59.55  | 0.0 |

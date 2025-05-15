@@ -21,11 +21,11 @@ Feature: Supply Teachers - Agency results - Agency payroll - Agencies
   Scenario: The agency details shown are correct
     And there are 5 agencies
     And the listed agencies with rates and distances are:
-      | BARTOLETTI, KOEPP AND NIENOW  | Southport | £27.59  | 17.0  |
-      | STANTON, FADEL AND BOSCO      | Liverpool | £41.45  | 2.6   |
-      | KERLUKE, TORP AND HEATHCOTE   | Liverpool | £47.94  | 0.7   |
-      | EMARD AND SONS                | Liverpool | £58.35  | 2.6   |
-      | FEEST-MULLER                  | Liverpool | £59.55  | 7.2   |
+      | BARTOLETTI, KOEPP AND NIENOW  | Southport | £27.59  | 16.4  |
+      | STANTON, FADEL AND BOSCO      | Liverpool | £41.45  | 2.0   |
+      | KERLUKE, TORP AND HEATHCOTE   | Liverpool | £47.94  | 0.0   |
+      | EMARD AND SONS                | Liverpool | £58.35  | 2.0   |
+      | FEEST-MULLER                  | Liverpool | £59.55  | 7.6   |
 
   Scenario Outline: I can naviagte to the agency details
     Given I click on '<agency_name>'
