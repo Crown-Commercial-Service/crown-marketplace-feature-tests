@@ -16,7 +16,7 @@ Feature: Management Consultancy - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find management consultants' page
+    Then I am on the 'Select the lot you need' page
 
   Scenario: Not permitted page - sign out
     And I go to the not permitted page for 'management consultancy'
@@ -33,7 +33,7 @@ Feature: Management Consultancy - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find management consultants' page
+    Then I am on the 'Select the lot you need' page
 
   Scenario: Cookies policy - Sign out
     When I click on 'Cookie policy'
@@ -51,7 +51,7 @@ Feature: Management Consultancy - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find management consultants' page
+    Then I am on the 'Select the lot you need' page
 
   Scenario: Cookies settings - Sign out
     When I click on 'Cookie settings'
@@ -69,7 +69,7 @@ Feature: Management Consultancy - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find management consultants' page
+    Then I am on the 'Select the lot you need' page
 
   Scenario: Accessibility statement - Sign out
     When I click on 'Accessibility statement'
