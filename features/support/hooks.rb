@@ -11,7 +11,7 @@ end
 
 Before do
   # Make sure we only run test for frameworks that are live in the environment
-  skip_this_scenario if ENV['LIVE_FRAMEWORKS'].exclude?(@framework)
+  skip_this_scenario if @framework && ENV['LIVE_FRAMEWORKS'].exclude?(@framework)
 end
 
 Before('@mobile') do
