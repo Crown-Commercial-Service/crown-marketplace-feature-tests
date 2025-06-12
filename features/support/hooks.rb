@@ -10,8 +10,8 @@ Before do |scenario|
 end
 
 Before do
-  # We only what the tests to run if RM6309 is live which wont be until later
-  skip_this_scenario if @framework == 'RM6309' && ['local', 'cmpdev'].exclude?(ENV.fetch('TEST_ENV', 'local'))
+  # Make sure we only run test for frameworks that are live in the environment
+  skip_this_scenario if ENV['LIVE_FRAMEWORKS'].exclude?(@framework)
 end
 
 Before('@mobile') do
