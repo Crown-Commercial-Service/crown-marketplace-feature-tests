@@ -1,11 +1,40 @@
 ---
 local:
   host: http://localhost:4000
+  live_frameworks:
+    - RM6187
+    - RM6232
+    - RM6238
+    - RM6240
+    - RM6309
 sandbox:
   host: https://cmp.cmp-sandbox.crowncommercial.gov.uk
+  live_frameworks:
+    - RM6187
+    - RM6232
+    - RM6238
+    - RM6240
+    - RM6309
 cmpdev:
   host: https://cmp.cmpdev.crowncommercial.gov.uk
+  live_frameworks:
+    - RM6187
+    - RM6232
+    - RM6238
+    - RM6240
+    - RM6309
 preview:
   host: https://marketplace.preview.crowncommercial.gov.uk
+  live_frameworks:
+    - RM6187
+    - RM6232
+    - RM6238
+    - RM6240
+    - RM6309
 production:
   host: https://marketplace.service.crowncommercial.gov.uk
+  live_frameworks:
+    - RM6187
+    - RM6232
+    - RM6238
+    - RM6240

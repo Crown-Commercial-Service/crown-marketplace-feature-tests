@@ -49,6 +49,8 @@ end
 
 ENV['TEST_RUN_ID'] = SecureRandom.uuid
 
+ENV['LIVE_FRAMEWORKS'] = config['live_frameworks'].join(',')
+
 # Set the Capybara config
 Capybara.app_host = config['host']
 
