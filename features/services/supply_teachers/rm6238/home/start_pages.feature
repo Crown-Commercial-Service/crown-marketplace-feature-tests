@@ -27,4 +27,4 @@ Feature: Supply Teachers - Start pages
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
     Then I click on 'Sign in with DfE Sign-in'
-    Then I am on the 'Department for Education Sign-in' page
+    Then I am on the 'Access the DfE Sign-in service' page
