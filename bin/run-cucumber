@@ -28,7 +28,7 @@ OptionParser.new do |opts|
     options[:cucumber_format] = cucumber_format
   end
 
-  opts.on('-fHEADLESS', '--headless=HEADLESS', 'Set the headless mode to run the test in [default: true]') do |headless|
+  opts.on('-hHEADLESS', '--headless=HEADLESS', 'Set the headless mode to run the test in [default: true]') do |headless|
     options[:headless] = headless
   end
 end.parse!

@@ -77,6 +77,7 @@ Feature: Facilities Management - RM6232 - Information appears correctly on resul
   @smoulder
   Scenario: Save and continue to 'What do I do next?'
     Then I enter 'Agnis search' into the contract name field
+    And I select 'Yes'
     And I click on 'Save and continue'
     Then I am on the 'What do I do next?' page
     And the procurement name is shown to be 'Agnis search'
