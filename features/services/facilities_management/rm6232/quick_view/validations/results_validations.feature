@@ -3,7 +3,7 @@ Feature: Facilities Management - RM6232 - Results validations
   Background: Sign in to the sytem
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
 
-  Scenario: Contract name is blank
+  Scenario: Contract name and linkt to PFI is blank
     And I click on 'Search for suppliers'
     Then I am on the 'Services' page
     And I click on 'Show all sections'
@@ -21,7 +21,8 @@ Feature: Facilities Management - RM6232 - Results validations
     Then I am on the 'Results' page
     Given I click on 'Save and continue'
     Then I should see the following error messages:
-      | Enter your contract name  |
+      | Enter your contract name                          |
+      | Select one option for requirements linked to PFI  |
 
   @smoulder
   Scenario: Contract name is taken
@@ -42,6 +43,7 @@ Feature: Facilities Management - RM6232 - Results validations
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I enter the taken contract name into the contract name field
+    And I select 'Yes'
     And I click on 'Save and continue'
     Then I should see the following error messages:
       | This contract name is already in use  |

@@ -173,6 +173,7 @@ end
 Given('I have a procurement with the name {string}') do |contract_name|
   visit '/facilities-management/RM6232/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=UKC1&service_codes%5B%5D=E.1'
   step "I enter '#{contract_name}' into the contract name field"
+  step "I select 'Yes'"
   step 'I click on "Save and continue"'
   step 'I am on the "What do I do next?" page'
 end
