@@ -91,6 +91,11 @@ Metrics/BlockLength:
 Naming/VariableNumber:
     Enabled: false
 
+Naming/PredicateMethod:
+    Enabled: true
+    AllowedMethods:
+        - wait_for_ajax
+
 Lint/MissingSuper:
     Enabled: false
 
