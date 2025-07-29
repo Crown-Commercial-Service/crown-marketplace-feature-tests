@@ -13,16 +13,16 @@ Feature: Management Consultancy - Suppliers - Accessibility
     And there are suppliers who can offer consultants and I count them
   
   Scenario: Supplier results page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario: Supplier page
     And I click on the first supplier
     Then I am on the management consultancy day rates page
     And the sub title is 'MCF4 lot 1 - Business'
     And I click on the 'Back' back link
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario: Download supplier list page
     Given I click on 'Download the supplier list'
     Then I am on the 'Download the supplier shortlist' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"

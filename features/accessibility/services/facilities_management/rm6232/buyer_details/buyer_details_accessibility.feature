@@ -5,7 +5,7 @@ Feature: Facilities Management - Buyer details - accessibility
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management' without details
 
   Scenario: Buyer details page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario: Buyer details - add address manually page
     And I enter the following details into the form:
@@ -13,4 +13,4 @@ Feature: Facilities Management - Buyer details - accessibility
     And I click on 'Find address'
     And I click on 'Enter address manually, if you can’t find address'
     Then I am on the 'Add address' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"

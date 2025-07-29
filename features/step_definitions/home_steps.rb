@@ -19,6 +19,8 @@ Then('the cookie banner shows I have {string} the cookies') do |option|
 end
 
 Then('the cookies have been saved') do
+  sleep 0.01
+
   expect(cookie_settings['settings_viewed']).to be true
 end
 

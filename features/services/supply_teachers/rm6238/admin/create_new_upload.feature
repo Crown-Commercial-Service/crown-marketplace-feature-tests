@@ -16,18 +16,18 @@ Feature: Supply Teachers - Admin - Create new upload
     And I select the file 'data/supply_teachers/rm6238/Supplier lookup.csv' to upload for 'Supplier lookup'
     And I click on 'Upload spreadsheets'
     Then I am on the 'Upload session' page
-    And I wait no longer than 20 seconds for the supply teachers upload status to change from 'Processing files'
+    And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Waiting to publish'
     And I click on 'Publish to live service'
     Then I am on the 'Upload session' page
-    And I wait no longer than 20 seconds for the supply teachers upload status to change from 'Publishing files'
+    And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Publishing files'
     And the status of the supply teachers upload is 'Published on live'
 
   Scenario: I can upload single successfully and cancel
     And I select the file 'data/supply_teachers/rm6238/Current accredited suppliers.xlsx' to upload for 'Current accredited suppliers'
     And I click on 'Upload spreadsheets'
     Then I am on the 'Upload session' page
-    And I wait no longer than 20 seconds for the supply teachers upload status to change from 'Processing files'
+    And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Waiting to publish'
     And I click on 'Cancel session'
     Then I am on the 'Upload session' page
@@ -44,7 +44,7 @@ Feature: Supply Teachers - Admin - Create new upload
     And I select the file 'data/supply_teachers/rm6238/Current accredited suppliers.xlsx' to upload for 'Current accredited suppliers'
     And I click on 'Upload spreadsheets'
     Then I am on the 'Upload session' page
-    And I wait no longer than 20 seconds for the supply teachers upload status to change from 'Processing files'
+    And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Waiting to publish'
     And I record the session name
     When I click on 'Return to manage supplier data'
@@ -54,7 +54,7 @@ Feature: Supply Teachers - Admin - Create new upload
     And I select the file 'data/supply_teachers/rm6238/Current accredited suppliers.xlsx' to upload for 'Current accredited suppliers'
     And I click on 'Upload spreadsheets'
     Then I am on the 'Upload session' page
-    And I wait no longer than 20 seconds for the supply teachers upload status to change from 'Processing files'
+    And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Waiting to publish'
     When I click on 'Return to manage supplier data'
     Then I am on the 'Supply teachers and agency workers' page

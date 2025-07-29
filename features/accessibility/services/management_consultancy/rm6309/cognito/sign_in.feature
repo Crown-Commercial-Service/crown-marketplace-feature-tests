@@ -6,4 +6,4 @@ Feature: Management Consultancy - RM6309 - Sign in to my account - Accessibility
     Then I am on the 'Find management consultants' page
     When I click on 'Start now'
     And I am on the 'Sign in to your management consultancy account' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"

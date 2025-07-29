@@ -300,6 +300,8 @@ end
 Then('I enter {string} for the agency search') do |agency_name|
   supply_teachers_page.supplier_search.input.fill_in with: "#{agency_name}\n"
   supply_teachers_page.supplier_search.search.click
+
+  sleep 0.1
 end
 
 Then('the listed agencies for agency results are:') do |raw_agency_name_and_branch|
