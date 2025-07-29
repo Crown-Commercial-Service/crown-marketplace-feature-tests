@@ -75,7 +75,7 @@ Feature: Supply Teachers - Temp to perm - Results
       | Based on the information you provided, you’re taking the worker on within the first 12 working weeks  |
       | of their contract, so you can be charged a fee even though you’ve given 4 working weeks’ notice.      |
 
-  Scenario Outline: Hiring before 9 - notice period does not change result
+  Scenario Outline: Hiring before 9 - notice period does not change result - Date <date>
     Given I enter '29/05/2021' for the 'hire' date
     Given I enter '<date>' for the 'notice' date
     And I click on 'Continue'

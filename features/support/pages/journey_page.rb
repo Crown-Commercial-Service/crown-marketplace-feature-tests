@@ -1,7 +1,7 @@
 module Pages
   class Journey < SitePrism::Page
     element :sub_title, :xpath, '//h1/../span'
-    elements :service_selection, '#selection-checkboxes label'
+    elements :service_selection, '#selection-checkboxes .govuk-checkboxes__item:not(.govuk-visually-hidden) label'
 
     section :basket, '#css-list-basket' do
       elements :selection, 'ul > li > span'
@@ -18,13 +18,19 @@ module Pages
 
     elements :suppliers, '.ccs-results-list a'
 
+    sections :legal_panel_for_government_suppliers, '.ccs-results-list h2' do
+      element :name, '.ccs-results-list__supplier-name > a'
+      element :prospectus, '.ccs-results-list__prospectus > a'
+    end
+
     section :supplier_rates_table_headings, 'table thead > tr' do
       element :rate_type_1, 'th:nth-of-type(2)'
       element :rate_type_2, 'th:nth-of-type(3)'
     end
 
-    section :supplier_rates_table, 'table tbody' do
+    section :supplier_rates_table, 'div:not(.govuk-tabs__panel--hidden) > table tbody' do
       sections :rows, 'tr' do
+        element :position, 'th'
         element :rate, 'td:nth-of-type(1)'
         element :rate_advice, 'td:nth-of-type(1)'
         element :rate_delivery, 'td:nth-of-type(2)'
@@ -35,7 +41,8 @@ module Pages
     end
 
     elements :contact_details, '.ccs-contact-details dd'
+    element :supplier_prospectus, '.ccs-supplier-prospectus'
 
-    element :day_rate_page_title, '#main-content > div:nth-child(3) > div.govuk-grid-column-two-thirds.govuk-\!-padding-right-8 > h2'
+    element :day_rate_page_title, '#main-content > div:nth-child(3) > div.govuk-grid-column-two-thirds.govuk-\!-padding-right-8 > h2:nth-child(1)'
   end
 end

@@ -1,0 +1,20 @@
+Feature: Legal Panel for Government - RM6360 - Forgot my password - Validations
+
+  Scenario Outline: I forgot my password - email invalid - Email <value>
+    When I go to the 'legal panel for government' start page for 'RM6360'
+    Then I am on the 'Find legal services for government' page
+    When I click on 'Start now'
+    And I am on the 'Sign in to your legal panel for government account' page
+    When I click on 'I’ve forgotten my password'
+    Then I am on the 'Reset password' page
+    And I enter the following details into the form:
+      | Email address | <value> |
+    And I click on 'Send reset email'
+    Then I should see the following error messages:
+      | Enter your email address in the correct format, like name@example.com |
+
+    Examples:
+      | value           |
+      |                 |
+      | fake@email      |
+      | fake email      |

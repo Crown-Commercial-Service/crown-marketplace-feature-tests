@@ -1,4 +1,4 @@
-@accessibility @javascript
+@accessibility
 Feature: Facilities Management - What do I do next accessibility
 
   Scenario: What do I do next page is accessible

@@ -1,6 +1,6 @@
 Feature: Management Consultancy - RM6309 - Forgot my password - Validations
 
-  Scenario Outline: I forgot my password - email invalid
+  Scenario Outline: I forgot my password - email invalid - Email <value>
     When I go to the 'management consultancy' start page for 'RM6309'
     Then I am on the 'Find management consultants' page
     When I click on 'Start now'

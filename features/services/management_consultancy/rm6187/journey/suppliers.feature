@@ -35,7 +35,7 @@ Feature: Management Consultancy - Suppliers
       | TORP GROUP                                |
       | WILLIAMSON GROUP                          |
 
-  Scenario Outline: Check the supplier data
+  Scenario Outline: Check the supplier data - Supplier <supplier>
     Given I click on '<supplier>'
     Then I am on the '<supplier>' page
     Then the supplier '<sme>' an SME

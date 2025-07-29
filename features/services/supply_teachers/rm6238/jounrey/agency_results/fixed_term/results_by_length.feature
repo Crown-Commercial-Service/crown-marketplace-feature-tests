@@ -13,7 +13,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by length
     And I click on 'Continue'
     Then I am on the 'What date do you want the employee to start?' page
 
-  Scenario Outline: Changing the length of the contract changes the result values only
+  Scenario Outline: Changing the length of the contract changes the result values only - Number of months <number_of_months>
     And I enter '06/05/2022' for the date
     And I click on 'Continue'
     Then I am on the 'What date do you want the employee to stop working?' page
@@ -52,7 +52,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by length
       | 06/05/2023  | 12                | £4,634.00     | £6,692.00     | £6,963.60     | £7,165.20     | £8,394.40     | £8,999.20     | £9,802.80     | £10,004.40    |
       | 06/08/2024  | 27                | £4,634.00     | £6,692.00     | £6,963.60     | £7,165.20     | £8,394.40     | £8,999.20     | £9,802.80     | £10,004.40    |
 
-  Scenario Outline: Half months are shown correctly
+  Scenario Outline: Half months are shown correctly - Number of months <number_of_months>
     And I enter '01/01/2022' for the date
     And I click on 'Continue'
     Then I am on the 'What date do you want the employee to stop working?' page

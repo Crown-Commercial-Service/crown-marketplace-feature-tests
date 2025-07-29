@@ -7,7 +7,7 @@ Feature: Supply Teachers - All agencies - suppliers
     Then I am on the 'Find an agency' page
 
   @skip-production
-  Scenario Outline: Can view supplier details
+  Scenario Outline: Can view supplier details - Agency <agency_name>
     And a list of 10 agencies are shown
     Given I click on '<agency_name>'
     Then I am on the '<agency_name>' page
@@ -20,7 +20,7 @@ Feature: Supply Teachers - All agencies - suppliers
 
   Examples:
     | agency_name               | branch_1  | branch_2        |
-    | CORKERY INC               | Liverpool |Southend-on-Sea  |
+    | CORKERY INC               | Liverpool | Southend-on-Sea |
     | FEEST-MULLER              | Liverpool | London          |
     | STANTON, FADEL AND BOSCO  | Liverpool | Twickenham      |
 

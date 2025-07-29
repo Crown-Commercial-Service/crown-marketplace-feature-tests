@@ -15,7 +15,7 @@ Feature: Facilities Management - RM6232 - Buyer details - validations
       | Select the type of public sector organisation you’re buying for |
       | You must select an option                                       |
 
-  Scenario Outline: Add address - frontend
+  Scenario Outline: Add address - frontend - Postcode <postcode>
     And I enter the following details into the form:
       | Postcode  | <postcode>  |
     And I click on 'Find address'
@@ -65,7 +65,7 @@ Feature: Facilities Management - RM6232 - Buyer details - validations
       | Enter your town or city                       |
       | Enter a valid postcode, for example SW1A 1AA  |
 
-  Scenario Outline: Add Address manually - postcode validation
+  Scenario Outline: Add Address manually - postcode validation - Postcode <postcode>
     And I enter the following details into the form:
       | Postcode  | ST16 1AA  |
     And I click on 'Find address'

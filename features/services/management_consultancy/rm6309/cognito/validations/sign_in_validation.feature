@@ -13,7 +13,7 @@ Feature: Management Consultancy - RM6309 - Sign in to my account - Validations
       | You must provide your email address in the correct format, like name@example.com  |
       | You must provide your password                                                    |
 
-    Scenario Outline: I sign in to my account - email format wrong
+  Scenario Outline: I sign in to my account - email format wrong - Email <email>
     And I enter the following details into the form:
       | Email     | <email>  |
       | Password  | ValidPassword1! |

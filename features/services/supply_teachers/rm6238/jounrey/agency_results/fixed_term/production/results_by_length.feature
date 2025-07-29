@@ -81,7 +81,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by length - Pro
       | Postcode: SW1A 1AA              |
       | Search distance: 25 miles       |
 
-  Scenario Outline: Half months are shown correctly
+  Scenario Outline: Half months are shown correctly - Number of months <number_of_months>
     And I enter '01/01/2022' for the date
     And I click on 'Continue'
     Then I am on the 'What date do you want the employee to stop working?' page

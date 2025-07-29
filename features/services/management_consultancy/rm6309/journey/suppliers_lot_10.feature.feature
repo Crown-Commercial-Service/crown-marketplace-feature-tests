@@ -1,7 +1,7 @@
 @skip-production
 Feature: Management Consultancy - Suppliers - Lot 10
 
-  Scenario Outline: Check the supplier data
+  Scenario Outline: Check the supplier data - Supplier <supplier>
     Given I sign in and navigate to the start page for the 'RM6309' framework in 'management consultancy'
     Given I select 'Lot 10 - Restructuring and insolvency'
     And I click on 'Continue'

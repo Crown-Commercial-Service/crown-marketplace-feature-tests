@@ -46,7 +46,7 @@ Feature: Supply Teachers - Find individual worker - Validations
     Then I should see the following error messages:
       | Enter a valid postcode  |
 
-  Scenario Outline: What date do you want the employee to start? validations
+  Scenario Outline: What date do you want the employee to start? validations - Date <date>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you want the agency to manage the worker’s pay?' page
@@ -65,7 +65,7 @@ Feature: Supply Teachers - Find individual worker - Validations
       | 89/45/0161  | Enter the contract start date, including the day, month and year  |
       | a/b/c       | Enter the contract start date, including the day, month and year  |
 
-  Scenario Outline: What date do you want the employee to stop working? validations
+  Scenario Outline: What date do you want the employee to stop working? validations - Date <date>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you want the agency to manage the worker’s pay?' page
@@ -88,7 +88,7 @@ Feature: Supply Teachers - Find individual worker - Validations
       | a/b/c       | Enter the contract end date, including the day, month and year                            |
       | yesterday   | The date the contract ended must be after the date the worker’s current contract started  |
 
-  Scenario Outline: What date do you want the employee to stop working? validations
+  Scenario Outline: What date do you want the employee to stop working? validations - Salary <value>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you want the agency to manage the worker’s pay?' page
@@ -113,7 +113,7 @@ Feature: Supply Teachers - Find individual worker - Validations
       | 0     | Enter a valid salary    |
       | -89   | Enter a valid salary    |
 
-  Scenario Outline: What is your school’s postcode? (agency worker) validations
+  Scenario Outline: What is your school’s postcode? (agency worker) validations - Postcode <value>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you want the agency to manage the worker’s pay?' page
@@ -139,7 +139,7 @@ Feature: Supply Teachers - Find individual worker - Validations
       |       | Enter a valid postcode  |
       | Keves | Enter a valid postcode  |
 
-  Scenario Outline: What is your school’s postcode? (nominated worker) validations
+  Scenario Outline: What is your school’s postcode? (nominated worker) validations - Postcode <value>
     And I select 'No'
     And I click on 'Continue'
     Then I am on the 'What is your school’s postcode?' page

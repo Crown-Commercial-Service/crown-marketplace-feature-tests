@@ -1,6 +1,6 @@
 Feature: Facilities Management - RM6232 - Forgot my password - Validations
 
-  Scenario Outline: I forgot my password - email invalid
+  Scenario Outline: I forgot my password - email invalid - Email <value>
     When I go to the 'facilities management' start page for 'RM6232'
     Then I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'

@@ -6,7 +6,7 @@ Feature: Supply Teachers - FTA to perm - Validations
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract start?' page
 
-  Scenario Outline: What date did the workers fixed term contract start? validations
+  Scenario Outline: What date did the workers fixed term contract start? validations - Date <date>
     And I enter '<date>' for the date
     And I click on 'Continue'
     Then I should see the following error messages:
@@ -19,7 +19,7 @@ Feature: Supply Teachers - FTA to perm - Validations
       | 89/45/0161  | Enter the contract start date, including the day, month and year  |
       | a/b/c       | Enter the contract start date, including the day, month and year  |
 
-  Scenario Outline: What date did the workers fixed term contract end? validations
+  Scenario Outline: What date did the workers fixed term contract end? validations - Date <date>
     And I enter 'today' for the date
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract end?' page
@@ -36,7 +36,7 @@ Feature: Supply Teachers - FTA to perm - Validations
       | a/b/c       | Enter the contract end date, including the day, month and year                            |
       | yesterday   | The date the contract ended must be after the date the worker’s current contract started  |
 
-  Scenario Outline: What date did the workers fixed term contract end? validations
+  Scenario Outline: What date did the workers fixed term contract end? validations - Date <date>
     And I enter 'yesterday' for the date
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract end?' page
@@ -56,7 +56,7 @@ Feature: Supply Teachers - FTA to perm - Validations
       | a/b/c       | Enter the date, including the day, month and year                                               |
       | today       | The date that you wish to hire the worker must be after the date the fixed term contract ended  |
 
-  Scenario Outline: What fixed term fee did you pay the worker? validations
+  Scenario Outline: What fixed term fee did you pay the worker? validations - Fixed term fee <fixed_term_fee>
     And I enter 'yesterday' for the date
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract end?' page

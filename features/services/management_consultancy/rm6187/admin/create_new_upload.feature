@@ -22,7 +22,7 @@ Feature: Management Consultancy - Admin - Create new upload
     And the status of the upload is 'Published on live'
 
   @file-download
-  Scenario Outline: Download files on dashboard
+  Scenario Outline: Download files on dashboard - <filename>
     And I click on "Return to 'Manage supplier data'"
     Then I am on the 'Manage supplier data' page
     When I download the '<filename>' file
@@ -35,7 +35,7 @@ Feature: Management Consultancy - Admin - Create new upload
       | Supplier service offerings  |
 
   @file-download
-  Scenario Outline: Download files on upload
+  Scenario Outline: Download files on upload - <filename>
     And I click on "Return to 'Manage supplier data'"
     Then I am on the 'Manage supplier data' page
     And I click on the first upload session with status 'Published on live'

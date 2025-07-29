@@ -25,7 +25,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Daily rate
     And I click on 'Continue'
     Then I am on the 'Agency results' page
 
-  Scenario Outline: Using the calculator for CORKERY INC
+  Scenario Outline: Using the calculator for CORKERY INC - Annual salary <annual_salary>
     Then for the agency 'CORKERY INC' I should see '£1,381.33' for the 'finders fee'
     And I enter the rate '<annual_salary>' for the supplier 'CORKERY INC'
     Then for the agency 'CORKERY INC' I should see '<finders_fee>' for the 'finders fee'
@@ -38,7 +38,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Daily rate
       | 41036         | £2024.44    |
       | 819320        | £40419.79   |
 
-  Scenario Outline: Using the calculator for DIETRICH-BORER
+  Scenario Outline: Using the calculator for DIETRICH-BORER - Annual salary <annual_salary>
     Then for the agency 'DIETRICH-BORER' I should see '£1,492.75' for the 'finders fee'
     And I enter the rate '<annual_salary>' for the supplier 'DIETRICH-BORER'
     Then for the agency 'DIETRICH-BORER' I should see '<finders_fee>' for the 'finders fee'

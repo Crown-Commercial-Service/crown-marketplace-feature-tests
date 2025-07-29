@@ -12,7 +12,7 @@ Feature: Facilities Management - RM6232 - Select services validations
     Then I should see the following error messages:
       | Select at least one service you need to include in your procurement |
   
-  Scenario Outline: Only mandatory services - one extra
+  Scenario Outline: Only mandatory services - one extra - Service <service>
     When I check the following items:
       | <service> |
     And I click on 'Continue'
@@ -25,7 +25,7 @@ Feature: Facilities Management - RM6232 - Select services validations
       | Helpdesk Services             |
       | Management of Billable Works  |
   
-  Scenario Outline: Only mandatory services - two extra
+  Scenario Outline: Only mandatory services - two extra - Services <service_1> and <service_2>
     When I check the following items:
       | <service_1> |
       | <service_2> |

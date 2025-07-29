@@ -13,7 +13,7 @@ Feature: Management Consultancy - Admin - Accessibility
     Then I am on the 'New data upload' page
     Then the page should be axe clean excluding ".ccs-contact-us"
 
-  Scenario Outline: Show page
+  Scenario Outline: Show page - <status>
     And I click on the first upload session with status '<status>'
     Then I am on the 'Upload session' page
     Then the page should be axe clean excluding ".ccs-contact-us"

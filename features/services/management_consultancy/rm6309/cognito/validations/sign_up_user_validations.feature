@@ -9,7 +9,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
     Then I am on the 'Create a CCS account' page
 
   @smoulder
-  Scenario: Email validations
+  Scenario Outline: Email validations - Email <email>
     Given I enter '<email>' for my email
     And I enter 'Passowrd1!' for the password
     And I enter 'Passowrd1!' for the password confirmation
@@ -30,7 +30,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
     When I click on 'Create account'
     Then I am on the 'You must use a public sector email address' page
 
-  Scenario Outline: Password validations
+  Scenario Outline: Password validations - Password <password>
     Given I enter 'test@crowncommercial.gov.uk' for my email
     And I enter '<password>' for the password
     And I enter '<password>' for the password confirmation
