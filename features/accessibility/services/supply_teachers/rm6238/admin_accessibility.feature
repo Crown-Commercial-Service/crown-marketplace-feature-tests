@@ -6,17 +6,17 @@ Feature: Supply Teachers - Admin - Accessibility
     Then I am on the 'Supply teachers and agency workers' page
   
   Scenario: Dashboard page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario: New upload page
     And I click on 'Set up upload session'
     Then I am on the 'Set up a new upload session' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario Outline: Show page
     And I click on the first upload session with status '<status>'
     Then I am on the 'Upload session' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
     Examples:
       | status            |

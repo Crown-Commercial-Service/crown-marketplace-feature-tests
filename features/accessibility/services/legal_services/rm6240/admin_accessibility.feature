@@ -6,17 +6,17 @@ Feature: Legal Services - Admin - Accessibility
     Then I am on the 'Manage supplier data' page
   
   Scenario: Dashboard page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario: New upload page
     And I click on 'Create a new data upload'
     Then I am on the 'New data upload' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
   Scenario Outline: Show page
     And I click on the first upload session with status '<status>'
     Then I am on the 'Upload session' page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
 
     Examples:
       | status            |

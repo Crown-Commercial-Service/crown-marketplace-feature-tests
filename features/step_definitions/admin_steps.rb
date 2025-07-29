@@ -1,5 +1,5 @@
-Then('I select the file {string} to upload for {string}') do |filename, filed|
-  page.attach_file(filed, filename)
+Then('I select the file {string} to upload for {string}') do |filename, field|
+  page.attach_file("#{page.find('label', text: field)['for']}-input", filename)
 end
 
 Then('I wait no longer than {int} seconds for the upload to finish') do |number_of_seconds|

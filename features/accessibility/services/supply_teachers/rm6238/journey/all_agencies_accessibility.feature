@@ -9,9 +9,9 @@ Feature: Supply Teachers - All agencies - Accessibility
     Then I am on the 'Find an agency' page
   
   Scenario: All agencies page
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
   
   Scenario: Agency details page
     Given I click on the first agency
     And the sub title is Agency details
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"

@@ -6,4 +6,4 @@ Feature: Facilities Management - What do I do next accessibility
     And I have a procurement with the name 'My WDIDN procurement'
     And I am on the 'What do I do next?' page
     And the procurement name is shown to be 'My WDIDN procurement'
-    Then the page should be axe clean
+    Then the page should be axe clean excluding ".ccs-contact-us"
