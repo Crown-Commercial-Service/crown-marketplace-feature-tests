@@ -14,7 +14,7 @@ Feature: Legal services - Central governemnt - Lot 2 - Service selection
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 2 - General service provision'
 
-    Scenario: The correct options are available
+  Scenario: The correct options are available
     Then I should see the following options for the lot:
       | Child Law                       |
       | Court of Protection             |

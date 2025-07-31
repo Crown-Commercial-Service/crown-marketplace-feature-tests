@@ -1,6 +1,7 @@
 SERVICE_TO_START_PAGE_TITLE = {
   'facilities management' => 'Your account',
   'legal services' => 'Do you work for central government?',
+  'legal panel for government' => 'Do you work for central government?',
   'management consultancy' => 'Select the lot you need',
   'supply teachers' => 'What is your school looking for?'
 }.freeze
@@ -8,6 +9,7 @@ SERVICE_TO_START_PAGE_TITLE = {
 SERVICE_TO_ADMIN_PAGE_TITLE = {
   'facilities management' => 'RM6232 administration dashboard',
   'legal services' => 'Manage supplier data',
+  'legal panel for government' => 'Manage supplier data',
   'management consultancy' => 'Manage supplier data',
   'supply teachers' => 'Supply teachers and agency workers'
 }.freeze
@@ -68,6 +70,20 @@ end
 Then('I enter the following details into the form:') do |table|
   table.raw.to_h.each do |field, value|
     fill_in field, with: value
+  end
+end
+
+Then('I type the following details into the form:') do |table|
+  table.raw.to_h.each do |field, value|
+    find_field(field).send_keys(value)
+  end
+end
+
+Then('I clear the form with backspaces:') do |table|
+  table.raw.flatten.each do |field|
+    element = find_field(field)
+
+    find_field(field).send_keys([:backspace] * element.value.length)
   end
 end
 

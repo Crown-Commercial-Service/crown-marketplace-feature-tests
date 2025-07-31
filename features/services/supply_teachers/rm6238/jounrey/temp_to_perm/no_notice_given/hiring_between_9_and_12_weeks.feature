@@ -10,7 +10,7 @@ Feature: Supply Teachers - Temp to perm - No notice given - hiring between 9 and
     And I enter '25' for the 'daily fee'
     Given I enter '19/06/2021' for the 'hire' date
 
-  Scenario Outline: Changing the length of the current contract changes the result
+  Scenario Outline: Changing the length of the current contract changes the result - Date <date>
     Given I enter '<date>' for the 'hire' date
     And I click on 'Continue'
     Then I am on the 'Temp-to-perm fee' page
@@ -25,7 +25,7 @@ Feature: Supply Teachers - Temp to perm - No notice given - hiring between 9 and
       | 21/06/2021  | £200.00 |
       | 26/06/2021  | £75.00  |
 
-  Scenario Outline: Changing the number of days per week changes the result
+  Scenario Outline: Changing the number of days per week changes the result - Days per week <days_per_week>
     And I enter '<days_per_week>' for the 'days per week'
     And I click on 'Continue'
     Then I am on the 'Temp-to-perm fee' page
@@ -39,7 +39,7 @@ Feature: Supply Teachers - Temp to perm - No notice given - hiring between 9 and
       | 4             | £160.00 | £400    |
       | 5             | £200.00 | £500    |
 
-  Scenario Outline: Changing the daily fee changes the result
+  Scenario Outline: Changing the daily fee changes the result - Dayly fee <daily_fee>
     And I enter '<daily_fee>' for the 'daily fee'
     And I click on 'Continue'
     Then I am on the 'Temp-to-perm fee' page

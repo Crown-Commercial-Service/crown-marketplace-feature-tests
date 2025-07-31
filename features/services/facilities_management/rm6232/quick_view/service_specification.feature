@@ -1,6 +1,6 @@
 Feature: Facilities Management - RM6232 - Service specification
   
-  Scenario: Service specification
+  Scenario Outline: Service specification - <service_name>
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
     And I click on 'Search for suppliers'
     Then I am on the 'Services' page

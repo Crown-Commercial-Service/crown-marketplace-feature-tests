@@ -8,7 +8,7 @@ Feature: Facilities Management - Navigation links when signed in
     And I should see the following navigation links:
       | Sign out |
 
-  Scenario Outline: Not permitted page
+  Scenario Outline: Not permitted page - Click link <link_text>
     And I go to the not permitted page for 'facilities management'
     And I should see the following navigation links:
       | My account  |
@@ -21,7 +21,7 @@ Feature: Facilities Management - Navigation links when signed in
       | My account  | Your account            |
       | Sign out    | Sign in to your account |
 
-  Scenario Outline: Cookies policy
+  Scenario Outline: Cookies policy - Click link <link_text>
     When I click on 'Cookie policy'
     Then I am on the 'Details about cookies on Crown Marketplace' page
     And I should see the following navigation links:
@@ -35,7 +35,7 @@ Feature: Facilities Management - Navigation links when signed in
       | My account  | Your account            |
       | Sign out    | Sign in to your account |
 
-  Scenario Outline: Cookies settings
+  Scenario Outline: Cookies settings - Click link <link_text>
     When I click on 'Cookie settings'
     Then I am on the 'Cookies on Crown Marketplace' page
     And I should see the following navigation links:
@@ -49,7 +49,7 @@ Feature: Facilities Management - Navigation links when signed in
       | My account  | Your account            |
       | Sign out    | Sign in to your account |
 
-  Scenario Outline: Accessibility statement
+  Scenario Outline: Accessibility statement - Click link <link_text>
     When I click on 'Accessibility statement'
     Then I am on the 'Facilities Management (FM) Accessibility statement' page
     And I should see the following navigation links:
@@ -70,7 +70,7 @@ Feature: Facilities Management - Navigation links when signed in
     And I click on 'Sign out'
     And I am on the 'Sign in to your account' page
 
-  Scenario Outline: Buyer details
+  Scenario Outline: Buyer details - Click link <link_text>
     Then I click on 'Manage my details'
     Then I am on the 'Manage your details' page
     And I should see the following navigation links:
@@ -84,7 +84,7 @@ Feature: Facilities Management - Navigation links when signed in
       | My account  | Your account            |
       | Sign out    | Sign in to your account |
 
-  Scenario Outline: Buyer details - Add address
+  Scenario Outline: Buyer details - Add address - Click link <link_text>
     Then I click on 'Manage my details'
     Then I am on the 'Manage your details' page
     And I change my contact detail address

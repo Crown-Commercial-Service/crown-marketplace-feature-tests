@@ -5,7 +5,7 @@ Feature: Legal services - Suppliers - Accessibility
     Given I sign in and navigate to the start page for the 'RM6240' framework in 'legal services'
     Then I am on the 'Do you work for central government?' page
 
-  Scenario Outline: Results page - central govenrment - Lots 1 and 2
+  Scenario Outline: Results page - central govenrment - <lot>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you hold an approval secured from the Government Legal Department (GLD) to use this framework?' page
@@ -31,7 +31,7 @@ Feature: Legal services - Suppliers - Accessibility
       | Lot 1 - Full service provision    | Information Technology  |
       | Lot 2 - General service provision | Employment              |
 
-  Scenario Outline: Results page - non central govenrment - Lots 1 and 2
+  Scenario Outline: Results page - non central govenrment - <lot>
     And I select 'No'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
@@ -54,7 +54,7 @@ Feature: Legal services - Suppliers - Accessibility
       | Lot 1 - Full service provision    | Information Technology  |
       | Lot 2 - General service provision | Employment              |
 
-  Scenario Outline: Supplier page - central govenrment - Lots 1 and 2
+  Scenario Outline: Supplier page - central govenrment - <lot>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you hold an approval secured from the Government Legal Department (GLD) to use this framework?' page
@@ -83,7 +83,7 @@ Feature: Legal services - Suppliers - Accessibility
       | Lot 1 - Full service provision    | Information Technology  |
       | Lot 2 - General service provision | Employment              |
 
-  Scenario Outline: Supplier page - non central govenrment - Lots 1 and 2
+  Scenario Outline: Supplier page - non central govenrment - <lot>
     And I select 'No'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
@@ -109,7 +109,7 @@ Feature: Legal services - Suppliers - Accessibility
       | Lot 1 - Full service provision    | Information Technology  |
       | Lot 2 - General service provision | Employment              |
 
-  Scenario Outline: Download supplier list page - central govenrment - Lots 1 and 2
+  Scenario Outline: Download supplier list page - central govenrment - <lot>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you hold an approval secured from the Government Legal Department (GLD) to use this framework?' page
@@ -137,7 +137,7 @@ Feature: Legal services - Suppliers - Accessibility
       | Lot 1 - Full service provision    | Information Technology  |
       | Lot 2 - General service provision | Employment              |
 
-  Scenario Outline: Download supplier list page - non central govenrment - Lots 1 and 2
+  Scenario Outline: Download supplier list page - non central govenrment - <lot>
     And I select 'No'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page

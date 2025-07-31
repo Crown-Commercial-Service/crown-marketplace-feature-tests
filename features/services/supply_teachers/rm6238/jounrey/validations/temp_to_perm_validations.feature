@@ -6,7 +6,7 @@ Feature: Supply Teachers - Temp to perm - Validations
     And I click on 'Continue'
     Then I am on the 'Find out how much you’ll be charged if you make an agency worker permanent' page
   
-  Scenario Outline: Contract start date validation
+  Scenario Outline: Contract start date validation - Date <date>
     Given I enter '<date>' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -22,7 +22,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | 89/45/0161  | Enter a real date                                                 |
       | a/b/c       | Enter a real date                                                 |
 
-  Scenario Outline: Days per week validation
+  Scenario Outline: Days per week validation - Days per week <days_per_week>
     Given I enter 'today' for the 'contract start' date
     And I enter '<days_per_week>' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -39,7 +39,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | 6             | The number of days worked per week must be between 0 and 5  |
       | so nah        | The number of days worked per week must be a number         |
 
-  Scenario Outline: Days rate validation
+  Scenario Outline: Days rate validation - Daily fee <daily_fee>
     Given I enter 'today' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '<daily_fee>' for the 'daily fee'
@@ -56,7 +56,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | .50       | The number of pounds charged per day must be in the format of a currency with no more than two decimal places |
       | 20.543    | The number of pounds charged per day must be in the format of a currency with no more than two decimal places |
 
-  Scenario Outline: Hire date date validation
+  Scenario Outline: Hire date date validation - Date <date>
     Given I enter 'today' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -73,7 +73,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | a/b/c       | Enter a real date                                                                                                 |
       | yesterday   | The date you want to take the worker on permanently must be after the date the worker’s current contract started  |
 
-  Scenario Outline: Holiday 1 start date validation
+  Scenario Outline: Holiday 1 start date validation - Date <date>
     Given I enter 'yesterday' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -91,7 +91,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | 29/02/2022  | Enter a real date                                                                   |
       | a/b/c       | Enter a real date                                                                   |
 
-  Scenario Outline: Holiday 1 end date validation
+  Scenario Outline: Holiday 1 end date validation - Date <date>
     Given I enter 'yesterday' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -110,7 +110,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | a/b/c       | Enter a real date                                                                 |
       | yesterday   | The end date of the first school holiday must be after the start date             |
 
-  Scenario Outline: Holiday 2 start date validation
+  Scenario Outline: Holiday 2 start date validation - Date <date>
     Given I enter 'yesterday' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -128,7 +128,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | 31/04/2022  | Enter a real date                                                                   |
       | a/b/c       | Enter a real date                                                                   |
 
-  Scenario Outline: Holiday 2 end date validation
+  Scenario Outline: Holiday 2 end date validation - Date <date>
     Given I enter 'yesterday' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -147,7 +147,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | a/b/c       | Enter a real date                                                                 |
       | yesterday   | The end date of the second school holiday must be after the start date            |
 
-  Scenario Outline: Notice date format validation
+  Scenario Outline: Notice date format validation - Date <date>
     Given I enter 'yesterday' for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'
@@ -163,7 +163,7 @@ Feature: Supply Teachers - Temp to perm - Validations
       | 31/13/2022  | Enter a real date                                                                                           |
       | a/b/c       | Enter a real date                                                                                           |
 
-  Scenario Outline: Notice date reletive to other dates validation
+  Scenario Outline: Notice date reletive to other dates validation - Number of months <months>
     And I enter a date 0 years and 2 months into the future for the 'contract start' date
     And I enter '5' for the 'days per week'
     And I enter '25' for the 'daily fee'

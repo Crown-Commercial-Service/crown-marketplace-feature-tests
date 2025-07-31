@@ -32,7 +32,7 @@ Feature: Legal services - Central government - Accessibility
     Then I am on the 'Select the lot you need' page
     Then the page should be axe clean excluding ".ccs-contact-us"
 
-  Scenario Outline: Select the legal services you need
+  Scenario Outline: Select the legal services you need - <lot>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you hold an approval secured from the Government Legal Department (GLD) to use this framework?' page
@@ -50,7 +50,7 @@ Feature: Legal services - Central government - Accessibility
       | Lot 1 - Full service provision    |
       | Lot 2 - General service provision |
 
-  Scenario Outline: Select the Select the jurisdiction you need you need
+  Scenario Outline: Select the Select the jurisdiction you need you need - <lot>
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Do you hold an approval secured from the Government Legal Department (GLD) to use this framework?' page

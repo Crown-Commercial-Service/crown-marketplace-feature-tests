@@ -1,6 +1,6 @@
 Feature: Facilities Management - RM6232 - Annual contract cost validations
   
-  Scenario Outline: validations for the annual contract cost
+  Scenario Outline: validations for the annual contract cost - Value <value>
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
     And I click on 'Search for suppliers'
     Then I am on the 'Services' page

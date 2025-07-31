@@ -6,7 +6,7 @@ Feature: Supply Teachers - FTA to perm - results
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract start?' page
 
-  Scenario Outline: Changing the rate changes the results
+  Scenario Outline: Changing the rate changes the results - Rate <rate>
     And I enter a date 0 years and 6 months into the past
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract end?' page
@@ -29,7 +29,7 @@ Feature: Supply Teachers - FTA to perm - results
       | 678   | You could be charged £949.20    |
       | 1316  | You could be charged £1,842.40  |
 
-  Scenario Outline: Changing the length of the contract changes the results
+  Scenario Outline: Changing the length of the contract changes the results - Number of months <months>
     And I enter a date 0 years and <months> months into the past
     And I click on 'Continue'
     Then I am on the 'What date did the workers fixed term contract end?' page

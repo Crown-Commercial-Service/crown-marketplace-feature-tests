@@ -1,6 +1,6 @@
 Feature: Legal Services - RM6240 - Forgot my password - Validations
 
-  Scenario Outline: I forgot my password - email invalid
+  Scenario Outline: I forgot my password - email invalid - Email <value>
     When I go to the 'legal services' start page for 'RM6240'
     Then I am on the 'Find legal services for the wider public sector' page
     When I click on 'Start now'

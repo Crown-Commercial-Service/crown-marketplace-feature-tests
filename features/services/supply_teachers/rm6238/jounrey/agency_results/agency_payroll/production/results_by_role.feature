@@ -1,7 +1,7 @@
 @skip-non-production
 Feature: Supply Teachers - Agency results - Agency payroll - Results by role - Production
 
-  Scenario Outline: How the roles affects the results
+  Scenario Outline: How the roles affects the results - Role <role>
     Given I sign in and navigate to the start page for the 'RM6238' framework in 'supply teachers'
     And I select 'An agency who can provide my school with an individual worker'
     And I click on 'Continue'

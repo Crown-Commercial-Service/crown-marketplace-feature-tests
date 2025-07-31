@@ -27,7 +27,7 @@ Feature: Supply Teachers - Agency results - Agency payroll - Agencies
       | EMARD AND SONS                | Liverpool | £58.35  | 2.0   |
       | FEEST-MULLER                  | Liverpool | £59.55  | 7.6   |
 
-  Scenario Outline: I can naviagte to the agency details
+  Scenario Outline: I can naviagte to the agency details - Agency <agency_name>
     Given I click on '<agency_name>'
     Then I am on the '<agency_name>' page
     And the sub title is Agency details

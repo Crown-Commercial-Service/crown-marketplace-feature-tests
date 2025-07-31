@@ -1,7 +1,7 @@
 @skip-non-production
 Feature: Supply Teachers - Agency results - Fixed term - Results by length - Production
 
-  Scenario Outline: Changing the salary of the contract changes the result values only
+  Scenario: Changing the salary of the contract changes the result values only
     Given I sign in and navigate to the start page for the 'RM6238' framework in 'supply teachers'
     And I select 'An agency who can provide my school with an individual worker'
     And I click on 'Continue'

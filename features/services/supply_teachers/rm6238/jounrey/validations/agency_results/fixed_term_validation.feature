@@ -26,7 +26,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Validations
     Then I am on the 'Agency results' page
     And there are 8 agencies
 
-  Scenario Outline: Annual salary validations
+  Scenario Outline: Annual salary validations - Dayly rate <dayly_rate>
     And I enter the rate '<dayly_rate>' for the supplier 'CORKERY INC'
     Then I should see the error message 'Annual salary is invalid' for 'CORKERY INC'
     And the following agencies have no errors:

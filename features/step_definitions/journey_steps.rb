@@ -3,9 +3,15 @@ Then('the sub title is {string}') do |title|
 end
 
 Then('I should see the following options for the lot:') do |services|
+  expect(journey_page.service_selection.length).to eq(services.raw.flatten.length)
+
   journey_page.service_selection.zip(services.raw.flatten) do |element, service|
     expect(element).to have_content(service)
   end
+end
+
+Then('I should see no options for the lot') do
+  expect(journey_page.service_selection.length).to be_zero
 end
 
 Then('the basket should say {string}') do |basket_text|
@@ -75,6 +81,22 @@ Then('the selected legal service suppliers are:') do |suppliers|
   end
 end
 
+Then('I should see that {string} suppliers can provide legal services for government') do |number_of_suppliers|
+  expect(journey_page.number_of_suppliers).to have_content "#{number_of_suppliers} suppliers can provide legal services that meet your requirements."
+end
+
+Then('the selected legal service for government suppliers are:') do |suppliers|
+  supplier_element_rows = journey_page.legal_panel_for_government_suppliers.sort_by { |row| row.name.text }
+  supplier_names_and_prospectus = suppliers.raw
+
+  expect(supplier_element_rows.length).to eq supplier_names_and_prospectus.length
+
+  supplier_element_rows.zip(supplier_names_and_prospectus).each do |row, (expected_name, expected_prospectus)|
+    expect(row.name).to have_content expected_name
+    expect(row.prospectus).to have_content expected_prospectus
+  end
+end
+
 Then('I deselect all the items') do
   journey_page.selection.checkboxes.map(&:uncheck)
 end
@@ -86,6 +108,10 @@ Then('the supplier {string} an SME') do |option|
   when 'is not'
     expect(journey_page.find('h1')).to have_no_content('SME')
   end
+end
+
+Then('the prospectus link is {string}') do |supplier_prospectus|
+  expect(journey_page.supplier_prospectus).to have_content(supplier_prospectus)
 end
 
 Then('the rate types are {string} and {string}') do |rate_type_1, rate_type_2|
@@ -111,7 +137,7 @@ Then('the contact details for the supplier are:') do |contact_details|
 end
 
 Then('the {string} hourly rate is {string}') do |role, hourly_rate|
-  table_row = journey_page.supplier_rates_table.rows[LS_RM6240_ROLES.index(role)]
+  table_row = journey_page.supplier_rates_table.rows.find { |row| row.position.text == role }
 
   expect(table_row.rate).to have_content(hourly_rate)
 end
@@ -130,6 +156,11 @@ Then('there are suppliers who can offer legal services and I count them') do
   @number_of_suppliers = journey_page.number_of_suppliers.text
 end
 
+Then('there are suppliers who can offer legal panel for government services and I count them') do
+  expect(journey_page.number_of_suppliers.text.match(/\d+/).to_s.to_i).to be_positive
+  @number_of_suppliers = journey_page.number_of_suppliers.text
+end
+
 Then('I click on the first supplier') do
   journey_page.suppliers.first.click
 end
@@ -142,11 +173,19 @@ Then('I am on the legal services rates page') do
   expect(journey_page.day_rate_page_title).to have_content('Rates')
 end
 
+Then('I am on the legal panel for government rates page') do
+  expect(journey_page.day_rate_page_title).to have_content('Rates')
+end
+
 Then('I should see the same number of consultants that I counted previously') do
   expect(journey_page.number_of_companies).to have_content @number_of_companies
 end
 
 Then('I should see the same number of legal services that I counted previously') do
+  expect(journey_page.number_of_suppliers).to have_content @number_of_suppliers
+end
+
+Then('I should see the same number of legal panel for government services that I counted previously') do
   expect(journey_page.number_of_suppliers).to have_content @number_of_suppliers
 end
 

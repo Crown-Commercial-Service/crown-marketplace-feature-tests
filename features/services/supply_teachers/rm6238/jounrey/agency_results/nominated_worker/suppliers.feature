@@ -25,7 +25,7 @@ Feature: Supply Teachers - Agency results - Nominated worker - Agencies
       | EMARD AND SONS                | Twickenham  | £46.68  | 9.1 |
       | FEEST-MULLER                  | London      | £47.64  | 0.0 |
 
-  Scenario Outline: I can naviagte to the agency details
+  Scenario Outline: I can naviagte to the agency details - Agency <agency_name>
     Given I click on '<agency_name>'
     Then I am on the '<agency_name>' page
     And the sub title is Agency details

@@ -10,7 +10,7 @@ Feature: Supply Teachers - Managed service providers - Accessibility
   Scenario: Is your contract likely to be worth more than £2.5 million? page
     Then the page should be axe clean excluding ".ccs-contact-us"
 
-  Scenario Outline: Master vendor managed service providers page
+  Scenario Outline: Master vendor managed service providers page - Option <option>
     And I select '<option>'
     And I click on 'Continue'
     Then I am on the 'Master vendor managed service providers' page

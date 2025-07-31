@@ -1,6 +1,6 @@
 Feature: Facilities Management - RM6232 - Annual contract cost
   
-  Scenario Outline: Annual contract cost limits inputs
+  Scenario Outline: Annual contract cost limits inputs - Value <value>
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
     And I click on 'Search for suppliers'
     Then I am on the 'Services' page

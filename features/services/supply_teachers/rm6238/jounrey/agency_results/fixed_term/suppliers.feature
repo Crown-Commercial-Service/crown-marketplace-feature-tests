@@ -37,7 +37,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Agencies
       | EMARD AND SONS                | Twickenham  | 9.1 | 28000 | 3 months  | £2,450.70 | 35.0% |
       | FEEST-MULLER                  | London      | 0.0 | 28000 | 3 months  | £2,501.10 | 35.7% |
 
-  Scenario Outline: I can naviagte to the agency details
+  Scenario Outline: I can naviagte to the agency details - Agency <agency_name>
     Given I click on '<agency_name>'
     Then I am on the '<agency_name>' page
     And the sub title is Agency details

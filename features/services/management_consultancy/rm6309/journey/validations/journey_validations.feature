@@ -9,7 +9,7 @@ Feature: Management Consultancy - Jounrey validations
     Then I should see the following error messages:
       | Select the lot you need |
 
-  Scenario Outline: Select the services you need validation
+  Scenario Outline: Select the services you need validation - <lot>
     Given I select '<lot>'
     And I click on 'Continue'
     Then I am on the 'Select the services you need' page

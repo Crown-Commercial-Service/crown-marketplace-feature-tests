@@ -1,6 +1,6 @@
 Feature: Supply Teachers - RM6238 - Forgot my password - Validations
 
-  Scenario Outline: I forgot my password - email invalid
+  Scenario Outline: I forgot my password - email invalid - Email <value>
     When I go to the 'supply teachers' start page for 'RM6238'
     Then I am on the 'Find supply teachers and agency workers' page
     When I click on 'Start now'
