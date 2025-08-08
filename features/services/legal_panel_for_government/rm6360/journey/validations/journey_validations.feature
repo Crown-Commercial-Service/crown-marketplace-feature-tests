@@ -76,3 +76,82 @@ Feature: Legal Panel for Government - Jounrey validations
     When I click on 'Continue'
     Then I should see the following error messages:
       | Select at least one legal service |
+
+  @smoulder
+  Scenario: Select suppliers for comparison - not Lot 4
+    Given I am on the 'Do you work for central government?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Select the lot you need' page
+    And I select 'Lot 1 - Core Legal Services'
+    And I click on 'Continue'
+    Then I am on the 'Select the legal services you need' page
+    And I check 'Children and Vulnerable Adults'
+    When I click on 'Continue'
+    Then I am on the 'Supplier results' page
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Select suppliers for comparison' page
+    When I click on 'Continue'
+    Then I should see the following error messages:
+      | You must select at least two suppliers for comparison |
+
+  Scenario: Select suppliers for comparison - one supplier - not Lot 4
+    Given I am on the 'Do you work for central government?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Select the lot you need' page
+    And I select 'Lot 1 - Core Legal Services'
+    And I click on 'Continue'
+    Then I am on the 'Select the legal services you need' page
+    And I check 'Children and Vulnerable Adults'
+    When I click on 'Continue'
+    Then I am on the 'Supplier results' page
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Select suppliers for comparison' page
+    When I check item 1
+    When I click on 'Continue'
+    Then I should see the following error messages:
+      | You must select at least two suppliers for comparison |
+
+  Scenario: Select suppliers for comparison - Lot 4
+    Given I am on the 'Do you work for central government?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Select the lot you need' page
+    And I select 'Lot 4a - Trade and Investment Negotiations'
+    And I click on 'Continue'
+    Then I am on the 'Is your requirement for a location outside of the countries listed below?' page
+    And I select 'No'
+    When I click on 'Continue'
+    Then I am on the 'Select the legal services you need' page
+    And I check 'Assimilated Law'
+    When I click on 'Continue'
+    Then I am on the 'Supplier results' page
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Select suppliers for comparison' page
+    When I click on 'Continue'
+    Then I should see the following error messages:
+      | You must select at least two suppliers for comparison |
+
+  @smoulder
+  Scenario: Select suppliers for comparison - one supplier - Lot 4
+    Given I am on the 'Do you work for central government?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Select the lot you need' page
+    And I select 'Lot 4a - Trade and Investment Negotiations'
+    And I click on 'Continue'
+    Then I am on the 'Is your requirement for a location outside of the countries listed below?' page
+    And I select 'No'
+    When I click on 'Continue'
+    Then I am on the 'Select the legal services you need' page
+    And I check 'Assimilated Law'
+    When I click on 'Continue'
+    Then I am on the 'Supplier results' page
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Select suppliers for comparison' page
+    When I check item 1
+    When I click on 'Continue'
+    Then I should see the following error messages:
+      | You must select at least two suppliers for comparison |
+

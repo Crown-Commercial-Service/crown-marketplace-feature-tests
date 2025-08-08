@@ -8,10 +8,10 @@ SERVICE_TO_START_PAGE_TITLE = {
 
 SERVICE_TO_ADMIN_PAGE_TITLE = {
   'facilities management' => 'RM6232 administration dashboard',
-  'legal services' => 'Manage supplier data',
-  'legal panel for government' => 'Manage supplier data',
-  'management consultancy' => 'Manage supplier data',
-  'supply teachers' => 'Supply teachers and agency workers'
+  'legal services' => 'Admin dashboard',
+  'legal panel for government' => 'Admin dashboard',
+  'management consultancy' => 'Admin dashboard',
+  'supply teachers' => 'Admin dashboard',
 }.freeze
 
 Given('I sign in and navigate to the start page for the {string} framework in {string}') do |framework, service|
@@ -93,6 +93,10 @@ end
 
 Given('I check {string}') do |item|
   check item
+end
+
+When('I check item {int}') do |number|
+  page.all('.govuk-checkboxes__input')[number].check
 end
 
 When('I deselect the following items:') do |items|

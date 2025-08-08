@@ -3,7 +3,7 @@ Feature: Management Consultancy - Admin - Accessibility
 
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6187' framework in 'management consultancy'
-    Then I am on the 'Manage supplier data' page
+    Then I am on the 'Admin dashboard' page
   
   Scenario: Dashboard page
     Then the page should be axe clean excluding ".ccs-contact-us"

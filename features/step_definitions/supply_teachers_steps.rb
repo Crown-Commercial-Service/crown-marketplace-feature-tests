@@ -510,19 +510,6 @@ Then 'I click on the Back to start button' do
   page.find_by_id('main-content').click_on('Back to start')
 end
 
-def date_options(date)
-  case date.downcase
-  when 'today'
-    Time.zone.today.strftime('%d/%m/%Y')
-  when 'yesterday'
-    Time.zone.yesterday.strftime('%d/%m/%Y')
-  when 'tomorrow'
-    Time.zone.tomorrow.strftime('%d/%m/%Y')
-  else
-    date
-  end.split('/')
-end
-
 def wait_for_ajax
   page.has_css?('main-content')
 end

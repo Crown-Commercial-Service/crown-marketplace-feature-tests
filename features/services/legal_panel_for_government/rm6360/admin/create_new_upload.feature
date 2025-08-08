@@ -3,7 +3,8 @@ Feature: Legal Panel for Government - Admin - Create new upload
 
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Manage supplier data' page
+    Then I am on the 'Admin dashboard' page
+    And I click on 'Supplier data'
     And I click on 'Create a new data upload'
     Then I am on the 'New data upload' page
 
