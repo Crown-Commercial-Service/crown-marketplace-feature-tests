@@ -3,7 +3,7 @@ Feature: Legal Services - Admin - Accessibility
 
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6240' framework in 'legal services'
-    Then I am on the 'Manage supplier data' page
+    Then I am on the 'Admin dashboard' page
   
   Scenario: Dashboard page
     Then the page should be axe clean excluding ".ccs-contact-us"

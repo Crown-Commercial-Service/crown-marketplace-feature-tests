@@ -3,6 +3,8 @@ Feature: Management Consultancy - Admin - Create new upload - Validations
 
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6309' framework in 'management consultancy'
+    Then I am on the 'Admin dashboard' page
+    And I click on 'Supplier data'
     Then I am on the 'Manage supplier data' page
     And I click on 'Create a new data upload'
     Then I am on the 'New data upload' page

@@ -3,6 +3,8 @@ Feature: Legal Services - Admin - Create new upload
 
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6240' framework in 'legal services'
+    Then I am on the 'Admin dashboard' page
+    And I click on 'Supplier data'
     Then I am on the 'Manage supplier data' page
     And I click on 'Create a new data upload'
     Then I am on the 'New data upload' page

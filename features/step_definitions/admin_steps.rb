@@ -14,12 +14,22 @@ Then('I wait no longer than {int} seconds for the supply teachers upload status 
   end
 end
 
+Then('I wait no longer than {int} seconds for the report to generate') do |number_of_seconds|
+  Timeout.timeout(number_of_seconds) do
+    sleep 1 until admin_page.report_generation_status.text != 'Generating report'
+  end
+end
+
 Then('the status of the upload is {string}') do |upload_status|
   expect(admin_page.upload_status).to have_content(upload_status)
 end
 
 Then('the status of the supply teachers upload is {string}') do |upload_status|
   expect(admin_page.supply_teachers.upload_status).to have_content(upload_status)
+end
+
+Then('the status of the report is {string}') do |upload_status|
+  expect(admin_page.report_generation_status).to have_content(upload_status)
 end
 
 Then('the details for the failed upload are:') do |issues_and_details_table|
@@ -57,6 +67,10 @@ When('I download the {string} supply teachers file') do |filename|
   admin_page.find('th.govuk-table__header', text: filename).find(:xpath, '..').find('a', text: 'Download').click
 end
 
+When('I download the {string} report file') do |filename|
+  admin_page.find('a', text: filename).click
+end
+
 Then('I click on the first upload session with status {string}') do |status|
   admin_page.first('td.govuk-table__cell', text: status).find(:xpath, '../td[1]/a').click
 end
@@ -68,4 +82,14 @@ end
 Then('I navigate to my recorded session page') do
   click_on "Upload session ##{@session_name}"
   step "I am on the 'Upload session #{@session_name}' page"
+end
+
+Then('I enter {string} as the {string} date') do |date, date_type|
+  add_user_reports_dates(date_type, *date_options(date))
+end
+
+def add_user_reports_dates(date_type, day, month, year)
+  admin_page.user_reports.send("#{date_type} day").set(day)
+  admin_page.user_reports.send("#{date_type} month").set(month)
+  admin_page.user_reports.send("#{date_type} year").set(year)
 end
