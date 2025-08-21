@@ -7,7 +7,7 @@ Feature: Facilities Management - RM6232 - Admin - Create new upload - Validation
     And I click on 'Supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'Manage the supplier data'
-    Then I am on the 'Admin dashboard' page
+    Then I am on the 'Manage supplier data' page
     And I click on 'Create a new data upload'
     Then I am on the 'New data upload' page
 

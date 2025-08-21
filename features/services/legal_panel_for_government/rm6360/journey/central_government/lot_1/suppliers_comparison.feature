@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 1 - Suppliers comparison
+Feature: Legal Panel for Government - Central governemnt - Lot 1 - Suppliers comparison
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
@@ -16,7 +16,7 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 1 - Suppliers
       | Aviation and Airports |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK GROUP                 | http://cruickshankgroup.test/nathaniel            |
       | CRUICKSHANK, WISOKY AND HARBER    | http://cruickshankwisokyandharber.example/kirby   |
@@ -27,7 +27,9 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 1 - Suppliers
       | KULAS, HINTZ AND DOYLE            | http://kulashintzanddoyle.example/joie            |
       | MURPHY LLC                        | http://murphyllc.test/troy                        |
       | NIENOW AND SONS                   | http://nienowandsons.test/geoffrey.hegmann        |
+      | ROOB-WHITE                        | http://roob-white.example/raymond                 |
       | SCHOWALTER GROUP                  | http://schowaltergroup.example/carlos.collier     |
+      | WOLFF, KRAJCIK AND PROSACCO       | http://wolffkrajcikandprosacco.test/buford        |
     And I click on 'Compare the supplier rates'
     Then I am on the 'Select suppliers for comparison' page
     When I check the following items:
@@ -63,7 +65,7 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 1 - Suppliers
   Scenario: Back to results
     When I click on 'Back to results'
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK GROUP                 | http://cruickshankgroup.test/nathaniel            |
       | CRUICKSHANK, WISOKY AND HARBER    | http://cruickshankwisokyandharber.example/kirby   |
@@ -74,4 +76,6 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 1 - Suppliers
       | KULAS, HINTZ AND DOYLE            | http://kulashintzanddoyle.example/joie            |
       | MURPHY LLC                        | http://murphyllc.test/troy                        |
       | NIENOW AND SONS                   | http://nienowandsons.test/geoffrey.hegmann        |
+      | ROOB-WHITE                        | http://roob-white.example/raymond                 |
       | SCHOWALTER GROUP                  | http://schowaltergroup.example/carlos.collier     |
+      | WOLFF, KRAJCIK AND PROSACCO       | http://wolffkrajcikandprosacco.test/buford        |

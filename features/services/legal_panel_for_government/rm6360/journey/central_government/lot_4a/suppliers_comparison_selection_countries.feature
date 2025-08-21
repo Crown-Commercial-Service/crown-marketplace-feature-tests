@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Suppliers comparison selection - Countries
+Feature: Legal Panel for Government - Central governemnt - Lot 4a - Suppliers comparison selection - Countries
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
@@ -25,15 +25,18 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Supplier
       | Assimilated Law |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '8' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
       | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
       | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
       | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
       | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
       | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
       | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
     And I click on 'Compare the supplier rates'
     Then I am on the 'Select suppliers for comparison' page
@@ -41,12 +44,15 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Supplier
   Scenario: The correct options are available
     Then I should see the following options for the lot:
       | ARMSTRONG GROUP                 |
+      | BLICK GROUP                     |
       | COLLIER, AUFDERHAR AND VOLKMAN  |
       | EMARD LLC                       |
       | FISHER-BASHIRIAN                |
+      | JOHNSON LLC                     |
       | KASSULKE, RITCHIE AND KOCH      |
       | SCHOWALTER GROUP                |
       | SMITH-DOYLE                     |
+      | STARK, ADAMS AND KOZEY          |
       | WELCH, PAGAC AND SWIFT          |
 
   Scenario: Service selection appears in basked

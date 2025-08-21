@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Suppliers comparison
+Feature: Legal Panel for Government - Central governemnt - Lot 4a - Suppliers comparison
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
@@ -20,15 +20,19 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Supplier
       | Domestic law of jurisdictions for trade |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '8' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
       | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
       | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
       | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
+      | KESSLER INC                     | http://kesslerinc.example/ward                    |
       | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
       | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
       | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
     And I click on 'Compare the supplier rates'
     Then I am on the 'Select suppliers for comparison' page
@@ -65,13 +69,17 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Supplier
   Scenario: Back to results
     When I click on 'Back to results'
     Then I am on the 'Supplier results' page
-    And I should see that '8' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
       | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
       | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
       | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
+      | KESSLER INC                     | http://kesslerinc.example/ward                    |
       | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
       | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
       | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
