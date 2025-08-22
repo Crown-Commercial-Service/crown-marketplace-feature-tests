@@ -34,6 +34,7 @@ preview:
     - RM6238
     - RM6240
     - RM6309
+    - RM6360
 production:
   host: https://marketplace.service.crowncommercial.gov.uk
   live_frameworks:
@@ -41,3 +42,4 @@ production:
     - RM6232
     - RM6238
     - RM6240
+    - RM6309

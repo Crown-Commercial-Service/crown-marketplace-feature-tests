@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 4b - Suppliers comparison selection - Countries
+Feature: Legal Panel for Government - Central governemnt - Lot 4b - Suppliers comparison selection - Countries
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
@@ -25,14 +25,18 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4b - Supplier
       | Wider trading arrangements  |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '8' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
+      | BLICK GROUP                     | http://blickgroup.test/odis_schneider           |
       | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/emile    |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/manual         |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/milton.klein    |
+      | JOHNSON LLC                     | http://johnsonllc.example/rima                  |
       | PARKER, DIETRICH AND TREMBLAY   | http://parkerdietrichandtremblay.example/leana  |
       | RUECKER AND SONS                | http://rueckerandsons.example/edmond_upton      |
+      | RUSSEL AND SONS                 | http://russelandsons.example/josiah             |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/piedad.collier    |
+      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/corie         |
       | TOY-ROBERTS                     | http://toy-roberts.example/tiffanie_bruen       |
       | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/dustin        |
     And I click on 'Compare the supplier rates'
@@ -40,12 +44,16 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4b - Supplier
 
   Scenario: The correct options are available
     Then I should see the following options for the lot:
+      | BLICK GROUP                     |
       | COLLIER, AUFDERHAR AND VOLKMAN  |
       | DECKOW, KIEHN AND ORN           |
       | FISHER-BASHIRIAN                |
+      | JOHNSON LLC                     |
       | PARKER, DIETRICH AND TREMBLAY   |
       | RUECKER AND SONS                |
+      | RUSSEL AND SONS                 |
       | SHIELDS-D'AMORE                 |
+      | STARK, ADAMS AND KOZEY          |
       | TOY-ROBERTS                     |
       | WELCH, PAGAC AND SWIFT          |
 

@@ -16,7 +16,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 1 - Suppliers
       | Aviation and Airports |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK GROUP                 | http://cruickshankgroup.test/nathaniel            |
       | CRUICKSHANK, WISOKY AND HARBER    | http://cruickshankwisokyandharber.example/kirby   |
@@ -27,7 +27,9 @@ Feature: Legal Panel for Government - Central governemnt - Lot 1 - Suppliers
       | KULAS, HINTZ AND DOYLE            | http://kulashintzanddoyle.example/joie            |
       | MURPHY LLC                        | http://murphyllc.test/troy                        |
       | NIENOW AND SONS                   | http://nienowandsons.test/geoffrey.hegmann        |
+      | ROOB-WHITE                        | http://roob-white.example/raymond                 |
       | SCHOWALTER GROUP                  | http://schowaltergroup.example/carlos.collier     |
+      | WOLFF, KRAJCIK AND PROSACCO       | http://wolffkrajcikandprosacco.test/buford        |
 
   Scenario: Check the supplier data - SME
     Given I click on 'MURPHY LLC'

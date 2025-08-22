@@ -20,7 +20,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | International arbitral awards           |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK, WISOKY AND HARBER  | http://cruickshankwisokyandharber.example/denisse             |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
@@ -28,6 +28,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
@@ -41,7 +42,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
     Given I check 'Investment dispute risk advice'
     When I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '14' suppliers can provide legal services for government
+    And I should see that '16' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN             | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | DOUGLAS GROUP                     | http://douglasgroup.test/mitchel                              |
@@ -51,7 +52,9 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | KULAS, HINTZ AND DOYLE            | http://kulashintzanddoyle.example/lynna.herman                |
       | LEHNER GROUP                      | http://lehnergroup.example/rueben.hane                        |
       | NIENOW AND SONS                   | http://nienowandsons.test/andrea                              |
+      | ROOB-WHITE                        | http://roob-white.example/kelley.luettgen                     |
       | RUECKER AND SONS                  | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                   | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN   | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                   | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                       | http://toy-roberts.example/gregg_legros                       |
@@ -64,7 +67,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
     And the sub title is 'Lot 4c - International Investment Disputes'
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK, WISOKY AND HARBER  | http://cruickshankwisokyandharber.example/denisse             |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
@@ -72,6 +75,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
@@ -83,7 +87,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
     Then I am on the 'Download the supplier shortlist' page
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK, WISOKY AND HARBER  | http://cruickshankwisokyandharber.example/denisse             |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
@@ -91,6 +95,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |

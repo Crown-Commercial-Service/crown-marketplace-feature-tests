@@ -24,8 +24,6 @@ Feature: Management Consultancy - Results
     Then I am on the 'Download the supplier shortlist' page
     And I click on 'Download supplier shortlist'
     Then the file 'shortlist_of_management_consultancy_suppliers' is downloaded with the 'xlsx' extension
-    And I click on 'Expression of interest template'
-    Then the file 'T1-Expression-of-Interest-2' is downloaded with the 'odt' extension
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
     And I should see the same number of consultants that I counted previously

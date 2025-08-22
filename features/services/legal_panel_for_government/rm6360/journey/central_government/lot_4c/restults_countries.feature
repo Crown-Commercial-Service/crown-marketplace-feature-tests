@@ -25,13 +25,14 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
       | Litigation and dispute resolution for trade investment disputes |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
@@ -45,14 +46,16 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
     Given I check 'Investment dispute risk advice'
     When I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '13' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN             | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                  | http://fisher-bashirian.example/marielle.hermiston            |
       | HICKLE, CARTWRIGHT AND EMMERICH   | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | KSHLERIN, BRAKUS AND CHRISTIANSEN | http://kshlerinbrakusandchristiansen.test/deloise.kuhlman     |
       | LEHNER GROUP                      | http://lehnergroup.example/rueben.hane                        |
+      | ROOB-WHITE                        | http://roob-white.example/kelley.luettgen                     |
       | RUECKER AND SONS                  | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                   | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN   | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                   | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                       | http://toy-roberts.example/gregg_legros                       |
@@ -74,7 +77,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
       | Litigation and dispute resolution for trade investment disputes |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '13' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
@@ -82,10 +85,12 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | MURPHY LLC                      | http://murphyllc.test/francesca_yundt                         |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
       | WILLMS-KOELPIN                  | http://willms-koelpin.test/juliette                           |
+      | WOLFF, KRAJCIK AND PROSACCO     | http://wolffkrajcikandprosacco.test/teena                     |
       | ZIEMANN-TROMP                   | http://ziemann-tromp.example/dale                             |
 
   Scenario: Going back from a supplier
@@ -94,13 +99,14 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
     And the sub title is 'Lot 4c - International Investment Disputes'
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
@@ -112,13 +118,14 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
     Then I am on the 'Download the supplier shortlist' page
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |

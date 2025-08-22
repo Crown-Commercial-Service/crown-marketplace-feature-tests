@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Suppliers comparison selection
+Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers comparison selection
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
@@ -20,7 +20,7 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Supplier
       | International arbitral awards           |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | CRUICKSHANK, WISOKY AND HARBER  | http://cruickshankwisokyandharber.example/denisse             |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
@@ -28,6 +28,7 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Supplier
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
@@ -44,6 +45,7 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Supplier
       | HICKLE, CARTWRIGHT AND EMMERICH |
       | LEHNER GROUP                    |
       | RUECKER AND SONS                |
+      | RUSSEL AND SONS                 |
       | SCHMELER, KSHLERIN AND SHANAHAN |
       | SHIELDS-D'AMORE                 |
       | TOY-ROBERTS                     |

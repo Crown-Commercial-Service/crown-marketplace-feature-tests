@@ -38,12 +38,13 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Results
     Given I check 'Insurance law'
     When I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '14' suppliers can provide legal services for government
+    And I should see that '15' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/alane.ratke      |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/reyna                  |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/aaron.swaniawski        |
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/armando      |
+      | JOHNSON LLC                     | http://johnsonllc.example/robt.conroy                   |
       | KAUTZER, PFEFFER AND SCHUMM     | http://kautzerpfefferandschumm.test/deandrea            |
       | LEHNER GROUP                    | http://lehnergroup.example/erwin                        |
       | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/alejandrina      |

@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Suppliers comparison - Countries
+Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers comparison - Countries
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
@@ -25,13 +25,14 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Supplier
       | Litigation and dispute resolution for trade investment disputes |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
@@ -85,13 +86,14 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Supplier
   Scenario: Back to results
     When I click on 'Back to results'
     Then I am on the 'Supplier results' page
-    And I should see that '10' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
       | HICKLE, CARTWRIGHT AND EMMERICH | http://hicklecartwrightandemmerich.example/herschel_armstrong |
       | LEHNER GROUP                    | http://lehnergroup.example/rueben.hane                        |
       | RUECKER AND SONS                | http://rueckerandsons.example/ricardo                         |
+      | RUSSEL AND SONS                 | http://russelandsons.example/felica                           |
       | SCHMELER, KSHLERIN AND SHANAHAN | http://schmelerkshlerinandshanahan.test/daren.jones           |
       | SHIELDS-D'AMORE                 | http://shields-damore.example/allen                           |
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |

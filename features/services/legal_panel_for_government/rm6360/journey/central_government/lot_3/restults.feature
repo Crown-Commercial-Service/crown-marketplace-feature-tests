@@ -16,12 +16,13 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
       | Fintech Crypto Assets |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '13' suppliers can provide legal services for government
+    And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
       | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
       | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
       | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
+      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
       | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
       | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
       | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
@@ -39,13 +40,14 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     Given I check 'United State Securities & Regulatory'
     When I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '12' suppliers can provide legal services for government
+    And I should see that '13' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP             | http://armstronggroup.test/geraldine_abbott     |
       | BATZ-BROWN                  | http://batz-brown.test/dennis                   |
       | DECKOW, KIEHN AND ORN       | http://deckowkiehnandorn.example/matt           |
       | EMARD LLC                   | http://emardllc.example/corine.balistreri       |
       | KASSULKE, RITCHIE AND KOCH  | http://kassulkeritchieandkoch.example/julianna  |
+      | KUHLMAN, ORTIZ AND LOCKMAN  | http://kuhlmanortizandlockman.example/philip    |
       | KULAS, HINTZ AND DOYLE      | http://kulashintzanddoyle.example/moses_ruecker |
       | LEHNER GROUP                | http://lehnergroup.example/jaime                |
       | REICHERT-MRAZ               | http://reichert-mraz.test/carey                 |
@@ -60,12 +62,13 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     And the sub title is 'Lot 3 - Finance and High Risk/Innovation'
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see that '13' suppliers can provide legal services for government
+    And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
       | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
       | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
       | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
+      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
       | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
       | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
       | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
@@ -81,12 +84,13 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     Then I am on the 'Download the supplier shortlist' page
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see that '13' suppliers can provide legal services for government
+    And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
       | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
       | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
       | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
+      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
       | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
       | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
       | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |

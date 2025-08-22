@@ -1,5 +1,5 @@
 @skip-production
-Feature: Legal Panel for Government - Non central governemnt - Lot 5 - Suppliers comparison selection
+Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers comparison selection
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
