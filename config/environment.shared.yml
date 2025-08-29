@@ -29,7 +29,6 @@ cmpdev:
 preview:
   host: https://marketplace.preview.crowncommercial.gov.uk
   live_frameworks:
-    - RM6187
     - RM6232
     - RM6238
     - RM6240
@@ -38,7 +37,6 @@ preview:
 production:
   host: https://marketplace.service.crowncommercial.gov.uk
   live_frameworks:
-    - RM6187
     - RM6232
     - RM6238
     - RM6240

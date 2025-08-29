@@ -6,17 +6,20 @@ Feature: Supply Teachers - Navigation links when signed out
   Scenario: Start page
     Then I should see the following navigation links:
       | Back to start |
+      | Sign in       |
 
   Scenario: Not permitted page
     And I go to the not permitted page for 'supply teachers'
     Then I should see the following navigation links:
       | Back to start |
+      | Sign in       |
 
   Scenario: Gate way page
     And I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
     And I should see the following navigation links:
       | Back to start |
+      | Sign in       |
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
 
@@ -26,6 +29,7 @@ Feature: Supply Teachers - Navigation links when signed out
     And I click on 'Sign in with CCS'
     And I should see the following navigation links:
       | Back to start |
+      | Sign in       |
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
 
@@ -35,6 +39,7 @@ Feature: Supply Teachers - Navigation links when signed out
     Then I am on the 'Details about cookies on Crown Marketplace' page
     And I should see the following navigation links:
       | Back to start |
+      | Sign in       |
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
 
@@ -43,6 +48,7 @@ Feature: Supply Teachers - Navigation links when signed out
     Then I am on the 'Cookies on Crown Marketplace' page
     And I should see the following navigation links:
       | Back to start |
+      | Sign in       |
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
 
@@ -51,5 +57,6 @@ Feature: Supply Teachers - Navigation links when signed out
     Then I am on the 'Supply Teachers (ST) Accessibility statement' page
     And I should see the following navigation links:
       | Back to start |
+      | Sign in       |
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
