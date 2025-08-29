@@ -179,7 +179,7 @@ Given('I have a procurement with the name {string}') do |contract_name|
 end
 
 When('the contract number is visible with the contract name {string}') do |contract_name|
-  expect(page.find('#main-content > div:nth-child(2) > div > span')).to have_content("#{contract_name} #{@contract_name_id} - RM6232")
+  expect(page.find('#main-content > div:nth-child(1) > div > span')).to have_content("#{contract_name} #{@contract_name_id} - RM6232")
   expect(page.find('.ccs-panel__body')).to have_content('RM6232')
 end
 

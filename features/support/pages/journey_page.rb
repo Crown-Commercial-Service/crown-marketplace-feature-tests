@@ -51,6 +51,6 @@ module Pages
     elements :contact_details, '.ccs-contact-details dd'
     element :supplier_prospectus, '.ccs-supplier-prospectus'
 
-    element :day_rate_page_title, '#main-content > div:nth-child(3) > div.govuk-grid-column-two-thirds.govuk-\!-padding-right-8 > h2:nth-child(1)'
+    element :day_rate_page_title, '#main-content > div:nth-child(2) > div.govuk-grid-column-two-thirds.govuk-\!-padding-right-8 > h2:nth-child(1)'
   end
 end

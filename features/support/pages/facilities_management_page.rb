@@ -42,7 +42,7 @@ module Pages
       element :annual_contract_value, '#annual_contract_value'
       element :sub_lot, '#procurement-sub-lot'
 
-      section :selection_summary, 'div:nth-child(3) > div.govuk-grid-column-one-third' do
+      section :selection_summary, 'div:nth-child(2) > div.govuk-grid-column-one-third' do
         section :services, SummarySection, 'div.ccs-summary-box:nth-of-type(1)'
         section :regions, SummarySection, 'div.ccs-summary-box:nth-of-type(2)'
 
@@ -53,7 +53,7 @@ module Pages
       end
 
       element :contract_name_field, '#facilities_management_rm6232_procurement_contract_name'
-      elements :suppliers, 'div:nth-child(3) > div.govuk-grid-column-two-thirds > ul > li'
+      elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li'
     end
 
     section :service_specification, '#main-content' do

@@ -43,7 +43,11 @@ Then('I choose to {string} {string} cookies') do |option, cookie|
 end
 
 Then('I should see the following navigation links:') do |navigation_links|
-  home_page.navigation.links.zip(navigation_links.raw.flatten).each do |actual, expected|
+  navigation_elements = home_page.navigation.links.to_a + home_page.navigation.buttons.to_a
+
+  expect(navigation_elements.length).to eq(navigation_links.raw.flatten.length)
+
+  navigation_elements.zip(navigation_links.raw.flatten).each do |actual, expected|
     expect(actual).to have_content expected
   end
 end
