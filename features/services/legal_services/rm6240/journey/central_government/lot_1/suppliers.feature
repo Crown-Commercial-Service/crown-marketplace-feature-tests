@@ -64,10 +64,10 @@ Feature: Legal services - Central governemnt - Lot 1 - Suppliers
     And the 'Paralegal, Legal Assistant' hourly rate is '£80.00'
     And there is no LMP (Legal project manager) hourly rate
     And the contact details for the supplier are:
-      | and.gerlach.sons@crona.co                         |
-      | 535-621-4440 x224                                 |
-      | http://gislason.name/michal_lueilwitz             |
-      | 5063 Lael Points, Lake Veliaburgh, PA 42674-0350  |
+      | and.gerlach.sons@crona.co                        |
+      | 535-621-4440 x224                                |
+      | http://gislason.name/michal_lueilwitz            |
+      | 5063 Lael Points, Lake Veliaburgh, PA 42674-0350 |
 
   @file-download
   Scenario: Download the supplier spreadsheet

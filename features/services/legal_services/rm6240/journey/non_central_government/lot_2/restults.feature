@@ -22,22 +22,22 @@ Feature: Legal services - Non central governemnt - Lot 2 - Results
     Then I am on the 'Supplier results' page
     And I should see that '16' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | EBERT, BASHIRIAN AND MILLER       |
-      | FLATLEY GROUP                     |
-      | GOLDNER GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | HESSEL-QUITZON                    |
-      | HUELS-WELCH                       |
-      | LUETTGEN-RIPPIN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
-      | PFEFFER GROUP                     |
-      | SCHNEIDER AND SONS                |
-      | VEUM-LOWE                         |
-      | WYMAN-O'CONNER                    |
+      | BERNIER, BRUEN AND RENNER        |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | EBERT, BASHIRIAN AND MILLER      |
+      | FLATLEY GROUP                    |
+      | GOLDNER GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | HESSEL-QUITZON                   |
+      | HUELS-WELCH                      |
+      | LUETTGEN-RIPPIN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PAUCEK, BUCKRIDGE AND GULGOWSKI  |
+      | PFEFFER GROUP                    |
+      | SCHNEIDER AND SONS               |
+      | VEUM-LOWE                        |
+      | WYMAN-O'CONNER                   |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -53,40 +53,40 @@ Feature: Legal services - Non central governemnt - Lot 2 - Results
     Then I am on the 'Supplier results' page
     And I should see that '34' suppliers can provide legal services
     And the selected legal service suppliers are:
-    | BERNHARD, WEHNER AND ORN          |
-    | BERNIER, BRUEN AND RENNER         |
-    | BREKKE, HAMMES AND WINTHEISER     |
-    | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-    | EBERT, BASHIRIAN AND MILLER       |
-    | FLATLEY GROUP                     |
-    | GOLDNER GROUP                     |
-    | GOTTLIEB GROUP                    |
-    | GRAHAM, REICHEL AND KULAS         |
-    | GREENFELDER LLC                   |
-    | HESSEL-QUITZON                    |
-    | HOMENICK-O'KEEFE                  |
-    | HUELS-WELCH                       |
-    | HYATT, ZIEMANN AND EMARD          |
-    | LUETTGEN-RIPPIN                   |
-    | MACGYVER-SCHOEN                   |
-    | MCCLURE LLC                       |
-    | MORISSETTE-RENNER                 |
-    | MOSCISKI, LABADIE AND REMPEL      |
-    | NICOLAS-PFEFFER                   |
-    | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
-    | PFEFFER GROUP                     |
-    | RIPPIN, SANFORD AND GOYETTE       |
-    | SATTERFIELD-WHITE                 |
-    | SCHNEIDER AND SONS                |
-    | SHANAHAN, CARTWRIGHT AND SCHAEFER |
-    | STEUBER, THOMPSON AND LANG        |
-    | STRACKE GROUP                     |
-    | THOMPSON AND SONS                 |
-    | TORPHY LLC                        |
-    | VEUM-LOWE                         |
-    | WEISSNAT INC                      |
-    | WYMAN-O'CONNER                    |
-    | ZULAUF, LABADIE AND MCCULLOUGH    |
+      | BERNHARD, WEHNER AND ORN          |
+      | BERNIER, BRUEN AND RENNER         |
+      | BREKKE, HAMMES AND WINTHEISER     |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
+      | EBERT, BASHIRIAN AND MILLER       |
+      | FLATLEY GROUP                     |
+      | GOLDNER GROUP                     |
+      | GOTTLIEB GROUP                    |
+      | GRAHAM, REICHEL AND KULAS         |
+      | GREENFELDER LLC                   |
+      | HESSEL-QUITZON                    |
+      | HOMENICK-O'KEEFE                  |
+      | HUELS-WELCH                       |
+      | HYATT, ZIEMANN AND EMARD          |
+      | LUETTGEN-RIPPIN                   |
+      | MACGYVER-SCHOEN                   |
+      | MCCLURE LLC                       |
+      | MORISSETTE-RENNER                 |
+      | MOSCISKI, LABADIE AND REMPEL      |
+      | NICOLAS-PFEFFER                   |
+      | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
+      | PFEFFER GROUP                     |
+      | RIPPIN, SANFORD AND GOYETTE       |
+      | SATTERFIELD-WHITE                 |
+      | SCHNEIDER AND SONS                |
+      | SHANAHAN, CARTWRIGHT AND SCHAEFER |
+      | STEUBER, THOMPSON AND LANG        |
+      | STRACKE GROUP                     |
+      | THOMPSON AND SONS                 |
+      | TORPHY LLC                        |
+      | VEUM-LOWE                         |
+      | WEISSNAT INC                      |
+      | WYMAN-O'CONNER                    |
+      | ZULAUF, LABADIE AND MCCULLOUGH    |
 
   Scenario: Jursidiction selection changes the results
     Given I click on the 'Back' back link
@@ -109,22 +109,22 @@ Feature: Legal services - Non central governemnt - Lot 2 - Results
     Then I am on the 'Supplier results' page
     And I should see that '16' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | EBERT, BASHIRIAN AND MILLER       |
-      | FLATLEY GROUP                     |
-      | GOLDNER GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | HESSEL-QUITZON                    |
-      | HUELS-WELCH                       |
-      | LUETTGEN-RIPPIN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
-      | PFEFFER GROUP                     |
-      | SCHNEIDER AND SONS                |
-      | VEUM-LOWE                         |
-      | WYMAN-O'CONNER                    |
+      | BERNIER, BRUEN AND RENNER        |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | EBERT, BASHIRIAN AND MILLER      |
+      | FLATLEY GROUP                    |
+      | GOLDNER GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | HESSEL-QUITZON                   |
+      | HUELS-WELCH                      |
+      | LUETTGEN-RIPPIN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PAUCEK, BUCKRIDGE AND GULGOWSKI  |
+      | PFEFFER GROUP                    |
+      | SCHNEIDER AND SONS               |
+      | VEUM-LOWE                        |
+      | WYMAN-O'CONNER                   |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -133,19 +133,19 @@ Feature: Legal services - Non central governemnt - Lot 2 - Results
     Then I am on the 'Supplier results' page
     And I should see that '16' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | EBERT, BASHIRIAN AND MILLER       |
-      | FLATLEY GROUP                     |
-      | GOLDNER GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | HESSEL-QUITZON                    |
-      | HUELS-WELCH                       |
-      | LUETTGEN-RIPPIN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
-      | PFEFFER GROUP                     |
-      | SCHNEIDER AND SONS                |
-      | VEUM-LOWE                         |
-      | WYMAN-O'CONNER                    |
+      | BERNIER, BRUEN AND RENNER        |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | EBERT, BASHIRIAN AND MILLER      |
+      | FLATLEY GROUP                    |
+      | GOLDNER GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | HESSEL-QUITZON                   |
+      | HUELS-WELCH                      |
+      | LUETTGEN-RIPPIN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PAUCEK, BUCKRIDGE AND GULGOWSKI  |
+      | PFEFFER GROUP                    |
+      | SCHNEIDER AND SONS               |
+      | VEUM-LOWE                        |
+      | WYMAN-O'CONNER                   |

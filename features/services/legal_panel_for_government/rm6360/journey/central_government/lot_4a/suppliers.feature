@@ -22,18 +22,18 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Results
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
-      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
-      | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
-      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
-      | KESSLER INC                     | http://kesslerinc.example/ward                    |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
-      | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                    | http://blickgroup.test/tiffiny                    |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/avis.swift |
+      | EMARD LLC                      | http://emardllc.example/jackson.pacocha           |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                    | http://johnsonllc.example/gail                    |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/rossie      |
+      | KESSLER INC                    | http://kesslerinc.example/ward                    |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/lucienne_dare      |
+      | SMITH-DOYLE                    | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde      |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram           |
 
   Scenario: Check the supplier data - SME
     Given I click on "ARMSTRONG GROUP"

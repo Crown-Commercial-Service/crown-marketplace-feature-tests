@@ -18,68 +18,68 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Suppliers com
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
-      | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
-      | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
-      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
-      | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
-      | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
-      | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/ngoc_shields             |
-      | SMITH-DOYLE                     | http://smith-doyle.example/joshua_murray                |
-      | SWANIAWSKI, PREDOVIC AND GRANT  | http://swaniawskipredovicandgrant.example/cody.murazik  |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/scot                  |
-      | WILLMS-JACOBS                   | http://willms-jacobs.example/orlando                    |
-      | WILLMS-KOELPIN                  | http://willms-koelpin.test/harrison.murazik             |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/geraldine_abbott            |
+      | BATZ-BROWN                     | http://batz-brown.test/dennis                          |
+      | EMARD LLC                      | http://emardllc.example/corine.balistreri              |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/julianna         |
+      | KUHLMAN, ORTIZ AND LOCKMAN     | http://kuhlmanortizandlockman.example/philip           |
+      | KULAS, HINTZ AND DOYLE         | http://kulashintzanddoyle.example/moses_ruecker        |
+      | REICHERT-MRAZ                  | http://reichert-mraz.test/carey                        |
+      | ROMAGUERA, SCHULIST AND GRAHAM | http://romagueraschulistandgraham.test/cordell         |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/ngoc_shields            |
+      | SMITH-DOYLE                    | http://smith-doyle.example/joshua_murray               |
+      | SWANIAWSKI, PREDOVIC AND GRANT | http://swaniawskipredovicandgrant.example/cody.murazik |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/scot                 |
+      | WILLMS-JACOBS                  | http://willms-jacobs.example/orlando                   |
+      | WILLMS-KOELPIN                 | http://willms-koelpin.test/harrison.murazik            |
     And I click on 'Compare the supplier rates'
     Then I am on the 'Select suppliers for comparison' page
     When I check the following items:
-      | ARMSTRONG GROUP                 |
-      | BATZ-BROWN                      |
-      | EMARD LLC                       |
+      | ARMSTRONG GROUP |
+      | BATZ-BROWN      |
+      | EMARD LLC       |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I should see that '3' suppliers have been selected for comparison
 
   Scenario: The rates table is displayed for comparison
     Then I should see the rates in the comparison table:
-      | Supplier         | Partner  | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive  | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant |
-      | ARMSTRONG GROUP  | £280.00  | £245.00                              | £210.00                                                    | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
-      | BATZ-BROWN       | £280.00  | £245.00                              | £210.00                                                    | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
-      | EMARD LLC        | £280.00  | £245.00                              | £210.00                                                    | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
+      | Supplier        | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant |
+      | ARMSTRONG GROUP | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
+      | BATZ-BROWN      | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
+      | EMARD LLC       | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
 
   Scenario: Changing selection changes the results
     And I click on the 'Back' back link
     Then I am on the 'Select suppliers for comparison' page
     And I deselect all the items
     When I check the following items:
-      | WILLMS-JACOBS                   |
-      | WILLMS-KOELPIN                  |
+      | WILLMS-JACOBS  |
+      | WILLMS-KOELPIN |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I should see that '2' suppliers have been selected for comparison
     Then I should see the rates in the comparison table:
-      | Supplier       | Partner  | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive  | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant |
-      | WILLMS-JACOBS  | £280.00  | £245.00                              | £210.00                                                    | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
-      | WILLMS-KOELPIN | £200.00  | £175.00                              | £150.00                                                    | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     |
+      | Supplier       | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant |
+      | WILLMS-JACOBS  | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     |
+      | WILLMS-KOELPIN | £200.00 | £175.00                              | £150.00                                                   | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     |
 
   Scenario: Back to results
     When I click on 'Back to results'
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
-      | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
-      | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
-      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
-      | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
-      | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
-      | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/ngoc_shields             |
-      | SMITH-DOYLE                     | http://smith-doyle.example/joshua_murray                |
-      | SWANIAWSKI, PREDOVIC AND GRANT  | http://swaniawskipredovicandgrant.example/cody.murazik  |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/scot                  |
-      | WILLMS-JACOBS                   | http://willms-jacobs.example/orlando                    |
-      | WILLMS-KOELPIN                  | http://willms-koelpin.test/harrison.murazik             |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/geraldine_abbott            |
+      | BATZ-BROWN                     | http://batz-brown.test/dennis                          |
+      | EMARD LLC                      | http://emardllc.example/corine.balistreri              |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/julianna         |
+      | KUHLMAN, ORTIZ AND LOCKMAN     | http://kuhlmanortizandlockman.example/philip           |
+      | KULAS, HINTZ AND DOYLE         | http://kulashintzanddoyle.example/moses_ruecker        |
+      | REICHERT-MRAZ                  | http://reichert-mraz.test/carey                        |
+      | ROMAGUERA, SCHULIST AND GRAHAM | http://romagueraschulistandgraham.test/cordell         |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/ngoc_shields            |
+      | SMITH-DOYLE                    | http://smith-doyle.example/joshua_murray               |
+      | SWANIAWSKI, PREDOVIC AND GRANT | http://swaniawskipredovicandgrant.example/cody.murazik |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/scot                 |
+      | WILLMS-JACOBS                  | http://willms-jacobs.example/orlando                   |
+      | WILLMS-KOELPIN                 | http://willms-koelpin.test/harrison.murazik            |

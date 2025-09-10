@@ -34,9 +34,9 @@ Feature: Supply Teachers - Agency results - Fixed term - Validations - Productio
       | 1 |
 
     Examples:
-      | dayly_rate  |
-      | -1          |
-      | Taion       |
+      | dayly_rate |
+      | -1         |
+      | Taion      |
 
   Scenario: Annual salary validations - both errors at once
     And I enter the rate '-1' for supplier number 1
@@ -49,7 +49,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Validations - Productio
     Then I should see the error message 'Annual salary is invalid' for supplier number 1
     And I enter the rate '20000' for supplier number 1
     And only the following suppliers should have errors:
-      | |
+      |  |
 
   @smoulder
   Scenario: Rate validations - multiple agencies

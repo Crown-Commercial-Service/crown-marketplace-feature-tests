@@ -185,3 +185,5 @@ config/environment.*
 reports/*
 
 data/**/~$*
+
+.python-version

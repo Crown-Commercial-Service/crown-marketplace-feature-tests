@@ -14,7 +14,7 @@ Feature: Management Consultancy - RM6187 - Forgot my password - Validations
       | Enter your email address in the correct format, like name@example.com |
 
     Examples:
-      | value           |
-      |                 |
-      | fake@email      |
-      | fake email      |
+      | value      |
+      |            |
+      | fake@email |
+      | fake email |

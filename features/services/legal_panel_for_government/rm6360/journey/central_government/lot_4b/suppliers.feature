@@ -22,20 +22,20 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4b - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | BLICK GROUP                     | http://blickgroup.test/odis_schneider           |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/emile    |
-      | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/manual         |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/milton.klein    |
-      | JOHNSON LLC                     | http://johnsonllc.example/rima                  |
-      | MCCLURE, THIEL AND FRAMI        | http://mcclurethielandframi.test/darius_stanton |
-      | ROBERTS-ZEMLAK                  | http://roberts-zemlak.example/armandina_funk    |
-      | RUECKER AND SONS                | http://rueckerandsons.example/edmond_upton      |
-      | RUSSEL AND SONS                 | http://russelandsons.example/josiah             |
-      | SHIELDS-D'AMORE                 | http://shields-damore.example/piedad.collier    |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/corie         |
-      | TOY-ROBERTS                     | http://toy-roberts.example/tiffanie_bruen       |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/dustin        |
-      | ZIEMANN-CUMMERATA               | http://ziemann-cummerata.test/chuck.yost        |
+      | BLICK GROUP                    | http://blickgroup.test/odis_schneider           |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/emile    |
+      | DECKOW, KIEHN AND ORN          | http://deckowkiehnandorn.example/manual         |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/milton.klein    |
+      | JOHNSON LLC                    | http://johnsonllc.example/rima                  |
+      | MCCLURE, THIEL AND FRAMI       | http://mcclurethielandframi.test/darius_stanton |
+      | ROBERTS-ZEMLAK                 | http://roberts-zemlak.example/armandina_funk    |
+      | RUECKER AND SONS               | http://rueckerandsons.example/edmond_upton      |
+      | RUSSEL AND SONS                | http://russelandsons.example/josiah             |
+      | SHIELDS-D'AMORE                | http://shields-damore.example/piedad.collier    |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/corie         |
+      | TOY-ROBERTS                    | http://toy-roberts.example/tiffanie_bruen       |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/dustin        |
+      | ZIEMANN-CUMMERATA              | http://ziemann-cummerata.test/chuck.yost        |
 
   Scenario: Check the supplier data - SME
     Given I click on 'TOY-ROBERTS'
@@ -54,10 +54,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4b - Results
     And the 'Senior Modeller, Senior Econometrician, Senior Analyst' hourly rate is '£210.00'
     And the 'Modeller, Econometrician, Analyst, Associate Analyst' hourly rate is '£175.00'
     And the contact details for the supplier are:
-      | toy.roberts@little-schmitt.example                      |
-      | (743) 554 5938                                          |
-      | http://toy-roberts.example/jame.torphy                  |
-      | Apt. 116 61630 Hosea Heights, Wymanfurt, NV 15218-3156  |
+      | toy.roberts@little-schmitt.example                     |
+      | (743) 554 5938                                         |
+      | http://toy-roberts.example/jame.torphy                 |
+      | Apt. 116 61630 Hosea Heights, Wymanfurt, NV 15218-3156 |
     And the prospectus link is 'http://toy-roberts.example/tiffanie_bruen'
 
   Scenario: Check the supplier data - Non SME

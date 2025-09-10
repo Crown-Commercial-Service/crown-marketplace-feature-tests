@@ -18,24 +18,24 @@ Feature: Legal Panel for Government - Central governemnt - Lot 2 - Suppliers
     Then I am on the 'Supplier results' page
     And I should see that '18' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | BATZ-BROWN                      | http://batz-brown.test/edris.oconner                    |
-      | BLICK GROUP                     | http://blickgroup.test/kitty_zulauf                     |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/heide.runolfsson |
-      | DOUGLAS GROUP                   | http://douglasgroup.test/claudio_blick                  |
-      | JOHNSON LLC                     | http://johnsonllc.example/vicente                       |
-      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/rosette_legros    |
-      | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/imelda_turcotte       |
-      | MURPHY LLC                      | http://murphyllc.test/charley                           |
-      | NIENOW AND SONS                 | http://nienowandsons.test/vera                          |
-      | REICHERT-MRAZ                   | http://reichert-mraz.test/clifford                      |
-      | ROOB-WHITE                      | http://roob-white.example/tristan_turcotte              |
-      | RUECKER AND SONS                | http://rueckerandsons.example/dana_kohler               |
-      | SHIELDS-D'AMORE                 | http://shields-damore.example/odell                     |
-      | SMITH-DOYLE                     | http://smith-doyle.example/efren                        |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/nelle                 |
-      | TOY-ROBERTS                     | http://toy-roberts.example/shon                         |
-      | WILLMS-JACOBS                   | http://willms-jacobs.example/georgiann.luettgen         |
-      | WOLFF, KRAJCIK AND PROSACCO     | http://wolffkrajcikandprosacco.test/taylor_johnson      |
+      | BATZ-BROWN                     | http://batz-brown.test/edris.oconner                    |
+      | BLICK GROUP                    | http://blickgroup.test/kitty_zulauf                     |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/heide.runolfsson |
+      | DOUGLAS GROUP                  | http://douglasgroup.test/claudio_blick                  |
+      | JOHNSON LLC                    | http://johnsonllc.example/vicente                       |
+      | KUHLMAN, ORTIZ AND LOCKMAN     | http://kuhlmanortizandlockman.example/rosette_legros    |
+      | KULAS, HINTZ AND DOYLE         | http://kulashintzanddoyle.example/imelda_turcotte       |
+      | MURPHY LLC                     | http://murphyllc.test/charley                           |
+      | NIENOW AND SONS                | http://nienowandsons.test/vera                          |
+      | REICHERT-MRAZ                  | http://reichert-mraz.test/clifford                      |
+      | ROOB-WHITE                     | http://roob-white.example/tristan_turcotte              |
+      | RUECKER AND SONS               | http://rueckerandsons.example/dana_kohler               |
+      | SHIELDS-D'AMORE                | http://shields-damore.example/odell                     |
+      | SMITH-DOYLE                    | http://smith-doyle.example/efren                        |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/nelle                 |
+      | TOY-ROBERTS                    | http://toy-roberts.example/shon                         |
+      | WILLMS-JACOBS                  | http://willms-jacobs.example/georgiann.luettgen         |
+      | WOLFF, KRAJCIK AND PROSACCO    | http://wolffkrajcikandprosacco.test/taylor_johnson      |
 
   Scenario: Check the supplier data - SME
     Given I click on 'COLLIER, AUFDERHAR AND VOLKMAN'
@@ -49,10 +49,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 2 - Suppliers
     And the 'Trainee/Legal Apprentice' hourly rate is '£90.00'
     And the 'Paralegal, Legal Assistant' hourly rate is '£60.00'
     And the contact details for the supplier are:
-      | collier_volkman_aufderhar_and@senger.test     |
-      | 516-485-8148                                  |
-      | http://collieraufderharandvolkman.test/lydia  |
-      | 9687 Dona Fords, West Majorie, OR 06822-3322  |
+      | collier_volkman_aufderhar_and@senger.test    |
+      | 516-485-8148                                 |
+      | http://collieraufderharandvolkman.test/lydia |
+      | 9687 Dona Fords, West Majorie, OR 06822-3322 |
     And the prospectus link is 'http://collieraufderharandvolkman.test/heide.runolfsson'
 
   Scenario: Check the supplier data - Non SME

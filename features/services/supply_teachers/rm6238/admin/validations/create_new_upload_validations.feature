@@ -12,7 +12,7 @@ Feature: Supply Teachers - Admin - Create new upload - Validations
   Scenario: No files uploaded
     And I click on 'Upload spreadsheets'
     Then I should see the following error messages:
-      | Upload at least one file  |
+      | Upload at least one file |
 
   Scenario: Incorrect extension uploaded
     And I select the file 'features/services/supply_teachers/rm6238/admin/validations/create_new_upload_validations.feature' to upload for 'Current accredited suppliers'
@@ -23,12 +23,12 @@ Feature: Supply Teachers - Admin - Create new upload - Validations
     And I select the file 'features/services/supply_teachers/rm6238/admin/validations/create_new_upload_validations.feature' to upload for 'Supplier lookup'
     And I click on 'Upload spreadsheets'
     Then I should see the following error messages:
-      | The 'Current accredited suppliers' file must be an XLSX           |
-      | The 'Geographical data all suppliers' file must be an XLSX        |
-      | The 'Master vendor contacts' file must be a CSV                   |
-      | The 'Education technology platform contacts' file must be a CSV   |
-      | The 'Pricing for tool' file must be an XLSX                       |
-      | The 'Supplier lookup' file must be a CSV                          |
+      | The 'Current accredited suppliers' file must be an XLSX         |
+      | The 'Geographical data all suppliers' file must be an XLSX      |
+      | The 'Master vendor contacts' file must be a CSV                 |
+      | The 'Education technology platform contacts' file must be a CSV |
+      | The 'Pricing for tool' file must be an XLSX                     |
+      | The 'Supplier lookup' file must be a CSV                        |
 
   Scenario: Upload invalid spreadsheet
     And I select the file 'data/legal_services/rm6240/Supplier details.xlsx' to upload for 'Current accredited suppliers'
@@ -51,4 +51,4 @@ Feature: Supply Teachers - Admin - Create new upload - Validations
     And I wait no longer than 20 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Failed'
     And the details for the failed supply teachers upload are:
-      | sheet 'Branch details' not found  |
+      | sheet 'Branch details' not found |

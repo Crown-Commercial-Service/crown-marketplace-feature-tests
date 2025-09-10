@@ -6,4 +6,4 @@ Feature: Sign in to my account - Legal Panel for Government - RM6360 - Accessibi
     Then I am on the 'Find legal services for government' page
     When I click on 'Start now'
     And I am on the 'Sign in to your legal panel for government account' page
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks

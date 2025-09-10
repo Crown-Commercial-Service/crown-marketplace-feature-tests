@@ -16,7 +16,7 @@ Feature: Management Consultancy - Navigation links when signed out
       | Create an account |
       | Sign in           |
 
-  Scenario: Sign in page 
+  Scenario: Sign in page
     And I click on 'Start now'
     Then I am on the 'Sign in to your management consultancy account' page
     And I should see the following navigation links:

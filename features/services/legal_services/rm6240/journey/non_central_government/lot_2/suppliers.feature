@@ -22,22 +22,22 @@ Feature: Legal services - Non central governemnt - Lot 2 - Suppliers
     Then I am on the 'Supplier results' page
     And I should see that '16' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | EBERT, BASHIRIAN AND MILLER       |
-      | FLATLEY GROUP                     |
-      | GOLDNER GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | HESSEL-QUITZON                    |
-      | HUELS-WELCH                       |
-      | LUETTGEN-RIPPIN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
-      | PFEFFER GROUP                     |
-      | SCHNEIDER AND SONS                |
-      | VEUM-LOWE                         |
-      | WYMAN-O'CONNER                    |
+      | BERNIER, BRUEN AND RENNER        |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | EBERT, BASHIRIAN AND MILLER      |
+      | FLATLEY GROUP                    |
+      | GOLDNER GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | HESSEL-QUITZON                   |
+      | HUELS-WELCH                      |
+      | LUETTGEN-RIPPIN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PAUCEK, BUCKRIDGE AND GULGOWSKI  |
+      | PFEFFER GROUP                    |
+      | SCHNEIDER AND SONS               |
+      | VEUM-LOWE                        |
+      | WYMAN-O'CONNER                   |
 
   Scenario: Check the supplier data - SME
     Given I click on 'LUETTGEN-RIPPIN'
@@ -51,10 +51,10 @@ Feature: Legal services - Non central governemnt - Lot 2 - Suppliers
     And the 'Paralegal, Legal Assistant' hourly rate is '£90.00'
     And there is no LMP (Legal project manager) hourly rate
     And the contact details for the supplier are:
-      | luettgen_rippin@breitenberg.name          |
-      | 1-787-468-7842 x06663                     |
-      | http://oconner-lind.com/modesto.stamm     |
-      | 209 Boyle Drives, Lindgrenstad, UT 82401  |
+      | luettgen_rippin@breitenberg.name         |
+      | 1-787-468-7842 x06663                    |
+      | http://oconner-lind.com/modesto.stamm    |
+      | 209 Boyle Drives, Lindgrenstad, UT 82401 |
 
   Scenario: Check the supplier data - Non SME
     Given I click on 'FLATLEY GROUP'
@@ -68,10 +68,10 @@ Feature: Legal services - Non central governemnt - Lot 2 - Suppliers
     And the 'Paralegal, Legal Assistant' hourly rate is '£90.00'
     And the 'LMP (Legal project manager)' hourly rate is '£187.00'
     And the contact details for the supplier are:
-      | group_flatley@schmeler.io                           |
-      | 1-340-696-9662 x7745                                |
-      | http://abshire.com/ruthann.welch                    |
-      | 87268 Barrows Station, Blockchester, IN 18873-6168  |
+      | group_flatley@schmeler.io                          |
+      | 1-340-696-9662 x7745                               |
+      | http://abshire.com/ruthann.welch                   |
+      | 87268 Barrows Station, Blockchester, IN 18873-6168 |
 
   @file-download
   Scenario: Download the supplier spreadsheet

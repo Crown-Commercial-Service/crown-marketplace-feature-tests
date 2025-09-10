@@ -47,10 +47,10 @@ Feature: Legal services - Central governemnt - Lot 2 - Suppliers
     And the 'Paralegal, Legal Assistant' hourly rate is '£65.00'
     And the 'LMP (Legal project manager)' hourly rate is '£200.00'
     And the contact details for the supplier are:
-      | bernhard.and.wehner.orn@kuvalis.com                     |
-      | 957.291.1622 x25202                                     |
-      | http://orn.org/patrice.connelly                         |
-      | Suite 264 78774 Sandy Hills, West Melvinfurt, AK 29387  |
+      | bernhard.and.wehner.orn@kuvalis.com                    |
+      | 957.291.1622 x25202                                    |
+      | http://orn.org/patrice.connelly                        |
+      | Suite 264 78774 Sandy Hills, West Melvinfurt, AK 29387 |
 
   Scenario: Check the supplier data - Non SME
     Given I click on 'MOSCISKI, LABADIE AND REMPEL'

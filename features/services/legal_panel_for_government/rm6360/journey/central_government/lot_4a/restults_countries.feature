@@ -27,17 +27,17 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Results with
     Then I am on the 'Supplier results' page
     And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
-      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
-      | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
-      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
-      | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                    | http://blickgroup.test/tiffiny                    |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/avis.swift |
+      | EMARD LLC                      | http://emardllc.example/jackson.pacocha           |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                    | http://johnsonllc.example/gail                    |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/rossie      |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/lucienne_dare      |
+      | SMITH-DOYLE                    | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde      |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram           |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -48,24 +48,24 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Results with
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
-      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
-      | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
-      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
-      | KILBACK-ERNSER                  | http://kilback-ernser.test/lilla                  |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
-      | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                    | http://blickgroup.test/tiffiny                    |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/avis.swift |
+      | EMARD LLC                      | http://emardllc.example/jackson.pacocha           |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                    | http://johnsonllc.example/gail                    |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/rossie      |
+      | KILBACK-ERNSER                 | http://kilback-ernser.test/lilla                  |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/lucienne_dare      |
+      | SMITH-DOYLE                    | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde      |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram           |
 
   Scenario: Country selection changes the results
     Given I click on the 'Back' back link
     Then I am on the 'Select the legal services you need' page
     Given I click on the 'Back' back link
-     Then I am on the 'Select the countries for your requirement' page
+    Then I am on the 'Select the countries for your requirement' page
     And I deselect all the items
     When I check the following items:
       | Burundi |
@@ -78,18 +78,18 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Results with
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                   |
-      | BLICK GROUP                     | http://blickgroup.test/tiffiny                      |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift   |
-      | EMARD LLC                       | http://emardllc.example/jackson.pacocha             |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann             |
-      | JOHNSON LLC                     | http://johnsonllc.example/gail                      |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie        |
-      | LARSON, KLEIN AND WUNSCH        | http://larsonkleinandwunsch.example/lynsey_leffler  |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare        |
-      | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell           |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde        |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram             |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                  |
+      | BLICK GROUP                    | http://blickgroup.test/tiffiny                     |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/avis.swift  |
+      | EMARD LLC                      | http://emardllc.example/jackson.pacocha            |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/loriann            |
+      | JOHNSON LLC                    | http://johnsonllc.example/gail                     |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/rossie       |
+      | LARSON, KLEIN AND WUNSCH       | http://larsonkleinandwunsch.example/lynsey_leffler |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/lucienne_dare       |
+      | SMITH-DOYLE                    | http://smith-doyle.example/genny_oconnell          |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde       |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram            |
 
   Scenario: Going back from a supplier
     And I click on 'SMITH-DOYLE'
@@ -99,17 +99,17 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Results with
     Then I am on the 'Supplier results' page
     And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
-      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
-      | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
-      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
-      | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                    | http://blickgroup.test/tiffiny                    |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/avis.swift |
+      | EMARD LLC                      | http://emardllc.example/jackson.pacocha           |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                    | http://johnsonllc.example/gail                    |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/rossie      |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/lucienne_dare      |
+      | SMITH-DOYLE                    | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde      |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram           |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -118,14 +118,14 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Results with
     Then I am on the 'Supplier results' page
     And I should see that '11' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/quincy                 |
-      | BLICK GROUP                     | http://blickgroup.test/tiffiny                    |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/avis.swift |
-      | EMARD LLC                       | http://emardllc.example/jackson.pacocha           |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/loriann           |
-      | JOHNSON LLC                     | http://johnsonllc.example/gail                    |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/rossie      |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/lucienne_dare      |
-      | SMITH-DOYLE                     | http://smith-doyle.example/genny_oconnell         |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/clay_jerde      |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/abram           |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                 |
+      | BLICK GROUP                    | http://blickgroup.test/tiffiny                    |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/avis.swift |
+      | EMARD LLC                      | http://emardllc.example/jackson.pacocha           |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/loriann           |
+      | JOHNSON LLC                    | http://johnsonllc.example/gail                    |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/rossie      |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/lucienne_dare      |
+      | SMITH-DOYLE                    | http://smith-doyle.example/genny_oconnell         |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde      |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram           |

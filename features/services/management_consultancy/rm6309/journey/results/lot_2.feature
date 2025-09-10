@@ -26,71 +26,71 @@ Feature: Management Consultancy - Lot 2 - Strategy and Policy - Results
     Then I am on the 'Supplier results' page
     And I should see that '32' companies can provide consultants
     And the selected suppliers are:
-      | BASHIRIAN, BODE AND STEUBER     |
-      | BAYER-KEMMER                    |
-      | BOEHM-JENKINS                   |
-      | BRUEN-WITTING                   |
-      | CRONA-ZIEME                     |
-      | DURGAN AND SONS                 |
-      | FARRELL AND SONS                |
-      | FISHER-DECKOW                   |
-      | GRAHAM, BREKKE AND HAMILL       |
-      | GRIMES-KUHLMAN                  |
-      | GUTMANN, LEMKE AND JOHNSTON     |
-      | HAAG AND SONS                   |
-      | HARTMANN-LEGROS                 |
-      | HARVEY-COLLINS                  |
-      | HILLL, HICKLE AND BODE          |
-      | HIRTHE INC                      |
-      | KUPHAL, JOHNSTON AND SCHROEDER  |
-      | LEBSACK, KOVACEK AND GOYETTE    |
-      | LEDNER-MAYER                    |
-      | LUEILWITZ-WAELCHI               |
-      | NICOLAS AND SONS                |
-      | PARISIAN AND SONS               |
-      | PFEFFER INC                     |
-      | ROBEL GROUP                     |
-      | RODRIGUEZ AND SONS              |
+      | BASHIRIAN, BODE AND STEUBER    |
+      | BAYER-KEMMER                   |
+      | BOEHM-JENKINS                  |
+      | BRUEN-WITTING                  |
+      | CRONA-ZIEME                    |
+      | DURGAN AND SONS                |
+      | FARRELL AND SONS               |
+      | FISHER-DECKOW                  |
+      | GRAHAM, BREKKE AND HAMILL      |
+      | GRIMES-KUHLMAN                 |
+      | GUTMANN, LEMKE AND JOHNSTON    |
+      | HAAG AND SONS                  |
+      | HARTMANN-LEGROS                |
+      | HARVEY-COLLINS                 |
+      | HILLL, HICKLE AND BODE         |
+      | HIRTHE INC                     |
+      | KUPHAL, JOHNSTON AND SCHROEDER |
+      | LEBSACK, KOVACEK AND GOYETTE   |
+      | LEDNER-MAYER                   |
+      | LUEILWITZ-WAELCHI              |
+      | NICOLAS AND SONS               |
+      | PARISIAN AND SONS              |
+      | PFEFFER INC                    |
+      | ROBEL GROUP                    |
+      | RODRIGUEZ AND SONS             |
     And I click on 'Next'
     Then I am on the 'Supplier results' page
     And I should see that '32' companies can provide consultants
     And the selected suppliers are:
-      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG  |
-      | SCHILLER-SCHAMBERGER                      |
-      | SCHMIDT, MARQUARDT AND HAMMES             |
-      | SCHUPPE INC                               |
-      | SMITH AND SONS                            |
-      | WEBER GROUP                               |
-      | WILLIAMSON GROUP                          |
+      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG |
+      | SCHILLER-SCHAMBERGER                     |
+      | SCHMIDT, MARQUARDT AND HAMMES            |
+      | SCHUPPE INC                              |
+      | SMITH AND SONS                           |
+      | WEBER GROUP                              |
+      | WILLIAMSON GROUP                         |
     And I click on 'Previous'
     Then I am on the 'Supplier results' page
     And I should see that '32' companies can provide consultants
     And the selected suppliers are:
-      | BASHIRIAN, BODE AND STEUBER     |
-      | BAYER-KEMMER                    |
-      | BOEHM-JENKINS                   |
-      | BRUEN-WITTING                   |
-      | CRONA-ZIEME                     |
-      | DURGAN AND SONS                 |
-      | FARRELL AND SONS                |
-      | FISHER-DECKOW                   |
-      | GRAHAM, BREKKE AND HAMILL       |
-      | GRIMES-KUHLMAN                  |
-      | GUTMANN, LEMKE AND JOHNSTON     |
-      | HAAG AND SONS                   |
-      | HARTMANN-LEGROS                 |
-      | HARVEY-COLLINS                  |
-      | HILLL, HICKLE AND BODE          |
-      | HIRTHE INC                      |
-      | KUPHAL, JOHNSTON AND SCHROEDER  |
-      | LEBSACK, KOVACEK AND GOYETTE    |
-      | LEDNER-MAYER                    |
-      | LUEILWITZ-WAELCHI               |
-      | NICOLAS AND SONS                |
-      | PARISIAN AND SONS               |
-      | PFEFFER INC                     |
-      | ROBEL GROUP                     |
-      | RODRIGUEZ AND SONS              |
+      | BASHIRIAN, BODE AND STEUBER    |
+      | BAYER-KEMMER                   |
+      | BOEHM-JENKINS                  |
+      | BRUEN-WITTING                  |
+      | CRONA-ZIEME                    |
+      | DURGAN AND SONS                |
+      | FARRELL AND SONS               |
+      | FISHER-DECKOW                  |
+      | GRAHAM, BREKKE AND HAMILL      |
+      | GRIMES-KUHLMAN                 |
+      | GUTMANN, LEMKE AND JOHNSTON    |
+      | HAAG AND SONS                  |
+      | HARTMANN-LEGROS                |
+      | HARVEY-COLLINS                 |
+      | HILLL, HICKLE AND BODE         |
+      | HIRTHE INC                     |
+      | KUPHAL, JOHNSTON AND SCHROEDER |
+      | LEBSACK, KOVACEK AND GOYETTE   |
+      | LEDNER-MAYER                   |
+      | LUEILWITZ-WAELCHI              |
+      | NICOLAS AND SONS               |
+      | PARISIAN AND SONS              |
+      | PFEFFER INC                    |
+      | ROBEL GROUP                    |
+      | RODRIGUEZ AND SONS             |
 
   Scenario: Going back from a supplier
     And I click on 'WILLIAMSON GROUP'

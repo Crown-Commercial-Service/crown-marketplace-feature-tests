@@ -102,12 +102,12 @@ Feature: Supply Teachers - Agency results - Fixed term - Results by length - Pro
       | Postcode: SW1A 1AA              |
       | Search distance: 25 miles       |
     And the number of months in the results is '<number_of_months>'
-    
+
     Examples:
-      | date        | number_of_months  |
-      | 01/01/2022  | 0                 |
-      | 16/01/2022  | 0                 |
-      | 17/01/2022  | 0.5               |
-      | 30/01/2022  | 0.5               |
-      | 01/02/2022  | 1                 |
-      | 18/04/2022  | 3.5               |
+      | date       | number_of_months |
+      | 01/01/2022 | 0                |
+      | 16/01/2022 | 0                |
+      | 17/01/2022 | 0.5              |
+      | 30/01/2022 | 0.5              |
+      | 01/02/2022 | 1                |
+      | 18/04/2022 | 3.5              |

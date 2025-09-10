@@ -43,10 +43,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 1 - Suppliers
     And the 'Trainee/Legal Apprentice' hourly rate is '£105.00'
     And the 'Paralegal, Legal Assistant' hourly rate is '£70.00'
     And the contact details for the supplier are:
-      | murphy.llc@friesen.test                                   |
-      | 240.166.6354                                              |
-      | http://murphyllc.test/alan                                |
-      | Suite 873 91400 Britany Isle, Windlerland, RI 32195-7620  |
+      | murphy.llc@friesen.test                                  |
+      | 240.166.6354                                             |
+      | http://murphyllc.test/alan                               |
+      | Suite 873 91400 Britany Isle, Windlerland, RI 32195-7620 |
     And the prospectus link is 'http://murphyllc.test/troy'
 
   Scenario: Check the supplier data - Non SME

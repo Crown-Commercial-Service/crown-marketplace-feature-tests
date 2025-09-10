@@ -10,28 +10,28 @@ Feature: Legal Panel for Government - RM6360 - Sign in to my account - Validatio
   Scenario: I sign in to my account - missing parameters
     And I click on the 'Sign in' button
     Then I should see the following error messages:
-      | You must provide your email address in the correct format, like name@example.com  |
-      | You must provide your password                                                    |
-      
+      | You must provide your email address in the correct format, like name@example.com |
+      | You must provide your password                                                   |
+
   Scenario Outline: I sign in to my account - email format wrong - Email <email>
     And I enter the following details into the form:
-      | Email     | <email>  |
-      | Password  | ValidPassword1! |
+      | Email    | <email>         |
+      | Password | ValidPassword1! |
     And I click on the 'Sign in' button
     Then I should see the following error messages:
-      | You must provide your email address in the correct format, like name@example.com  |
+      | You must provide your email address in the correct format, like name@example.com |
 
     Examples:
-      | email   |  
+      | email   |
       | local@  |
       | @domain |
       | @       |
-                                                 
+
   Scenario: I sign in to my account - cookies disabled
     And my cookies are disabled
     And I enter the following details into the form:
-      | Email     | test@email.com  |
-      | Password  | ValidPassword1! |
+      | Email    | test@email.com  |
+      | Password | ValidPassword1! |
     And I click on the 'Sign in' button
     Then I should see the following error messages:
-      | Your browser must have cookies enabled  |
+      | Your browser must have cookies enabled |

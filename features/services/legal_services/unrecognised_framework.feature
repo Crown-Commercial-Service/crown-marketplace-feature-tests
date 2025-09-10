@@ -17,7 +17,7 @@ Feature: Legal Services - Start pages - With an unrecognised framework
     And I click on 'RM6240'
     Then I am on the 'Find legal services for the wider public sector' page
     And the framework is 'RM6240'
-  
+
   Scenario: Go to an unrecognised famework in the admin section - logged out
     When I go to '/legal-services/RM0172/admin'
     Then I am on the 'The web address contained an unrecognised framework' page

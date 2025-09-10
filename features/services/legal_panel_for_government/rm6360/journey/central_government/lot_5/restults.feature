@@ -12,8 +12,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Results
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 5 - Rail Legal Services'
     When I check the following items:
-      | Pensions law  |
-      | Planning law  |
+      | Pensions law |
+      | Planning law |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government

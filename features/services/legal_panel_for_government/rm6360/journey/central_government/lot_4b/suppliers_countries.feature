@@ -16,29 +16,29 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4b - Results
     Then I am on the 'Select the countries for your requirement' page
     And the sub title is 'Lot 4b - International Trade Disputes'
     When I check the following items:
-      | Algeria         |
-      | Cayman Islands  |
+      | Algeria        |
+      | Cayman Islands |
     And I click on 'Continue'
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 4b - International Trade Disputes'
     When I check the following items:
-      | Wider trading arrangements  |
+      | Wider trading arrangements |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | BLICK GROUP                     | http://blickgroup.test/odis_schneider           |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/emile    |
-      | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/manual         |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/milton.klein    |
-      | JOHNSON LLC                     | http://johnsonllc.example/rima                  |
-      | PARKER, DIETRICH AND TREMBLAY   | http://parkerdietrichandtremblay.example/leana  |
-      | RUECKER AND SONS                | http://rueckerandsons.example/edmond_upton      |
-      | RUSSEL AND SONS                 | http://russelandsons.example/josiah             |
-      | SHIELDS-D'AMORE                 | http://shields-damore.example/piedad.collier    |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/corie         |
-      | TOY-ROBERTS                     | http://toy-roberts.example/tiffanie_bruen       |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/dustin        |
+      | BLICK GROUP                    | http://blickgroup.test/odis_schneider          |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/emile   |
+      | DECKOW, KIEHN AND ORN          | http://deckowkiehnandorn.example/manual        |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/milton.klein   |
+      | JOHNSON LLC                    | http://johnsonllc.example/rima                 |
+      | PARKER, DIETRICH AND TREMBLAY  | http://parkerdietrichandtremblay.example/leana |
+      | RUECKER AND SONS               | http://rueckerandsons.example/edmond_upton     |
+      | RUSSEL AND SONS                | http://russelandsons.example/josiah            |
+      | SHIELDS-D'AMORE                | http://shields-damore.example/piedad.collier   |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/corie        |
+      | TOY-ROBERTS                    | http://toy-roberts.example/tiffanie_bruen      |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/dustin       |
     Given I click on "SHIELDS-D'AMORE"
     Then I am on the "SHIELDS-D'AMORE" page
     And I click on 'Algeria'

@@ -74,30 +74,30 @@ Feature: Legal services - Central governemnt - Lot 2 - Results
     Then I am on the 'Supplier results' page
     And I should see that '24' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNHARD, WEHNER AND ORN          |
-      | BERNIER, BRUEN AND RENNER         |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | EBERT, BASHIRIAN AND MILLER       |
-      | FLATLEY GROUP                     |
-      | GERLACH AND SONS                  |
-      | GOLDNER GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | GREENFELDER LLC                   |
-      | HESSEL-QUITZON                    |
-      | HYATT, ZIEMANN AND EMARD          |
-      | LUETTGEN-RIPPIN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | MOSCISKI, LABADIE AND REMPEL      |
-      | PAUCEK, BUCKRIDGE AND GULGOWSKI   |
-      | PFEFFER GROUP                     |
-      | STEUBER, THOMPSON AND LANG        |
-      | STRACKE GROUP                     |
-      | THOMPSON AND SONS                 |
-      | TORPHY LLC                        |
-      | VEUM-LOWE                         |
-      | WYMAN-O'CONNER                    |
-      | ZULAUF, LABADIE AND MCCULLOUGH    |
+      | BERNHARD, WEHNER AND ORN         |
+      | BERNIER, BRUEN AND RENNER        |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | EBERT, BASHIRIAN AND MILLER      |
+      | FLATLEY GROUP                    |
+      | GERLACH AND SONS                 |
+      | GOLDNER GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | GREENFELDER LLC                  |
+      | HESSEL-QUITZON                   |
+      | HYATT, ZIEMANN AND EMARD         |
+      | LUETTGEN-RIPPIN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | MOSCISKI, LABADIE AND REMPEL     |
+      | PAUCEK, BUCKRIDGE AND GULGOWSKI  |
+      | PFEFFER GROUP                    |
+      | STEUBER, THOMPSON AND LANG       |
+      | STRACKE GROUP                    |
+      | THOMPSON AND SONS                |
+      | TORPHY LLC                       |
+      | VEUM-LOWE                        |
+      | WYMAN-O'CONNER                   |
+      | ZULAUF, LABADIE AND MCCULLOUGH   |
 
   Scenario: Jursidiction selection changes the results
     Given I click on the 'Back' back link

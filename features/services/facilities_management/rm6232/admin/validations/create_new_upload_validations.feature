@@ -24,9 +24,9 @@ Feature: Facilities Management - RM6232 - Admin - Create new upload - Validation
     And I select the file 'features/services/facilities_management/rm6232/admin/validations/create_new_upload_validations.feature' to upload for 'Supplier regions'
     And I click on 'Upload data'
     Then I should see the following error messages:
-      | The 'Supplier details' file must be an XLSX   |
-      | The 'Supplier services' file must be an XLSX  |
-      | The 'Supplier regions' file must be an XLSX   |
+      | The 'Supplier details' file must be an XLSX  |
+      | The 'Supplier services' file must be an XLSX |
+      | The 'Supplier regions' file must be an XLSX  |
 
   Scenario: Upload invalid spreadsheets
     And I select the file 'data/management_consultancy/rm6187/Supplier details.xlsx' to upload for 'Supplier details'
@@ -37,8 +37,8 @@ Feature: Facilities Management - RM6232 - Admin - Create new upload - Validation
     And I wait no longer than 20 seconds for the upload to finish
     And the status of the upload is 'Failed'
     And the details for the failed upload are:
-      | The 'Supplier details' file is missing sheets   | The 'Supplier details' file should have 1 sheet named 'RM6232 Suppliers Details'          |
-      | The 'Supplier services' file is missing sheets  | The 'Supplier services' file should have 9 sheets with the following names:               |
-      |                                                 | 'Lot 1a', 'Lot 1b', 'Lot 1c', 'Lot 2a', 'Lot 2b', 'Lot 2c', 'Lot 3a', 'Lot 3b', 'Lot 3c'  |
-      | The 'Supplier regions' file is missing sheets   | The 'Supplier regions' file should have 9 sheets with the following names:                |
-      |                                                 | 'Lot 1a', 'Lot 1b', 'Lot 1c', 'Lot 2a', 'Lot 2b', 'Lot 2c', 'Lot 3a', 'Lot 3b', 'Lot 3c'  |
+      | The 'Supplier details' file is missing sheets  | The 'Supplier details' file should have 1 sheet named 'RM6232 Suppliers Details'         |
+      | The 'Supplier services' file is missing sheets | The 'Supplier services' file should have 9 sheets with the following names:              |
+      |                                                | 'Lot 1a', 'Lot 1b', 'Lot 1c', 'Lot 2a', 'Lot 2b', 'Lot 2c', 'Lot 3a', 'Lot 3b', 'Lot 3c' |
+      | The 'Supplier regions' file is missing sheets  | The 'Supplier regions' file should have 9 sheets with the following names:               |
+      |                                                | 'Lot 1a', 'Lot 1b', 'Lot 1c', 'Lot 2a', 'Lot 2b', 'Lot 2c', 'Lot 3a', 'Lot 3b', 'Lot 3c' |

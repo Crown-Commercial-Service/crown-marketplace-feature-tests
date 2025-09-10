@@ -46,12 +46,12 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Service selec
     And the following items should appear in the basket:
       | Credit Insurance and Related Products |
     When I check the following items:
-      | Debt Capital Markets                  |
-      | Investment and Asset Management       |
-      | Merger and Acquisition Activity       |
-      | Restructuring/Insolvency              |
-      | Sovereign Debt Restructuring          |
-      | United State Securities & Regulatory  |
+      | Debt Capital Markets                 |
+      | Investment and Asset Management      |
+      | Merger and Acquisition Activity      |
+      | Restructuring/Insolvency             |
+      | Sovereign Debt Restructuring         |
+      | United State Securities & Regulatory |
     Then the basket should say '7 services selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -81,7 +81,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Service selec
       | Merger and Acquisition Activity       |
       | Project and Asset Finance             |
     When I deselect the following items:
-      | Project and Asset Finance             |
+      | Project and Asset Finance |
     Then the basket should say '5 services selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -91,8 +91,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Service selec
       | Equity Capital Markets                |
       | Merger and Acquisition Activity       |
     When I remove the following items from the basket:
-      | Equity Capital Markets                |
-      | Merger and Acquisition Activity       |
+      | Equity Capital Markets          |
+      | Merger and Acquisition Activity |
     Then the basket should say '3 services selected'
     And the remove all link should be visible
     And the following items should appear in the basket:

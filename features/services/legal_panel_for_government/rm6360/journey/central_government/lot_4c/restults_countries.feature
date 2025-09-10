@@ -16,8 +16,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
     Then I am on the 'Select the countries for your requirement' page
     And the sub title is 'Lot 4c - International Investment Disputes'
     When I check the following items:
-      | Malta   |
-      | Malawi  |
+      | Malta  |
+      | Malawi |
     And I click on 'Continue'
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 4c - International Investment Disputes'
@@ -66,10 +66,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results with
     Given I click on the 'Back' back link
     Then I am on the 'Select the legal services you need' page
     Given I click on the 'Back' back link
-     Then I am on the 'Select the countries for your requirement' page
+    Then I am on the 'Select the countries for your requirement' page
     And I deselect all the items
     When I check the following items:
-      | Taiwan  |
+      | Taiwan |
     And I click on 'Continue'
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 4c - International Investment Disputes'

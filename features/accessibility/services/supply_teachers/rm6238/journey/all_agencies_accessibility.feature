@@ -7,11 +7,11 @@ Feature: Supply Teachers - All agencies - Accessibility
     And I select 'A list of all agencies'
     And I click on 'Continue'
     Then I am on the 'Find an agency' page
-  
+
   Scenario: All agencies page
-    Then the page should be axe clean excluding ".ccs-contact-us"
-  
+    Then the page should pass the accessibility checks
+
   Scenario: Agency details page
     Given I click on the first agency
     And the sub title is Agency details
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks

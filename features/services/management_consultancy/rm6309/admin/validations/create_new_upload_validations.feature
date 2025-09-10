@@ -12,9 +12,9 @@ Feature: Management Consultancy - Admin - Create new upload - Validations
   Scenario: No files uploaded
     And I click on 'Upload data'
     Then I should see the following error messages:
-      | Select the 'Supplier details' file            |
-      | Select the 'Supplier rate cards' file         |
-      | Select the 'Supplier service offerings' file  |
+      | Select the 'Supplier details' file           |
+      | Select the 'Supplier rate cards' file        |
+      | Select the 'Supplier service offerings' file |
 
   Scenario: Incorrect extension uploaded
     And I select the file 'features/services/management_consultancy/rm6309/admin/validations/create_new_upload_validations.feature' to upload for 'Supplier details'
@@ -35,10 +35,10 @@ Feature: Management Consultancy - Admin - Create new upload - Validations
     And I wait no longer than 20 seconds for the upload to finish
     And the status of the upload is 'Failed'
     And the details for the failed upload are:
-      | The 'Supplier details' file is missing sheets           | The 'Supplier details' file should have 1 sheet with the following name: 'MCF4'       |
-      | The 'Supplier rate cards' file is missing sheets        | The 'Supplier rate cards' file should have 9 sheets with the following names:         |
-      |                                                         | 'MCF4 Lot 1', 'MCF4 Lot 2', 'MCF4 Lot 3', 'MCF4 Lot 4', 'MCF4 Lot 5', 'MCF4 Lot 6',   |
-      |                                                         | 'MCF4 Lot 7', 'MCF4 Lot 8', 'MCF4 Lot 9', 'MCF4 Lot 10'                               |
-      | The 'Supplier service offerings' file is missing sheets | The 'Supplier service offerings' file should have 9 sheets with the following names:  |
-      |                                                         | 'MCF4 Lot 1', 'MCF4 Lot 2', 'MCF4 Lot 3', 'MCF4 Lot 4', 'MCF4 Lot 5', 'MCF4 Lot 6',   |
-      |                                                         | 'MCF4 Lot 7', 'MCF4 Lot 8', 'MCF4 Lot 9', 'MCF4 Lot 10'                               |
+      | The 'Supplier details' file is missing sheets           | The 'Supplier details' file should have 1 sheet with the following name: 'MCF4'      |
+      | The 'Supplier rate cards' file is missing sheets        | The 'Supplier rate cards' file should have 9 sheets with the following names:        |
+      |                                                         | 'MCF4 Lot 1', 'MCF4 Lot 2', 'MCF4 Lot 3', 'MCF4 Lot 4', 'MCF4 Lot 5', 'MCF4 Lot 6',  |
+      |                                                         | 'MCF4 Lot 7', 'MCF4 Lot 8', 'MCF4 Lot 9', 'MCF4 Lot 10'                              |
+      | The 'Supplier service offerings' file is missing sheets | The 'Supplier service offerings' file should have 9 sheets with the following names: |
+      |                                                         | 'MCF4 Lot 1', 'MCF4 Lot 2', 'MCF4 Lot 3', 'MCF4 Lot 4', 'MCF4 Lot 5', 'MCF4 Lot 6',  |
+      |                                                         | 'MCF4 Lot 7', 'MCF4 Lot 8', 'MCF4 Lot 9', 'MCF4 Lot 10'                              |

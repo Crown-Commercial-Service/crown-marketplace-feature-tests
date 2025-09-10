@@ -2,7 +2,7 @@
 Feature: Legal Panel for Government - Admin - User reports
 
   @file-download
-  Scenario: I can generate and download a report  
+  Scenario: I can generate and download a report
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
     Then I am on the 'Admin dashboard' page
     And I click on 'User reports'

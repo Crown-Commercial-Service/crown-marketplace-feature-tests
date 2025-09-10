@@ -8,7 +8,7 @@ Feature: Facilities Management - Results accessibility
 
   Scenario: Select services page
     And I click on 'Show all sections'
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks
 
   Scenario: Select regions page
     And I click on 'Show all sections'
@@ -19,7 +19,7 @@ Feature: Facilities Management - Results accessibility
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks
 
   Scenario: Annual contract cost page
     And I click on 'Show all sections'
@@ -31,11 +31,11 @@ Feature: Facilities Management - Results accessibility
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks
 
   Scenario: Restuls page
     And I click on 'Show all sections'
@@ -47,11 +47,11 @@ Feature: Facilities Management - Results accessibility
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
     And I click on 'Continue'
     Then I am on the 'Results' page
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks

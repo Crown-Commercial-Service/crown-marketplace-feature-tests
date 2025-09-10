@@ -265,24 +265,24 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
     Then the basket should say '1 country selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | Afghanistan   |
+      | Afghanistan |
     When I check the following items:
-      | Colombia      |
-      | Gabon         |
-      | Macao         |
-      | Panama        |
-      | Vatican City  |
-      | Zimbabwe      |
+      | Colombia     |
+      | Gabon        |
+      | Macao        |
+      | Panama       |
+      | Vatican City |
+      | Zimbabwe     |
     Then the basket should say '7 countries selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | Afghanistan   |
-      | Colombia      |
-      | Gabon         |
-      | Macao         |
-      | Panama        |
-      | Vatican City  |
-      | Zimbabwe      |
+      | Afghanistan  |
+      | Colombia     |
+      | Gabon        |
+      | Macao        |
+      | Panama       |
+      | Vatican City |
+      | Zimbabwe     |
 
   @smoulder
   Scenario: Changing the selection will change the basket
@@ -303,7 +303,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
       | Suriname      |
       | Taiwan        |
     When I deselect the following items:
-      | Taiwan        |
+      | Taiwan |
     Then the basket should say '5 countries selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -313,8 +313,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
       | Madagascar    |
       | Suriname      |
     When I remove the following items from the basket:
-      | Madagascar    |
-      | Suriname      |
+      | Madagascar |
+      | Suriname   |
     Then the basket should say '3 countries selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -326,22 +326,22 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
 
   Scenario: Go back from services and change selection
     When I check the following items:
-      | Madagascar  |
-      | Tonga       |
-      | Tunisia     |
+      | Madagascar |
+      | Tonga      |
+      | Tunisia    |
     And I click on 'Continue'
     Then I am on the 'Select the legal services you need' page
     And I click on the 'Back' back link
     Then I am on the 'Select the countries for your requirement' page
     And the following items should appear in the basket:
-      | Madagascar  |
-      | Tonga       |
-      | Tunisia     |
+      | Madagascar |
+      | Tonga      |
+      | Tunisia    |
 
   @smoulder
   Scenario: Search for a country
     When I type the following details into the form:
-      | Start typing to find a country  | as |
+      | Start typing to find a country | as |
     Then I should see the following options for the lot:
       | Burkina Faso                              |
       | Christmas Island                          |
@@ -350,9 +350,9 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
       | St Helena, Ascension and Tristan da Cunha |
       | The Bahamas                               |
     When I enter the following details into the form:
-      | Start typing to find a country  | |
+      | Start typing to find a country |  |
     When I type the following details into the form:
-      | Start typing to find a country  | AS |
+      | Start typing to find a country | AS |
     Then I should see the following options for the lot:
       | Burkina Faso                              |
       | Christmas Island                          |
@@ -361,29 +361,29 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
       | St Helena, Ascension and Tristan da Cunha |
       | The Bahamas                               |
     When I enter the following details into the form:
-      | Start typing to find a country  | |
+      | Start typing to find a country |  |
     When I type the following details into the form:
-      | Start typing to find a country  | Brit |
+      | Start typing to find a country | Brit |
     Then I should see the following options for the lot:
-      | British Indian Ocean Territory  |
-      | British Virgin Islands          |
+      | British Indian Ocean Territory |
+      | British Virgin Islands         |
     When I type the following details into the form:
-      | Start typing to find a country  | ishi  |
+      | Start typing to find a country | ishi |
     Then I should see the following options for the lot:
-      | British Indian Ocean Territory  |
+      | British Indian Ocean Territory |
     When I enter the following details into the form:
-      | Start typing to find a country  | |
+      | Start typing to find a country |  |
     When I type the following details into the form:
-      | Start typing to find a country  | Greese |
+      | Start typing to find a country | Greese |
     Then I should see no options for the lot
     When I enter the following details into the form:
-      | Start typing to find a country  | |
+      | Start typing to find a country |  |
     When I type the following details into the form:
-      | Start typing to find a country  | Greece |
+      | Start typing to find a country | Greece |
     Then I should see the following options for the lot:
-      | Greece  |
+      | Greece |
     When I clear the form with backspaces:
-      | Start typing to find a country  |
+      | Start typing to find a country |
     Then I should see the following options for the lot:
       | Afghanistan                                  |
       | Åland Islands                                |

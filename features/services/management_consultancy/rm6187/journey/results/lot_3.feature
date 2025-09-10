@@ -30,68 +30,68 @@ Feature: Management Consultancy - Lot 3 - Complex and Transformation - Results
     Then I am on the 'Supplier results' page
     And I should see that '29' companies can provide consultants
     And the selected suppliers are:
-      | BARROWS AND SONS                  |
-      | BARTON-VON                        |
-      | BOGISICH, BAUMBACH AND KERTZMANN  |
-      | BRUEN LLC                         |
-      | DIBBERT-ANKUNDING                 |
-      | DURGAN INC                        |
-      | FISHER-DECKOW                     |
-      | FUNK-DONNELLY                     |
-      | GOYETTE-KOEPP                     |
-      | HAAG AND SONS                     |
-      | HARTMANN, REMPEL AND DARE         |
-      | HARVEY-COLLINS                    |
-      | HILLL, HICKLE AND BODE            |
-      | KESSLER AND SONS                  |
-      | KIEHN, BLICK AND FUNK             |
-      | KOELPIN LLC                       |
-      | KRAJCIK-ZIEMANN                   |
-      | KSHLERIN INC                      |
-      | KUHIC AND SONS                    |
-      | MCKENZIE LLC                      |
-      | NICOLAS AND SONS                  |
-      | REYNOLDS INC                      |
-      | REYNOLDS-HALVORSON                |
-      | SAWAYN-VON                        |
-      | SMITH AND SONS                    |
+      | BARROWS AND SONS                 |
+      | BARTON-VON                       |
+      | BOGISICH, BAUMBACH AND KERTZMANN |
+      | BRUEN LLC                        |
+      | DIBBERT-ANKUNDING                |
+      | DURGAN INC                       |
+      | FISHER-DECKOW                    |
+      | FUNK-DONNELLY                    |
+      | GOYETTE-KOEPP                    |
+      | HAAG AND SONS                    |
+      | HARTMANN, REMPEL AND DARE        |
+      | HARVEY-COLLINS                   |
+      | HILLL, HICKLE AND BODE           |
+      | KESSLER AND SONS                 |
+      | KIEHN, BLICK AND FUNK            |
+      | KOELPIN LLC                      |
+      | KRAJCIK-ZIEMANN                  |
+      | KSHLERIN INC                     |
+      | KUHIC AND SONS                   |
+      | MCKENZIE LLC                     |
+      | NICOLAS AND SONS                 |
+      | REYNOLDS INC                     |
+      | REYNOLDS-HALVORSON               |
+      | SAWAYN-VON                       |
+      | SMITH AND SONS                   |
     And I click on 'Next'
     Then I am on the 'Supplier results' page
     And I should see that '29' companies can provide consultants
     And the selected suppliers are:
-      | STIEDEMANN AND SONS           |
-      | TORP GROUP                    |
-      | ULLRICH, MONAHAN AND REICHEL  |
-      | WILLIAMSON GROUP              |
+      | STIEDEMANN AND SONS          |
+      | TORP GROUP                   |
+      | ULLRICH, MONAHAN AND REICHEL |
+      | WILLIAMSON GROUP             |
     And I click on 'Previous'
     Then I am on the 'Supplier results' page
     And I should see that '29' companies can provide consultants
     And the selected suppliers are:
-      | BARROWS AND SONS                  |
-      | BARTON-VON                        |
-      | BOGISICH, BAUMBACH AND KERTZMANN  |
-      | BRUEN LLC                         |
-      | DIBBERT-ANKUNDING                 |
-      | DURGAN INC                        |
-      | FISHER-DECKOW                     |
-      | FUNK-DONNELLY                     |
-      | GOYETTE-KOEPP                     |
-      | HAAG AND SONS                     |
-      | HARTMANN, REMPEL AND DARE         |
-      | HARVEY-COLLINS                    |
-      | HILLL, HICKLE AND BODE            |
-      | KESSLER AND SONS                  |
-      | KIEHN, BLICK AND FUNK             |
-      | KOELPIN LLC                       |
-      | KRAJCIK-ZIEMANN                   |
-      | KSHLERIN INC                      |
-      | KUHIC AND SONS                    |
-      | MCKENZIE LLC                      |
-      | NICOLAS AND SONS                  |
-      | REYNOLDS INC                      |
-      | REYNOLDS-HALVORSON                |
-      | SAWAYN-VON                        |
-      | SMITH AND SONS                    |
+      | BARROWS AND SONS                 |
+      | BARTON-VON                       |
+      | BOGISICH, BAUMBACH AND KERTZMANN |
+      | BRUEN LLC                        |
+      | DIBBERT-ANKUNDING                |
+      | DURGAN INC                       |
+      | FISHER-DECKOW                    |
+      | FUNK-DONNELLY                    |
+      | GOYETTE-KOEPP                    |
+      | HAAG AND SONS                    |
+      | HARTMANN, REMPEL AND DARE        |
+      | HARVEY-COLLINS                   |
+      | HILLL, HICKLE AND BODE           |
+      | KESSLER AND SONS                 |
+      | KIEHN, BLICK AND FUNK            |
+      | KOELPIN LLC                      |
+      | KRAJCIK-ZIEMANN                  |
+      | KSHLERIN INC                     |
+      | KUHIC AND SONS                   |
+      | MCKENZIE LLC                     |
+      | NICOLAS AND SONS                 |
+      | REYNOLDS INC                     |
+      | REYNOLDS-HALVORSON               |
+      | SAWAYN-VON                       |
+      | SMITH AND SONS                   |
 
   Scenario: Going back from a supplier
     And I click on 'HARVEY-COLLINS'

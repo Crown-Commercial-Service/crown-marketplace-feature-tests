@@ -17,7 +17,7 @@ Feature: Legal Panel for Government - Start pages - With an unrecognised framewo
     And I click on 'RM6360'
     Then I am on the 'Find legal services for government' page
     And the framework is 'RM6360'
-  
+
   Scenario: Go to an unrecognised famework in the admin section - logged out
     When I go to '/legal-panel-for-government/RM0172/admin'
     Then I am on the 'The web address contained an unrecognised framework' page
