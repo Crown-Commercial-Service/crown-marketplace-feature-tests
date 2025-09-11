@@ -52,10 +52,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
     And the 'Senior Modeller, Senior Econometrician, Senior Analyst' hourly rate is '£210.00'
     And the 'Modeller, Econometrician, Analyst, Associate Analyst' hourly rate is '£175.00'
     And the contact details for the supplier are:
-      | kiehn.deckow.and.orn@breitenberg-ratke.example  |
-      | 221.969.0798                                    |
-      | http://deckowkiehnandorn.example/keila_sporer   |
-      | 37596 Bogan Tunnel, Rueckerland, NH 72357       |
+      | kiehn.deckow.and.orn@breitenberg-ratke.example |
+      | 221.969.0798                                   |
+      | http://deckowkiehnandorn.example/keila_sporer  |
+      | 37596 Bogan Tunnel, Rueckerland, NH 72357      |
     And the prospectus link is 'http://deckowkiehnandorn.example/freddie_oberbrunner'
 
   Scenario: Check the supplier data - Non SME

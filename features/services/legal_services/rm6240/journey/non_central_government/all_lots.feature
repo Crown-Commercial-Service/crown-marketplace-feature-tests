@@ -7,7 +7,7 @@ Feature: Legal services - Non central governemnt - Results
     And I select 'No'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
-  
+
   Scenario: Can view results of the services - Lot 1 - Full service provision
     And I select 'Lot 1 - Full service provision'
     And I click on 'Continue'

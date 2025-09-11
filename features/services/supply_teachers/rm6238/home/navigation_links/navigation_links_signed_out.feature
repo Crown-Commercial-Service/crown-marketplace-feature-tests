@@ -23,7 +23,7 @@ Feature: Supply Teachers - Navigation links when signed out
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
 
-  Scenario: Sign in page 
+  Scenario: Sign in page
     And I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
     And I click on 'Sign in with CCS'
@@ -32,7 +32,6 @@ Feature: Supply Teachers - Navigation links when signed out
       | Sign in       |
     And I click on 'Back to start'
     And I am on the 'Find supply teachers and agency workers' page
-
 
   Scenario: Cookies policy
     When I click on 'Cookie policy'

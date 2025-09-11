@@ -16,8 +16,8 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -44,8 +44,8 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '999999' for the annual contract cost
@@ -65,15 +65,15 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
 
   Scenario: Select only total services
     When I check the following items:
-      | End-User Accommodation Services       |
-      | Third Party Claims                    |
-      | Special Need or Disability Adaptions  |
+      | End-User Accommodation Services      |
+      | Third Party Claims                   |
+      | Special Need or Disability Adaptions |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -93,16 +93,16 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
 
   Scenario: Select hard and total services
     When I check the following items:
-      | Lifts, hoists and conveyance systems maintenance  |
-      | Radon Gas Management Services                     |
-      | Occupancy Management                              |
-      | Housing Stock Management                          |
+      | Lifts, hoists and conveyance systems maintenance |
+      | Radon Gas Management Services                    |
+      | Occupancy Management                             |
+      | Housing Stock Management                         |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -130,8 +130,8 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -151,16 +151,16 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
 
   Scenario: Select soft and total services
     When I check the following items:
-      | Specialist Health FM Services                           |
-      | Reactive cleaning (outside cleaning operational hours)  |
-      | Accommodation Stores Service                            |
-      | Occupancy Management                                    |
+      | Specialist Health FM Services                          |
+      | Reactive cleaning (outside cleaning operational hours) |
+      | Accommodation Stores Service                           |
+      | Occupancy Management                                   |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -188,8 +188,8 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -209,15 +209,15 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
 
   Scenario: Select total and hard/soft services
     When I check the following items:
-      | CAFM system                                       |
-      | Management of Billable Works                      |
-      | Housing and residential accommodation management  |
+      | CAFM system                                      |
+      | Management of Billable Works                     |
+      | Housing and residential accommodation management |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -237,16 +237,16 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
 
   Scenario: Select hard and soft services
     When I check the following items:
-      | Window cleaning (external)              |
-      | Retail Services / Convenience Store     |
-      | Condition surveys                       |
-      | Energy Performance Certificates (EPCs)  |
+      | Window cleaning (external)             |
+      | Retail Services / Convenience Store    |
+      | Condition surveys                      |
+      | Energy Performance Certificates (EPCs) |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost
@@ -277,8 +277,8 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley and Durham  |
-      | Essex                   |
+      | Tees Valley and Durham |
+      | Essex                  |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '1499999' for the annual contract cost

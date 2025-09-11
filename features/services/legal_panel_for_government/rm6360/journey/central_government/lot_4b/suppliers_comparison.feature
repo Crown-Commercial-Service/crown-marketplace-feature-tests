@@ -22,68 +22,68 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4b - Suppliers co
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | BLICK GROUP                     | http://blickgroup.test/odis_schneider           |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/emile    |
-      | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/manual         |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/milton.klein    |
-      | JOHNSON LLC                     | http://johnsonllc.example/rima                  |
-      | MCCLURE, THIEL AND FRAMI        | http://mcclurethielandframi.test/darius_stanton |
-      | ROBERTS-ZEMLAK                  | http://roberts-zemlak.example/armandina_funk    |
-      | RUECKER AND SONS                | http://rueckerandsons.example/edmond_upton      |
-      | RUSSEL AND SONS                 | http://russelandsons.example/josiah             |
-      | SHIELDS-D'AMORE                 | http://shields-damore.example/piedad.collier    |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/corie         |
-      | TOY-ROBERTS                     | http://toy-roberts.example/tiffanie_bruen       |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/dustin        |
-      | ZIEMANN-CUMMERATA               | http://ziemann-cummerata.test/chuck.yost        |
+      | BLICK GROUP                    | http://blickgroup.test/odis_schneider           |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/emile    |
+      | DECKOW, KIEHN AND ORN          | http://deckowkiehnandorn.example/manual         |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/milton.klein    |
+      | JOHNSON LLC                    | http://johnsonllc.example/rima                  |
+      | MCCLURE, THIEL AND FRAMI       | http://mcclurethielandframi.test/darius_stanton |
+      | ROBERTS-ZEMLAK                 | http://roberts-zemlak.example/armandina_funk    |
+      | RUECKER AND SONS               | http://rueckerandsons.example/edmond_upton      |
+      | RUSSEL AND SONS                | http://russelandsons.example/josiah             |
+      | SHIELDS-D'AMORE                | http://shields-damore.example/piedad.collier    |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/corie         |
+      | TOY-ROBERTS                    | http://toy-roberts.example/tiffanie_bruen       |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/dustin        |
+      | ZIEMANN-CUMMERATA              | http://ziemann-cummerata.test/chuck.yost        |
     And I click on 'Compare the supplier rates'
     Then I am on the 'Select suppliers for comparison' page
     When I check the following items:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | DECKOW, KIEHN AND ORN           |
-      | FISHER-BASHIRIAN                |
+      | COLLIER, AUFDERHAR AND VOLKMAN |
+      | DECKOW, KIEHN AND ORN          |
+      | FISHER-BASHIRIAN               |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I should see that '3' suppliers have been selected for comparison
 
   Scenario: The rates table is displayed for comparison
     Then I should see the rates in the comparison table:
-      | Supplier                                       | Senior Counsel, Senior Partner (20 years +PQE) | Partner  | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive  | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
-      | COLLIER, AUFDERHAR AND VOLKMAN                 | £270.00                                        | £240.00  | £210.00                              | £180.00                                                    | £150.00                              | £120.00                                                            | £90.00                   | £60.00                     | £150.00        | £120.00                                                          | £180.00                                                | £150.00                                              |
-      | DECKOW, KIEHN AND ORN                          | £225.00                                        | £200.00  | £175.00                              | £150.00                                                    | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     | £125.00        | £100.00                                                          | £150.00                                                | £125.00                                              |
-      | FISHER-BASHIRIAN                               | £270.00                                        | £240.00  | £210.00                              | £180.00                                                    | £150.00                              | £120.00                                                            | £90.00                   | £60.00                     | £150.00        | £120.00                                                          | £180.00                                                | £150.00                                              |
+      | Supplier                       | Senior Counsel, Senior Partner (20 years +PQE) | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
+      | COLLIER, AUFDERHAR AND VOLKMAN | £270.00                                        | £240.00 | £210.00                              | £180.00                                                   | £150.00                              | £120.00                                                            | £90.00                   | £60.00                     | £150.00        | £120.00                                                          | £180.00                                                | £150.00                                              |
+      | DECKOW, KIEHN AND ORN          | £225.00                                        | £200.00 | £175.00                              | £150.00                                                   | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     | £125.00        | £100.00                                                          | £150.00                                                | £125.00                                              |
+      | FISHER-BASHIRIAN               | £270.00                                        | £240.00 | £210.00                              | £180.00                                                   | £150.00                              | £120.00                                                            | £90.00                   | £60.00                     | £150.00        | £120.00                                                          | £180.00                                                | £150.00                                              |
 
   Scenario: Changing selection changes the results
     And I click on the 'Back' back link
     Then I am on the 'Select suppliers for comparison' page
     And I deselect all the items
     When I check the following items:
-      | WELCH, PAGAC AND SWIFT          |
-      | ZIEMANN-CUMMERATA               |
+      | WELCH, PAGAC AND SWIFT |
+      | ZIEMANN-CUMMERATA      |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I should see that '2' suppliers have been selected for comparison
     Then I should see the rates in the comparison table:
-      | Supplier                                       | Senior Counsel, Senior Partner (20 years +PQE) | Partner  | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive  | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
-      | WELCH, PAGAC AND SWIFT                         | £315.00                                        | £280.00  | £245.00                              | £210.00                                                    | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     | £175.00        | £140.00                                                          | £210.00                                                | £175.00                                              |
-      | ZIEMANN-CUMMERATA                              | £225.00                                        | £200.00  | £175.00                              | £150.00                                                    | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     | £125.00        |                                                                  |                                                        |                                                      |
+      | Supplier               | Senior Counsel, Senior Partner (20 years +PQE) | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
+      | WELCH, PAGAC AND SWIFT | £315.00                                        | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     | £175.00        | £140.00                                                          | £210.00                                                | £175.00                                              |
+      | ZIEMANN-CUMMERATA      | £225.00                                        | £200.00 | £175.00                              | £150.00                                                   | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     | £125.00        |                                                                  |                                                        |                                                      |
 
   Scenario: Back to results
     When I click on 'Back to results'
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | BLICK GROUP                     | http://blickgroup.test/odis_schneider           |
-      | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/emile    |
-      | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/manual         |
-      | FISHER-BASHIRIAN                | http://fisher-bashirian.example/milton.klein    |
-      | JOHNSON LLC                     | http://johnsonllc.example/rima                  |
-      | MCCLURE, THIEL AND FRAMI        | http://mcclurethielandframi.test/darius_stanton |
-      | ROBERTS-ZEMLAK                  | http://roberts-zemlak.example/armandina_funk    |
-      | RUECKER AND SONS                | http://rueckerandsons.example/edmond_upton      |
-      | RUSSEL AND SONS                 | http://russelandsons.example/josiah             |
-      | SHIELDS-D'AMORE                 | http://shields-damore.example/piedad.collier    |
-      | STARK, ADAMS AND KOZEY          | http://starkadamsandkozey.example/corie         |
-      | TOY-ROBERTS                     | http://toy-roberts.example/tiffanie_bruen       |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/dustin        |
-      | ZIEMANN-CUMMERATA               | http://ziemann-cummerata.test/chuck.yost        |
+      | BLICK GROUP                    | http://blickgroup.test/odis_schneider           |
+      | COLLIER, AUFDERHAR AND VOLKMAN | http://collieraufderharandvolkman.test/emile    |
+      | DECKOW, KIEHN AND ORN          | http://deckowkiehnandorn.example/manual         |
+      | FISHER-BASHIRIAN               | http://fisher-bashirian.example/milton.klein    |
+      | JOHNSON LLC                    | http://johnsonllc.example/rima                  |
+      | MCCLURE, THIEL AND FRAMI       | http://mcclurethielandframi.test/darius_stanton |
+      | ROBERTS-ZEMLAK                 | http://roberts-zemlak.example/armandina_funk    |
+      | RUECKER AND SONS               | http://rueckerandsons.example/edmond_upton      |
+      | RUSSEL AND SONS                | http://russelandsons.example/josiah             |
+      | SHIELDS-D'AMORE                | http://shields-damore.example/piedad.collier    |
+      | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/corie         |
+      | TOY-ROBERTS                    | http://toy-roberts.example/tiffanie_bruen       |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/dustin        |
+      | ZIEMANN-CUMMERATA              | http://ziemann-cummerata.test/chuck.yost        |

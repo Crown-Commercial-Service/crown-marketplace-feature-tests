@@ -12,8 +12,8 @@ Feature: Legal services - Non central governemnt - Lot 1 - Suppliers
     And I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 1 - Full service provision'
     When I check the following items:
-      | Children and Vulnerable Adults  |
-      | Corporate Law                   |
+      | Children and Vulnerable Adults |
+      | Corporate Law                  |
     And I click on 'Continue'
     Then I am on the 'Select the jurisdiction you need' page
     And the sub title is 'Lot 1 - Full service provision'
@@ -45,10 +45,10 @@ Feature: Legal services - Non central governemnt - Lot 1 - Suppliers
     And the 'Paralegal, Legal Assistant' hourly rate is '£90.00'
     And there is no LMP (Legal project manager) hourly rate
     And the contact details for the supplier are:
-      | veum_lowe@lesch.name                  |
-      | 397.718.2092 x159                     |
-      | http://stanton.name/rory              |
-      | 931 Gaston Fork, Alphaport, MS 97918  |
+      | veum_lowe@lesch.name                 |
+      | 397.718.2092 x159                    |
+      | http://stanton.name/rory             |
+      | 931 Gaston Fork, Alphaport, MS 97918 |
 
   Scenario: Check the supplier data - Non SME
     Given I click on 'GOTTLIEB GROUP'

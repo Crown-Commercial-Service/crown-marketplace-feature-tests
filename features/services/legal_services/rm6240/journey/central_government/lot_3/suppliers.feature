@@ -56,10 +56,10 @@ Feature: Legal services - Central governemnt - Lot 3 - Suppliers
     And the 'Paralegal, Legal Assistant' hourly rate is '£90.00'
     And there is no LMP (Legal project manager) hourly rate
     And the contact details for the supplier are:
-      | macgyver.schoen@langworth.co                      |
-      | (264) 698-0248 x4478                              |
-      | http://ritchie.biz/clint.kunde                    |
-      | 2945 Charlie Estates, Lake Marhta, RI 79222-8844  |
+      | macgyver.schoen@langworth.co                     |
+      | (264) 698-0248 x4478                             |
+      | http://ritchie.biz/clint.kunde                   |
+      | 2945 Charlie Estates, Lake Marhta, RI 79222-8844 |
 
   @file-download
   Scenario: Download the supplier spreadsheet

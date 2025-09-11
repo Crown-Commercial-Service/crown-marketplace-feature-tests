@@ -16,8 +16,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
     Then I am on the 'Select the countries for your requirement' page
     And the sub title is 'Lot 4c - International Investment Disputes'
     When I check the following items:
-      | Malta   |
-      | Malawi  |
+      | Malta  |
+      | Malawi |
     And I click on 'Continue'
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 4c - International Investment Disputes'
@@ -62,7 +62,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | DECKOW, KIEHN AND ORN           |
+      | DECKOW, KIEHN AND ORN |
     When I check the following items:
       | FISHER-BASHIRIAN                |
       | HICKLE, CARTWRIGHT AND EMMERICH |
@@ -87,7 +87,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
       | HICKLE, CARTWRIGHT AND EMMERICH |
       | LEHNER GROUP                    |
     When I deselect the following items:
-      | DECKOW, KIEHN AND ORN           |
+      | DECKOW, KIEHN AND ORN |
     Then the basket should say '3 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -100,7 +100,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | LEHNER GROUP                    |
+      | LEHNER GROUP |
     When I click on 'Remove all'
     Then the basket should say 'No suppliers selected'
 

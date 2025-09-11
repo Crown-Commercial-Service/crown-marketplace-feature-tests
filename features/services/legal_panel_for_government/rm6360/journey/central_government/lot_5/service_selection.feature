@@ -13,26 +13,26 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Service selec
 
   Scenario: The correct options are available
     Then I should see the following options for the lot:
-      | Competition law                                             |
-      | Dispute Resolution and litigation law                       |
-      | Employment law                                              |
-      | Environmental law                                           |
-      | EU law                                                      |
-      | Health and Safety law                                       |
-      | Information law including data protection law               |
-      | Information technology law                                  |
-      | Insurance law                                               |
-      | Intellectual property law                                   |
-      | International law                                           |
-      | Pensions law                                                |
-      | Planning law                                                |
-      | Public procurement law                                      |
-      | Rail Commercial Law                                         |
-      | Real estate law                                             |
-      | Regulatory law                                              |
-      | Restructuring/ Insolvency law                               |
-      | Subsidy Control Law                                         |
-      | Tax law                                                     |
+      | Competition law                               |
+      | Dispute Resolution and litigation law         |
+      | Employment law                                |
+      | Environmental law                             |
+      | EU law                                        |
+      | Health and Safety law                         |
+      | Information law including data protection law |
+      | Information technology law                    |
+      | Insurance law                                 |
+      | Intellectual property law                     |
+      | International law                             |
+      | Pensions law                                  |
+      | Planning law                                  |
+      | Public procurement law                        |
+      | Rail Commercial Law                           |
+      | Real estate law                               |
+      | Regulatory law                                |
+      | Restructuring/ Insolvency law                 |
+      | Subsidy Control Law                           |
+      | Tax law                                       |
 
   Scenario: Service selection appears in basked
     Then the basket should say 'No services selected'
@@ -41,24 +41,24 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Service selec
     Then the basket should say '1 service selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | EU law                      |
+      | EU law |
     When I check the following items:
-      | Employment law              |
-      | Information technology law  |
-      | Insurance law               |
-      | International law           |
-      | Rail Commercial Law         |
-      | Real estate law             |
+      | Employment law             |
+      | Information technology law |
+      | Insurance law              |
+      | International law          |
+      | Rail Commercial Law        |
+      | Real estate law            |
     Then the basket should say '7 services selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | EU law                      |
-      | Employment law              |
-      | Information technology law  |
-      | Insurance law               |
-      | International law           |
-      | Rail Commercial Law         |
-      | Real estate law             |
+      | EU law                     |
+      | Employment law             |
+      | Information technology law |
+      | Insurance law              |
+      | International law          |
+      | Rail Commercial Law        |
+      | Real estate law            |
 
   Scenario: Changing the selection will change the basket
     When I check the following items:
@@ -78,7 +78,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Service selec
       | Public procurement law                        |
       | Tax law                                       |
     When I deselect the following items:
-      | Tax law                                       |
+      | Tax law |
     Then the basket should say '5 services selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -88,8 +88,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Service selec
       | Planning law                                  |
       | Public procurement law                        |
     When I remove the following items from the basket:
-      | Planning law                                  |
-      | Public procurement law                        |
+      | Planning law           |
+      | Public procurement law |
     Then the basket should say '3 services selected'
     And the remove all link should be visible
     And the following items should appear in the basket:

@@ -12,20 +12,20 @@ Feature: Management Consultancy - Lot 6 - Procurement and Supply Chain - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE           |
-      | BASHIRIAN, BODE AND STEUBER         |
-      | GERHOLD-RUNTE                       |
-      | GOYETTE-KOEPP                       |
-      | HETTINGER, MURPHY AND HERMISTON     |
-      | JOHNSON GROUP                       |
-      | KRAJCIK-ZIEMANN                     |
-      | KUPHAL, CARTER AND DIETRICH         |
-      | KUPHAL, JOHNSTON AND SCHROEDER      |
-      | MCDERMOTT, SCHULTZ AND GLEICHNER    |
-      | MOEN GROUP                          |
-      | SHANAHAN LLC                        |
-      | SMITH AND SONS                      |
-      | STOLTENBERG, POWLOWSKI AND KREIGER  |
+      | ABSHIRE, QUITZON AND HOWE          |
+      | BASHIRIAN, BODE AND STEUBER        |
+      | GERHOLD-RUNTE                      |
+      | GOYETTE-KOEPP                      |
+      | HETTINGER, MURPHY AND HERMISTON    |
+      | JOHNSON GROUP                      |
+      | KRAJCIK-ZIEMANN                    |
+      | KUPHAL, CARTER AND DIETRICH        |
+      | KUPHAL, JOHNSTON AND SCHROEDER     |
+      | MCDERMOTT, SCHULTZ AND GLEICHNER   |
+      | MOEN GROUP                         |
+      | SHANAHAN LLC                       |
+      | SMITH AND SONS                     |
+      | STOLTENBERG, POWLOWSKI AND KREIGER |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -36,28 +36,28 @@ Feature: Management Consultancy - Lot 6 - Procurement and Supply Chain - Results
     Then I am on the 'Supplier results' page
     And I should see that '22' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE           |
-      | BASHIRIAN, BODE AND STEUBER         |
-      | ERNSER GROUP                        |
-      | GERHOLD-RUNTE                       |
-      | GOYETTE-KOEPP                       |
-      | HETTINGER, MURPHY AND HERMISTON     |
-      | HODKIEWICZ LLC                      |
-      | JOHNSON GROUP                       |
-      | KRAJCIK-ZIEMANN                     |
-      | KSHLERIN INC                        |
-      | KSHLERIN, BUCKRIDGE AND BROWN       |
-      | KUHIC AND SONS                      |
-      | KUPHAL, CARTER AND DIETRICH         |
-      | KUPHAL, JOHNSTON AND SCHROEDER      |
-      | MCDERMOTT, SCHULTZ AND GLEICHNER    |
-      | MOEN GROUP                          |
-      | SHANAHAN LLC                        |
-      | SMITH AND SONS                      |
-      | STOLTENBERG, POWLOWSKI AND KREIGER  |
-      | TOWNE AND SONS                      |
-      | ULLRICH, MONAHAN AND REICHEL        |
-      | WOLF, BEIER AND GOODWIN             |
+      | ABSHIRE, QUITZON AND HOWE          |
+      | BASHIRIAN, BODE AND STEUBER        |
+      | ERNSER GROUP                       |
+      | GERHOLD-RUNTE                      |
+      | GOYETTE-KOEPP                      |
+      | HETTINGER, MURPHY AND HERMISTON    |
+      | HODKIEWICZ LLC                     |
+      | JOHNSON GROUP                      |
+      | KRAJCIK-ZIEMANN                    |
+      | KSHLERIN INC                       |
+      | KSHLERIN, BUCKRIDGE AND BROWN      |
+      | KUHIC AND SONS                     |
+      | KUPHAL, CARTER AND DIETRICH        |
+      | KUPHAL, JOHNSTON AND SCHROEDER     |
+      | MCDERMOTT, SCHULTZ AND GLEICHNER   |
+      | MOEN GROUP                         |
+      | SHANAHAN LLC                       |
+      | SMITH AND SONS                     |
+      | STOLTENBERG, POWLOWSKI AND KREIGER |
+      | TOWNE AND SONS                     |
+      | ULLRICH, MONAHAN AND REICHEL       |
+      | WOLF, BEIER AND GOODWIN            |
 
   Scenario: Going back from a supplier
     And I click on 'MOEN GROUP'
@@ -67,20 +67,20 @@ Feature: Management Consultancy - Lot 6 - Procurement and Supply Chain - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE           |
-      | BASHIRIAN, BODE AND STEUBER         |
-      | GERHOLD-RUNTE                       |
-      | GOYETTE-KOEPP                       |
-      | HETTINGER, MURPHY AND HERMISTON     |
-      | JOHNSON GROUP                       |
-      | KRAJCIK-ZIEMANN                     |
-      | KUPHAL, CARTER AND DIETRICH         |
-      | KUPHAL, JOHNSTON AND SCHROEDER      |
-      | MCDERMOTT, SCHULTZ AND GLEICHNER    |
-      | MOEN GROUP                          |
-      | SHANAHAN LLC                        |
-      | SMITH AND SONS                      |
-      | STOLTENBERG, POWLOWSKI AND KREIGER  |
+      | ABSHIRE, QUITZON AND HOWE          |
+      | BASHIRIAN, BODE AND STEUBER        |
+      | GERHOLD-RUNTE                      |
+      | GOYETTE-KOEPP                      |
+      | HETTINGER, MURPHY AND HERMISTON    |
+      | JOHNSON GROUP                      |
+      | KRAJCIK-ZIEMANN                    |
+      | KUPHAL, CARTER AND DIETRICH        |
+      | KUPHAL, JOHNSTON AND SCHROEDER     |
+      | MCDERMOTT, SCHULTZ AND GLEICHNER   |
+      | MOEN GROUP                         |
+      | SHANAHAN LLC                       |
+      | SMITH AND SONS                     |
+      | STOLTENBERG, POWLOWSKI AND KREIGER |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -89,17 +89,17 @@ Feature: Management Consultancy - Lot 6 - Procurement and Supply Chain - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE           |
-      | BASHIRIAN, BODE AND STEUBER         |
-      | GERHOLD-RUNTE                       |
-      | GOYETTE-KOEPP                       |
-      | HETTINGER, MURPHY AND HERMISTON     |
-      | JOHNSON GROUP                       |
-      | KRAJCIK-ZIEMANN                     |
-      | KUPHAL, CARTER AND DIETRICH         |
-      | KUPHAL, JOHNSTON AND SCHROEDER      |
-      | MCDERMOTT, SCHULTZ AND GLEICHNER    |
-      | MOEN GROUP                          |
-      | SHANAHAN LLC                        |
-      | SMITH AND SONS                      |
-      | STOLTENBERG, POWLOWSKI AND KREIGER  |
+      | ABSHIRE, QUITZON AND HOWE          |
+      | BASHIRIAN, BODE AND STEUBER        |
+      | GERHOLD-RUNTE                      |
+      | GOYETTE-KOEPP                      |
+      | HETTINGER, MURPHY AND HERMISTON    |
+      | JOHNSON GROUP                      |
+      | KRAJCIK-ZIEMANN                    |
+      | KUPHAL, CARTER AND DIETRICH        |
+      | KUPHAL, JOHNSTON AND SCHROEDER     |
+      | MCDERMOTT, SCHULTZ AND GLEICHNER   |
+      | MOEN GROUP                         |
+      | SHANAHAN LLC                       |
+      | SMITH AND SONS                     |
+      | STOLTENBERG, POWLOWSKI AND KREIGER |

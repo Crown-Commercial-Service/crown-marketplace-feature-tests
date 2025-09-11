@@ -28,6 +28,6 @@ Feature: Supply Teachers - Agency results - Agency payroll - Results by length -
       | Term: <term>                                                          |
 
     Examples:
-      | term                  |
-      | Daily Supply          |
-      | Long Term (6 weeks+)  |
+      | term                 |
+      | Daily Supply         |
+      | Long Term (6 weeks+) |

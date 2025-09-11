@@ -20,19 +20,19 @@ Feature: Legal Panel for Government - Suppliers comparison - Accessibility
     And I click on "Compare the supplier rates"
     Then I am on the "Select suppliers for comparison" page
     When I check the following items:
-      | <supplier_1>  |
-      | <supplier_2>  |
+      | <supplier_1> |
+      | <supplier_2> |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I should see that '2' suppliers have been selected for comparison
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks
 
     Examples:
-      | lot                                       | service           | number_of_suppliers | supplier_1                | supplier_2                      |
-      | Lot 1 - Core Legal Services               | Assimilated Law   | 11                  | BATZ-BROWN                | CRUICKSHANK GROUP               |
-      | Lot 2 - Major Projects and Complex Advice | Assimilated Law   | 12                  | DOUGLAS GROUP             | KULAS, HINTZ AND DOYLE          |
-      | Lot 3 - Finance and High Risk/Innovation  | Corporate Finance | 16                  | REICHERT-MRAZ             | ROMAGUERA, SCHULIST AND GRAHAM  |
-      | Lot 5 - Rail Legal Services               | Competition law   | 14                  | SWIFT, MANTE AND WUCKERT  | TOY-ROBERTS                     |
+      | lot                                       | service           | number_of_suppliers | supplier_1               | supplier_2                     |
+      | Lot 1 - Core Legal Services               | Assimilated Law   | 11                  | BATZ-BROWN               | CRUICKSHANK GROUP              |
+      | Lot 2 - Major Projects and Complex Advice | Assimilated Law   | 12                  | DOUGLAS GROUP            | KULAS, HINTZ AND DOYLE         |
+      | Lot 3 - Finance and High Risk/Innovation  | Corporate Finance | 16                  | REICHERT-MRAZ            | ROMAGUERA, SCHULIST AND GRAHAM |
+      | Lot 5 - Rail Legal Services               | Competition law   | 14                  | SWIFT, MANTE AND WUCKERT | TOY-ROBERTS                    |
 
   Scenario Outline: Suppliers comparisons page
     And I select 'Yes'
@@ -53,15 +53,15 @@ Feature: Legal Panel for Government - Suppliers comparison - Accessibility
     And I click on "Compare the supplier rates"
     Then I am on the "Select suppliers for comparison" page
     When I check the following items:
-      | <supplier_1>  |
-      | <supplier_2>  |
+      | <supplier_1> |
+      | <supplier_2> |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I should see that '2' suppliers have been selected for comparison
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks
 
     Examples:
-      | lot                                         | service                                 | number_of_suppliers | supplier_1                      | supplier_2                      |
-      | Lot 4a - Trade and Investment Negotiations  | Assimilated Law                         | 10                  | ARMSTRONG GROUP                 | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | Lot 4b - International Trade Disputes       | Compliance with international law       | 11                  | KUHLMAN-MARVIN                  | MCCLURE, THIEL AND FRAMI        |
-      | Lot 4c - International Investment Disputes  | Domestic law of jurisdictions for trade | 12                  | CRUICKSHANK, WISOKY AND HARBER  | DECKOW, KIEHN AND ORN           |
+      | lot                                        | service                                 | number_of_suppliers | supplier_1                     | supplier_2                     |
+      | Lot 4a - Trade and Investment Negotiations | Assimilated Law                         | 10                  | ARMSTRONG GROUP                | COLLIER, AUFDERHAR AND VOLKMAN |
+      | Lot 4b - International Trade Disputes      | Compliance with international law       | 11                  | KUHLMAN-MARVIN                 | MCCLURE, THIEL AND FRAMI       |
+      | Lot 4c - International Investment Disputes | Domestic law of jurisdictions for trade | 12                  | CRUICKSHANK, WISOKY AND HARBER | DECKOW, KIEHN AND ORN          |

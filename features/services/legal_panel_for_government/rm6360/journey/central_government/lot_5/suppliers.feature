@@ -12,8 +12,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 5 - Rail Legal Services'
     When I check the following items:
-      | Pensions law  |
-      | Planning law  |
+      | Pensions law |
+      | Planning law |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government
@@ -61,10 +61,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers
     And the 'Trainee/Legal Apprentice' hourly rate is '£75.00'
     And the 'Paralegal, Legal Assistant' hourly rate is '£50.00'
     And the contact details for the supplier are:
-      | and_mante_swift_wuckert@spencer.test                  |
-      | 326.723.9088                                          |
-      | http://swiftmanteandwuckert.test/alfredia_wintheiser  |
-      | Apt. 103 915 Aufderhar Rapids, Schoenview, VT 79396   |
+      | and_mante_swift_wuckert@spencer.test                 |
+      | 326.723.9088                                         |
+      | http://swiftmanteandwuckert.test/alfredia_wintheiser |
+      | Apt. 103 915 Aufderhar Rapids, Schoenview, VT 79396  |
     And the prospectus link is 'http://swiftmanteandwuckert.test/caryn'
 
   @file-download

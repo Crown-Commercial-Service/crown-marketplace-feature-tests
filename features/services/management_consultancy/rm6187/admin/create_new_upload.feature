@@ -31,10 +31,10 @@ Feature: Management Consultancy - Admin - Create new upload
     Then the file '<filename>' is downloaded with the 'xlsx' extension
 
     Examples:
-      | filename                    |
-      | Supplier details            |
-      | Supplier rate cards         |
-      | Supplier service offerings  |
+      | filename                   |
+      | Supplier details           |
+      | Supplier rate cards        |
+      | Supplier service offerings |
 
   @file-download
   Scenario Outline: Download files on upload - <filename>
@@ -49,7 +49,7 @@ Feature: Management Consultancy - Admin - Create new upload
     Then I am on the 'Manage supplier data' page
 
     Examples:
-      | filename                    |
-      | Supplier details            |
-      | Supplier rate cards         |
-      | Supplier service offerings  |
+      | filename                   |
+      | Supplier details           |
+      | Supplier rate cards        |
+      | Supplier service offerings |

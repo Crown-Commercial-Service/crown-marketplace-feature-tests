@@ -12,28 +12,28 @@ Feature: Management Consultancy - Lot 1 - Business - Results
     Then I am on the 'Supplier results' page
     And I should see that '22' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE                 |
-      | BASHIRIAN, BODE AND STEUBER               |
-      | BOGISICH, BAUMBACH AND KERTZMANN          |
-      | BRUEN-WITTING                             |
-      | CONSIDINE GROUP                           |
-      | CRONA-ZIEME                               |
-      | DAVIS, HALEY AND HAND                     |
-      | DIBBERT-ANKUNDING                         |
-      | ERNSER GROUP                              |
-      | HERMANN-WEHNER                            |
-      | HILLL, HICKLE AND BODE                    |
-      | JOHNSON GROUP                             |
-      | KOELPIN LLC                               |
-      | KOZEY-KEELING                             |
-      | LANGWORTH, HETTINGER AND KUNDE            |
-      | LEDNER-MAYER                              |
-      | ORTIZ, STREICH AND HEANEY                 |
-      | PARKER INC                                |
-      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG  |
-      | SCHILLER-SCHAMBERGER                      |
-      | TORP GROUP                                |
-      | WILLIAMSON GROUP                          |
+      | ABSHIRE, QUITZON AND HOWE                |
+      | BASHIRIAN, BODE AND STEUBER              |
+      | BOGISICH, BAUMBACH AND KERTZMANN         |
+      | BRUEN-WITTING                            |
+      | CONSIDINE GROUP                          |
+      | CRONA-ZIEME                              |
+      | DAVIS, HALEY AND HAND                    |
+      | DIBBERT-ANKUNDING                        |
+      | ERNSER GROUP                             |
+      | HERMANN-WEHNER                           |
+      | HILLL, HICKLE AND BODE                   |
+      | JOHNSON GROUP                            |
+      | KOELPIN LLC                              |
+      | KOZEY-KEELING                            |
+      | LANGWORTH, HETTINGER AND KUNDE           |
+      | LEDNER-MAYER                             |
+      | ORTIZ, STREICH AND HEANEY                |
+      | PARKER INC                               |
+      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG |
+      | SCHILLER-SCHAMBERGER                     |
+      | TORP GROUP                               |
+      | WILLIAMSON GROUP                         |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -47,78 +47,78 @@ Feature: Management Consultancy - Lot 1 - Business - Results
     Then I am on the 'Supplier results' page
     And I should see that '39' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE         |
-      | BASHIRIAN, BODE AND STEUBER       |
-      | BOGISICH, BAUMBACH AND KERTZMANN  |
-      | BRAKUS GROUP                      |
-      | BRUEN-WITTING                     |
-      | CASSIN-HAAG                       |
-      | CONSIDINE GROUP                   |
-      | CRONA-ZIEME                       |
-      | DAVIS, HALEY AND HAND             |
-      | DIBBERT-ANKUNDING                 |
-      | DURGAN AND SONS                   |
-      | ERNSER GROUP                      |
-      | FARRELL-MARVIN                    |
-      | HAAG, SATTERFIELD AND MERTZ       |
-      | HERMANN-WEHNER                    |
-      | HILLL, HICKLE AND BODE            |
-      | JOHNSON GROUP                     |
-      | KEMMER, LEFFLER AND LEGROS        |
-      | KOELPIN LLC                       |
-      | KOZEY-KEELING                     |
-      | KRAJCIK-ZIEMANN                   |
-      | KUHIC AND SONS                    |
-      | LANGWORTH, HETTINGER AND KUNDE    |
-      | LEBSACK, KOVACEK AND GOYETTE      |
-      | LEDNER-MAYER                      |
+      | ABSHIRE, QUITZON AND HOWE        |
+      | BASHIRIAN, BODE AND STEUBER      |
+      | BOGISICH, BAUMBACH AND KERTZMANN |
+      | BRAKUS GROUP                     |
+      | BRUEN-WITTING                    |
+      | CASSIN-HAAG                      |
+      | CONSIDINE GROUP                  |
+      | CRONA-ZIEME                      |
+      | DAVIS, HALEY AND HAND            |
+      | DIBBERT-ANKUNDING                |
+      | DURGAN AND SONS                  |
+      | ERNSER GROUP                     |
+      | FARRELL-MARVIN                   |
+      | HAAG, SATTERFIELD AND MERTZ      |
+      | HERMANN-WEHNER                   |
+      | HILLL, HICKLE AND BODE           |
+      | JOHNSON GROUP                    |
+      | KEMMER, LEFFLER AND LEGROS       |
+      | KOELPIN LLC                      |
+      | KOZEY-KEELING                    |
+      | KRAJCIK-ZIEMANN                  |
+      | KUHIC AND SONS                   |
+      | LANGWORTH, HETTINGER AND KUNDE   |
+      | LEBSACK, KOVACEK AND GOYETTE     |
+      | LEDNER-MAYER                     |
     And I click on 'Next'
     Then I am on the 'Supplier results' page
     And I should see that '39' companies can provide consultants
     And the selected suppliers are:
-      | MCCLURE, EMARD AND LITTLE                 |
-      | MURPHY, PFEFFER AND GREENFELDER           |
-      | ORTIZ, STREICH AND HEANEY                 |
-      | PARKER INC                                |
-      | PREDOVIC, MCGLYNN AND FRIESEN             |
-      | ROLFSON-WEBER                             |
-      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG  |
-      | SCHADEN AND SONS                          |
-      | SCHAMBERGER, RYAN AND THIEL               |
-      | SCHILLER-SCHAMBERGER                      |
-      | SCHOWALTER LLC                            |
-      | TORP GROUP                                |
-      | WILL-FRIESEN                              |
-      | WILLIAMSON GROUP                          |
+      | MCCLURE, EMARD AND LITTLE                |
+      | MURPHY, PFEFFER AND GREENFELDER          |
+      | ORTIZ, STREICH AND HEANEY                |
+      | PARKER INC                               |
+      | PREDOVIC, MCGLYNN AND FRIESEN            |
+      | ROLFSON-WEBER                            |
+      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG |
+      | SCHADEN AND SONS                         |
+      | SCHAMBERGER, RYAN AND THIEL              |
+      | SCHILLER-SCHAMBERGER                     |
+      | SCHOWALTER LLC                           |
+      | TORP GROUP                               |
+      | WILL-FRIESEN                             |
+      | WILLIAMSON GROUP                         |
     And I click on 'Previous'
     Then I am on the 'Supplier results' page
     And I should see that '39' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE         |
-      | BASHIRIAN, BODE AND STEUBER       |
-      | BOGISICH, BAUMBACH AND KERTZMANN  |
-      | BRAKUS GROUP                      |
-      | BRUEN-WITTING                     |
-      | CASSIN-HAAG                       |
-      | CONSIDINE GROUP                   |
-      | CRONA-ZIEME                       |
-      | DAVIS, HALEY AND HAND             |
-      | DIBBERT-ANKUNDING                 |
-      | DURGAN AND SONS                   |
-      | ERNSER GROUP                      |
-      | FARRELL-MARVIN                    |
-      | HAAG, SATTERFIELD AND MERTZ       |
-      | HERMANN-WEHNER                    |
-      | HILLL, HICKLE AND BODE            |
-      | JOHNSON GROUP                     |
-      | KEMMER, LEFFLER AND LEGROS        |
-      | KOELPIN LLC                       |
-      | KOZEY-KEELING                     |
-      | KRAJCIK-ZIEMANN                   |
-      | KUHIC AND SONS                    |
-      | LANGWORTH, HETTINGER AND KUNDE    |
-      | LEBSACK, KOVACEK AND GOYETTE      |
-      | LEDNER-MAYER                      |
+      | ABSHIRE, QUITZON AND HOWE        |
+      | BASHIRIAN, BODE AND STEUBER      |
+      | BOGISICH, BAUMBACH AND KERTZMANN |
+      | BRAKUS GROUP                     |
+      | BRUEN-WITTING                    |
+      | CASSIN-HAAG                      |
+      | CONSIDINE GROUP                  |
+      | CRONA-ZIEME                      |
+      | DAVIS, HALEY AND HAND            |
+      | DIBBERT-ANKUNDING                |
+      | DURGAN AND SONS                  |
+      | ERNSER GROUP                     |
+      | FARRELL-MARVIN                   |
+      | HAAG, SATTERFIELD AND MERTZ      |
+      | HERMANN-WEHNER                   |
+      | HILLL, HICKLE AND BODE           |
+      | JOHNSON GROUP                    |
+      | KEMMER, LEFFLER AND LEGROS       |
+      | KOELPIN LLC                      |
+      | KOZEY-KEELING                    |
+      | KRAJCIK-ZIEMANN                  |
+      | KUHIC AND SONS                   |
+      | LANGWORTH, HETTINGER AND KUNDE   |
+      | LEBSACK, KOVACEK AND GOYETTE     |
+      | LEDNER-MAYER                     |
 
   Scenario: Going back from a supplier
     And I click on 'DIBBERT-ANKUNDING'
@@ -128,28 +128,28 @@ Feature: Management Consultancy - Lot 1 - Business - Results
     Then I am on the 'Supplier results' page
     And I should see that '22' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE                 |
-      | BASHIRIAN, BODE AND STEUBER               |
-      | BOGISICH, BAUMBACH AND KERTZMANN          |
-      | BRUEN-WITTING                             |
-      | CONSIDINE GROUP                           |
-      | CRONA-ZIEME                               |
-      | DAVIS, HALEY AND HAND                     |
-      | DIBBERT-ANKUNDING                         |
-      | ERNSER GROUP                              |
-      | HERMANN-WEHNER                            |
-      | HILLL, HICKLE AND BODE                    |
-      | JOHNSON GROUP                             |
-      | KOELPIN LLC                               |
-      | KOZEY-KEELING                             |
-      | LANGWORTH, HETTINGER AND KUNDE            |
-      | LEDNER-MAYER                              |
-      | ORTIZ, STREICH AND HEANEY                 |
-      | PARKER INC                                |
-      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG  |
-      | SCHILLER-SCHAMBERGER                      |
-      | TORP GROUP                                |
-      | WILLIAMSON GROUP                          |
+      | ABSHIRE, QUITZON AND HOWE                |
+      | BASHIRIAN, BODE AND STEUBER              |
+      | BOGISICH, BAUMBACH AND KERTZMANN         |
+      | BRUEN-WITTING                            |
+      | CONSIDINE GROUP                          |
+      | CRONA-ZIEME                              |
+      | DAVIS, HALEY AND HAND                    |
+      | DIBBERT-ANKUNDING                        |
+      | ERNSER GROUP                             |
+      | HERMANN-WEHNER                           |
+      | HILLL, HICKLE AND BODE                   |
+      | JOHNSON GROUP                            |
+      | KOELPIN LLC                              |
+      | KOZEY-KEELING                            |
+      | LANGWORTH, HETTINGER AND KUNDE           |
+      | LEDNER-MAYER                             |
+      | ORTIZ, STREICH AND HEANEY                |
+      | PARKER INC                               |
+      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG |
+      | SCHILLER-SCHAMBERGER                     |
+      | TORP GROUP                               |
+      | WILLIAMSON GROUP                         |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -158,25 +158,25 @@ Feature: Management Consultancy - Lot 1 - Business - Results
     Then I am on the 'Supplier results' page
     And I should see that '22' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE                 |
-      | BASHIRIAN, BODE AND STEUBER               |
-      | BOGISICH, BAUMBACH AND KERTZMANN          |
-      | BRUEN-WITTING                             |
-      | CONSIDINE GROUP                           |
-      | CRONA-ZIEME                               |
-      | DAVIS, HALEY AND HAND                     |
-      | DIBBERT-ANKUNDING                         |
-      | ERNSER GROUP                              |
-      | HERMANN-WEHNER                            |
-      | HILLL, HICKLE AND BODE                    |
-      | JOHNSON GROUP                             |
-      | KOELPIN LLC                               |
-      | KOZEY-KEELING                             |
-      | LANGWORTH, HETTINGER AND KUNDE            |
-      | LEDNER-MAYER                              |
-      | ORTIZ, STREICH AND HEANEY                 |
-      | PARKER INC                                |
-      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG  |
-      | SCHILLER-SCHAMBERGER                      |
-      | TORP GROUP                                |
-      | WILLIAMSON GROUP                          |
+      | ABSHIRE, QUITZON AND HOWE                |
+      | BASHIRIAN, BODE AND STEUBER              |
+      | BOGISICH, BAUMBACH AND KERTZMANN         |
+      | BRUEN-WITTING                            |
+      | CONSIDINE GROUP                          |
+      | CRONA-ZIEME                              |
+      | DAVIS, HALEY AND HAND                    |
+      | DIBBERT-ANKUNDING                        |
+      | ERNSER GROUP                             |
+      | HERMANN-WEHNER                           |
+      | HILLL, HICKLE AND BODE                   |
+      | JOHNSON GROUP                            |
+      | KOELPIN LLC                              |
+      | KOZEY-KEELING                            |
+      | LANGWORTH, HETTINGER AND KUNDE           |
+      | LEDNER-MAYER                             |
+      | ORTIZ, STREICH AND HEANEY                |
+      | PARKER INC                               |
+      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG |
+      | SCHILLER-SCHAMBERGER                     |
+      | TORP GROUP                               |
+      | WILLIAMSON GROUP                         |

@@ -12,10 +12,10 @@ Feature: Management Consultancy - Lot 9 - Environment and Sustainability - Resul
     Then I am on the 'Supplier results' page
     And I should see that '4' companies can provide consultants
     And the selected suppliers are:
-      | CARTER-BEATTY                   |
-      | LANGWORTH, HETTINGER AND KUNDE  |
-      | LEDNER-MAYER                    |
-      | UPTON AND SONS                  |
+      | CARTER-BEATTY                  |
+      | LANGWORTH, HETTINGER AND KUNDE |
+      | LEDNER-MAYER                   |
+      | UPTON AND SONS                 |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -26,17 +26,17 @@ Feature: Management Consultancy - Lot 9 - Environment and Sustainability - Resul
     Then I am on the 'Supplier results' page
     And I should see that '11' companies can provide consultants
     And the selected suppliers are:
-      | CARTER-BEATTY                   |
-      | LANGWORTH, HETTINGER AND KUNDE  |
-      | LEDNER-MAYER                    |
-      | LEGROS, LANGOSH AND MEDHURST    |
-      | PREDOVIC, MCGLYNN AND FRIESEN   |
-      | REYNOLDS-HALVORSON              |
-      | SCHAMBERGER, RYAN AND THIEL     |
-      | SCHMIDT, MARQUARDT AND HAMMES   |
-      | TOWNE AND SONS                  |
-      | UPTON AND SONS                  |
-      | WOLF, BEIER AND GOODWIN         |
+      | CARTER-BEATTY                  |
+      | LANGWORTH, HETTINGER AND KUNDE |
+      | LEDNER-MAYER                   |
+      | LEGROS, LANGOSH AND MEDHURST   |
+      | PREDOVIC, MCGLYNN AND FRIESEN  |
+      | REYNOLDS-HALVORSON             |
+      | SCHAMBERGER, RYAN AND THIEL    |
+      | SCHMIDT, MARQUARDT AND HAMMES  |
+      | TOWNE AND SONS                 |
+      | UPTON AND SONS                 |
+      | WOLF, BEIER AND GOODWIN        |
 
   Scenario: Going back from a supplier
     And I click on 'LEDNER-MAYER'
@@ -46,10 +46,10 @@ Feature: Management Consultancy - Lot 9 - Environment and Sustainability - Resul
     Then I am on the 'Supplier results' page
     And I should see that '4' companies can provide consultants
     And the selected suppliers are:
-      | CARTER-BEATTY                   |
-      | LANGWORTH, HETTINGER AND KUNDE  |
-      | LEDNER-MAYER                    |
-      | UPTON AND SONS                  |
+      | CARTER-BEATTY                  |
+      | LANGWORTH, HETTINGER AND KUNDE |
+      | LEDNER-MAYER                   |
+      | UPTON AND SONS                 |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -58,7 +58,7 @@ Feature: Management Consultancy - Lot 9 - Environment and Sustainability - Resul
     Then I am on the 'Supplier results' page
     And I should see that '4' companies can provide consultants
     And the selected suppliers are:
-      | CARTER-BEATTY                   |
-      | LANGWORTH, HETTINGER AND KUNDE  |
-      | LEDNER-MAYER                    |
-      | UPTON AND SONS                  |
+      | CARTER-BEATTY                  |
+      | LANGWORTH, HETTINGER AND KUNDE |
+      | LEDNER-MAYER                   |
+      | UPTON AND SONS                 |

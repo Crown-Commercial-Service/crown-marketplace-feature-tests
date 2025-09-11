@@ -27,66 +27,66 @@ Feature: Management Consultancy - Lot 10 - Restructuring and insolvency - Result
     Then I am on the 'Supplier results' page
     And I should see that '27' companies can provide consultants
     And the selected suppliers are:
-      | BOYER, HEGMANN AND TURCOTTE     |
-      | BRAKUS GROUP                    |
-      | DAVIS, HALEY AND HAND           |
-      | DIBBERT-ANKUNDING               |
-      | ERNSER GROUP                    |
-      | GERHOLD-RUNTE                   |
-      | GUTMANN, LEMKE AND JOHNSTON     |
-      | JENKINS INC                     |
-      | JOHNSON GROUP                   |
-      | KERLUKE, BODE AND LANG          |
-      | KONOPELSKI AND SONS             |
-      | KREIGER, SWIFT AND LEDNER       |
-      | LANGWORTH-KEELING               |
-      | LITTEL-WELCH                    |
-      | MCCLURE, EMARD AND LITTLE       |
-      | PAUCEK-HERMAN                   |
-      | PROSACCO INC                    |
-      | REICHEL-HODKIEWICZ              |
-      | REICHERT LLC                    |
-      | SHANAHAN LLC                    |
-      | SIMONIS-FARRELL                 |
-      | STARK, KUHLMAN AND FAHEY        |
-      | STIEDEMANN, ANKUNDING AND FUNK  |
-      | TORP GROUP                      |
-      | WILLIAMSON GROUP                |
+      | BOYER, HEGMANN AND TURCOTTE    |
+      | BRAKUS GROUP                   |
+      | DAVIS, HALEY AND HAND          |
+      | DIBBERT-ANKUNDING              |
+      | ERNSER GROUP                   |
+      | GERHOLD-RUNTE                  |
+      | GUTMANN, LEMKE AND JOHNSTON    |
+      | JENKINS INC                    |
+      | JOHNSON GROUP                  |
+      | KERLUKE, BODE AND LANG         |
+      | KONOPELSKI AND SONS            |
+      | KREIGER, SWIFT AND LEDNER      |
+      | LANGWORTH-KEELING              |
+      | LITTEL-WELCH                   |
+      | MCCLURE, EMARD AND LITTLE      |
+      | PAUCEK-HERMAN                  |
+      | PROSACCO INC                   |
+      | REICHEL-HODKIEWICZ             |
+      | REICHERT LLC                   |
+      | SHANAHAN LLC                   |
+      | SIMONIS-FARRELL                |
+      | STARK, KUHLMAN AND FAHEY       |
+      | STIEDEMANN, ANKUNDING AND FUNK |
+      | TORP GROUP                     |
+      | WILLIAMSON GROUP               |
     And I click on 'Next'
     Then I am on the 'Supplier results' page
     And I should see that '27' companies can provide consultants
     And the selected suppliers are:
-      | WINDLER, REICHERT AND HARBER  |
-      | WITTING, HANE AND WIEGAND     |
+      | WINDLER, REICHERT AND HARBER |
+      | WITTING, HANE AND WIEGAND    |
     And I click on 'Previous'
     Then I am on the 'Supplier results' page
     And I should see that '27' companies can provide consultants
     And the selected suppliers are:
-      | BOYER, HEGMANN AND TURCOTTE     |
-      | BRAKUS GROUP                    |
-      | DAVIS, HALEY AND HAND           |
-      | DIBBERT-ANKUNDING               |
-      | ERNSER GROUP                    |
-      | GERHOLD-RUNTE                   |
-      | GUTMANN, LEMKE AND JOHNSTON     |
-      | JENKINS INC                     |
-      | JOHNSON GROUP                   |
-      | KERLUKE, BODE AND LANG          |
-      | KONOPELSKI AND SONS             |
-      | KREIGER, SWIFT AND LEDNER       |
-      | LANGWORTH-KEELING               |
-      | LITTEL-WELCH                    |
-      | MCCLURE, EMARD AND LITTLE       |
-      | PAUCEK-HERMAN                   |
-      | PROSACCO INC                    |
-      | REICHEL-HODKIEWICZ              |
-      | REICHERT LLC                    |
-      | SHANAHAN LLC                    |
-      | SIMONIS-FARRELL                 |
-      | STARK, KUHLMAN AND FAHEY        |
-      | STIEDEMANN, ANKUNDING AND FUNK  |
-      | TORP GROUP                      |
-      | WILLIAMSON GROUP                |
+      | BOYER, HEGMANN AND TURCOTTE    |
+      | BRAKUS GROUP                   |
+      | DAVIS, HALEY AND HAND          |
+      | DIBBERT-ANKUNDING              |
+      | ERNSER GROUP                   |
+      | GERHOLD-RUNTE                  |
+      | GUTMANN, LEMKE AND JOHNSTON    |
+      | JENKINS INC                    |
+      | JOHNSON GROUP                  |
+      | KERLUKE, BODE AND LANG         |
+      | KONOPELSKI AND SONS            |
+      | KREIGER, SWIFT AND LEDNER      |
+      | LANGWORTH-KEELING              |
+      | LITTEL-WELCH                   |
+      | MCCLURE, EMARD AND LITTLE      |
+      | PAUCEK-HERMAN                  |
+      | PROSACCO INC                   |
+      | REICHEL-HODKIEWICZ             |
+      | REICHERT LLC                   |
+      | SHANAHAN LLC                   |
+      | SIMONIS-FARRELL                |
+      | STARK, KUHLMAN AND FAHEY       |
+      | STIEDEMANN, ANKUNDING AND FUNK |
+      | TORP GROUP                     |
+      | WILLIAMSON GROUP               |
 
   Scenario: Going back from a supplier
     And I click on 'REICHERT LLC'

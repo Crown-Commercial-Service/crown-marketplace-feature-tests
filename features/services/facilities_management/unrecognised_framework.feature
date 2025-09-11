@@ -17,7 +17,7 @@ Feature: Facilities Management - Start pages - With an unrecognised framework
     And I click on 'RM6232'
     Then I am on the 'Find a facilities management supplier' page
     And the framework is 'RM6232'
-  
+
   Scenario: Go to an unrecognised famework in the admin section - logged out
     When I go to '/facilities-management/RM0172/admin'
     Then I am on the 'The web address contained an unrecognised framework' page

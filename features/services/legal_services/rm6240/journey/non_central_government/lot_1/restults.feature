@@ -12,8 +12,8 @@ Feature: Legal services - Non central governemnt - Lot 1 - Results
     And I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 1 - Full service provision'
     When I check the following items:
-      | Children and Vulnerable Adults  |
-      | Corporate Law                   |
+      | Children and Vulnerable Adults |
+      | Corporate Law                  |
     And I click on 'Continue'
     Then I am on the 'Select the jurisdiction you need' page
     And the sub title is 'Lot 1 - Full service provision'

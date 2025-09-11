@@ -18,20 +18,20 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
-      | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
-      | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
-      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
-      | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
-      | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
-      | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/ngoc_shields             |
-      | SMITH-DOYLE                     | http://smith-doyle.example/joshua_murray                |
-      | SWANIAWSKI, PREDOVIC AND GRANT  | http://swaniawskipredovicandgrant.example/cody.murazik  |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/scot                  |
-      | WILLMS-JACOBS                   | http://willms-jacobs.example/orlando                    |
-      | WILLMS-KOELPIN                  | http://willms-koelpin.test/harrison.murazik             |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/geraldine_abbott            |
+      | BATZ-BROWN                     | http://batz-brown.test/dennis                          |
+      | EMARD LLC                      | http://emardllc.example/corine.balistreri              |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/julianna         |
+      | KUHLMAN, ORTIZ AND LOCKMAN     | http://kuhlmanortizandlockman.example/philip           |
+      | KULAS, HINTZ AND DOYLE         | http://kulashintzanddoyle.example/moses_ruecker        |
+      | REICHERT-MRAZ                  | http://reichert-mraz.test/carey                        |
+      | ROMAGUERA, SCHULIST AND GRAHAM | http://romagueraschulistandgraham.test/cordell         |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/ngoc_shields            |
+      | SMITH-DOYLE                    | http://smith-doyle.example/joshua_murray               |
+      | SWANIAWSKI, PREDOVIC AND GRANT | http://swaniawskipredovicandgrant.example/cody.murazik |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/scot                 |
+      | WILLMS-JACOBS                  | http://willms-jacobs.example/orlando                   |
+      | WILLMS-KOELPIN                 | http://willms-koelpin.test/harrison.murazik            |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -42,19 +42,19 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     Then I am on the 'Supplier results' page
     And I should see that '13' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP             | http://armstronggroup.test/geraldine_abbott     |
-      | BATZ-BROWN                  | http://batz-brown.test/dennis                   |
-      | DECKOW, KIEHN AND ORN       | http://deckowkiehnandorn.example/matt           |
-      | EMARD LLC                   | http://emardllc.example/corine.balistreri       |
-      | KASSULKE, RITCHIE AND KOCH  | http://kassulkeritchieandkoch.example/julianna  |
-      | KUHLMAN, ORTIZ AND LOCKMAN  | http://kuhlmanortizandlockman.example/philip    |
-      | KULAS, HINTZ AND DOYLE      | http://kulashintzanddoyle.example/moses_ruecker |
-      | LEHNER GROUP                | http://lehnergroup.example/jaime                |
-      | REICHERT-MRAZ               | http://reichert-mraz.test/carey                 |
-      | SCHOWALTER GROUP            | http://schowaltergroup.example/ngoc_shields     |
-      | SMITH-DOYLE                 | http://smith-doyle.example/joshua_murray        |
-      | WELCH, PAGAC AND SWIFT      | http://welchpagacandswift.example/scot          |
-      | WILLMS-JACOBS               | http://willms-jacobs.example/orlando            |
+      | ARMSTRONG GROUP            | http://armstronggroup.test/geraldine_abbott     |
+      | BATZ-BROWN                 | http://batz-brown.test/dennis                   |
+      | DECKOW, KIEHN AND ORN      | http://deckowkiehnandorn.example/matt           |
+      | EMARD LLC                  | http://emardllc.example/corine.balistreri       |
+      | KASSULKE, RITCHIE AND KOCH | http://kassulkeritchieandkoch.example/julianna  |
+      | KUHLMAN, ORTIZ AND LOCKMAN | http://kuhlmanortizandlockman.example/philip    |
+      | KULAS, HINTZ AND DOYLE     | http://kulashintzanddoyle.example/moses_ruecker |
+      | LEHNER GROUP               | http://lehnergroup.example/jaime                |
+      | REICHERT-MRAZ              | http://reichert-mraz.test/carey                 |
+      | SCHOWALTER GROUP           | http://schowaltergroup.example/ngoc_shields     |
+      | SMITH-DOYLE                | http://smith-doyle.example/joshua_murray        |
+      | WELCH, PAGAC AND SWIFT     | http://welchpagacandswift.example/scot          |
+      | WILLMS-JACOBS              | http://willms-jacobs.example/orlando            |
 
   Scenario: Going back from a supplier
     And I click on 'WILLMS-JACOBS'
@@ -64,20 +64,20 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
-      | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
-      | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
-      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
-      | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
-      | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
-      | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/ngoc_shields             |
-      | SMITH-DOYLE                     | http://smith-doyle.example/joshua_murray                |
-      | SWANIAWSKI, PREDOVIC AND GRANT  | http://swaniawskipredovicandgrant.example/cody.murazik  |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/scot                  |
-      | WILLMS-JACOBS                   | http://willms-jacobs.example/orlando                    |
-      | WILLMS-KOELPIN                  | http://willms-koelpin.test/harrison.murazik             |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/geraldine_abbott            |
+      | BATZ-BROWN                     | http://batz-brown.test/dennis                          |
+      | EMARD LLC                      | http://emardllc.example/corine.balistreri              |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/julianna         |
+      | KUHLMAN, ORTIZ AND LOCKMAN     | http://kuhlmanortizandlockman.example/philip           |
+      | KULAS, HINTZ AND DOYLE         | http://kulashintzanddoyle.example/moses_ruecker        |
+      | REICHERT-MRAZ                  | http://reichert-mraz.test/carey                        |
+      | ROMAGUERA, SCHULIST AND GRAHAM | http://romagueraschulistandgraham.test/cordell         |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/ngoc_shields            |
+      | SMITH-DOYLE                    | http://smith-doyle.example/joshua_murray               |
+      | SWANIAWSKI, PREDOVIC AND GRANT | http://swaniawskipredovicandgrant.example/cody.murazik |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/scot                 |
+      | WILLMS-JACOBS                  | http://willms-jacobs.example/orlando                   |
+      | WILLMS-KOELPIN                 | http://willms-koelpin.test/harrison.murazik            |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -86,17 +86,17 @@ Feature: Legal Panel for Government - Central governemnt - Lot 3 - Results
     Then I am on the 'Supplier results' page
     And I should see that '14' suppliers can provide legal services for government
     And the selected legal service for government suppliers are:
-      | ARMSTRONG GROUP                 | http://armstronggroup.test/geraldine_abbott             |
-      | BATZ-BROWN                      | http://batz-brown.test/dennis                           |
-      | EMARD LLC                       | http://emardllc.example/corine.balistreri               |
-      | KASSULKE, RITCHIE AND KOCH      | http://kassulkeritchieandkoch.example/julianna          |
-      | KUHLMAN, ORTIZ AND LOCKMAN      | http://kuhlmanortizandlockman.example/philip            |
-      | KULAS, HINTZ AND DOYLE          | http://kulashintzanddoyle.example/moses_ruecker         |
-      | REICHERT-MRAZ                   | http://reichert-mraz.test/carey                         |
-      | ROMAGUERA, SCHULIST AND GRAHAM  | http://romagueraschulistandgraham.test/cordell          |
-      | SCHOWALTER GROUP                | http://schowaltergroup.example/ngoc_shields             |
-      | SMITH-DOYLE                     | http://smith-doyle.example/joshua_murray                |
-      | SWANIAWSKI, PREDOVIC AND GRANT  | http://swaniawskipredovicandgrant.example/cody.murazik  |
-      | WELCH, PAGAC AND SWIFT          | http://welchpagacandswift.example/scot                  |
-      | WILLMS-JACOBS                   | http://willms-jacobs.example/orlando                    |
-      | WILLMS-KOELPIN                  | http://willms-koelpin.test/harrison.murazik             |
+      | ARMSTRONG GROUP                | http://armstronggroup.test/geraldine_abbott            |
+      | BATZ-BROWN                     | http://batz-brown.test/dennis                          |
+      | EMARD LLC                      | http://emardllc.example/corine.balistreri              |
+      | KASSULKE, RITCHIE AND KOCH     | http://kassulkeritchieandkoch.example/julianna         |
+      | KUHLMAN, ORTIZ AND LOCKMAN     | http://kuhlmanortizandlockman.example/philip           |
+      | KULAS, HINTZ AND DOYLE         | http://kulashintzanddoyle.example/moses_ruecker        |
+      | REICHERT-MRAZ                  | http://reichert-mraz.test/carey                        |
+      | ROMAGUERA, SCHULIST AND GRAHAM | http://romagueraschulistandgraham.test/cordell         |
+      | SCHOWALTER GROUP               | http://schowaltergroup.example/ngoc_shields            |
+      | SMITH-DOYLE                    | http://smith-doyle.example/joshua_murray               |
+      | SWANIAWSKI, PREDOVIC AND GRANT | http://swaniawskipredovicandgrant.example/cody.murazik |
+      | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/scot                 |
+      | WILLMS-JACOBS                  | http://willms-jacobs.example/orlando                   |
+      | WILLMS-KOELPIN                 | http://willms-koelpin.test/harrison.murazik            |

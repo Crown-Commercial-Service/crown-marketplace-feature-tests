@@ -12,28 +12,28 @@ Feature: Management Consultancy - Suppliers
     Then I am on the 'Supplier results' page
     And I should see that '22' companies can provide consultants
     And the selected suppliers are:
-      | ABSHIRE, QUITZON AND HOWE                 |
-      | BASHIRIAN, BODE AND STEUBER               |
-      | BOGISICH, BAUMBACH AND KERTZMANN          |
-      | BRUEN-WITTING                             |
-      | CONSIDINE GROUP                           |
-      | CRONA-ZIEME                               |
-      | DAVIS, HALEY AND HAND                     |
-      | DIBBERT-ANKUNDING                         |
-      | ERNSER GROUP                              |
-      | HERMANN-WEHNER                            |
-      | HILLL, HICKLE AND BODE                    |
-      | JOHNSON GROUP                             |
-      | KOELPIN LLC                               |
-      | KOZEY-KEELING                             |
-      | LANGWORTH, HETTINGER AND KUNDE            |
-      | LEDNER-MAYER                              |
-      | ORTIZ, STREICH AND HEANEY                 |
-      | PARKER INC                                |
-      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG  |
-      | SCHILLER-SCHAMBERGER                      |
-      | TORP GROUP                                |
-      | WILLIAMSON GROUP                          |
+      | ABSHIRE, QUITZON AND HOWE                |
+      | BASHIRIAN, BODE AND STEUBER              |
+      | BOGISICH, BAUMBACH AND KERTZMANN         |
+      | BRUEN-WITTING                            |
+      | CONSIDINE GROUP                          |
+      | CRONA-ZIEME                              |
+      | DAVIS, HALEY AND HAND                    |
+      | DIBBERT-ANKUNDING                        |
+      | ERNSER GROUP                             |
+      | HERMANN-WEHNER                           |
+      | HILLL, HICKLE AND BODE                   |
+      | JOHNSON GROUP                            |
+      | KOELPIN LLC                              |
+      | KOZEY-KEELING                            |
+      | LANGWORTH, HETTINGER AND KUNDE           |
+      | LEDNER-MAYER                             |
+      | ORTIZ, STREICH AND HEANEY                |
+      | PARKER INC                               |
+      | RUNOLFSDOTTIR, SCHROEDER AND STOLTENBERG |
+      | SCHILLER-SCHAMBERGER                     |
+      | TORP GROUP                               |
+      | WILLIAMSON GROUP                         |
 
   Scenario Outline: Check the supplier data - Supplier <supplier>
     Given I click on '<supplier>'
@@ -46,17 +46,17 @@ Feature: Management Consultancy - Suppliers
     And the rate for the 'Managing Consultant / Director' is '<rate_5>'
     And the rate for the 'Partner' is '<rate_6>'
     And the contact details for the supplier are:
-      | <contact_name>    |
-      | <contact_email>   |
-      | <contact_number>  |
-      | <website>         |
-      | <address>         |
+      | <contact_name>   |
+      | <contact_email>  |
+      | <contact_number> |
+      | <website>        |
+      | <address>        |
 
     Examples:
-      | supplier          | sme     | rate_1  | rate_2  | rate_3  | rate_4  | rate_5  | rate_6  | contact_name        | contact_email                     | contact_number      | website                         | address                                                 |
-      | BRUEN-WITTING     | is not  | £360    | £400    | £450    | £600    | £1,200  | £1,500  | Mr. Phillis Schmidt | bruen_witting@kub-kris.io         | 1-662-003-4968 x255 | http://balistreri.co/young.wiza | 791 Maxie Landing, Jasonfurt, AZ 16479                  |
-      | KOELPIN LLC       | is      | £500    | £600    | £700    | £800    | £1,500  | £1,900  | Ileen Turner        | koelpin.llc@gusikowski-durgan.org | 613.662.1799 x019   | http://schumm.org/ezra_blanda   | Suite 744 30858 Lynsey Fall, South Erin, OH 64135-3093  |
-      | WILLIAMSON GROUP  | is not  | £510    | £570    | £640    | £740    | £1,100  | £1,640  | Simonne Borer       | group_williamson@padberg-wiza.com |                     | http://hyatt.com/corey.windler  | 430 Kautzer Divide, Lake Lorriefurt, LA 54301-3074      |
+      | supplier         | sme    | rate_1 | rate_2 | rate_3 | rate_4 | rate_5 | rate_6 | contact_name        | contact_email                     | contact_number      | website                         | address                                                |
+      | BRUEN-WITTING    | is not | £360   | £400   | £450   | £600   | £1,200 | £1,500 | Mr. Phillis Schmidt | bruen_witting@kub-kris.io         | 1-662-003-4968 x255 | http://balistreri.co/young.wiza | 791 Maxie Landing, Jasonfurt, AZ 16479                 |
+      | KOELPIN LLC      | is     | £500   | £600   | £700   | £800   | £1,500 | £1,900 | Ileen Turner        | koelpin.llc@gusikowski-durgan.org | 613.662.1799 x019   | http://schumm.org/ezra_blanda   | Suite 744 30858 Lynsey Fall, South Erin, OH 64135-3093 |
+      | WILLIAMSON GROUP | is not | £510   | £570   | £640   | £740   | £1,100 | £1,640 | Simonne Borer       | group_williamson@padberg-wiza.com |                     | http://hyatt.com/corey.windler  | 430 Kautzer Divide, Lake Lorriefurt, LA 54301-3074     |
 
   @file-download
   Scenario: Download the supplier spreadsheet

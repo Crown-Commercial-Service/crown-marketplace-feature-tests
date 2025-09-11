@@ -23,29 +23,29 @@ Feature: Legal services - Central governemnt - Lot 1 - Results
     Then I am on the 'Supplier results' page
     And I should see that '23' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BOGAN, RODRIGUEZ AND SIPES        |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | CORKERY-BLANDA                    |
-      | FLATLEY GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | GRANT INC                         |
-      | GREENFELDER LLC                   |
-      | HALEY-SCHOEN                      |
-      | HAUCK AND SONS                    |
-      | HODKIEWICZ INC                    |
-      | LUEILWITZ, JAST AND GLEASON       |
-      | MACGYVER-SCHOEN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PFEFFER GROUP                     |
-      | RATH-NICOLAS                      |
-      | RIPPIN, SANFORD AND GOYETTE       |
-      | SATTERFIELD-LOCKMAN               |
-      | SPORER, MARKS AND HOWE            |
-      | THOMPSON AND SONS                 |
-      | VEUM-LOWE                         |
-      | WEISSNAT INC                      |
+      | BERNIER, BRUEN AND RENNER        |
+      | BOGAN, RODRIGUEZ AND SIPES       |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | CORKERY-BLANDA                   |
+      | FLATLEY GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | GRANT INC                        |
+      | GREENFELDER LLC                  |
+      | HALEY-SCHOEN                     |
+      | HAUCK AND SONS                   |
+      | HODKIEWICZ INC                   |
+      | LUEILWITZ, JAST AND GLEASON      |
+      | MACGYVER-SCHOEN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PFEFFER GROUP                    |
+      | RATH-NICOLAS                     |
+      | RIPPIN, SANFORD AND GOYETTE      |
+      | SATTERFIELD-LOCKMAN              |
+      | SPORER, MARKS AND HOWE           |
+      | THOMPSON AND SONS                |
+      | VEUM-LOWE                        |
+      | WEISSNAT INC                     |
 
   Scenario: Service selection changes the results
     Given I click on the 'Back' back link
@@ -61,26 +61,26 @@ Feature: Legal services - Central governemnt - Lot 1 - Results
     Then I am on the 'Supplier results' page
     And I should see that '20' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BOGAN, RODRIGUEZ AND SIPES        |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | CORKERY-BLANDA                    |
-      | GOTTLIEB GROUP                    |
-      | GREENFELDER LLC                   |
-      | HALEY-SCHOEN                      |
-      | HAUCK AND SONS                    |
-      | HODKIEWICZ INC                    |
-      | LUEILWITZ, JAST AND GLEASON       |
-      | MACGYVER-SCHOEN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PFEFFER GROUP                     |
-      | RATH-NICOLAS                      |
-      | RIPPIN, SANFORD AND GOYETTE       |
-      | SATTERFIELD-LOCKMAN               |
-      | SPORER, MARKS AND HOWE            |
-      | VEUM-LOWE                         |
-      | WEISSNAT INC                      |
+      | BERNIER, BRUEN AND RENNER        |
+      | BOGAN, RODRIGUEZ AND SIPES       |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | CORKERY-BLANDA                   |
+      | GOTTLIEB GROUP                   |
+      | GREENFELDER LLC                  |
+      | HALEY-SCHOEN                     |
+      | HAUCK AND SONS                   |
+      | HODKIEWICZ INC                   |
+      | LUEILWITZ, JAST AND GLEASON      |
+      | MACGYVER-SCHOEN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PFEFFER GROUP                    |
+      | RATH-NICOLAS                     |
+      | RIPPIN, SANFORD AND GOYETTE      |
+      | SATTERFIELD-LOCKMAN              |
+      | SPORER, MARKS AND HOWE           |
+      | VEUM-LOWE                        |
+      | WEISSNAT INC                     |
 
   Scenario: Jursidiction selection changes the results
     Given I click on the 'Back' back link
@@ -110,29 +110,29 @@ Feature: Legal services - Central governemnt - Lot 1 - Results
     Then I am on the 'Supplier results' page
     And I should see that '23' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BOGAN, RODRIGUEZ AND SIPES        |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | CORKERY-BLANDA                    |
-      | FLATLEY GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | GRANT INC                         |
-      | GREENFELDER LLC                   |
-      | HALEY-SCHOEN                      |
-      | HAUCK AND SONS                    |
-      | HODKIEWICZ INC                    |
-      | LUEILWITZ, JAST AND GLEASON       |
-      | MACGYVER-SCHOEN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PFEFFER GROUP                     |
-      | RATH-NICOLAS                      |
-      | RIPPIN, SANFORD AND GOYETTE       |
-      | SATTERFIELD-LOCKMAN               |
-      | SPORER, MARKS AND HOWE            |
-      | THOMPSON AND SONS                 |
-      | VEUM-LOWE                         |
-      | WEISSNAT INC                      |
+      | BERNIER, BRUEN AND RENNER        |
+      | BOGAN, RODRIGUEZ AND SIPES       |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | CORKERY-BLANDA                   |
+      | FLATLEY GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | GRANT INC                        |
+      | GREENFELDER LLC                  |
+      | HALEY-SCHOEN                     |
+      | HAUCK AND SONS                   |
+      | HODKIEWICZ INC                   |
+      | LUEILWITZ, JAST AND GLEASON      |
+      | MACGYVER-SCHOEN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PFEFFER GROUP                    |
+      | RATH-NICOLAS                     |
+      | RIPPIN, SANFORD AND GOYETTE      |
+      | SATTERFIELD-LOCKMAN              |
+      | SPORER, MARKS AND HOWE           |
+      | THOMPSON AND SONS                |
+      | VEUM-LOWE                        |
+      | WEISSNAT INC                     |
 
   Scenario: Going back from downloading documents
     And I click on 'Download the supplier list'
@@ -141,26 +141,26 @@ Feature: Legal services - Central governemnt - Lot 1 - Results
     Then I am on the 'Supplier results' page
     And I should see that '23' suppliers can provide legal services
     And the selected legal service suppliers are:
-      | BERNIER, BRUEN AND RENNER         |
-      | BOGAN, RODRIGUEZ AND SIPES        |
-      | BRUEN, CARTWRIGHT AND RUTHERFORD  |
-      | CORKERY-BLANDA                    |
-      | FLATLEY GROUP                     |
-      | GOTTLIEB GROUP                    |
-      | GRANT INC                         |
-      | GREENFELDER LLC                   |
-      | HALEY-SCHOEN                      |
-      | HAUCK AND SONS                    |
-      | HODKIEWICZ INC                    |
-      | LUEILWITZ, JAST AND GLEASON       |
-      | MACGYVER-SCHOEN                   |
-      | MCCLURE LLC                       |
-      | MORISSETTE-RENNER                 |
-      | PFEFFER GROUP                     |
-      | RATH-NICOLAS                      |
-      | RIPPIN, SANFORD AND GOYETTE       |
-      | SATTERFIELD-LOCKMAN               |
-      | SPORER, MARKS AND HOWE            |
-      | THOMPSON AND SONS                 |
-      | VEUM-LOWE                         |
-      | WEISSNAT INC                      |
+      | BERNIER, BRUEN AND RENNER        |
+      | BOGAN, RODRIGUEZ AND SIPES       |
+      | BRUEN, CARTWRIGHT AND RUTHERFORD |
+      | CORKERY-BLANDA                   |
+      | FLATLEY GROUP                    |
+      | GOTTLIEB GROUP                   |
+      | GRANT INC                        |
+      | GREENFELDER LLC                  |
+      | HALEY-SCHOEN                     |
+      | HAUCK AND SONS                   |
+      | HODKIEWICZ INC                   |
+      | LUEILWITZ, JAST AND GLEASON      |
+      | MACGYVER-SCHOEN                  |
+      | MCCLURE LLC                      |
+      | MORISSETTE-RENNER                |
+      | PFEFFER GROUP                    |
+      | RATH-NICOLAS                     |
+      | RIPPIN, SANFORD AND GOYETTE      |
+      | SATTERFIELD-LOCKMAN              |
+      | SPORER, MARKS AND HOWE           |
+      | THOMPSON AND SONS                |
+      | VEUM-LOWE                        |
+      | WEISSNAT INC                     |

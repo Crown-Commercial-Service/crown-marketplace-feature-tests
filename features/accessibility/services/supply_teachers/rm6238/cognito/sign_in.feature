@@ -8,4 +8,4 @@ Feature: Supply Teachers - RM6238 - Sign in to my account - Accessibility
     Then I am on the 'Sign in to find supply teachers and agency workers' page
     And I click on 'Sign in with CCS'
     And I am on the 'Sign in to your supply teachers account' page
-    Then the page should be axe clean excluding ".ccs-contact-us"
+    Then the page should pass the accessibility checks

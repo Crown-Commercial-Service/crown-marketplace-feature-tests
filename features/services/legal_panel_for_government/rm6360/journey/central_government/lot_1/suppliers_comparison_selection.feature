@@ -55,58 +55,58 @@ Feature: Legal Panel for Government - Central governemnt - Lot 1 - Suppliers com
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | CRUICKSHANK GROUP                 |
+      | CRUICKSHANK GROUP |
     When I check the following items:
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |
     Then the basket should say '3 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | CRUICKSHANK GROUP                 |
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
+      | CRUICKSHANK GROUP              |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |
 
   Scenario: Changing the selection will change the basket
     When I check the following items:
-      | CRUICKSHANK GROUP                 |
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
-      | DONNELLY-RIPPIN                   |
+      | CRUICKSHANK GROUP              |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |
+      | DONNELLY-RIPPIN                |
     Then the basket should say '4 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | CRUICKSHANK GROUP                 |
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
-      | DONNELLY-RIPPIN                   |
+      | CRUICKSHANK GROUP              |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |
+      | DONNELLY-RIPPIN                |
     When I deselect the following items:
-      | CRUICKSHANK GROUP                 |
+      | CRUICKSHANK GROUP |
     Then the basket should say '3 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DONNELLY-RIPPIN                   |
-      | DECKOW, ALTENWERTH AND HALEY      |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DONNELLY-RIPPIN                |
+      | DECKOW, ALTENWERTH AND HALEY   |
     When I remove the following items from the basket:
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | DONNELLY-RIPPIN                   |
+      | DONNELLY-RIPPIN |
     When I click on 'Remove all'
     Then the basket should say 'No suppliers selected'
 
   Scenario: Go back from suppliers and change selection
     When I check the following items:
-      | CRUICKSHANK GROUP                 |
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
+      | CRUICKSHANK GROUP              |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I click on the 'Back' back link
     Then I am on the 'Select suppliers for comparison' page
     And the following items should appear in the basket:
-      | CRUICKSHANK GROUP                 |
-      | CRUICKSHANK, WISOKY AND HARBER    |
-      | DECKOW, ALTENWERTH AND HALEY      |
+      | CRUICKSHANK GROUP              |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, ALTENWERTH AND HALEY   |

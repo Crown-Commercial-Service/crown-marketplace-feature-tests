@@ -12,8 +12,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers com
     Then I am on the 'Select the legal services you need' page
     And the sub title is 'Lot 5 - Rail Legal Services'
     When I check the following items:
-      | Pensions law  |
-      | Planning law  |
+      | Pensions law |
+      | Planning law |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
     And I should see that '12' suppliers can provide legal services for government
@@ -55,7 +55,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers com
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
+      | COLLIER, AUFDERHAR AND VOLKMAN |
     When I check the following items:
       | DECKOW, KIEHN AND ORN           |
       | HICKLE, CARTWRIGHT AND EMMERICH |
@@ -80,7 +80,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers com
       | HICKLE, CARTWRIGHT AND EMMERICH |
       | KAUTZER, PFEFFER AND SCHUMM     |
     When I deselect the following items:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
+      | COLLIER, AUFDERHAR AND VOLKMAN |
     Then the basket should say '3 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -93,7 +93,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers com
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | KAUTZER, PFEFFER AND SCHUMM     |
+      | KAUTZER, PFEFFER AND SCHUMM |
     When I click on 'Remove all'
     Then the basket should say 'No suppliers selected'
 

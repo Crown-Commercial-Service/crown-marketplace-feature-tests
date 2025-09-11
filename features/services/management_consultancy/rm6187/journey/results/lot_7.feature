@@ -25,76 +25,76 @@ Feature: Management Consultancy - Lot 7 - Health, Social Care and Community - Re
     Then I am on the 'Supplier results' page
     And I should see that '37' companies can provide consultants
     And the selected suppliers are:
-      | ABERNATHY, FAY AND BEER         |
-      | BASHIRIAN, BODE AND STEUBER     |
-      | BERGNAUM LLC                    |
-      | BREKKE, RAU AND REINGER         |
-      | CASSIN-HAAG                     |
-      | COLLIER INC                     |
-      | DIETRICH AND SONS               |
-      | DURGAN AND SONS                 |
-      | FISHER-DECKOW                   |
-      | GOTTLIEB, SCHMITT AND GREEN     |
-      | GRAHAM, BREKKE AND HAMILL       |
-      | HESSEL, GREENHOLT AND BLICK     |
-      | HODKIEWICZ-LEDNER               |
-      | HUDSON LLC                      |
-      | JENKINS INC                     |
-      | JOHNSON GROUP                   |
-      | KIEHN, BLICK AND FUNK           |
-      | KONOPELSKI AND SONS             |
-      | KREIGER, SWIFT AND LEDNER       |
-      | LANGWORTH, HETTINGER AND KUNDE  |
-      | LANGWORTH-KEELING               |
-      | LITTEL-WELCH                    |
-      | MCCLURE, EMARD AND LITTLE       |
-      | PAUCEK-HERMAN                   |
-      | PREDOVIC, MCGLYNN AND FRIESEN   |
+      | ABERNATHY, FAY AND BEER        |
+      | BASHIRIAN, BODE AND STEUBER    |
+      | BERGNAUM LLC                   |
+      | BREKKE, RAU AND REINGER        |
+      | CASSIN-HAAG                    |
+      | COLLIER INC                    |
+      | DIETRICH AND SONS              |
+      | DURGAN AND SONS                |
+      | FISHER-DECKOW                  |
+      | GOTTLIEB, SCHMITT AND GREEN    |
+      | GRAHAM, BREKKE AND HAMILL      |
+      | HESSEL, GREENHOLT AND BLICK    |
+      | HODKIEWICZ-LEDNER              |
+      | HUDSON LLC                     |
+      | JENKINS INC                    |
+      | JOHNSON GROUP                  |
+      | KIEHN, BLICK AND FUNK          |
+      | KONOPELSKI AND SONS            |
+      | KREIGER, SWIFT AND LEDNER      |
+      | LANGWORTH, HETTINGER AND KUNDE |
+      | LANGWORTH-KEELING              |
+      | LITTEL-WELCH                   |
+      | MCCLURE, EMARD AND LITTLE      |
+      | PAUCEK-HERMAN                  |
+      | PREDOVIC, MCGLYNN AND FRIESEN  |
     And I click on 'Next'
     Then I am on the 'Supplier results' page
     And I should see that '37' companies can provide consultants
     And the selected suppliers are:
-      | PROSACCO INC                    |
-      | REICHEL-HODKIEWICZ              |
-      | REICHERT LLC                    |
-      | SHANAHAN LLC                    |
-      | SIMONIS-FARRELL                 |
-      | SMITH AND SONS                  |
-      | STARK, KUHLMAN AND FAHEY        |
-      | STIEDEMANN, ANKUNDING AND FUNK  |
-      | TORP GROUP                      |
-      | WILLIAMSON GROUP                |
-      | WINDLER, REICHERT AND HARBER    |
-      | WITTING, HANE AND WIEGAND       |
+      | PROSACCO INC                   |
+      | REICHEL-HODKIEWICZ             |
+      | REICHERT LLC                   |
+      | SHANAHAN LLC                   |
+      | SIMONIS-FARRELL                |
+      | SMITH AND SONS                 |
+      | STARK, KUHLMAN AND FAHEY       |
+      | STIEDEMANN, ANKUNDING AND FUNK |
+      | TORP GROUP                     |
+      | WILLIAMSON GROUP               |
+      | WINDLER, REICHERT AND HARBER   |
+      | WITTING, HANE AND WIEGAND      |
     And I click on 'Previous'
     Then I am on the 'Supplier results' page
     And I should see that '37' companies can provide consultants
     And the selected suppliers are:
-      | ABERNATHY, FAY AND BEER         |
-      | BASHIRIAN, BODE AND STEUBER     |
-      | BERGNAUM LLC                    |
-      | BREKKE, RAU AND REINGER         |
-      | CASSIN-HAAG                     |
-      | COLLIER INC                     |
-      | DIETRICH AND SONS               |
-      | DURGAN AND SONS                 |
-      | FISHER-DECKOW                   |
-      | GOTTLIEB, SCHMITT AND GREEN     |
-      | GRAHAM, BREKKE AND HAMILL       |
-      | HESSEL, GREENHOLT AND BLICK     |
-      | HODKIEWICZ-LEDNER               |
-      | HUDSON LLC                      |
-      | JENKINS INC                     |
-      | JOHNSON GROUP                   |
-      | KIEHN, BLICK AND FUNK           |
-      | KONOPELSKI AND SONS             |
-      | KREIGER, SWIFT AND LEDNER       |
-      | LANGWORTH, HETTINGER AND KUNDE  |
-      | LANGWORTH-KEELING               |
-      | LITTEL-WELCH                    |
-      | MCCLURE, EMARD AND LITTLE       |
-      | PAUCEK-HERMAN                   |
-      | PREDOVIC, MCGLYNN AND FRIESEN   |
+      | ABERNATHY, FAY AND BEER        |
+      | BASHIRIAN, BODE AND STEUBER    |
+      | BERGNAUM LLC                   |
+      | BREKKE, RAU AND REINGER        |
+      | CASSIN-HAAG                    |
+      | COLLIER INC                    |
+      | DIETRICH AND SONS              |
+      | DURGAN AND SONS                |
+      | FISHER-DECKOW                  |
+      | GOTTLIEB, SCHMITT AND GREEN    |
+      | GRAHAM, BREKKE AND HAMILL      |
+      | HESSEL, GREENHOLT AND BLICK    |
+      | HODKIEWICZ-LEDNER              |
+      | HUDSON LLC                     |
+      | JENKINS INC                    |
+      | JOHNSON GROUP                  |
+      | KIEHN, BLICK AND FUNK          |
+      | KONOPELSKI AND SONS            |
+      | KREIGER, SWIFT AND LEDNER      |
+      | LANGWORTH, HETTINGER AND KUNDE |
+      | LANGWORTH-KEELING              |
+      | LITTEL-WELCH                   |
+      | MCCLURE, EMARD AND LITTLE      |
+      | PAUCEK-HERMAN                  |
+      | PREDOVIC, MCGLYNN AND FRIESEN  |
 
   Scenario: Going back from a supplier
     And I click on 'PROSACCO INC'

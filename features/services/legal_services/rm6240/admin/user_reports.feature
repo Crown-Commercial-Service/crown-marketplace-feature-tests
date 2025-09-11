@@ -2,7 +2,7 @@
 Feature: Legal Services - Admin - User reports
 
   @file-download
-  Scenario: I can generate and download a report  
+  Scenario: I can generate and download a report
     Given I sign in as an admin for the 'RM6240' framework in 'legal services'
     Then I am on the 'Admin dashboard' page
     And I click on 'User reports'

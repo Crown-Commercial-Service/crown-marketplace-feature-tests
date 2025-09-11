@@ -33,12 +33,12 @@ Feature: Legal Services - Admin - Create new upload
     Then the file '<filename>' is downloaded with the 'xlsx' extension
 
     Examples:
-      | filename                          |
-      | Supplier details                  |
-      | Supplier rate cards               |
-      | Supplier lot 1 service offerings  |
-      | Supplier lot 2 service offerings  |
-      | Supplier lot 3 service offerings  |
+      | filename                         |
+      | Supplier details                 |
+      | Supplier rate cards              |
+      | Supplier lot 1 service offerings |
+      | Supplier lot 2 service offerings |
+      | Supplier lot 3 service offerings |
 
   @file-download
   Scenario Outline: Download files on upload - <filename>
@@ -53,9 +53,9 @@ Feature: Legal Services - Admin - Create new upload
     Then I am on the 'Manage supplier data' page
 
     Examples:
-      | filename                          |
-      | Supplier details                  |
-      | Supplier rate cards               |
-      | Supplier lot 1 service offerings  |
-      | Supplier lot 2 service offerings  |
-      | Supplier lot 3 service offerings  |
+      | filename                         |
+      | Supplier details                 |
+      | Supplier rate cards              |
+      | Supplier lot 1 service offerings |
+      | Supplier lot 2 service offerings |
+      | Supplier lot 3 service offerings |

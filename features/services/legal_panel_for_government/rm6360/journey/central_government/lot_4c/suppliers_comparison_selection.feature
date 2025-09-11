@@ -59,16 +59,16 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | CRUICKSHANK, WISOKY AND HARBER  |
+      | CRUICKSHANK, WISOKY AND HARBER |
     When I check the following items:
-      | DECKOW, KIEHN AND ORN           |
-      | FISHER-BASHIRIAN                |
+      | DECKOW, KIEHN AND ORN |
+      | FISHER-BASHIRIAN      |
     Then the basket should say '3 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
-      | CRUICKSHANK, WISOKY AND HARBER  |
-      | DECKOW, KIEHN AND ORN           |
-      | FISHER-BASHIRIAN                |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, KIEHN AND ORN          |
+      | FISHER-BASHIRIAN               |
 
   Scenario: Changing the selection will change the basket
     When I check the following items:
@@ -84,7 +84,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
       | FISHER-BASHIRIAN                |
       | HICKLE, CARTWRIGHT AND EMMERICH |
     When I deselect the following items:
-      | CRUICKSHANK, WISOKY AND HARBER  |
+      | CRUICKSHANK, WISOKY AND HARBER |
     Then the basket should say '3 suppliers selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -92,8 +92,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
       | FISHER-BASHIRIAN                |
       | HICKLE, CARTWRIGHT AND EMMERICH |
     When I remove the following items from the basket:
-      | DECKOW, KIEHN AND ORN           |
-      | FISHER-BASHIRIAN                |
+      | DECKOW, KIEHN AND ORN |
+      | FISHER-BASHIRIAN      |
     Then the basket should say '1 supplier selected'
     And the remove all link should be visible
     And the following items should appear in the basket:
@@ -103,14 +103,14 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Suppliers co
 
   Scenario: Go back from suppliers and change selection
     When I check the following items:
-      | CRUICKSHANK, WISOKY AND HARBER  |
-      | DECKOW, KIEHN AND ORN           |
-      | FISHER-BASHIRIAN                |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, KIEHN AND ORN          |
+      | FISHER-BASHIRIAN               |
     And I click on 'Continue'
     Then I am on the 'Compare supplier rates' page
     And I click on the 'Back' back link
     Then I am on the 'Select suppliers for comparison' page
     And the following items should appear in the basket:
-      | CRUICKSHANK, WISOKY AND HARBER  |
-      | DECKOW, KIEHN AND ORN           |
-      | FISHER-BASHIRIAN                |
+      | CRUICKSHANK, WISOKY AND HARBER |
+      | DECKOW, KIEHN AND ORN          |
+      | FISHER-BASHIRIAN               |

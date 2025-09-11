@@ -71,13 +71,13 @@ Feature: Supply Teachers - Admin - Create new upload
     Then the file '<filename>' is downloaded with the '<extension>' extension
 
     Examples:
-      | filename                                | extension |
-      | Current accredited suppliers            | xlsx      |
-      | Geographical data all suppliers         | xlsx      |
-      | Master vendor contacts                  | csv       |
-      | Education technology platform contacts  | csv       |
-      | Pricing for tool                        | xlsx      |
-      | Supplier lookup                         | csv       |
+      | filename                               | extension |
+      | Current accredited suppliers           | xlsx      |
+      | Geographical data all suppliers        | xlsx      |
+      | Master vendor contacts                 | csv       |
+      | Education technology platform contacts | csv       |
+      | Pricing for tool                       | xlsx      |
+      | Supplier lookup                        | csv       |
 
   @file-download
   Scenario Outline: Download files on upload - <filename>
@@ -92,10 +92,10 @@ Feature: Supply Teachers - Admin - Create new upload
     Then I am on the 'Supply teachers and agency workers' page
 
     Examples:
-      | filename                                | extension |
-      | Current accredited suppliers            | xlsx      |
-      | Geographical data all suppliers         | xlsx      |
-      | Master vendor contacts                  | csv       |
-      | Education technology platform contacts  | csv       |
-      | Pricing for tool                        | xlsx      |
-      | Supplier lookup                         | csv       |
+      | filename                               | extension |
+      | Current accredited suppliers           | xlsx      |
+      | Geographical data all suppliers        | xlsx      |
+      | Master vendor contacts                 | csv       |
+      | Education technology platform contacts | csv       |
+      | Pricing for tool                       | xlsx      |
+      | Supplier lookup                        | csv       |
