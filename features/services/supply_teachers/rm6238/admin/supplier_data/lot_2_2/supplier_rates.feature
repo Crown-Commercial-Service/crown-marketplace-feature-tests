@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Admin - Supplier lot data - Lot 2.2 - Rates
 
   Scenario: Rates

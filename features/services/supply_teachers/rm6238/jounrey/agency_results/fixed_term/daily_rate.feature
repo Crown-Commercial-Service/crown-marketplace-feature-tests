@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Fixed term - Daily rate
 
   Background: Navigate to the Agency results page

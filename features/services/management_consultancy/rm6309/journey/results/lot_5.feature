@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 5 - HR - Results
 
   Background: Navigate to start page and select the lot

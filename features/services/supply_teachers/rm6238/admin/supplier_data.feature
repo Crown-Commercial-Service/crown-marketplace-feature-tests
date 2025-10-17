@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Admin - Supplier data pages
 
   Background: Navigate to supplier data page

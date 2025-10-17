@@ -5,12 +5,11 @@ rerun_opts = rerun.empty? ? "--format #{ENV['CUCUMBER_FORMAT'] || 'progress'} fe
 restricted_tags = [
   '@wip',
   '@accessibility',
-  ENV['TEST_ENV'] == 'production' ? '@skip-production' : nil,
   ENV['TEST_ENV'] == 'production' || ENV['TEST_ENV'] == 'local' || ENV['TEST_ENV'].nil? ? nil : '@skip-non-production'
 ].compact.join(' and not ')
-std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags 'not #{restricted_tags}' --publish-quiet "
+std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags '#{ENV['TEST_ENV'] == 'production' ? '@production and ' : ''}not #{restricted_tags}' --publish-quiet "
 accessibility_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags '@accessibility' --publish-quiet CUCUMBER_ACCESSIBILITY=true "
-smoulder_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags '@smoulder#{' and not @skip-production' if ENV['TEST_ENV'] == 'production'}' --publish-quiet "
+smoulder_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} --strict --tags '@smoulder#{ENV['TEST_ENV'] == 'production' ? ' and @production' : ''}' --publish-quiet "
 std_report_opts = "--format json --out reports/report#{ENV['TEST_ENV_NUMBER']}.json --format rerun --out reports/rerun.txt "
 parallel_report_opts = "--format json --out reports/report#{ENV['TEST_ENV_NUMBER']}.json --format ParallelTests::Cucumber::FailuresLogger --out reports/rerun.txt "
 %>

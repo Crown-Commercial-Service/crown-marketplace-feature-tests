@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Admin - Supplier lot data - Lot 6 - Services
 
   Scenario: Services

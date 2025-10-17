@@ -1,4 +1,4 @@
-@smoulder
+@smoulder @production
 Feature: Legal Panel for Government - Non central governemnt
 
   Scenario: If my requirements are not suitable, I cannot continue

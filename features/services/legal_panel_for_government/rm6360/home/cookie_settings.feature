@@ -19,7 +19,7 @@ Feature: Legal Panel for Government - Cookie settings
     And the 'ga' cookies have been 'accepted'
     And the 'glassbox' cookies have been 'accepted'
 
-  @smoulder
+  @smoulder @production
   Scenario: Selecting links in the banner - reject cookies
     When I click on 'Reject analytics cookies'
     Then the cookie banner shows I have 'rejected' the cookies
@@ -78,7 +78,7 @@ Feature: Legal Panel for Government - Cookie settings
     And the 'ga' cookies have been 'accepted'
     And the 'glassbox' cookies have been 'accepted'
 
-  @smoulder
+  @smoulder @production
   Scenario: Changing the cookie settings - disableing the ga and glassbox cookies
     When I click on 'Accept analytics cookies'
     Then the cookie banner shows I have 'accepted' the cookies

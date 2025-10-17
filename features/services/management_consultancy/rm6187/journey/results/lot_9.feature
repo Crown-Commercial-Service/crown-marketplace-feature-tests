@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 9 - Environmental Sustainability and Socio-economic Development - Results
 
   Background: Navigate to start page and select the lot

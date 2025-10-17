@@ -1,4 +1,4 @@
-@mobile @smoulder
+@mobile @smoulder @production
 Feature: Legal Services - Headers are responsive
 
   Scenario: Signed in and the navigation links are responsive

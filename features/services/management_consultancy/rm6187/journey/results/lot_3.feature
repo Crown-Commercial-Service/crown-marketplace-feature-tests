@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 3 - Complex and Transformation - Results
 
   Background: Navigate to start page and select the lot

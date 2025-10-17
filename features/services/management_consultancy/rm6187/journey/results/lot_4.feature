@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 4 - Finance - Results
 
   Background: Navigate to start page and select the lot

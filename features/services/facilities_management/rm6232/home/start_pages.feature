@@ -27,7 +27,7 @@ Feature: Facilities Management - Start pages
     Then I sign in
     And I am on the 'Your account' page
 
-  @smoulder
+  @smoulder @production
   Scenario: Viewing the home page
     When I go to the 'facilities management' start page for 'RM6232'
     And I am on the 'Find a facilities management supplier' page

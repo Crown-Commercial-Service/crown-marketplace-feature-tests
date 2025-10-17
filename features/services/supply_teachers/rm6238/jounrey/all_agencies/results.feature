@@ -6,7 +6,6 @@ Feature: Supply Teachers - All agencies
     And I click on 'Continue'
     Then I am on the 'Find an agency' page
 
-  @skip-production
   Scenario: All agencies search
     And a list of 10 agencies are shown
     And the listed agencies for all agencies are:
@@ -40,7 +39,7 @@ Feature: Supply Teachers - All agencies
       | STANTON, FADEL AND BOSCO     |
       | ZIEMANN-HERMANN              |
 
-  @skip-non-production @smoulder
+  @skip-non-production @smoulder @production
   Scenario: All agencies search - Production
     And multiple agencies are shown and I count them
     And I enter "an" for the agency search

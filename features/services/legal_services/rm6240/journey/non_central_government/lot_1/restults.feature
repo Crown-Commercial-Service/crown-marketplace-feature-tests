@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal services - Non central governemnt - Lot 1 - Results
 
   Background: Navigate to start page and complete the journey

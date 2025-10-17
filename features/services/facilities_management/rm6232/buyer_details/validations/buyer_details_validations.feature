@@ -3,7 +3,7 @@ Feature: Facilities Management - RM6232 - Buyer details - validations
   Background: Navigate to Buyer Details page
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management' without details
 
-  @smoulder
+  @smoulder @production
   Scenario: Save and continue - empty fields
     When I click on 'Save and continue'
     Then I should see the following error messages:
@@ -52,7 +52,7 @@ Feature: Facilities Management - RM6232 - Buyer details - validations
     Then I should see the following error messages:
       | You must select an address to save your details |
 
-  @smoulder
+  @smoulder @production
   Scenario: Add Address manually - nothing entered
     And I enter the following details into the form:
       | Postcode | ST16 1AA |

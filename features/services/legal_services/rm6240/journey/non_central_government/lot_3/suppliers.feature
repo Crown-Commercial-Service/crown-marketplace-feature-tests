@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal services - Non central governemnt - Lot 3 - Suppliers
 
   Background: Login and then navigate to the supplier results page

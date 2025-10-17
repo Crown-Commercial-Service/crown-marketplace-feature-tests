@@ -1,4 +1,4 @@
-@smoulder
+@smoulder @production
 Feature: Facilities Management - RM6232 - Select region validations
 
   Scenario: No region selected

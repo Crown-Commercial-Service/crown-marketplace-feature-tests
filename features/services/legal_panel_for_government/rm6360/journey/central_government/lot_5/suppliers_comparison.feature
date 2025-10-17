@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers comparison
 
   Background: Navigate to start page and complete the journey

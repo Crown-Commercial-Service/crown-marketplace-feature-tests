@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Fixed term - Results by length
 
   Background: I navigate to the employee to start date page

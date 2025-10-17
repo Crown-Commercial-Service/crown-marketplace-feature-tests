@@ -5,7 +5,7 @@ Feature: Facilities Management - What do I do next
     And I have a procurement with the name 'My WDIDN procurement'
     And I am on the 'What do I do next?' page
 
-  @smoulder
+  @smoulder @production
   Scenario: The content is correct
     And the procurement name is shown to be 'My WDIDN procurement'
     And the contract number is visible with the contract name 'My WDIDN procurement'
@@ -16,7 +16,7 @@ Feature: Facilities Management - What do I do next
       | Visit the Facilities Management and Workplace Services framework page for |
       | information on how to procure via this framework, including:              |
 
-  @file-download @smoulder
+  @file-download @smoulder @production
   Scenario: Download the supplier spreadsheet
     And I click on 'Selected suppliers'
     Then the facilities management file for 'My WDIDN procurement' is downloaded with the 'xlsx' extension

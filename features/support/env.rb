@@ -49,7 +49,8 @@ end
 
 ENV['TEST_RUN_ID'] = SecureRandom.uuid
 
-ENV['LIVE_FRAMEWORKS'] = config['live_frameworks'].join(',')
+ENV['LIVE_SERVICES'] = config['live_services'].map { |service| service['service'] }.join(',')
+ENV['LIVE_FRAMEWORKS'] = config['live_services'].map { |service| service['frameworks'] }.flatten.join(',')
 
 # Set the Capybara config
 Capybara.app_host = config['host']

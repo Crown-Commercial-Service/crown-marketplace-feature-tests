@@ -1,4 +1,4 @@
-@skip-non-production @smoulder
+@skip-non-production @smoulder @production
 Feature: Legal Panel for Government - Central governemnt - Supplier Comparison
 
   Background: Navigate to the select lot page

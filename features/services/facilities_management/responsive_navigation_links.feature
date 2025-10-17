@@ -1,4 +1,4 @@
-@mobile @smoulder
+@mobile @smoulder @production
 Feature: Facilities Management - Headers are responsive
 
   Scenario: Signed in and the navigation links are responsive

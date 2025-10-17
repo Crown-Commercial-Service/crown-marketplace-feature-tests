@@ -10,7 +10,6 @@ Feature: Supply Teachers - Master vendors - Above threshold
     Then I am on the 'Master vendor managed service providers' page
     And the caption is 'Contract worth more than £2.5 million'
 
-  @skip-production
   Scenario: Master vendors - Above threshold results
     And there are 3 managed service provider agencies
     And the managed service provider agencies are:
@@ -28,7 +27,7 @@ Feature: Supply Teachers - Master vendors - Above threshold
     And I click on 'Back'
     Then I am on the 'Is your contract likely to be worth more than £2.5 million?' page
 
-  @skip-non-production @smoulder
+  @skip-non-production @smoulder @production
   Scenario: Master vendors - Below threshold results - Production
     And there are multiple managed service provider agencies
     And the first supplier has contact details

@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Agency payroll - Results by role
 
   Background: Navigate to the postcode page

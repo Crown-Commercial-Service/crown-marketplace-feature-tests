@@ -1,6 +1,6 @@
 Feature: Management Consultancy - Start pages - With an unrecognised framework
 
-  @smoulder
+  @smoulder @production
   Scenario: Go to unrecognised famework in the buyer section - logged in
     Given I sign in and navigate to the start page for the 'RM6309' framework in 'management consultancy'
     And I go to the 'management consultancy' start page for 'RM9812'
@@ -26,7 +26,6 @@ Feature: Management Consultancy - Start pages - With an unrecognised framework
     Then I am on '/management-consultancy/RM6309/admin/sign-in'
     And the framework is 'RM6309'
 
-  @skip-production
   Scenario: Go to an unrecognised famework in the admin section - logged in
     Given I sign in as an admin for the 'RM6309' framework in 'management consultancy'
     Then I am on the 'Admin dashboard' page

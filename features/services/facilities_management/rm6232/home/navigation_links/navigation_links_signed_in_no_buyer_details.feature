@@ -9,7 +9,7 @@ Feature: Facilities Management - Navigation links when signed in - without buyer
     Then I sign in
     And I am on the 'Manage your details' page
 
-  @smoulder
+  @smoulder @production
   Scenario: Buyer details - Sign out
     And I should see the following navigation links:
       | Sign out |

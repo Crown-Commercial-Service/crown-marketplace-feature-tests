@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Nominated worker - Agencies
 
   Background: Navigate to the Agency results page

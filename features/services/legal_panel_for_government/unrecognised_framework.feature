@@ -1,6 +1,6 @@
 Feature: Legal Panel for Government - Start pages - With an unrecognised framework
 
-  @smoulder
+  @smoulder @production
   Scenario: Go to unrecognised famework in the buyer section - logged in
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
     And I go to the 'legal panel for government' start page for 'RM0172'
@@ -26,7 +26,6 @@ Feature: Legal Panel for Government - Start pages - With an unrecognised framewo
     Then I am on '/legal-panel-for-government/RM6360/admin/sign-in'
     And the framework is 'RM6360'
 
-  @skip-production
   Scenario: Go to an unrecognised famework in the admin section - logged in
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
     Then I am on the 'Admin dashboard' page

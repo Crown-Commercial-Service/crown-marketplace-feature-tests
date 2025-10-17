@@ -10,7 +10,7 @@ Feature: Legal Panel for Government - Start pages
     When I click on 'Start now'
     Then I am on the 'Sign in to your legal panel for government account' page
 
-  @smoulder
+  @smoulder @production
   Scenario: Logging in
     When I go to the 'legal panel for government' start page for 'RM6360'
     Then I am on the 'Find legal services for government' page

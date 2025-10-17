@@ -10,7 +10,7 @@ Feature: Supply Teachers - Start pages
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
 
-  @smoulder
+  @smoulder @production
   Scenario: Logging in
     When I go to the 'supply teachers' start page for 'RM6238'
     Then I am on the 'Find supply teachers and agency workers' page
@@ -20,7 +20,7 @@ Feature: Supply Teachers - Start pages
     Then I sign in
     Then I am on the 'What is your school looking for?' page
 
-  @smoulder
+  @smoulder @production
   Scenario: I can reach the DfE Sign in Page
     When I go to the 'supply teachers' start page for 'RM6238'
     Then I am on the 'Find supply teachers and agency workers' page

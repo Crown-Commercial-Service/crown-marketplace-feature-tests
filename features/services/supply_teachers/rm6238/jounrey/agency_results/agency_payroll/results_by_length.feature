@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Agency payroll - Results by length
 
   Background: Navigate to the School postcode and worker requirements page

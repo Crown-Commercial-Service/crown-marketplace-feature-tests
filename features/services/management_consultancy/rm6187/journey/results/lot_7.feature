@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 7 - Health, Social Care and Community - Results
 
   Background: Navigate to start page and select the lot

@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4c - Services
 
   Scenario: Services

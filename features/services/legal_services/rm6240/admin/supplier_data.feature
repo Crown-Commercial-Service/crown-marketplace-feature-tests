@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal services - Admin - Supplier data pages
 
   Background: Navigate to supplier data page

@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Services - Admin - User reports - Validations
 
   Background: Navigate to generate reports page

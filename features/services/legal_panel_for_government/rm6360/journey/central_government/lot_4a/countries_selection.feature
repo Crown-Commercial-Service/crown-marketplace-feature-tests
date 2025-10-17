@@ -284,7 +284,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
       | Vatican City |
       | Zimbabwe     |
 
-  @smoulder
+  @smoulder @production
   Scenario: Changing the selection will change the basket
     When I check the following items:
       | Antarctica    |
@@ -338,7 +338,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Select count
       | Tonga      |
       | Tunisia    |
 
-  @smoulder
+  @smoulder @production
   Scenario: Search for a country
     When I type the following details into the form:
       | Start typing to find a country | as |

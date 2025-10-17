@@ -1,4 +1,3 @@
-@skip-production
 Feature: Facilities Management - RM6232 - Admin - Create new upload
 
   Background: Navigate to admin upload page

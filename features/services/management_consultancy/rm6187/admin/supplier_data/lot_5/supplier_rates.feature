@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Admin - Supplier lot data - Lot 5 - Rates
 
   Scenario: Rates

@@ -81,7 +81,7 @@ Feature: Legal services - Central governemnt - Lot 2 - Service selection
     When I click on 'Remove all'
     Then the basket should say 'No services selected'
 
-  @smoulder
+  @smoulder @production
   Scenario: Go back from jurisdiction and change selection
     When I check the following items:
       | Employment               |

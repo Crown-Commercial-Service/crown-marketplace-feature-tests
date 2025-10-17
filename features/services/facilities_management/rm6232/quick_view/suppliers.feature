@@ -1,4 +1,3 @@
-@skip-production
 Feature: Facilities Management - RM6232 - Suppliers
 
   Background: Navigate to the results page

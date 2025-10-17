@@ -1,6 +1,6 @@
 Feature: Legal Services - Start pages - With an unrecognised framework
 
-  @smoulder
+  @smoulder @production
   Scenario: Go to unrecognised famework in the buyer section - logged in
     Given I sign in and navigate to the start page for the 'RM6240' framework in 'legal services'
     And I go to the 'legal services' start page for 'RM0172'
@@ -26,7 +26,6 @@ Feature: Legal Services - Start pages - With an unrecognised framework
     Then I am on '/legal-services/RM6240/admin/sign-in'
     And the framework is 'RM6240'
 
-  @skip-production
   Scenario: Go to an unrecognised famework in the admin section - logged in
     Given I sign in as an admin for the 'RM6240' framework in 'legal services'
     Then I am on the 'Admin dashboard' page

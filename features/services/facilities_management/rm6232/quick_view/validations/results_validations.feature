@@ -24,7 +24,7 @@ Feature: Facilities Management - RM6232 - Results validations
       | Enter your contract name                         |
       | Select one option for requirements linked to PFI |
 
-  @smoulder
+  @smoulder @production
   Scenario: Contract name is taken
     Given I have a search and I record the name
     And I click on 'Search for suppliers'

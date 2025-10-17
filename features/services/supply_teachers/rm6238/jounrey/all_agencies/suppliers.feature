@@ -6,7 +6,6 @@ Feature: Supply Teachers - All agencies - suppliers
     And I click on 'Continue'
     Then I am on the 'Find an agency' page
 
-  @skip-production
   Scenario Outline: Can view supplier details - Agency <agency_name>
     And a list of 10 agencies are shown
     Given I click on '<agency_name>'
@@ -24,7 +23,6 @@ Feature: Supply Teachers - All agencies - suppliers
       | FEEST-MULLER             | Liverpool | London          |
       | STANTON, FADEL AND BOSCO | Liverpool | Twickenham      |
 
-  @skip-production
   Scenario: Supplier details are correct
     And a list of 10 agencies are shown
     Given I click on 'EMARD AND SONS'
@@ -49,7 +47,7 @@ Feature: Supply Teachers - All agencies - suppliers
       | Merseyside |
       | L4 0TH     |
 
-  @skip-non-production @smoulder
+  @skip-non-production @smoulder @production
   Scenario: Can view a suppliers details
     And multiple agencies are shown and I count them
     And I click on the first agency

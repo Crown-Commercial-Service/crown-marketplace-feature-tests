@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Admin - User reports - Validations
 
   Background: Navigate to generate reports page

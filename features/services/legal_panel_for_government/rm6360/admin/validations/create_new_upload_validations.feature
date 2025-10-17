@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Admin - Create new upload - Validations
 
   Background: Navigate to admin upload page
