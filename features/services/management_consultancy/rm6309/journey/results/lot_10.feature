@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 10 - Restructuring and insolvency - Results
 
   Background: Navigate to start page and select the lot

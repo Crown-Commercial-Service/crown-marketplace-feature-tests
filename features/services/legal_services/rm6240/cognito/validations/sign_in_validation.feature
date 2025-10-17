@@ -6,7 +6,7 @@ Feature: Legal Services - RM6240 - Sign in to my account - Validations
     When I click on 'Start now'
     And I am on the 'Sign in to your legal services account' page
 
-  @smoulder
+  @smoulder @production
   Scenario: I sign in to my account - missing parameters
     And I click on the 'Sign in' button
     Then I should see the following error messages:

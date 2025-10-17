@@ -8,7 +8,7 @@ Feature: Supply Teachers - RM6238 - Sign in to my account - Validations
     And I click on 'Sign in with CCS'
     And I am on the 'Sign in to your supply teachers account' page
 
-  @smoulder
+  @smoulder @production
   Scenario: I sign in to my account - missing parameters
     And I click on the 'Sign in' button
     Then I should see the following error messages:

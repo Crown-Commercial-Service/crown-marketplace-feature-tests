@@ -38,7 +38,7 @@ Feature: Facilities Management - RM6232 - Select regions
       | East Lothian and Midlothian (UKM23)                                                   |
       | Outer Belfast (Carrickfergus, Castlereagh, Lisburn, Newtownabbey, North Down) (UKN02) |
 
-  @smoulder
+  @smoulder @production
   Scenario: Changing the selection will change the basket
     When I check the following items:
       | Essex                       |

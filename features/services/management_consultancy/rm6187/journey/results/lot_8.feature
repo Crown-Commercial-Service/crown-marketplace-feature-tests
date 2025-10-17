@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 8 - Infrastructure including Transport - Results
 
   Background: Navigate to start page and select the lot

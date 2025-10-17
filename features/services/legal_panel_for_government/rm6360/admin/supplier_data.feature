@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Admin - Supplier data pages
 
   Background: Navigate to supplier data page

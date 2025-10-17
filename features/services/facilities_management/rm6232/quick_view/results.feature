@@ -74,7 +74,7 @@ Feature: Facilities Management - RM6232 - Information appears correctly on resul
     And I should see the following 'annual contract cost' in the selection summary:
       | £123,456,789 |
 
-  @smoulder
+  @smoulder @production
   Scenario: Save and continue to 'What do I do next?'
     Then I enter 'Agnis search' into the contract name field
     And I select 'Yes'

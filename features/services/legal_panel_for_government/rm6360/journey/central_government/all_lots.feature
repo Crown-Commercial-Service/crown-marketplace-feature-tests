@@ -1,4 +1,4 @@
-@file-download @skip-non-production @smoulder
+@file-download @skip-non-production @smoulder @production
 Feature: Legal Panel for Government - Central governemnt - Results
 
   Background: Navigate to the select lot page

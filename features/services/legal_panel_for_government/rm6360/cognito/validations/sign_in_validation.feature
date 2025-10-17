@@ -6,7 +6,7 @@ Feature: Legal Panel for Government - RM6360 - Sign in to my account - Validatio
     When I click on 'Start now'
     And I am on the 'Sign in to your legal panel for government account' page
 
-  @smoulder
+  @smoulder @production
   Scenario: I sign in to my account - missing parameters
     And I click on the 'Sign in' button
     Then I should see the following error messages:

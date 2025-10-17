@@ -63,7 +63,7 @@ Feature: Facilities Management - Navigation links when signed in
       | My account | Your account            |
       | Sign out   | Sign in to your account |
 
-  @smoulder
+  @smoulder @production
   Scenario: Home page - Sign out
     And I should see the following navigation links:
       | Sign out |

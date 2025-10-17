@@ -1,6 +1,6 @@
 Feature: Facilities Management - Start pages - With an unrecognised framework
 
-  @smoulder
+  @smoulder @production
   Scenario: Go to unrecognised famework in the buyer section - logged in
     Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
     And I go to the 'facilities management' start page for 'RM0172'
@@ -26,7 +26,6 @@ Feature: Facilities Management - Start pages - With an unrecognised framework
     Then I am on '/facilities-management/RM6232/admin/sign-in'
     And the framework is 'RM6232'
 
-  @skip-production
   Scenario: Go to an unrecognised famework in the admin section - logged in
     Given I sign in as an admin for the 'RM6232' framework in 'facilities management'
     Then I am on the 'RM6232 administration dashboard' page

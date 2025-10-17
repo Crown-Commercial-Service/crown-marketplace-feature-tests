@@ -88,7 +88,7 @@ Feature: Legal Panel for Government - Central governemnt - Lot 1 - Service selec
       | Health, Healthcare and Social Care |
       | Intellectual Property Law          |
 
-  @smoulder
+  @smoulder @production
   Scenario: Changing the selection will change the basket
     When I check the following items:
       | Children and Vulnerable Adults     |

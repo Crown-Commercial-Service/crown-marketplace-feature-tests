@@ -6,7 +6,6 @@ Feature: Supply Teachers - Education technology platforms
     And I click on 'Continue'
     Then I am on the 'Education technology platform service providers' page
 
-  @skip-production
   Scenario: Education technology platform results
     And there are 4 managed service provider agencies
     And the managed service provider agencies are:
@@ -26,7 +25,7 @@ Feature: Supply Teachers - Education technology platforms
     And I click on 'Back'
     Then I am on the 'What is your school looking for?' page
 
-  @skip-non-production @smoulder
+  @skip-non-production @smoulder @production
   Scenario: Education technology platform results - Production
     And there are multiple managed service provider agencies
     And the first supplier has contact details
