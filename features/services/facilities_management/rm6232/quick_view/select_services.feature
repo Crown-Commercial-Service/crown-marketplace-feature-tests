@@ -32,7 +32,7 @@ Feature: Facilities Management - RM6232 - Select services
       | Courier booking and distribution services    |
       | Patrols (fixed or static guarding)           |
 
-  @smoulder
+  @smoulder @production
   Scenario: Changing the selection will change the basket
     When I check the following items:
       | Water Hygiene Maintenance                    |

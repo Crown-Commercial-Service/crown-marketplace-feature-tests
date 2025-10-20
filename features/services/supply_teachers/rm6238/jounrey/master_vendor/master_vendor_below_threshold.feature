@@ -10,7 +10,6 @@ Feature: Supply Teachers - Master vendors - Below threshold
     Then I am on the 'Master vendor managed service providers' page
     And the caption is 'Contract worth less than £2.5 million'
 
-  @skip-production
   Scenario: Master vendors - Below threshold results
     And there are 3 managed service provider agencies
     And the managed service provider agencies are:

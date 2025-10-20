@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Suppliers - Lot 10
 
   Scenario Outline: Check the supplier data - Supplier <supplier>

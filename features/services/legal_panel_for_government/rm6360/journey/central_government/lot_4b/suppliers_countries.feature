@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Central governemnt - Lot 4b - Results
 
   Scenario: Check the supplier data for different counties

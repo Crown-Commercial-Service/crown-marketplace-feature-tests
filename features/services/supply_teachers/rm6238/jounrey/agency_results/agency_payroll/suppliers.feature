@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Agency payroll - Agencies
 
   Background: Navigate to the Agency results page

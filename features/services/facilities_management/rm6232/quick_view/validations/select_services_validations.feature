@@ -6,7 +6,7 @@ Feature: Facilities Management - RM6232 - Select services validations
     Then I am on the 'Services' page
     And I click on 'Show all sections'
 
-  @smoulder
+  @smoulder @production
   Scenario: No services selected
     And I click on 'Continue'
     Then I should see the following error messages:
@@ -39,7 +39,7 @@ Feature: Facilities Management - RM6232 - Select services validations
       | CAFM system       | Management of Billable Works |
       | Helpdesk Services | Management of Billable Works |
 
-  @smoulder
+  @smoulder @production
   Scenario: Only mandatory services - three extra
     When I check the following items:
       | CAFM system                  |

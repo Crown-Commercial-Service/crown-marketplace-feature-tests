@@ -1,6 +1,6 @@
 Feature: Supply Teachers - Start pages - With an unrecognised framework
 
-  @smoulder
+  @smoulder @production
   Scenario: Go to unrecognised famework in the buyer section - logged in
     Given I sign in and navigate to the start page for the 'RM6238' framework in 'supply teachers'
     And I go to the 'supply teachers' start page for 'RM0172'
@@ -26,7 +26,6 @@ Feature: Supply Teachers - Start pages - With an unrecognised framework
     Then I am on '/supply-teachers/RM6238/admin/sign-in'
     And the framework is 'RM6238'
 
-  @skip-production
   Scenario: Go to an unrecognised famework in the admin section - logged in
     Given I sign in as an admin for the 'RM6238' framework in 'supply teachers'
     Then I am on the 'Admin dashboard' page

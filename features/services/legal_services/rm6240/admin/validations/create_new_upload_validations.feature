@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Services - Admin - Create new upload - Validations
 
   Background: Navigate to admin upload page

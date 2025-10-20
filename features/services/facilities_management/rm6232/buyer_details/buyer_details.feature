@@ -41,7 +41,7 @@ Feature: Facilities Management - RM6232 - Buyer details
       | Sector               | Government Policy                    |
       | Contact opt in       | Yes                                  |
 
-  @smoulder
+  @smoulder @production
   Scenario: Changes are kept when adding address manually
     And I enter the following details into the form:
       | Name              | Testy McTestface |

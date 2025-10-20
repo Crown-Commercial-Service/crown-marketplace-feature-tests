@@ -3,7 +3,7 @@ Feature: Supply Teachers - Navigation links when signed in
   Background: I navigate to the start page
     Given I sign in and navigate to the start page for the 'RM6238' framework in 'supply teachers'
 
-  @smoulder
+  @smoulder @production
   Scenario: Start page
     When I go to the 'supply teachers' start page for 'RM6238'
     And I should see the following navigation links:

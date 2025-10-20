@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Lot 6 - Procurement and Supply Chain - Results
 
   Background: Navigate to start page and select the lot

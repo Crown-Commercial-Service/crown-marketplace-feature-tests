@@ -6,7 +6,7 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Services' page
     And I click on 'Show all sections'
 
-  @smoulder
+  @smoulder @production
   Scenario: Select only hard services
     When I check the following items:
       | Audio Visual (AV) equipment maintenance |
@@ -264,7 +264,7 @@ Feature: Facilities Management - RM6232 - Service selection and annual contract 
     Then I am on the 'Results' page
     And I should be in sub-lot '1c'
 
-  @smoulder
+  @smoulder @production
   Scenario: Select total, hard and soft services
     When I check the following items:
       | Mail room equipment maintenance                                                                                                           |

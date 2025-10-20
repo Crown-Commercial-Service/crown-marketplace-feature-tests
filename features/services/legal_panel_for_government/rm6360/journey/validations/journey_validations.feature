@@ -3,14 +3,14 @@ Feature: Legal Panel for Government - Jounrey validations
   Background: Navigate to start page
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
 
-  @smoulder
+  @smoulder @production
   Scenario: Do you work for central government validation
     Given I am on the 'Do you work for central government?' page
     When I click on 'Continue'
     Then I should see the following error messages:
       | Select yes if you work for central government |
 
-  @smoulder
+  @smoulder @production
   Scenario: Select the lot you need validations - central government yes
     Given I am on the 'Do you work for central government?' page
     And I select 'Yes'
@@ -20,7 +20,7 @@ Feature: Legal Panel for Government - Jounrey validations
     Then I should see the following error messages:
       | Select the lot you need |
 
-  @smoulder
+  @smoulder @production
   Scenario: Select the legal services you need - not Lot 4
     Given I am on the 'Do you work for central government?' page
     And I select 'Yes'
@@ -33,7 +33,7 @@ Feature: Legal Panel for Government - Jounrey validations
     Then I should see the following error messages:
       | Select at least one legal service |
 
-  @smoulder
+  @smoulder @production
   Scenario: Is your requirement for a location outside of the countries listed below?
     Given I am on the 'Do you work for central government?' page
     And I select 'Yes'
@@ -46,7 +46,7 @@ Feature: Legal Panel for Government - Jounrey validations
     Then I should see the following error messages:
       | Select if your requirement is for a country outside the listed locations |
 
-  @smoulder
+  @smoulder @production
   Scenario: Select the countries for your requirement
     Given I am on the 'Do you work for central government?' page
     And I select 'Yes'
@@ -77,7 +77,7 @@ Feature: Legal Panel for Government - Jounrey validations
     Then I should see the following error messages:
       | Select at least one legal service |
 
-  @smoulder
+  @smoulder @production
   Scenario: Select suppliers for comparison - not Lot 4
     Given I am on the 'Do you work for central government?' page
     And I select 'Yes'
@@ -133,7 +133,7 @@ Feature: Legal Panel for Government - Jounrey validations
     Then I should see the following error messages:
       | You must select at least two suppliers for comparison |
 
-  @smoulder
+  @smoulder @production
   Scenario: Select suppliers for comparison - one supplier - Lot 4
     Given I am on the 'Do you work for central government?' page
     And I select 'Yes'

@@ -4,7 +4,7 @@ Feature: Management Consultancy - Results
   Background: Navigate to the select lot page
     Given I sign in and navigate to the start page for the 'RM6309' framework in 'management consultancy'
 
-  @file-download @smoulder
+  @file-download @smoulder @production
   Scenario: Can view results of the services - Lot 1 - Business
     Given I select 'Lot 1 - Business'
     And I click on 'Continue'
@@ -70,7 +70,7 @@ Feature: Management Consultancy - Results
     Then I am on the 'Supplier results' page
     And I should see the same number of consultants that I counted previously
 
-  @smoulder
+  @smoulder @production
   Scenario: Can view results of the services - Lot 4 - Finance
     Given I select 'Lot 4 - Finance'
     And I click on 'Continue'
@@ -134,7 +134,7 @@ Feature: Management Consultancy - Results
     Then I am on the 'Supplier results' page
     And I should see the same number of consultants that I counted previously
 
-  @smoulder
+  @smoulder @production
   Scenario: Can view results of the services - Lot 7 - Health, Social Care and Community
     Given I select 'Lot 7 - Health, Social Care and Community'
     And I click on 'Continue'
@@ -198,7 +198,7 @@ Feature: Management Consultancy - Results
     Then I am on the 'Supplier results' page
     And I should see the same number of consultants that I counted previously
 
-  @smoulder
+  @smoulder @production
   Scenario: Can view results of the services - Lot 10 - Restructuring and insolvency
     Given I select 'Lot 10 - Restructuring and insolvency'
     And I click on 'Continue'

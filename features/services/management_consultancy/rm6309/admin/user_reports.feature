@@ -1,4 +1,3 @@
-@skip-production
 Feature: Management Consultancy - Admin - User reports
 
   @file-download

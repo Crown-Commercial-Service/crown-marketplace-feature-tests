@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal Panel for Government - Central governemnt - Lot 4b - Suppliers comparison - Countries
 
   Background: Navigate to start page and complete the journey

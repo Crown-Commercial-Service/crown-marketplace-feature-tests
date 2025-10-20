@@ -1,4 +1,4 @@
-@smoulder
+@smoulder @production
 Feature: Supply Teachers - Master Vendor validations
 
   Scenario: Is your contract likely to be worth more than £2.5 million? validations

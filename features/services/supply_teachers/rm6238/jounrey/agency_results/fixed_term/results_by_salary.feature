@@ -1,4 +1,3 @@
-@skip-production
 Feature: Supply Teachers - Agency results - Fixed term - Results by length
 
   Scenario Outline: Changing the salary of the contract changes the result values only - Annual salary <annual_salary>

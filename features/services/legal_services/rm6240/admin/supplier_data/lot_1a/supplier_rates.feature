@@ -1,4 +1,3 @@
-@skip-production
 Feature: Legal services - Admin - Supplier lot data - Lot 1a - Rates
 
   Scenario: Rates

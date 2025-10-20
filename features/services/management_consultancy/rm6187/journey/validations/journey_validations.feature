@@ -3,7 +3,7 @@ Feature: Management Consultancy - Jounrey validations
   Background: Navigate to start page
     Given I sign in and navigate to the start page for the 'RM6187' framework in 'management consultancy'
 
-  @smoulder
+  @smoulder @production
   Scenario: Select the lot you need validation
     When I click on 'Continue'
     Then I should see the following error messages:
@@ -29,7 +29,7 @@ Feature: Management Consultancy - Jounrey validations
       | Lot 8 - Infrastructure including Transport                          |
       | Lot 9 - Environmental Sustainability and Socio-economic Development |
 
-  @skip-non-production @smoulder
+  @skip-non-production @smoulder @production
   Scenario: Select the services you need validation
     Given I select 'Lot 1 - Business'
     And I click on 'Continue'
