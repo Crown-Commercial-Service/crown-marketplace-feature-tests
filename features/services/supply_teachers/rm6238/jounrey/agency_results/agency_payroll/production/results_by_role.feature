@@ -1,4 +1,3 @@
-@skip-non-production
 Feature: Supply Teachers - Agency results - Agency payroll - Results by role - Production
 
   Scenario Outline: How the roles affects the results - Role <role>

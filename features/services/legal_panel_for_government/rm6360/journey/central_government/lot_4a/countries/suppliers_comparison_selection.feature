@@ -1,8 +1,16 @@
-Feature: Legal Panel for Government - Central governemnt - Lot 4a - Suppliers comparison selection - Countries
+Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Suppliers comparison selection - Countries
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Do you work for central government?' page
+    Then I am on the 'Your account' page
+    And I click on 'Search for suppliers'
+    Then I am on the 'Do you work for central government or an arms length body?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter '10/2024' for the requirement 'start' date
+    And I enter '10/2025' for the requirement 'end' date
+    And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
@@ -18,13 +26,13 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Suppliers co
       | Finland     |
       | South Sudan |
     And I click on 'Continue'
-    Then I am on the 'Select the legal services you need' page
+    Then I am on the 'Select the legal specialisms you need' page
     And the sub title is 'Lot 4a - Trade and Investment Negotiations'
     When I check the following items:
       | Assimilated Law |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal specialisms for government
     And the selected legal service for government suppliers are:
       | ARMSTRONG GROUP                | http://armstronggroup.test/quincy                 |
       | BLICK GROUP                    | http://blickgroup.test/tiffiny                    |
@@ -38,6 +46,9 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4a - Suppliers co
       | STARK, ADAMS AND KOZEY         | http://starkadamsandkozey.example/clay_jerde      |
       | WELCH, PAGAC AND SWIFT         | http://welchpagacandswift.example/abram           |
     And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
+    And I 'have' reviewed the suppliers’ prospectus
+    And I click on 'Continue'
     Then I am on the 'Select suppliers for comparison' page
 
   Scenario: The correct options are available

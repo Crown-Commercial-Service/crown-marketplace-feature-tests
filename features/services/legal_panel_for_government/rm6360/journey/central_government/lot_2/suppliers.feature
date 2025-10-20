@@ -1,21 +1,29 @@
-Feature: Legal Panel for Government - Central governemnt - Lot 2 - Suppliers
+Feature: Legal Panel for Government - Non central governemnt - Lot 2 - Suppliers
 
   Background: Navigate to start page and complete the journey
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Do you work for central government?' page
+    Then I am on the 'Your account' page
+    And I click on 'Search for suppliers'
+    Then I am on the 'Do you work for central government or an arms length body?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter '10/2024' for the requirement 'start' date
+    And I enter '10/2025' for the requirement 'end' date
+    And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 2 - Major Projects and Complex Advice'
     And I click on 'Continue'
-    Then I am on the 'Select the legal services you need' page
+    Then I am on the 'Select the legal specialisms you need' page
     And the sub title is 'Lot 2 - Major Projects and Complex Advice'
     When I check the following items:
       | Competition Law |
       | Contracts       |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '18' suppliers can provide legal services for government
+    And I should see that '18' suppliers can provide legal specialisms for government
     And the selected legal service for government suppliers are:
       | BATZ-BROWN                     | http://batz-brown.test/edris.oconner                    |
       | BLICK GROUP                    | http://blickgroup.test/kitty_zulauf                     |
@@ -35,6 +43,11 @@ Feature: Legal Panel for Government - Central governemnt - Lot 2 - Suppliers
       | TOY-ROBERTS                    | http://toy-roberts.example/shon                         |
       | WILLMS-JACOBS                  | http://willms-jacobs.example/georgiann.luettgen         |
       | WOLFF, KRAJCIK AND PROSACCO    | http://wolffkrajcikandprosacco.test/taylor_johnson      |
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
+    And I select 'No'
+    And I click on 'Continue'
+    Then I am on the 'Compare supplier rates' page
 
   Scenario: Check the supplier data - SME
     Given I click on 'COLLIER, AUFDERHAR AND VOLKMAN'
@@ -71,10 +84,3 @@ Feature: Legal Panel for Government - Central governemnt - Lot 2 - Suppliers
       | http://kulashintzanddoyle.example/francesco |
       | 89395 Ross Rest, Jesusshire, UT 00890-9098  |
     And the prospectus link is 'http://kulashintzanddoyle.example/imelda_turcotte'
-
-  @file-download
-  Scenario: Download the supplier spreadsheet
-    Given I click on 'Download the supplier list'
-    Then I am on the 'Download the supplier shortlist' page
-    And I click on 'Download supplier shortlist'
-    Then the file 'Shortlist of Legal Panel for Government Suppliers.xlsx' is downloaded with the 'xlsx' extension

@@ -42,6 +42,10 @@ Then('I choose to {string} {string} cookies') do |option, cookie|
   end
 end
 
+Then('I click on the header link {string}') do |button_text|
+  home_page.navigation.click_on(button_text)
+end
+
 Then('I should see the following navigation links:') do |navigation_links|
   navigation_elements = home_page.navigation.links.to_a + home_page.navigation.buttons.to_a
 

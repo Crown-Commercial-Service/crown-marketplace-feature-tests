@@ -110,13 +110,11 @@ We also have some additional tags which are used during the setup of the `defaul
 | @accessibility        | Marks a feature as an accessibility test and are not run as part of the default profile                     |
 | @smoulder             | Used to mark a subset of the test that we can run after a release to make sure the applications are working |
 | @production           | Marks a feature to be runable if `TEST_ENV` is production                                                   |
-| @skip-non-production  | Marks a feature to be skipped if `TEST_ENV` is not production                                               |
 
 The reason we have special tags for production is that the features assume that test data is being used.
 As we cannot use test data in production we use `@production` tag to mark tests we know will work in production.
 
 Because we know some features will not work, there are some extra features that exist to be used when running tests on production.
-As the other environments do not need to run these features, the functionality will have already been covered in other features, we use the `@skip-non-production` tag to skip them.
 
 ### Accessibility features
 

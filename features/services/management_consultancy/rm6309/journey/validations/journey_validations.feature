@@ -30,7 +30,7 @@ Feature: Management Consultancy - Jounrey validations
       | Lot 9 - Environment and Sustainability    |
       | Lot 10 - Restructuring and insolvency     |
 
-  @skip-non-production @smoulder @production
+  @smoulder @production
   Scenario: Select the services you need validation
     Given I select 'Lot 1 - Business'
     And I click on 'Continue'

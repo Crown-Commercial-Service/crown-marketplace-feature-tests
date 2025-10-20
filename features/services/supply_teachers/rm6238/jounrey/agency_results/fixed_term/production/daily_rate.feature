@@ -1,4 +1,4 @@
-@skip-non-production @smoulder @production
+@smoulder @production
 Feature: Supply Teachers - Agency results - Fixed term - Daily rate - Production
 
   Background: Navigate to the Agency results page

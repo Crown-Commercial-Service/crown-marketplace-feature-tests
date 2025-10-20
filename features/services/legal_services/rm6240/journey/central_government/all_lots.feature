@@ -1,4 +1,4 @@
-@file-download @skip-non-production @smoulder @production
+@file-download @smoulder @production
 Feature: Legal services - Central governemnt - Results
 
   Background: Navigate to the select lot page

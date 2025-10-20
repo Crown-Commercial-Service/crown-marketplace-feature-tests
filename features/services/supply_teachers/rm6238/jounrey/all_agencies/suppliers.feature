@@ -47,7 +47,7 @@ Feature: Supply Teachers - All agencies - suppliers
       | Merseyside |
       | L4 0TH     |
 
-  @skip-non-production @smoulder @production
+  @smoulder @production
   Scenario: Can view a suppliers details
     And multiple agencies are shown and I count them
     And I click on the first agency

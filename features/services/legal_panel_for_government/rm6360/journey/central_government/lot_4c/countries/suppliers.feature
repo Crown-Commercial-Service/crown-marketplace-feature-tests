@@ -1,8 +1,17 @@
-Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
+@javascript
+Feature: Legal Panel for Government - Non central governemnt - Lot 4c - Suppliers - Countries
 
   Scenario: Check the supplier data for different counties
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Do you work for central government?' page
+    Then I am on the 'Your account' page
+    And I click on 'Search for suppliers'
+    Then I am on the 'Do you work for central government or an arms length body?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter '10/2024' for the requirement 'start' date
+    And I enter '10/2025' for the requirement 'end' date
+    And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
@@ -18,13 +27,13 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | Malta  |
       | Malawi |
     And I click on 'Continue'
-    Then I am on the 'Select the legal services you need' page
+    Then I am on the 'Select the legal specialisms you need' page
     And the sub title is 'Lot 4c - International Investment Disputes'
     When I check the following items:
       | Litigation and dispute resolution for trade investment disputes |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '11' suppliers can provide legal services for government
+    And I should see that '11' suppliers can provide legal specialisms for government
     And the selected legal service for government suppliers are:
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/freddie_oberbrunner          |
       | FISHER-BASHIRIAN                | http://fisher-bashirian.example/marielle.hermiston            |
@@ -37,7 +46,12 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4c - Results
       | TOY-ROBERTS                     | http://toy-roberts.example/gregg_legros                       |
       | WILLMS-KOELPIN                  | http://willms-koelpin.test/juliette                           |
       | ZIEMANN-TROMP                   | http://ziemann-tromp.example/dale                             |
-    Given I click on 'DECKOW, KIEHN AND ORN'
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
+    And I 'have not' reviewed the suppliers’ prospectus
+    And I click on 'Continue'
+    Then I am on the 'Compare supplier rates' page
+    Given I click on 'DECKOW, KIEHN AND ORN' legal panel for governemnt supplier
     Then I am on the 'DECKOW, KIEHN AND ORN' page
     And I click on 'Malta'
     And the 'Senior Counsel, Senior Partner (20 years +PQE)' hourly rate is '£315.00'

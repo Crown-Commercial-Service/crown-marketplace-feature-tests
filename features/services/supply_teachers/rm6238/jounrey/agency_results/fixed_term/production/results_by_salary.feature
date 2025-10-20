@@ -1,4 +1,3 @@
-@skip-non-production
 Feature: Supply Teachers - Agency results - Fixed term - Results by length - Production
 
   Scenario: Changing the salary of the contract changes the result values only

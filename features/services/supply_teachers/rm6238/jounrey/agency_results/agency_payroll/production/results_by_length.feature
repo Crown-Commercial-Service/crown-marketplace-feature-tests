@@ -1,4 +1,3 @@
-@skip-non-production
 Feature: Supply Teachers - Agency results - Agency payroll - Results by length - Production
 
   Scenario Outline: How the length of contract affects the results - Term <term>
