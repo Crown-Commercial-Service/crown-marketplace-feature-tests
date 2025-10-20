@@ -1,22 +1,14 @@
 Feature: Legal Panel for Government - Footer links
 
-  Background: Navigate to start page
+  Scenario Outline: <page_link>
     Given I go to the 'legal panel for government' start page for 'RM6360'
-
-  Scenario: Cookies policy
-    When I click on 'Cookie policy'
-    Then I am on the 'Details about cookies on Crown Marketplace' page
+    When I click on '<page_link>'
+    Then I am on the '<page_title>' page
     And I click on 'Back to start'
     And I am on the 'Find legal services for government' page
 
-  Scenario: Cookies settings
-    When I click on 'Cookie settings'
-    Then I am on the 'Cookies on Crown Marketplace' page
-    And I click on 'Back to start'
-    And I am on the 'Find legal services for government' page
-
-  Scenario: Accessibility statement
-    When I click on 'Accessibility statement'
-    Then I am on the 'Legal Panel for Government (LPG) Accessibility statement' page
-    And I click on 'Back to start'
-    And I am on the 'Find legal services for government' page
+    Examples:
+      | page_link               | page_title                                               |
+      | Cookie policy           | Details about cookies on Crown Marketplace               |
+      | Cookie settings         | Cookies on Crown Marketplace                             |
+      | Accessibility statement | Legal Panel for Government (LPG) Accessibility statement |

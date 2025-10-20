@@ -3,6 +3,10 @@ module Pages
     @admin_page ||= Admin.new
   end
 
+  def buyer_detail_page
+    @buyer_detail_page ||= BuyerDetailPage.new
+  end
+
   def facilities_management_page
     @facilities_management_page ||= FacilitiesManagement.new
   end
@@ -17,5 +21,9 @@ module Pages
 
   def supply_teachers_page
     @supply_teachers_page ||= SupplyTeachers.new
+  end
+
+  def legal_panel_for_government_page
+    @legal_panel_for_government_page ||= LegalPanelForGovernment.new
   end
 end

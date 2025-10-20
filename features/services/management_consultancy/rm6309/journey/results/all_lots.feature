@@ -1,4 +1,3 @@
-@skip-non-production
 Feature: Management Consultancy - Results
 
   Background: Navigate to the select lot page

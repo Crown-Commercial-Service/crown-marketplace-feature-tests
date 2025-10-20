@@ -1,4 +1,3 @@
-@skip-non-production
 Feature: Supply Teachers - Agency results - Nominated worker - Results by location - Production
 
   Background: Navigate to the What is your school’s postcode? page

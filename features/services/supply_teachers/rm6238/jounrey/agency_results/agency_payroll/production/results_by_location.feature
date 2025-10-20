@@ -1,4 +1,3 @@
-@skip-non-production
 Feature: Supply Teachers - Agency results - Agency payroll - Results by location - Production
 
   Background: Navigate to the postcode page

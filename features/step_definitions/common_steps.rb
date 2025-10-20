@@ -1,7 +1,7 @@
 SERVICE_TO_START_PAGE_TITLE = {
   'facilities management' => 'Your account',
   'legal services' => 'Do you work for central government?',
-  'legal panel for government' => 'Do you work for central government?',
+  'legal panel for government' => 'Your account',
   'management consultancy' => 'Select the lot you need',
   'supply teachers' => 'What is your school looking for?'
 }.freeze

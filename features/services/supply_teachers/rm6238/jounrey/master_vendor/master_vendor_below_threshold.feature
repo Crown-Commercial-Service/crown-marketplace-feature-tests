@@ -27,7 +27,6 @@ Feature: Supply Teachers - Master vendors - Below threshold
     And I click on 'Back'
     Then I am on the 'Is your contract likely to be worth more than £2.5 million?' page
 
-  @skip-non-production
   Scenario: Master vendors - Below threshold results - Production
     And there are multiple managed service provider agencies
     And the first supplier has contact details

@@ -1,21 +1,29 @@
-Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers comparison selection
+Feature: Legal Panel for Government - Non central governemnt - Lot 5 - Suppliers comparison selection
 
-  Background: Navigate to start page and complete the journey
+  Scenario: The correct options are available
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Do you work for central government?' page
+    Then I am on the 'Your account' page
+    And I click on 'Search for suppliers'
+    Then I am on the 'Do you work for central government or an arms length body?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter '10/2024' for the requirement 'start' date
+    And I enter '10/2025' for the requirement 'end' date
+    And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 5 - Rail Legal Services'
     And I click on 'Continue'
-    Then I am on the 'Select the legal services you need' page
+    Then I am on the 'Select the legal specialisms you need' page
     And the sub title is 'Lot 5 - Rail Legal Services'
     When I check the following items:
       | Pensions law |
       | Planning law |
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And I should see that '12' suppliers can provide legal services for government
+    And I should see that '12' suppliers can provide legal specialisms for government
     And the selected legal service for government suppliers are:
       | COLLIER, AUFDERHAR AND VOLKMAN  | http://collieraufderharandvolkman.test/alane.ratke      |
       | DECKOW, KIEHN AND ORN           | http://deckowkiehnandorn.example/reyna                  |
@@ -30,9 +38,10 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers com
       | WINTHEISER, WINDLER AND KULAS   | http://wintheiserwindlerandkulas.example/percy          |
       | ZIEMANN-TROMP                   | http://ziemann-tromp.example/sammie_denesik             |
     And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
+    And I 'have' reviewed the suppliers’ prospectus
+    And I click on 'Continue'
     Then I am on the 'Select suppliers for comparison' page
-
-  Scenario: The correct options are available
     Then I should see the following options for the lot:
       | COLLIER, AUFDERHAR AND VOLKMAN  |
       | DECKOW, KIEHN AND ORN           |
@@ -46,66 +55,3 @@ Feature: Legal Panel for Government - Central governemnt - Lot 5 - Suppliers com
       | WILLMS-KOELPIN                  |
       | WINTHEISER, WINDLER AND KULAS   |
       | ZIEMANN-TROMP                   |
-
-  Scenario: Service selection appears in basked
-    Then the basket should say 'No suppliers selected'
-    And the remove all link should not be visible
-    When I check 'COLLIER, AUFDERHAR AND VOLKMAN'
-    Then the basket should say '1 supplier selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | COLLIER, AUFDERHAR AND VOLKMAN |
-    When I check the following items:
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-    Then the basket should say '3 suppliers selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-
-  Scenario: Changing the selection will change the basket
-    When I check the following items:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-      | KAUTZER, PFEFFER AND SCHUMM     |
-    Then the basket should say '4 suppliers selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-      | KAUTZER, PFEFFER AND SCHUMM     |
-    When I deselect the following items:
-      | COLLIER, AUFDERHAR AND VOLKMAN |
-    Then the basket should say '3 suppliers selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-      | KAUTZER, PFEFFER AND SCHUMM     |
-    When I remove the following items from the basket:
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-    Then the basket should say '1 supplier selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | KAUTZER, PFEFFER AND SCHUMM |
-    When I click on 'Remove all'
-    Then the basket should say 'No suppliers selected'
-
-  Scenario: Go back from suppliers and change selection
-    When I check the following items:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |
-    And I click on 'Continue'
-    Then I am on the 'Compare supplier rates' page
-    And I click on the 'Back' back link
-    Then I am on the 'Select suppliers for comparison' page
-    And the following items should appear in the basket:
-      | COLLIER, AUFDERHAR AND VOLKMAN  |
-      | DECKOW, KIEHN AND ORN           |
-      | HICKLE, CARTWRIGHT AND EMMERICH |

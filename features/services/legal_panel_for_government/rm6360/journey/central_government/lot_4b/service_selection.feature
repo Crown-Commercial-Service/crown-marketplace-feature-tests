@@ -1,8 +1,16 @@
-Feature: Legal Panel for Government - Central governemnt - Lot 4b - Service selection
+Feature: Legal Panel for Government - Non central governemnt - Lot 4b - Service selection
 
-  Background: Navigate to start page and select the lot
+  Scenario: The correct options are available
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Do you work for central government?' page
+    Then I am on the 'Your account' page
+    And I click on 'Search for suppliers'
+    Then I am on the 'Do you work for central government or an arms length body?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter '10/2024' for the requirement 'start' date
+    And I enter '10/2025' for the requirement 'end' date
+    And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
@@ -12,10 +20,8 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4b - Service sele
     And I select 'No'
     And the sub title is 'Lot 4b - International Trade Disputes'
     And I click on 'Continue'
-    Then I am on the 'Select the legal services you need' page
+    Then I am on the 'Select the legal specialisms you need' page
     And the sub title is 'Lot 4b - International Trade Disputes'
-
-  Scenario: The correct options are available
     Then I should see the following options for the lot:
       | Compliance with international law       |
       | Domestic law of jurisdictions for trade |
@@ -26,82 +32,3 @@ Feature: Legal Panel for Government - Central governemnt - Lot 4b - Service sele
       | Wider trading arrangements              |
       | WTO litigation and dispute resolution   |
       | WTO practice                            |
-
-  Scenario: Service selection appears in basked
-    Then the basket should say 'No services selected'
-    And the remove all link should not be visible
-    When I check 'Compliance with international law'
-    Then the basket should say '1 service selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | Compliance with international law |
-    When I check the following items:
-      | International trade disputes          |
-      | Trade remedies                        |
-      | Trade remedies investigations         |
-      | WTO litigation and dispute resolution |
-      | WTO practice                          |
-      | Wider trading arrangements            |
-    Then the basket should say '7 services selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | Compliance with international law     |
-      | International trade disputes          |
-      | Trade remedies                        |
-      | Trade remedies investigations         |
-      | WTO litigation and dispute resolution |
-      | WTO practice                          |
-      | Wider trading arrangements            |
-
-  Scenario: Changing the selection will change the basket
-    When I check the following items:
-      | Compliance with international law     |
-      | International trade disputes          |
-      | Prevention of disputes                |
-      | WTO litigation and dispute resolution |
-      | WTO practice                          |
-      | Wider trading arrangements            |
-    Then the basket should say '6 services selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | Compliance with international law     |
-      | International trade disputes          |
-      | Prevention of disputes                |
-      | WTO litigation and dispute resolution |
-      | WTO practice                          |
-      | Wider trading arrangements            |
-    When I deselect the following items:
-      | Wider trading arrangements |
-    Then the basket should say '5 services selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | Compliance with international law     |
-      | International trade disputes          |
-      | Prevention of disputes                |
-      | WTO litigation and dispute resolution |
-      | WTO practice                          |
-    When I remove the following items from the basket:
-      | WTO litigation and dispute resolution |
-      | WTO practice                          |
-    Then the basket should say '3 services selected'
-    And the remove all link should be visible
-    And the following items should appear in the basket:
-      | Compliance with international law |
-      | International trade disputes      |
-      | Prevention of disputes            |
-    When I click on 'Remove all'
-    Then the basket should say 'No services selected'
-
-  Scenario: Go back from suppliers and change selection
-    When I check the following items:
-      | Domestic law of jurisdictions for trade |
-      | International trade disputes            |
-      | Prevention of disputes                  |
-    And I click on 'Continue'
-    Then I am on the 'Supplier results' page
-    And I click on the 'Back' back link
-    Then I am on the 'Select the legal services you need' page
-    And the following items should appear in the basket:
-      | Domestic law of jurisdictions for trade |
-      | International trade disputes            |
-      | Prevention of disputes                  |

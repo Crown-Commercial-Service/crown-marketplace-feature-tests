@@ -1,9 +1,17 @@
-@file-download @skip-non-production @smoulder @production
+@file-download @smoulder @production
 Feature: Legal Panel for Government - Central governemnt - Results
 
   Background: Navigate to the select lot page
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
-    Then I am on the 'Do you work for central government?' page
+    Then I am on the 'Your account' page
+    And I click on 'Search for suppliers'
+    Then I am on the 'Do you work for central government or an arms length body?' page
+    And I select 'Yes'
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter '10/2024' for the requirement 'start' date
+    And I enter '10/2025' for the requirement 'end' date
+    And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
@@ -11,25 +19,20 @@ Feature: Legal Panel for Government - Central governemnt - Results
   Scenario Outline: Can view results of the services - <lot_name>
     And I select '<lot_name>'
     And I click on 'Continue'
-    And I am on the 'Select the legal services you need' page
+    And I am on the 'Select the legal specialisms you need' page
     And the sub title is '<lot_name>'
     Given I check '<service_name>'
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And there are suppliers who can offer legal panel for government services and I count them
-    And I click on the first supplier
-    Then I am on the legal panel for government rates page
+    And there are suppliers who can offer legal panel for government specialisms and I count them
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
     And the sub title is '<lot_name>'
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see the same number of legal panel for government services that I counted previously
+    And I should see the same number of legal panel for government specialisms that I counted previously
     And I click on 'Download the supplier list'
-    Then I am on the 'Download the supplier shortlist' page
-    And I click on 'Download supplier shortlist'
     Then the file 'Shortlist of Legal Panel for Government Suppliers.xlsx' is downloaded with the 'xlsx' extension
-    And I click on the 'Back' back link
-    Then I am on the 'Supplier results' page
-    And I should see the same number of legal panel for government services that I counted previously
 
     Examples:
       | lot_name                                  | service_name          |
@@ -45,25 +48,20 @@ Feature: Legal Panel for Government - Central governemnt - Results
     And the sub title is '<lot_name>'
     Given I select 'No'
     And I click on 'Continue'
-    And I am on the 'Select the legal services you need' page
+    And I am on the 'Select the legal specialisms you need' page
     And the sub title is '<lot_name>'
     Given I check '<service_name>'
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And there are suppliers who can offer legal panel for government services and I count them
-    And I click on the first supplier
-    Then I am on the legal panel for government rates page
+    And there are suppliers who can offer legal panel for government specialisms and I count them
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
     And the sub title is '<lot_name>'
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see the same number of legal panel for government services that I counted previously
+    And I should see the same number of legal panel for government specialisms that I counted previously
     And I click on 'Download the supplier list'
-    Then I am on the 'Download the supplier shortlist' page
-    And I click on 'Download supplier shortlist'
     Then the file 'Shortlist of Legal Panel for Government Suppliers.xlsx' is downloaded with the 'xlsx' extension
-    And I click on the 'Back' back link
-    Then I am on the 'Supplier results' page
-    And I should see the same number of legal panel for government services that I counted previously
 
     Examples:
       | lot_name                                   | service_name                     |
@@ -82,25 +80,20 @@ Feature: Legal Panel for Government - Central governemnt - Results
     And the sub title is '<lot_name>'
     Given I check 'Equatorial Guinea'
     And I click on 'Continue'
-    And I am on the 'Select the legal services you need' page
+    And I am on the 'Select the legal specialisms you need' page
     And the sub title is '<lot_name>'
     Given I check '<service_name>'
     And I click on 'Continue'
     Then I am on the 'Supplier results' page
-    And there are suppliers who can offer legal panel for government services and I count them
-    And I click on the first supplier
-    Then I am on the legal panel for government rates page
+    And there are suppliers who can offer legal panel for government specialisms and I count them
+    And I click on 'Compare the supplier rates'
+    Then I am on the 'Have you reviewed the suppliers’ prospectus to inform your down-selection?' page
     And the sub title is '<lot_name>'
     And I click on the 'Back' back link
     Then I am on the 'Supplier results' page
-    And I should see the same number of legal panel for government services that I counted previously
+    And I should see the same number of legal panel for government specialisms that I counted previously
     And I click on 'Download the supplier list'
-    Then I am on the 'Download the supplier shortlist' page
-    And I click on 'Download supplier shortlist'
     Then the file 'Shortlist of Legal Panel for Government Suppliers.xlsx' is downloaded with the 'xlsx' extension
-    And I click on the 'Back' back link
-    Then I am on the 'Supplier results' page
-    And I should see the same number of legal panel for government services that I counted previously
 
     Examples:
       | lot_name                                   | service_name                     |
