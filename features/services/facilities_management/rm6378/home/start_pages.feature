@@ -1,17 +1,17 @@
 Feature: Facilities Management - Start pages
 
   Scenario: Buyer sees start page
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     Then I am on the 'Find a facilities management supplier' page
 
   Scenario: Buyer navigatis to sign in page
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     Then I am on the 'Sign in to your account' page
 
   Scenario: Logging on user without details
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
@@ -20,7 +20,7 @@ Feature: Facilities Management - Start pages
     And I am on the 'Your details' page
 
   Scenario: Logging on user with details
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
@@ -29,7 +29,7 @@ Feature: Facilities Management - Start pages
 
   @smoulder @production
   Scenario: Viewing the home page
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page
@@ -44,4 +44,4 @@ Feature: Facilities Management - Start pages
       | Manage my details                                                        |
       | Update and edit your contact details                                     |
       | View further information about the Facilities Management and             |
-      | Workplace Services framework RM6232 (opens in a new tab)                 |
+      | Workplace Services framework RM6378 (opens in a new tab)                 |

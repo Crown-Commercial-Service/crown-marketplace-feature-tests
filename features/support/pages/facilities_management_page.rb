@@ -5,33 +5,6 @@ module Pages
   end
 
   class FacilitiesManagement < SitePrism::Page
-    section :buyer_details, '#main-content' do
-      element :Name, '#facilities_management_buyer_detail_full_name'
-      element :'Job title', '#facilities_management_buyer_detail_job_title'
-      element :'Telephone number', '#facilities_management_buyer_detail_telephone_number'
-      element :'Organisation name', '#facilities_management_buyer_detail_organisation_name'
-      element :'Organisation address', '#address-text'
-
-      section :sector, '#sector-form-group' do
-        element :'Defence and Security', '#facilities_management_buyer_detail_sector_defence_and_security'
-        element :Health, '#facilities_management_buyer_detail_sector_health'
-        element :'Government Policy', '#facilities_management_buyer_detail_sector_government_policy'
-        element :'Local Community and Housing', '#facilities_management_buyer_detail_sector_local_community_and_housing'
-        element :Infrastructure, '#facilities_management_buyer_detail_sector_infrastructure'
-        element :Education, '#facilities_management_buyer_detail_sector_education'
-        element :'Culture, Media and Sport', '#facilities_management_buyer_detail_sector_culture_media_and_sport'
-      end
-
-      section :contact_opt_in, '#contact_opt_in-form-group' do
-        element :Yes, '#facilities_management_buyer_detail_contact_opt_in_true'
-        element :No, '#facilities_management_buyer_detail_contact_opt_in_false'
-      end
-
-      element :postcode_error_message, '#organisation_address_postcode-error'
-      element :address_drop_down, '#address-results-container'
-      element :change_address, '#change-input-2'
-    end
-
     section :quick_view, '#main-content' do
       section :basket, '#css-list-basket' do
         elements :selection, 'ul > li > div:nth-of-type(2)'
@@ -41,6 +14,7 @@ module Pages
 
       element :annual_contract_value, '#annual_contract_value'
       element :sub_lot, '#procurement-sub-lot'
+      elements :sub_lots, '#procurement-search-results > ul > li > a > span'
 
       section :selection_summary, 'div:nth-child(2) > div.govuk-grid-column-one-third' do
         section :services, SummarySection, 'div.ccs-summary-box:nth-of-type(1)'
@@ -52,8 +26,8 @@ module Pages
         end
       end
 
-      element :contract_name_field, '#facilities_management_rm6232_procurement_contract_name'
-      elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li'
+      element :contract_name_field, '#facilities_management_rm6232_procurement_contract_name, #facilities_management_rm6378_procurement_contract_name'
+      elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li, #procurement-search-results > div:not(.govuk-tabs__panel--hidden) > ul > li'
     end
 
     section :service_specification, '#main-content' do
@@ -63,6 +37,11 @@ module Pages
 
     section :procurement, '#main-content' do
       elements :procurement_names, 'div.govuk-grid-row > div > div > table > tbody > tr'
+    end
+
+    section :notification_banner, 'div.govuk-notification-banner' do
+      element :title, 'div.govuk-notification-banner__header > h2.govuk-notification-banner__title'
+      element :message, 'div.govuk-notification-banner__content > p.govuk-notification-banner__heading'
     end
   end
 end

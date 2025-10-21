@@ -1,4 +1,3 @@
-@javascript
 Feature: Legal Panel for Government - Non central governemnt - Lot 4b - Suppliers - Countries
 
   Scenario: Check the supplier data for different counties

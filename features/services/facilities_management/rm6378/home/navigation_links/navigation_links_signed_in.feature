@@ -1,10 +1,10 @@
 Feature: Facilities Management - Navigation links when signed in
 
   Background: I navigate to the start page
-    Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
+    Given I sign in and navigate to the start page for the 'RM6378' framework in 'facilities management'
 
   Scenario: Start page
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     And I should see the following navigation links:
       | My account |
       | Sign out   |

@@ -1,7 +1,7 @@
-Feature: Facilities Management - RM6232 - Buyer details
+Feature: Facilities Management - RM6378 - Buyer details
 
   Background: Navigate to Buyer Details page
-    Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
+    Given I sign in and navigate to the start page for the 'RM6378' framework in 'facilities management'
     Then I click on 'Manage my details'
     Then I am on the 'Your details' page
     And the following buyer details have been entered for 'Personal details':
