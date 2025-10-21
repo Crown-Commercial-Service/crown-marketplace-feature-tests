@@ -1,7 +1,7 @@
 Feature: Facilities Management - Navigation links when signed in - without buyer details
 
   Background: I navigate to the start page
-    When I go to the 'facilities management' start page for 'RM6232'
+    When I go to the 'facilities management' start page for 'RM6378'
     And I am on the 'Find a facilities management supplier' page
     When I click on 'Start now'
     And I am on the 'Sign in to your account' page

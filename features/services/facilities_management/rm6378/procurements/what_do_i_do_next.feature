@@ -1,14 +1,14 @@
 Feature: Facilities Management - What do I do next
 
   Background: I navigate to the What do I do next page
-    Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
-    And I have a procurement with the name 'My WDIDN procurement' for 'RM6232'
+    Given I sign in and navigate to the start page for the 'RM6378' framework in 'facilities management'
+    And I have a procurement with the name 'My WDIDN procurement' for 'RM6378'
     And I am on the 'What do I do next?' page
 
   @smoulder @production
   Scenario: The content is correct
     And the procurement name is shown to be 'My WDIDN procurement'
-    And the contract number is visible with the contract name 'My WDIDN procurement' for 'RM6232'
+    And the contract number is visible with the contract name 'My WDIDN procurement' for 'RM6378'
     Then the following content should be displayed on the page:
       | Step 1 - download your results                                            |
       | You can download your shortlisted supplier list now, which also contains: |

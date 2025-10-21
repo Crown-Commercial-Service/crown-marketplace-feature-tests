@@ -12,21 +12,30 @@ module Pages
       section :'Organisation details', '#buyer-details-summery--organisation-details' do
         sections :rows, SummaryRowRowSection, 'govuk-summary-list__row'
       end
+      section :'Contact preferences', '#buyer-details-summery--contact-preferences' do
+        sections :rows, SummaryRowRowSection, 'govuk-summary-list__row'
+      end
     end
 
-    section :sector, '#organisation_sector-form-group' do
-      element :'Defence and Security', '#buyer_detail_organisation_sector_defence_and_security'
-      element :Health, '#buyer_detail_organisation_sector_health'
-      element :'Government Policy', '#buyer_detail_organisation_sector_government_policy'
-      element :'Local Community and Housing', '#buyer_detail_organisation_sector_local_community_and_housing'
-      element :Infrastructure, '#buyer_detail_organisation_sector_infrastructure'
-      element :Education, '#buyer_detail_organisation_sector_education'
-      element :'Culture, Media and Sport', '#buyer_detail_organisation_sector_culture_media_and_sport'
+    section :sector, '#sector-form-group, #organisation_sector-form-group' do
+      element :'Defence and Security', '#facilities_management_buyer_detail_sector_defence_and_security, #buyer_detail_organisation_sector_defence_and_security'
+      element :Health, '#facilities_management_buyer_detail_sector_health, #buyer_detail_organisation_sector_health'
+      element :'Government Policy', '#facilities_management_buyer_detail_sector_government_policy, #buyer_detail_organisation_sector_government_policy'
+      element :'Local Community and Housing', '#facilities_management_buyer_detail_sector_local_community_and_housing, #buyer_detail_organisation_sector_local_community_and_housing'
+      element :Infrastructure, '#facilities_management_buyer_detail_sector_infrastructure, #buyer_detail_organisation_sector_infrastructure'
+      element :Education, '#facilities_management_buyer_detail_sector_education, #buyer_detail_organisation_sector_education'
+      element :'Culture, Media and Sport', '#facilities_management_buyer_detail_sector_culture_media_and_sport, #buyer_detail_organisation_sector_culture_media_and_sport'
     end
 
     section :contact_opt_in, '#contact_opt_in-form-group' do
       element :Yes, '#buyer_detail_contact_opt_in_true'
       element :No, '#buyer_detail_contact_opt_in_false'
     end
+
+    element :address_line_1_error_message, '#organisation_address_line_1-error'
+    element :town_or_city_error_message, '#organisation_address_town-error'
+    element :postcode_error_message, '#organisation_address_postcode-error'
+    element :address_drop_down, '#organisation_address'
+    element :change_address, '#organisation-address--change-address-button'
   end
 end

@@ -76,6 +76,17 @@ Then('I should be in sub-lot {string}') do |sub_lot|
   expect(facilities_management_page.quick_view.sub_lot).to have_content("Sub-lot #{sub_lot}")
 end
 
+Then('I should be in the following sub-lots:') do |sub_lots|
+  sub_lot_elements = facilities_management_page.quick_view.sub_lots
+  expected_sub_lots = sub_lots.raw.flatten
+
+  expect(sub_lot_elements.length).to eq(expected_sub_lots.length)
+
+  sub_lot_elements.zip(expected_sub_lots).each do |sub_lot_element, expected_sublot|
+    expect(sub_lot_element).to have_content("Sub-lot #{expected_sublot}")
+  end
+end
+
 Then('I should see the following {string} in the selection summary:') do |option, selection_summary_table|
   case option
   when 'services', 'regions'
@@ -104,7 +115,7 @@ Then('the procurement {string} is on the dashboard') do |contract_name|
   expect(facilities_management_page).to have_link("#{contract_name} #{@contract_name_id}")
 end
 
-Given('I have a search and I record the name') do
+Given('I have a search and I record the name for {string}') do |framework|
   step 'I click on "View your saved searches"'
   step 'I am on the "Saved searches" page'
 
@@ -113,7 +124,7 @@ Given('I have a search and I record the name') do
   if procurement_names.length.positive?
     @taken_contract_name = procurement_names[0].find('a').text
   else
-    visit '/facilities-management/RM6232/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=UKC1&service_codes%5B%5D=E.1'
+    visit SEARCH_URLS[framework]
 
     @taken_contract_name = "Taken contract name #{SecureRandom.uuid}"
 
@@ -124,26 +135,31 @@ Given('I have a search and I record the name') do
     step "the procurement name is shown to be '#{@taken_contract_name}'"
   end
 
-  visit '/facilities-management/RM6232'
+  visit "/facilities-management/#{framework}"
 end
 
 Then('I enter the taken contract name into the contract name field') do
   facilities_management_page.quick_view.contract_name_field.set(@taken_contract_name)
 end
 
+Then('there is a notification with the message for the saved security search for {string}') do |contract_name|
+  expect(facilities_management_page.notification_banner.title).to have_content('Important')
+  expect(facilities_management_page.notification_banner.message).to have_content("Your result which included security services was saved as #{contract_name} #{@contract_name_id} (Security)")
+end
+
 # Procurement journey steps
 
-Given('I have a procurement with the name {string}') do |contract_name|
-  visit '/facilities-management/RM6232/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=UKC1&service_codes%5B%5D=E.1'
+Given('I have a procurement with the name {string} for {string}') do |contract_name, framework|
+  visit SEARCH_URLS[framework]
   step "I enter '#{contract_name}' into the contract name field"
   step "I select 'Yes'"
   step 'I click on "Save and continue"'
   step 'I am on the "What do I do next?" page'
 end
 
-When('the contract number is visible with the contract name {string}') do |contract_name|
-  expect(page.find('#main-content > div:nth-child(1) > div > span')).to have_content("#{contract_name} #{@contract_name_id} - RM6232")
-  expect(page.find('.ccs-panel__body')).to have_content('RM6232')
+When('the contract number is visible with the contract name {string} for {string}') do |contract_name, framework|
+  expect(page.find('#main-content > div:nth-child(1) > div > span')).to have_content("#{contract_name} #{@contract_name_id} - #{framework}")
+  expect(page.find('.ccs-panel__body')).to have_content(framework)
 end
 
 Then('the facilities management file for {string} is downloaded with the {string} extension') do |contract_name, file_extension|
@@ -165,3 +181,8 @@ Then('the selected facilities management suppliers are:') do |suppliers|
     expect(actual).to have_content expected
   end
 end
+
+SEARCH_URLS = {
+  'RM6232' => '/facilities-management/RM6232/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=UKC1&service_codes%5B%5D=E.1',
+  'RM6378' => '/facilities-management/RM6378/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=TLC3&service_codes%5B%5D=E1'
+}.freeze

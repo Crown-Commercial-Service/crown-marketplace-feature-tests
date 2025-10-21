@@ -8,7 +8,7 @@ Before do |scenario|
     end
   end
 
-  %w[rm6187 rm6232 rm6238 rm6240 rm6309 rm6360].each do |framework|
+  %w[rm6187 rm6232 rm6238 rm6240 rm6309 rm6360 rm6378].each do |framework|
     if scenario.location.file.include? framework
       @framework = framework.upcase
       break

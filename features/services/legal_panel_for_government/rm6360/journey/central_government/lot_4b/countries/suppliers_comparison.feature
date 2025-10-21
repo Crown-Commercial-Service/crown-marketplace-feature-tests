@@ -1,6 +1,5 @@
 Feature: Legal Panel for Government - Non central governemnt - Lot 4b - Suppliers comparison - Countries
 
-  @javascript
   Scenario: Suppliers reviewed - The rates table is displayed for comparison
     Given I sign in and navigate to the start page for the 'RM6360' framework in 'legal panel for government'
     Then I am on the 'Your account' page

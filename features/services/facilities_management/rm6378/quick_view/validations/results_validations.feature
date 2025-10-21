@@ -1,7 +1,7 @@
-Feature: Facilities Management - RM6232 - Results validations
+Feature: Facilities Management - RM6378 - Results validations
 
   Background: Sign in to the sytem
-    Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management'
+    Given I sign in and navigate to the start page for the 'RM6378' framework in 'facilities management'
 
   Scenario: Contract name and linkt to PFI is blank
     And I click on 'Search for suppliers'
@@ -26,7 +26,7 @@ Feature: Facilities Management - RM6232 - Results validations
 
   @smoulder @production
   Scenario: Contract name is taken
-    Given I have a search and I record the name for 'RM6232'
+    Given I have a search and I record the name for 'RM6378'
     And I click on 'Search for suppliers'
     Then I am on the 'Services' page
     And I click on 'Show all sections'

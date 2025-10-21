@@ -1,7 +1,7 @@
-Feature: Facilities Management - RM6232 - Buyer details - validations
+Feature: Facilities Management - RM6378 - Buyer details - validations
 
   Background: Navigate to Buyer Details page
-    Given I sign in and navigate to the start page for the 'RM6232' framework in 'facilities management' without details
+    Given I sign in and navigate to the start page for the 'RM6378' framework in 'facilities management' without details
 
   @smoulder @production
   Scenario: Save and return - Personal details - empty field
