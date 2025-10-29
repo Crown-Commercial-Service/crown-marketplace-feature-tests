@@ -2,7 +2,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 5 - Rates
 
   Scenario: Rates
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'KAUTZER, PFEFFER AND SCHUMM'
     Then I am on the 'Supplier lot data' page
@@ -11,7 +11,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 5 - Rates
     Then I am on the 'Lot 5 - Rail Legal Services - Rates' page
     And the caption is 'KAUTZER, PFEFFER AND SCHUMM'
     And the rates in the 'United Kingdom' table are:
-      | Position                                                           | Hourly |
+      | Grade                                                              | Hourly |
       | Partner                                                            | £280   |
       | Legal Director/Counsel or equivalent                               | £245   |
       | Senior Solicitor, Senior Associate/Senior Legal Executive          | £210   |

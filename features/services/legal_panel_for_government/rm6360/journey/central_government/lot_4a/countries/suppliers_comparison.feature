@@ -230,3 +230,26 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Supplier
       | SMITH-DOYLE                    | £315.00                                        | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     | £175.00        | £140.00                                                          | £210.00                                                | £210.00                                              |
       | STARK, ADAMS AND KOZEY         | £225.00                                        | £200.00 | £175.00                              | £150.00                                                   | £125.00                              | £100.00                                                            | £75.00                   | £50.00                     | £125.00        | £100.00                                                          | £150.00                                                | £150.00                                              |
       | WELCH, PAGAC AND SWIFT         | £315.00                                        | £280.00 | £245.00                              | £210.00                                                   | £175.00                              | £140.00                                                            | £105.00                  | £70.00                     | £175.00        | £140.00                                                          | £210.00                                                | £210.00                                              |
+
+  @file-download
+  Scenario: Suppliers reviewed - Download the supplier spreadsheet
+    And I 'have' reviewed the suppliers’ prospectus
+    And I click on 'Continue'
+    Then I am on the 'Select suppliers for comparison' page
+    When I check the following items:
+      | ARMSTRONG GROUP                |
+      | COLLIER, AUFDERHAR AND VOLKMAN |
+      | EMARD LLC                      |
+    And I click on 'Continue'
+    Then I am on the 'Compare supplier rates' page
+    And I should see that '3' suppliers have been selected for comparison
+    Given I click on 'Download the rates for comparison'
+    Then the file 'Rates of Legal Panel for Government Suppliers.xlsx' is downloaded with the 'xlsx' extension
+
+  @file-download
+  Scenario: Suppliers not reviewed - Download the supplier spreadsheet
+    And I 'have not' reviewed the suppliers’ prospectus
+    And I click on 'Continue'
+    Then I am on the 'Compare supplier rates' page
+    Given I click on 'Download the rates for comparison'
+    Then the file 'Rates of Legal Panel for Government Suppliers.xlsx' is downloaded with the 'xlsx' extension

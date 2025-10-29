@@ -2,7 +2,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4b - Juris
 
   Scenario: Jurisdictions
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'RUSSEL AND SONS'
     Then I am on the 'Supplier lot data' page

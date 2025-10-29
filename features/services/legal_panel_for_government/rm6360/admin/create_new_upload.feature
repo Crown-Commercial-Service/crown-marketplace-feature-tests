@@ -3,7 +3,7 @@ Feature: Legal Panel for Government - Admin - Create new upload
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
     Then I am on the 'Admin dashboard' page
-    And I click on 'Manage supplier data'
+    And I click on 'Upload supplier data'
     And I click on 'Create a new data upload'
     Then I am on the 'New data upload' page
 
@@ -26,8 +26,8 @@ Feature: Legal Panel for Government - Admin - Create new upload
 
   @file-download
   Scenario Outline: Download files on dashboard - <filename>
-    And I click on "Return to 'Manage supplier data'"
-    Then I am on the 'Manage supplier data' page
+    And I click on "Return to 'Upload supplier data'"
+    Then I am on the 'Upload supplier data' page
     When I download the '<filename>' file
     Then the file '<filename>' is downloaded with the 'xlsx' extension
 
@@ -42,15 +42,15 @@ Feature: Legal Panel for Government - Admin - Create new upload
 
   @file-download
   Scenario Outline: Download files on upload - <filename>
-    And I click on "Return to 'Manage supplier data'"
-    Then I am on the 'Manage supplier data' page
+    And I click on "Return to 'Upload supplier data'"
+    Then I am on the 'Upload supplier data' page
     And I click on the first upload session with status 'Published on live'
     Then I am on the 'Upload session' page
     And the status of the upload is 'Published on live'
     When I download the '<filename>' file
     Then the file '<filename>' is downloaded with the 'xlsx' extension
-    And I click on "Return to 'Manage supplier data'"
-    Then I am on the 'Manage supplier data' page
+    And I click on "Return to 'Upload supplier data'"
+    Then I am on the 'Upload supplier data' page
 
     Examples:
       | filename                              |

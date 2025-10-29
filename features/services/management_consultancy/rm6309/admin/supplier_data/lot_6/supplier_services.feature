@@ -2,7 +2,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 6 - Services
 
   Scenario: Services
     Given I sign in as an admin for the 'RM6309' framework in 'management consultancy'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'ABSHIRE, QUITZON AND HOWE'
     Then I am on the 'Supplier lot data' page

@@ -65,6 +65,7 @@ preview:
     - service: facilities_management
       frameworks: 
         - RM6232
+        - RM6378
     - service: legal_panel_for_government
       frameworks: 
         - RM6360

@@ -3,7 +3,7 @@ Feature: Supply Teachers - Admin - Create new upload
   Background: Navigate to admin upload page
     Given I sign in as an admin for the 'RM6238' framework in 'supply teachers'
     Then I am on the 'Admin dashboard' page
-    And I click on 'Manage supplier data'
+    And I click on 'Upload supplier data'
     Then I am on the 'Supply teachers and agency workers' page
     And I click on 'Set up upload session'
     Then I am on the 'Set up a new upload session' page

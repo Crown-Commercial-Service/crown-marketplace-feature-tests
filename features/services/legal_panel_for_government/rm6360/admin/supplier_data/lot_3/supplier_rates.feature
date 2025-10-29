@@ -2,7 +2,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 3 - Rates
 
   Scenario: Rates
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'SCHMELER, KSHLERIN AND SHANAHAN'
     Then I am on the 'Supplier lot data' page
@@ -11,7 +11,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 3 - Rates
     Then I am on the 'Lot 3 - Finance and High Risk/Innovation - Rates' page
     And the caption is 'SCHMELER, KSHLERIN AND SHANAHAN'
     And the rates in the 'United Kingdom' table are:
-      | Position                                                           | Hourly |
+      | Grade                                                              | Hourly |
       | Partner                                                            | £200   |
       | Legal Director/Counsel or equivalent                               | £175   |
       | Senior Solicitor, Senior Associate/Senior Legal Executive          | £150   |
