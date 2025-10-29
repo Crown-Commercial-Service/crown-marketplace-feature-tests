@@ -2,7 +2,7 @@ Feature: Legal services - Admin - Supplier data pages
 
   Background: Navigate to supplier data page
     Given I sign in as an admin for the 'RM6240' framework in 'legal services'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
 
   Scenario: Supplier data page

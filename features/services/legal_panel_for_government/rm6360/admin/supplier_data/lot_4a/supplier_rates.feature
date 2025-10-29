@@ -2,7 +2,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4a - Rates
 
   Scenario: Rates
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'BLICK GROUP'
     Then I am on the 'Supplier lot data' page
@@ -11,7 +11,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4a - Rates
     Then I am on the 'Lot 4a - Trade and Investment Negotiations - Rates' page
     And the caption is 'BLICK GROUP'
     And the rates in the 'Benin' table are:
-      | Position                                                           | Hourly  |
+      | Grade                                                              | Hourly  |
       | Senior Counsel, Senior Partner (20 years +PQE)                     | £315.00 |
       | Partner                                                            | £280.00 |
       | Legal Director/Counsel or equivalent                               | £245.00 |
@@ -25,7 +25,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4a - Rates
       | Senior Modeller, Senior Econometrician, Senior Analyst             | £210.00 |
       | Modeller, Econometrician, Analyst, Associate Analyst               | £210.00 |
     And the rates in the 'Paraguay' table are:
-      | Position                                                           | Hourly  |
+      | Grade                                                              | Hourly  |
       | Senior Counsel, Senior Partner (20 years +PQE)                     | £225.00 |
       | Partner                                                            | £200.00 |
       | Legal Director/Counsel or equivalent                               | £175.00 |
@@ -39,7 +39,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4a - Rates
       | Senior Modeller, Senior Econometrician, Senior Analyst             | £150.00 |
       | Modeller, Econometrician, Analyst, Associate Analyst               | £150.00 |
     And the rates in the 'United Kingdom' table are:
-      | Position                                                           | Hourly  |
+      | Grade                                                              | Hourly  |
       | Senior Counsel, Senior Partner (20 years +PQE)                     | £270.00 |
       | Partner                                                            | £240.00 |
       | Legal Director/Counsel or equivalent                               | £210.00 |

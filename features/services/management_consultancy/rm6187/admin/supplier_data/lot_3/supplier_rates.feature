@@ -2,7 +2,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 3 - Rates
 
   Scenario: Rates
     Given I sign in as an admin for the 'RM6187' framework in 'management consultancy'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'KSHLERIN INC'
     Then I am on the 'Supplier lot data' page

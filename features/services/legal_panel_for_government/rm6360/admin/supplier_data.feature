@@ -2,7 +2,7 @@ Feature: Legal Panel for Government - Admin - Supplier data pages
 
   Background: Navigate to supplier data page
     Given I sign in as an admin for the 'RM6360' framework in 'legal panel for government'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
 
   Scenario: Supplier data page

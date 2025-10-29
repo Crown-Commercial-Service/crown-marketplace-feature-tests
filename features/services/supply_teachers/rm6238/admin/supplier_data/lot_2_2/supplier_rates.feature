@@ -2,7 +2,7 @@ Feature: Supply Teachers - Admin - Supplier lot data - Lot 2.2 - Rates
 
   Scenario: Rates
     Given I sign in as an admin for the 'RM6238' framework in 'supply teachers'
-    And I click on 'View supplier data'
+    And I click on 'Manage supplier data'
     Then I am on the 'Supplier data' page
     And I click on 'View lot data' for 'MCGLYNN, BAILEY AND NIKOLAUS'
     Then I am on the 'Supplier lot data' page
