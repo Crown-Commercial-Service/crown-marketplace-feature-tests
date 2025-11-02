@@ -26,5 +26,5 @@ gem 'rubocop-capybara', '~> 2.22'
 gem 'rubocop-rspec', '~> 3.7'
 
 # For running tests in parallel
-gem 'parallel_tests', '~> 5.4.0'
+gem 'parallel_tests', '~> 5.5.0'
 gem 'report_builder', '~> 1.9'
