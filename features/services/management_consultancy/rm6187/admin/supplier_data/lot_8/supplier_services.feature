@@ -8,15 +8,13 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 8 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'GOYETTE-KOEPP'
     And I click on 'View services' for the lot 'Lot 8 - Infrastructure including Transport'
-    Then I am on the 'Lot 8 - Infrastructure including Transport - Services' page
+    Then I am on the 'Lot 8 - Infrastructure including Transport View services' page
     And the caption is 'GOYETTE-KOEPP'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                                   | Has service? |
-      | Aviation                                       | Yes          |
-      | Communications and technology infrastructure   | Yes          |
-      | Highways                                       | Yes          |
-      | Ports and shipping                             | No           |
-      | Public transport (including buses and parking) | Yes          |
-      | Rail                                           | Yes          |
-      | Smart infrastructure                           | Yes          |
-      | Towns and cities                               | Yes          |
+      | Aviation                                       |
+      | Communications and technology infrastructure   |
+      | Highways                                       |
+      | Public transport (including buses and parking) |
+      | Rail                                           |
+      | Smart infrastructure                           |
+      | Towns and cities                               |

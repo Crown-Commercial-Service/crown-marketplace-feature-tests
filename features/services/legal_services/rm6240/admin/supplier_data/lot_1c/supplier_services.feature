@@ -8,47 +8,39 @@ Feature: Legal services - Admin - Supplier lot data - Lot 1c - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'RICE INC'
     And I click on 'View services' for the lot 'Lot 1c - Full service provision (Northern Ireland)'
-    Then I am on the 'Lot 1c - Full service provision - Services' page
+    Then I am on the 'Lot 1c - Full service provision View services' page
     And the caption is 'RICE INC'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                                   | Has service? |
-      | Administrative and Public Law                  | Yes          |
-      | Charities Law                                  | Yes          |
-      | Children and Vulnerable Adults                 | No           |
-      | Competition Law                                | Yes          |
-      | Contracts                                      | Yes          |
-      | Corporate Law                                  | Yes          |
-      | Data Protection and Information Law            | Yes          |
-      | Education Law                                  | No           |
-      | Employment                                     | Yes          |
-      | Energy, Natural Resources and Climate Change   | Yes          |
-      | Food, Rural and Environmental Affairs          | No           |
-      | Franchise Law                                  | Yes          |
-      | Health and Safety                              | Yes          |
-      | Health, Healthcare and Social Care             | No           |
-      | Immigration                                    | Yes          |
-      | Information Technology                         | Yes          |
-      | Infrastructure                                 | Yes          |
-      | Intellectual Property                          | Yes          |
-      | International Trade, Investment and Regulation | Yes          |
-      | Islamic Finance / Sukuk                        | No           |
-      | Licensing Law                                  | No           |
-      | Life Sciences                                  | Yes          |
-      | Litigation and Dispute Resolution              | Yes          |
-      | Media Law                                      | Yes          |
-      | Mental Health Law                              | No           |
-      | Non-Complex Finance and Investment             | Yes          |
-      | Outsourcing / Insourcing                       | Yes          |
-      | Partnerships                                   | Yes          |
-      | Pensions                                       | Yes          |
-      | Planning                                       | Yes          |
-      | Projects                                       | Yes          |
-      | Property, Real Estate and Construction         | Yes          |
-      | Public Inquests and Inquiries                  | Yes          |
-      | Public International Law                       | Yes          |
-      | Public Procurement                             | Yes          |
-      | Restructuring and Insolvency                   | Yes          |
-      | Retained EU Law and EU Law                     | Yes          |
-      | Tax                                            | Yes          |
-      | Telecommunications                             | Yes          |
-      | Transport Law (excluding Rail)                 | Yes          |
+      | Administrative and Public Law                  |
+      | Charities Law                                  |
+      | Competition Law                                |
+      | Contracts                                      |
+      | Corporate Law                                  |
+      | Data Protection and Information Law            |
+      | Employment                                     |
+      | Energy, Natural Resources and Climate Change   |
+      | Franchise Law                                  |
+      | Health and Safety                              |
+      | Immigration                                    |
+      | Information Technology                         |
+      | Infrastructure                                 |
+      | Intellectual Property                          |
+      | International Trade, Investment and Regulation |
+      | Life Sciences                                  |
+      | Litigation and Dispute Resolution              |
+      | Media Law                                      |
+      | Non-Complex Finance and Investment             |
+      | Outsourcing / Insourcing                       |
+      | Partnerships                                   |
+      | Pensions                                       |
+      | Planning                                       |
+      | Projects                                       |
+      | Property, Real Estate and Construction         |
+      | Public Inquests and Inquiries                  |
+      | Public International Law                       |
+      | Public Procurement                             |
+      | Restructuring and Insolvency                   |
+      | Retained EU Law and EU Law                     |
+      | Tax                                            |
+      | Telecommunications                             |
+      | Transport Law (excluding Rail)                 |

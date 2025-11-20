@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 4 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'GRIMES-KUHLMAN'
     And I click on 'View rates' for the lot 'Lot 4 - Finance'
-    Then I am on the 'Lot 4 - Finance - Rates' page
+    Then I am on the 'Lot 4 - Finance View rates' page
     And the caption is 'GRIMES-KUHLMAN'
     And the rates in the table are:
       | Position                                   | Max day rate (Advice) | Max day rate (Delivery) |

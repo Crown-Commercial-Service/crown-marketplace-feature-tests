@@ -48,7 +48,7 @@ Feature: Supply Teachers - Admin - Create new upload
     And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Waiting to publish'
     And I record the session name
-    When I click on 'Return to manage supplier data'
+    When I click on 'Return to upload supplier data'
     Then I am on the 'Supply teachers and agency workers' page
     And I click on 'Set up upload session'
     Then I am on the 'Set up a new upload session' page
@@ -57,14 +57,14 @@ Feature: Supply Teachers - Admin - Create new upload
     Then I am on the 'Upload session' page
     And I wait no longer than 30 seconds for the supply teachers upload status to change from 'Processing files'
     And the status of the supply teachers upload is 'Waiting to publish'
-    When I click on 'Return to manage supplier data'
+    When I click on 'Return to upload supplier data'
     Then I am on the 'Supply teachers and agency workers' page
     And I navigate to my recorded session page
     And the status of the supply teachers upload is 'Cancelled session'
 
   @file-download
   Scenario Outline: Download files on dashboard - <filename>
-    And I click on 'Return to manage supplier data'
+    And I click on 'Return to upload supplier data'
     Then I am on the 'Supply teachers and agency workers' page
     When I download the '<filename>' file
     Then the file '<filename>' is downloaded with the '<extension>' extension
@@ -80,14 +80,14 @@ Feature: Supply Teachers - Admin - Create new upload
 
   @file-download
   Scenario Outline: Download files on upload - <filename>
-    And I click on 'Return to manage supplier data'
+    And I click on 'Return to upload supplier data'
     Then I am on the 'Supply teachers and agency workers' page
     And I click on the first upload session with status 'Published on live'
     Then I am on the 'Upload session' page
     And the status of the supply teachers upload is 'Published on live'
     When I download the '<filename>' supply teachers file
     Then the file '<filename>' is downloaded with the '<extension>' extension
-    And I click on 'Return to manage supplier data'
+    And I click on 'Return to upload supplier data'
     Then I am on the 'Supply teachers and agency workers' page
 
     Examples:

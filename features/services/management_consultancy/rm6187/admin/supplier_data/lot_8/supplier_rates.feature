@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 8 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'GOYETTE-KOEPP'
     And I click on 'View rates' for the lot 'Lot 8 - Infrastructure including Transport'
-    Then I am on the 'Lot 8 - Infrastructure including Transport - Rates' page
+    Then I am on the 'Lot 8 - Infrastructure including Transport View rates' page
     And the caption is 'GOYETTE-KOEPP'
     And the rates in the table are:
       | Position                                              | Max day rate |

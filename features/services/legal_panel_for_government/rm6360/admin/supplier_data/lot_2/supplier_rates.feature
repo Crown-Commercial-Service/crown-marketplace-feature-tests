@@ -8,14 +8,15 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 2 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'WELCH, PAGAC AND SWIFT'
     And I click on 'View rates' for the lot 'Lot 2 - Major Projects and Complex Advice'
-    Then I am on the 'Lot 2 - Major Projects and Complex Advice - Rates' page
+    Then I am on the 'Lot 2 - Major Projects and Complex Advice View rates' page
     And the caption is 'WELCH, PAGAC AND SWIFT'
     And the rates in the 'United Kingdom' table are:
-      | Grade                                                              | Hourly |
-      | Partner                                                            | £240   |
-      | Legal Director/Counsel or equivalent                               | £210   |
-      | Senior Solicitor, Senior Associate/Senior Legal Executive          | £180   |
-      | Solicitor, Associate/Legal Executive                               | £150   |
-      | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | £120   |
-      | Trainee/Legal Apprentice                                           | £90    |
-      | Paralegal, Legal Assistant                                         | £60    |
+      | Grade                                                              | Hourly  |
+      | Partner                                                            | £240    |
+      | Legal Director/Counsel or equivalent                               | £210    |
+      | Senior Solicitor, Senior Associate/Senior Legal Executive          | £180    |
+      | Solicitor, Associate/Legal Executive                               | £150    |
+      | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | £120    |
+      | Trainee/Legal Apprentice                                           | £90     |
+      | Paralegal, Legal Assistant                                         | £60     |
+      | Legal Project Managers                                             | £195.00 |

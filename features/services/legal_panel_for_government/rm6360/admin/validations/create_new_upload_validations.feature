@@ -46,20 +46,9 @@ Feature: Legal Panel for Government - Admin - Create new upload - Validations
     And I wait no longer than 20 seconds for the upload to finish
     And the status of the upload is 'Failed'
     And the details for the failed upload are:
-      | The 'Supplier details' file is missing sheets                      | The 'Supplier details' file should have 1 sheet named 'All Suppliers'                 |
-      | The 'Supplier service offerings' file is missing sheets            | The 'Supplier service offerings' file should have 7 sheets with the following names:  |
-      |                                                                    | 'Lot 1', 'Lot 2', 'Lot 3', 'Lot 4a', 'Lot 4b', 'Lot 4c', 'Lot 5'                      |
-      | The 'Supplier rate cards (lots 1, 2, 3, 5)' file is missing sheets | The 'Supplier rate cards (lots 1, 2, 3, 5)' file should have 4 sheets with the        |
-      |                                                                    | following names: 'Lot 1', 'Lot 2', 'Lot 3', 'Lot 5'                                   |
-      | The 'Supplier lot 4a rate cards' file is missing sheets            | The 'Supplier lot 4a rate cards' file should have 12 sheets with the following names: |
-      |                                                                    | 'Senior Counsel', 'Partner', 'Legal Director', 'Senior Solicitor', 'Solicitor',       |
-      |                                                                    | 'NQ Solicitor', 'Trainee', 'Paralegal', 'Senior Analyst', 'Analyst',                  |
-      |                                                                    | 'Senior Modeller', 'Modeller'                                                         |
-      | The 'Supplier lot 4b rate cards' file is missing sheets            | The 'Supplier lot 4b rate cards' file should have 12 sheets with the following names: |
-      |                                                                    | 'Senior Counsel', 'Partner', 'Legal Director', 'Senior Solicitor', 'Solicitor',       |
-      |                                                                    | 'NQ Solicitor', 'Trainee', 'Paralegal', 'Senior Analyst', 'Analyst',                  |
-      |                                                                    | 'Senior Modeller', 'Modeller'                                                         |
-      | The 'Supplier lot 4c rate cards' file is missing sheets            | The 'Supplier lot 4c rate cards' file should have 12 sheets with the following names: |
-      |                                                                    | 'Senior Counsel', 'Partner', 'Legal Director', 'Senior Solicitor', 'Solicitor',       |
-      |                                                                    | 'NQ Solicitor', 'Trainee', 'Paralegal', 'Senior Analyst', 'Analyst',                  |
-      |                                                                    | 'Senior Modeller', 'Modeller'                                                         |
+      | The 'Supplier details' file is missing sheets                      | The 'Supplier details' file should have 1 sheet named 'All Suppliers'                                                                                 |
+      | The 'Supplier service offerings' file is missing sheets            | The 'Supplier service offerings' file should have 7 sheets with the following names: 'Lot 1', 'Lot 2', 'Lot 3', 'Lot 4a', 'Lot 4b', 'Lot 4c', 'Lot 5' |
+      | The 'Supplier rate cards (lots 1, 2, 3, 5)' file is missing sheets | The 'Supplier rate cards (lots 1, 2, 3, 5)' file should have 4 sheets with the following names: 'Lot 1', 'Lot 2', 'Lot 3', 'Lot 5'                    |
+      | The 'Supplier lot 4a rate cards' file is missing sheets            | The 'Supplier lot 4a rate cards' file should have 2 sheets with the following names: 'Lot 4a Mandatory Jurisdiction', 'Lot 4a Optional Jurisdiction'  |
+      | The 'Supplier lot 4b rate cards' file is missing sheets            | The 'Supplier lot 4b rate cards' file should have 2 sheets with the following names: 'Lot 4b Mandatory Jurisdiction', 'Lot 4b Optional Jurisdiction'  |
+      | The 'Supplier lot 4c rate cards' file is missing sheets            | The 'Supplier lot 4c rate cards' file should have 2 sheets with the following names: 'Lot 4c Mandatory Jurisdiction', 'Lot 4c Optional Jurisdiction'  |

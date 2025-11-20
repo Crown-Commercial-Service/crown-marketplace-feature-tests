@@ -8,22 +8,17 @@ Feature: Legal services - Admin - Supplier lot data - Lot 2c - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'ROWE GROUP'
     And I click on 'View services' for the lot 'Lot 2c - General service provision (Northern Ireland)'
-    Then I am on the 'Lot 2c - General service provision - Services' page
+    Then I am on the 'Lot 2c - General service provision View services' page
     And the caption is 'ROWE GROUP'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                    | Has service? |
-      | Child Law                       | No           |
-      | Court of Protection             | No           |
-      | Debt Recovery                   | Yes          |
-      | Education Law                   | Yes          |
-      | Employment                      | Yes          |
-      | Healthcare                      | Yes          |
-      | Intellectual Property           | Yes          |
-      | Licensing                       | Yes          |
-      | Litigation / Dispute Resolution | Yes          |
-      | Mental Health Law               | No           |
-      | Pensions                        | Yes          |
-      | Planning and Environment        | Yes          |
-      | Primary Care                    | No           |
-      | Property and Construction       | Yes          |
-      | Social Housing                  | Yes          |
+      | Debt Recovery                   |
+      | Education Law                   |
+      | Employment                      |
+      | Healthcare                      |
+      | Intellectual Property           |
+      | Licensing                       |
+      | Litigation / Dispute Resolution |
+      | Pensions                        |
+      | Planning and Environment        |
+      | Property and Construction       |
+      | Social Housing                  |

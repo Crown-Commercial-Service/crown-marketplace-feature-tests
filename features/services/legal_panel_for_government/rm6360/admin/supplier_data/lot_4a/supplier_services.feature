@@ -8,17 +8,16 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4a - Servi
     Then I am on the 'Supplier lot data' page
     And the caption is 'BLICK GROUP'
     And I click on 'View services' for the lot 'Lot 4a - Trade and Investment Negotiations'
-    Then I am on the 'Lot 4a - Trade and Investment Negotiations - Services' page
+    Then I am on the 'Lot 4a - Trade and Investment Negotiations View services' page
     And the caption is 'BLICK GROUP'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                            | Has service? |
-      | Assimilated Law                         | Yes          |
-      | Domestic law of jurisdictions for trade | Yes          |
-      | FTA chapters                            | Yes          |
-      | Implementation of trade agreements      | Yes          |
-      | International law of trade              | Yes          |
-      | International treaty law                | Yes          |
-      | Investment treaties                     | Yes          |
-      | Legal barriers to markets               | Yes          |
-      | Trade and investment negotiations       | Yes          |
-      | Wider trading arrangements              | Yes          |
+      | Assimilated Law                         |
+      | Domestic law of jurisdictions for trade |
+      | FTA chapters                            |
+      | Implementation of trade agreements      |
+      | International law of trade              |
+      | International treaty law                |
+      | Investment treaties                     |
+      | Legal barriers to markets               |
+      | Trade and investment negotiations       |
+      | Wider trading arrangements              |

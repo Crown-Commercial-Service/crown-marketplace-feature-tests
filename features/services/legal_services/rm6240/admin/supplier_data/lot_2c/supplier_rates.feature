@@ -8,7 +8,7 @@ Feature: Legal services - Admin - Supplier lot data - Lot 2c - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'ROWE GROUP'
     And I click on 'View rates' for the lot 'Lot 2c - General service provision (Northern Ireland)'
-    Then I am on the 'Lot 2c - General service provision - Rates' page
+    Then I am on the 'Lot 2c - General service provision View rates' page
     And the caption is 'ROWE GROUP'
     And the rates in the table are:
       | Position                                           | Hourly |
