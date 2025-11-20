@@ -8,21 +8,18 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 1 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'HOPPE, MANTE AND METZ'
     And I click on 'View services' for the lot 'Lot 1 - Business'
-    Then I am on the 'Lot 1 - Business - Services' page
+    Then I am on the 'Lot 1 - Business View services' page
     And the caption is 'HOPPE, MANTE AND METZ'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                                                                     | Has service? |
-      | Automation                                                                       | Yes          |
-      | Business case development                                                        | Yes          |
-      | Business consultancy                                                             | Yes          |
-      | Business policy development and/or appraisal                                     | Yes          |
-      | Business processes                                                               | Yes          |
-      | Business strategy                                                                | Yes          |
-      | Change management                                                                | Yes          |
-      | Digital, technology and cyber                                                    | Yes          |
-      | Innovation, growth and business models                                           | No           |
-      | Operational planning and/or improvement, including Target Operating Models (TOM) | Yes          |
-      | Organisational design and review, Enterprise Resource Planning (ERP)             | No           |
-      | Programme and project management                                                 | Yes          |
-      | Risk, opportunity and compliance                                                 | Yes          |
-      | Value for money reviews                                                          | Yes          |
+      | Automation                                                                       |
+      | Business case development                                                        |
+      | Business consultancy                                                             |
+      | Business policy development and/or appraisal                                     |
+      | Business processes                                                               |
+      | Business strategy                                                                |
+      | Change management                                                                |
+      | Digital, technology and cyber                                                    |
+      | Operational planning and/or improvement, including Target Operating Models (TOM) |
+      | Programme and project management                                                 |
+      | Risk, opportunity and compliance                                                 |
+      | Value for money reviews                                                          |

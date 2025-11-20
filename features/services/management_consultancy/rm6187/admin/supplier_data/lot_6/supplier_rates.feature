@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 6 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'HARVEY-COLLINS'
     And I click on 'View rates' for the lot 'Lot 6 - Procurement and Supply Chain'
-    Then I am on the 'Lot 6 - Procurement and Supply Chain - Rates' page
+    Then I am on the 'Lot 6 - Procurement and Supply Chain View rates' page
     And the caption is 'HARVEY-COLLINS'
     And the rates in the table are:
       | Position                                              | Max day rate |

@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 9 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'WOLF, BEIER AND GOODWIN'
     And I click on 'View rates' for the lot 'Lot 9 - Environmental Sustainability and Socio-economic Development'
-    Then I am on the 'Lot 9 - Environmental Sustainability and Socio-economic Development - Rates' page
+    Then I am on the 'Lot 9 - Environmental Sustainability and Socio-economic Development View rates' page
     And the caption is 'WOLF, BEIER AND GOODWIN'
     And the rates in the table are:
       | Position                                              | Max day rate |

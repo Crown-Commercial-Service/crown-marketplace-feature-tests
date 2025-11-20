@@ -8,7 +8,7 @@ Feature: Legal services - Admin - Supplier lot data - Lot 2a - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'RICE-KREIGER'
     And I click on 'View rates' for the lot 'Lot 2a - General service provision (England and Wales)'
-    Then I am on the 'Lot 2a - General service provision - Rates' page
+    Then I am on the 'Lot 2a - General service provision View rates' page
     And the caption is 'RICE-KREIGER'
     And the rates in the table are:
       | Position                                           | Hourly |

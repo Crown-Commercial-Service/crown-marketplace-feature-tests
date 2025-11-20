@@ -37,7 +37,7 @@ Feature: Legal Panel for Government - Central governemnt - Supplier Comparison
     Then I am on the 'Compare supplier rates' page
     And I should see that '3' suppliers have been selected for comparison
     Then I should see the rates for the following roles:
-      | Supplier | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant |
+      | Supplier | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Legal Project Managers |
     And I click on 'Back to results'
     Then I am on the 'Supplier results' page
     And I should see the same number of legal panel for government specialisms that I counted previously
@@ -74,7 +74,7 @@ Feature: Legal Panel for Government - Central governemnt - Supplier Comparison
     Then I am on the 'Compare supplier rates' page
     And I should see that '3' suppliers have been selected for comparison
     Then I should see the rates for the following roles:
-      | Supplier | Senior Counsel, Senior Partner (20 years +PQE) | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
+      | Supplier | Senior Counsel, Senior Partner (20 years +PQE) | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Legal Project Managers | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
     And I click on 'Back to results'
     Then I am on the 'Supplier results' page
     And I should see the same number of legal panel for government specialisms that I counted previously
@@ -114,7 +114,7 @@ Feature: Legal Panel for Government - Central governemnt - Supplier Comparison
     Then I am on the 'Compare supplier rates' page
     And I should see that '3' suppliers have been selected for comparison
     Then I should see the rates for the following roles:
-      | Supplier | Senior Counsel, Senior Partner (20 years +PQE) | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
+      | Supplier | Senior Counsel, Senior Partner (20 years +PQE) | Partner | Legal Director/Counsel or equivalent | Senior Solicitor, Senior Associate/Senior Legal Executive | Solicitor, Associate/Legal Executive | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | Trainee/Legal Apprentice | Paralegal, Legal Assistant | Legal Project Managers | Senior Analyst | Analyst, Associate Analyst, Research Associate, Research Officer | Senior Modeller, Senior Econometrician, Senior Analyst | Modeller, Econometrician, Analyst, Associate Analyst |
     And I click on 'Back to results'
     Then I am on the 'Supplier results' page
     And I should see the same number of legal panel for government specialisms that I counted previously

@@ -8,8 +8,7 @@ Feature: Legal services - Admin - Supplier lot data - Lot 3 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'WEISSNAT INC'
     And I click on 'View services' for the lot 'Lot 3 - Transport rail legal services'
-    Then I am on the 'Lot 3 - Transport rail legal services - Services' page
+    Then I am on the 'Lot 3 - Transport rail legal services View services' page
     And the caption is 'WEISSNAT INC'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name     | Has service? |
-      | Transport (Rail) | Yes          |
+      | Transport (Rail) |

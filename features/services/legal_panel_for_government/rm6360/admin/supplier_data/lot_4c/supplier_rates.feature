@@ -8,7 +8,7 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4c - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'CRUICKSHANK, WISOKY AND HARBER'
     And I click on 'View rates' for the lot 'Lot 4c - International Investment Disputes'
-    Then I am on the 'Lot 4c - International Investment Disputes - Rates' page
+    Then I am on the 'Lot 4c - International Investment Disputes View rates' page
     And the caption is 'CRUICKSHANK, WISOKY AND HARBER'
     And the rates in the 'Belarus' table are:
       | Grade                                                              | Hourly  |
@@ -20,8 +20,9 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4c - Rates
       | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | £100.00 |
       | Trainee/Legal Apprentice                                           | £75.00  |
       | Paralegal, Legal Assistant                                         | £50.00  |
-      | Senior Modeller, Senior Econometrician, Senior Analyst             | £150.00 |
-      | Modeller, Econometrician, Analyst, Associate Analyst               | £125.00 |
+      | Legal Project Managers                                             | £181.25 |
+      | Senior Analyst                                                     | £150.00 |
+      | Analyst, Associate Analyst, Research Associate, Research Officer   | £125.00 |
     And the rates in the 'Sweden' table are:
       | Grade                                                              | Hourly  |
       | Senior Counsel, Senior Partner (20 years +PQE)                     | £225.00 |
@@ -32,8 +33,9 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4c - Rates
       | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | £100.00 |
       | Trainee/Legal Apprentice                                           | £75.00  |
       | Paralegal, Legal Assistant                                         | £50.00  |
-      | Senior Modeller, Senior Econometrician, Senior Analyst             | £150.00 |
-      | Modeller, Econometrician, Analyst, Associate Analyst               | £125.00 |
+      | Legal Project Managers                                             | £181.25 |
+      | Senior Analyst                                                     | £150.00 |
+      | Analyst, Associate Analyst, Research Associate, Research Officer   | £125.00 |
     And the rates in the 'United Kingdom' table are:
       | Grade                                                              | Hourly  |
       | Senior Counsel, Senior Partner (20 years +PQE)                     | £315.00 |
@@ -44,5 +46,6 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 4c - Rates
       | NQ Solicitor/Associate, Junior Solicitor/Associate/Legal Executive | £140.00 |
       | Trainee/Legal Apprentice                                           | £105.00 |
       | Paralegal, Legal Assistant                                         | £70.00  |
-      | Senior Modeller, Senior Econometrician, Senior Analyst             | £210.00 |
-      | Modeller, Econometrician, Analyst, Associate Analyst               | £175.00 |
+      | Legal Project Managers                                             | £253.75 |
+      | Senior Analyst                                                     | £210.00 |
+      | Analyst, Associate Analyst, Research Associate, Research Officer   | £175.00 |

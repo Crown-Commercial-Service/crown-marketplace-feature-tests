@@ -8,7 +8,7 @@ Feature: Legal services - Admin - Supplier lot data - Lot 1c - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'RICE INC'
     And I click on 'View rates' for the lot 'Lot 1c - Full service provision (Northern Ireland)'
-    Then I am on the 'Lot 1c - Full service provision - Rates' page
+    Then I am on the 'Lot 1c - Full service provision View rates' page
     And the caption is 'RICE INC'
     And the rates in the table are:
       | Position                                           | Hourly |

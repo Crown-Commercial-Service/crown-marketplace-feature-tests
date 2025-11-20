@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 3 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'KSHLERIN INC'
     And I click on 'View rates' for the lot 'Lot 3 - Complex and Transformation'
-    Then I am on the 'Lot 3 - Complex and Transformation - Rates' page
+    Then I am on the 'Lot 3 - Complex and Transformation View rates' page
     And the caption is 'KSHLERIN INC'
     And the rates in the table are:
       | Position                                              | Max day rate |

@@ -8,17 +8,15 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 5 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'SAUER, MCCULLOUGH AND SCHADEN'
     And I click on 'View services' for the lot 'Lot 5 - HR'
-    Then I am on the 'Lot 5 - HR - Services' page
+    Then I am on the 'Lot 5 - HR View services' page
     And the caption is 'SAUER, MCCULLOUGH AND SCHADEN'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                                    | Has service? |
-      | Capability development                          | Yes          |
-      | Cultural transformation                         | Yes          |
-      | Dispute management                              | No           |
-      | Diversity and inclusion                         | Yes          |
-      | Employee relations                              | Yes          |
-      | HR functions, process and design                | Yes          |
-      | HR policy                                       | Yes          |
-      | Organisational design and/or workforce planning | Yes          |
-      | Performance management                          | Yes          |
-      | Training and development                        | Yes          |
+      | Capability development                          |
+      | Cultural transformation                         |
+      | Diversity and inclusion                         |
+      | Employee relations                              |
+      | HR functions, process and design                |
+      | HR policy                                       |
+      | Organisational design and/or workforce planning |
+      | Performance management                          |
+      | Training and development                        |

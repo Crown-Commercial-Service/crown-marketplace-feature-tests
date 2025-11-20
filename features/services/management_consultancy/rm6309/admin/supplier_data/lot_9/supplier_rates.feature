@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 9 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'BRAKUS GROUP'
     And I click on 'View rates' for the lot 'Lot 9 - Environment and Sustainability'
-    Then I am on the 'Lot 9 - Environment and Sustainability - Rates' page
+    Then I am on the 'Lot 9 - Environment and Sustainability View rates' page
     And the caption is 'BRAKUS GROUP'
     And the rates in the table are:
       | Position                                   | Max day rate (Advice) | Max day rate (Delivery) |

@@ -73,7 +73,7 @@ preview:
       frameworks: 
         - RM6240
     - service: management_consultancy
-      frameworks: 
+      frameworks:
         - RM6309
     - service: supply_teachers
       frameworks: 

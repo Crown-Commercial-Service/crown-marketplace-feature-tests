@@ -8,7 +8,7 @@ Feature: Legal services - Admin - Supplier lot data - Lot 3 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'WEISSNAT INC'
     And I click on 'View rates' for the lot 'Lot 3 - Transport rail legal services'
-    Then I am on the 'Lot 3 - Transport rail legal services - Rates' page
+    Then I am on the 'Lot 3 - Transport rail legal services View rates' page
     And the caption is 'WEISSNAT INC'
     And the rates in the table are:
       | Position                                           | Hourly |

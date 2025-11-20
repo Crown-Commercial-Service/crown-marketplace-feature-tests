@@ -8,7 +8,7 @@ Feature: Legal services - Admin - Supplier lot data - Lot 1b - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'SCHNEIDER AND SONS'
     And I click on 'View rates' for the lot 'Lot 1b - Full service provision (Scotland)'
-    Then I am on the 'Lot 1b - Full service provision - Rates' page
+    Then I am on the 'Lot 1b - Full service provision View rates' page
     And the caption is 'SCHNEIDER AND SONS'
     And the rates in the table are:
       | Position                                           | Hourly |

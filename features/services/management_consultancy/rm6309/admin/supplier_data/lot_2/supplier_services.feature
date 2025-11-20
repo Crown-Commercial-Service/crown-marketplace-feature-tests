@@ -8,19 +8,15 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 2 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'SMITH AND SONS'
     And I click on 'View services' for the lot 'Lot 2 - Strategy and Policy'
-    Then I am on the 'Lot 2 - Strategy and Policy - Services' page
+    Then I am on the 'Lot 2 - Strategy and Policy View services' page
     And the caption is 'SMITH AND SONS'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                    | Has service? |
-      | Business case development       | Yes          |
-      | Business process re-engineering | No           |
-      | Business structure              | Yes          |
-      | Change management               | Yes          |
-      | Digital, technology and cyber   | Yes          |
-      | Future planning                 | No           |
-      | Game plan                       | Yes          |
-      | Policy                          | Yes          |
-      | Regulatory advice               | Yes          |
-      | Social value                    | No           |
-      | Strategic advice                | Yes          |
-      | Strategy                        | Yes          |
+      | Business case development     |
+      | Business structure            |
+      | Change management             |
+      | Digital, technology and cyber |
+      | Game plan                     |
+      | Policy                        |
+      | Regulatory advice             |
+      | Strategic advice              |
+      | Strategy                      |

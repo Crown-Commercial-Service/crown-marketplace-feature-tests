@@ -8,30 +8,11 @@ Feature: Legal Panel for Government - Admin - Supplier lot data - Lot 3 - Servic
     Then I am on the 'Supplier lot data' page
     And the caption is 'SCHMELER, KSHLERIN AND SHANAHAN'
     And I click on 'View services' for the lot 'Lot 3 - Finance and High Risk/Innovation'
-    Then I am on the 'Lot 3 - Finance and High Risk/Innovation - Services' page
+    Then I am on the 'Lot 3 - Finance and High Risk/Innovation View services' page
     And the caption is 'SCHMELER, KSHLERIN AND SHANAHAN'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                                                | Has service? |
-      | Corporate Finance                                           | No           |
-      | Corporate Law                                               | No           |
-      | Credit Insurance and Related Products                       | No           |
-      | Debt Capital Markets                                        | No           |
-      | Energy and Natural Resources                                | No           |
-      | Equity Capital Markets                                      | No           |
-      | Financial Institutions Rescue, Restructuring and Insolvency | No           |
-      | Financial Services, Market and Competition Regulation       | No           |
-      | Fintech Crypto Assets                                       | No           |
-      | Insurance and Reinsurance                                   | No           |
-      | International Development/Aid Funding                       | Yes          |
-      | International Finance Organisations                         | No           |
-      | Investment and Asset Management                             | No           |
-      | Investment and Commercial Banking                           | Yes          |
-      | Islamic Finance / Sukuk                                     | No           |
-      | Litigation and Dispute Resolution                           | Yes          |
-      | Merger and Acquisition Activity                             | No           |
-      | Project and Asset Finance                                   | No           |
-      | Projects and transactions                                   | No           |
-      | Restructuring/Insolvency                                    | Yes          |
-      | Sovereign Debt Restructuring                                | Yes          |
-      | Sustainable Finance/ Green Finance                          | No           |
-      | United State Securities & Regulatory                        | No           |
+      | International Development/Aid Funding |
+      | Investment and Commercial Banking     |
+      | Litigation and Dispute Resolution     |
+      | Restructuring/Insolvency              |
+      | Sovereign Debt Restructuring          |

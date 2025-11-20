@@ -8,20 +8,18 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 8 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'HUDSON LLC'
     And I click on 'View services' for the lot 'Lot 8 - Infrastructure'
-    Then I am on the 'Lot 8 - Infrastructure - Services' page
+    Then I am on the 'Lot 8 - Infrastructure View services' page
     And the caption is 'HUDSON LLC'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                                 | Has service? |
-      | Aerospace                                    | Yes          |
-      | Automotive                                   | Yes          |
-      | Aviation                                     | Yes          |
-      | Communications and technology infrastructure | Yes          |
-      | Defence                                      | Yes          |
-      | Highways                                     | No           |
-      | Nuclear                                      | Yes          |
-      | Ports and shipping                           | Yes          |
-      | Public transport                             | Yes          |
-      | Rail                                         | Yes          |
-      | Smart infrastructure                         | Yes          |
-      | Towns, cities and rural areas                | Yes          |
-      | Travel, transportation and logistics         | Yes          |
+      | Aerospace                                    |
+      | Automotive                                   |
+      | Aviation                                     |
+      | Communications and technology infrastructure |
+      | Defence                                      |
+      | Nuclear                                      |
+      | Ports and shipping                           |
+      | Public transport                             |
+      | Rail                                         |
+      | Smart infrastructure                         |
+      | Towns, cities and rural areas                |
+      | Travel, transportation and logistics         |

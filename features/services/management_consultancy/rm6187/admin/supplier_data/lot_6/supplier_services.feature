@@ -8,20 +8,17 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 6 - Services
     Then I am on the 'Supplier lot data' page
     And the caption is 'HARVEY-COLLINS'
     And I click on 'View services' for the lot 'Lot 6 - Procurement and Supply Chain'
-    Then I am on the 'Lot 6 - Procurement and Supply Chain - Services' page
+    Then I am on the 'Lot 6 - Procurement and Supply Chain View services' page
     And the caption is 'HARVEY-COLLINS'
     And the supplier should be assigned to the 'services' as follows:
-      | Service name                    | Has service? |
-      | Category management             | No           |
-      | Commercial review               | Yes          |
-      | Contract management             | Yes          |
-      | Cost reduction                  | Yes          |
-      | Digitalisation                  | Yes          |
-      | Financial advice                | Yes          |
-      | Outsourcing and insourcing      | Yes          |
-      | P2P                             | No           |
-      | Procurement process             | Yes          |
-      | Sourcing                        | Yes          |
-      | Supplier management             | Yes          |
-      | Supply chain and logistics      | Yes          |
-      | Tender development and analysis | Yes          |
+      | Commercial review               |
+      | Contract management             |
+      | Cost reduction                  |
+      | Digitalisation                  |
+      | Financial advice                |
+      | Outsourcing and insourcing      |
+      | Procurement process             |
+      | Sourcing                        |
+      | Supplier management             |
+      | Supply chain and logistics      |
+      | Tender development and analysis |

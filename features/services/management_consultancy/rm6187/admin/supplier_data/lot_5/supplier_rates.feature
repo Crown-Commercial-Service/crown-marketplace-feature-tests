@@ -8,7 +8,7 @@ Feature: Management Consultancy - Admin - Supplier lot data - Lot 5 - Rates
     Then I am on the 'Supplier lot data' page
     And the caption is 'SAUER, MCCULLOUGH AND SCHADEN'
     And I click on 'View rates' for the lot 'Lot 5 - HR'
-    Then I am on the 'Lot 5 - HR - Rates' page
+    Then I am on the 'Lot 5 - HR View rates' page
     And the caption is 'SAUER, MCCULLOUGH AND SCHADEN'
     And the rates in the table are:
       | Position                                              | Max day rate |
