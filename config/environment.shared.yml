@@ -87,6 +87,9 @@ production:
     - service: legal_services
       frameworks: 
         - RM6240
+    - service: legal_panel_for_government
+      frameworks: 
+        - RM6360
     - service: management_consultancy
       frameworks: 
         - RM6309
