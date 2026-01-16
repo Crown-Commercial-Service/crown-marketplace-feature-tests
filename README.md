@@ -149,6 +149,22 @@ Once you have pushed your changes, you should open a Pull Request on the main br
 
 Once all these have passed, and the PR has been reviewed and approved by another developer, you can merge the PR.
 
+## Releases
+
+We use GitHub releases/tags to manage the version of the feature tests that should be compatible with the apps.
+The CHANGELOG.md shows which version of the feature tests should work with the versions of the applications.
+
+To create a new release:
+- From the release commit (nearly always the HEAD of the main branch) checkout a new branch with the release version in the format:
+`release-<major>.<minor>.<patch>`
+- Update the version number in the VERSION file
+- Update the CHANGELOG with a list of the changes and their Pull Requests
+- Commit the changes (with the commit message 'Release v<major>.<minor>.<patch>'), push to GitHub and open a Pull Request
+- Once this Pull Request has been reviewed and merged a new GitHub release will be created
+
+The `main` branch should run without failure against the cmpdev environemnt.
+
+
 [Crown Marketplace]: https://github.com/Crown-Commercial-Service/crown-marketplace-legacy
 [Crown Marketplace Legacy]: https://github.com/Crown-Commercial-Service/crown-marketplace-legacy
 [Cucumber]: https://cucumber.io/
