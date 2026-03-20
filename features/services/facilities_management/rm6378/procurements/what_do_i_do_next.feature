@@ -13,13 +13,13 @@ Feature: Facilities Management - What do I do next
       | Step 1 - download your results                                            |
       | You can download your shortlisted supplier list now, which also contains: |
       | Step 2 - read about how to buy                                            |
-      |Visit the Facilities Management and Security Services framework page for   |
-      |information on how to procure via this framework, including:               |
+      | Visit the Facilities Management and Security Services framework page for  |
+      | information on how to procure via this framework, including:              |
 
   @file-download @smoulder @production
   Scenario: Download the supplier spreadsheet
-    And I click on 'Supplier shortlists'
-    Then the facilities management file for 'My WDIDN procurement' is downloaded with the 'xlsx' extension
+    And I click on 'Selected suppliers'
+    Then the facilities management file for 'Supplier shortlist (My WDIDN procurement)' is downloaded with the 'xlsx' extension
 
   Scenario: Back button link
     And I click on 'Return to saved searches'

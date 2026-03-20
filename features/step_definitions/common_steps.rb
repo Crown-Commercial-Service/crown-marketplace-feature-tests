@@ -152,17 +152,3 @@ Then('I pause') do
   # byebug
   pending 'This step is used for debugging features'
 end
-
-Then('I enter {string} for the contract start date') do |date|
-  add_contract_start_date(*date_options(date))
-end
-
-Then('I enter {string} for the estimated contract duration') do |value|
-  facilities_management_page.estimated_contract_duration.set(value)
-end
-
-def add_contract_start_date(day, month, year)
-  facilities_management_page.contract_start_date.day.set(day)
-  facilities_management_page.contract_start_date.month.set(month)
-  facilities_management_page.contract_start_date.year.set(year)
-end

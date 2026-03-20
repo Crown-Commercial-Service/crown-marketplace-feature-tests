@@ -25,7 +25,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Information about your requirements' page
     And I enter 'tomorrow' for the contract start date
     And I enter '27' for the estimated contract duration
-    And I select the 'Yes' radio button
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -54,7 +54,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Information about your requirements' page
     And I enter 'tomorrow' for the contract start date
     And I enter '27' for the estimated contract duration
-    And I select the 'Yes' radio button
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -83,7 +83,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Information about your requirements' page
     And I enter 'tomorrow' for the contract start date
     And I enter '27' for the estimated contract duration
-    And I select the 'Yes' radio button
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -113,7 +113,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Information about your requirements' page
     And I enter 'tomorrow' for the contract start date
     And I enter '27' for the estimated contract duration
-    And I select the 'Yes' radio button
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -146,7 +146,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Information about your requirements' page
     And I enter 'tomorrow' for the contract start date
     And I enter '27' for the estimated contract duration
-    And I select the 'Yes' radio button
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -173,7 +173,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Information about your requirements' page
     And I enter 'tomorrow' for the contract start date
     And I enter '27' for the estimated contract duration
-    And I choose the 'Yes' radio button
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
