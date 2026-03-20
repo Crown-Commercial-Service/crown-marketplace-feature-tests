@@ -91,10 +91,6 @@ Given('I select {string}') do |item|
   choose item
 end
 
-Then 'I select the {string} radio button' do |option|
-  page.choose(option)
-end
-
 Given('I check {string}') do |item|
   check item
 end
