@@ -26,22 +26,22 @@ module Pages
         end
 
         section :'estimated contract start date', 'div.ccs-summary-box:nth-of-type(4)' do
-         element :selection, '.ccs-summary-box__content'
-         element :change, 'a'
+          element :selection, '.ccs-summary-box__content'
+          element :change, 'a'
         end
 
         section :'estimated contract duration', 'div.ccs-summary-box:nth-of-type(5)' do
-         element :selection, '.ccs-summary-box__content'
-         element :change, 'a'
+          element :selection, '.ccs-summary-box__content'
+          element :change, 'a'
         end
 
         section :'requirement linked to pfi', 'div.ccs-summary-box:nth-of-type(6)' do
-         element :selection, '.ccs-summary-box__content'
-         element :change, 'a'
+          element :selection, '.ccs-summary-box__content'
+          element :change, 'a'
         end
 
-      element :contract_name_field, '#facilities_management_rm6232_procurement_contract_name, #facilities_management_rm6378_procurement_contract_name'
-       elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li, #procurement-search-results > div:not(.govuk-tabs__panel--hidden) > ul > li'
+        element :contract_name_field, '#facilities_management_rm6232_procurement_contract_name, #facilities_management_rm6378_procurement_contract_name'
+        elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li, #procurement-search-results > div:not(.govuk-tabs__panel--hidden) > ul > li'
       end
     end
 
