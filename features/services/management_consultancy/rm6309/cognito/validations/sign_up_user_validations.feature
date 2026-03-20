@@ -6,7 +6,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
     When I click on 'Start now'
     Then I am on the 'Sign in to your management consultancy account' page
     And I click on 'Create an account'
-    Then I am on the 'Create a CCS account' page
+    Then I am on the 'Create a GCA account' page
 
   @smoulder @production
   Scenario Outline: Email validations - Email <email>

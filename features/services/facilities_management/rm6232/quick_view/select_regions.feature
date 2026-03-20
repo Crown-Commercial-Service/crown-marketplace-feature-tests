@@ -99,7 +99,7 @@ Feature: Facilities Management - RM6232 - Select regions
     And I click on the 'Return to regions' back link
     Then I am on the 'Regions' page
     And the following items should appear in the facilities management basket:
-      | Essex (UKH3)                        |
+      | Essex                               |
       | Inner London - East (UKI4)          |
       | Gwynedd (UKL12)                     |
       | East Lothian and Midlothian (UKM23) |

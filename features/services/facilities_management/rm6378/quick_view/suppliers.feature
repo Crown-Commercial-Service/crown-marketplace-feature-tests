@@ -7,28 +7,33 @@ Feature: Facilities Management - RM6378 - Suppliers
     And I click on 'Show all sections'
     Then I check the following items:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 2a |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
     And I should see the following 'regions' in the selection summary:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I should see the following 'annual contract cost' in the selection summary:
       | £123,456 |
     And the selected facilities management suppliers are:
@@ -54,13 +59,18 @@ Feature: Facilities Management - RM6378 - Suppliers
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 2a |
       | 4a |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
       | Security Helpdesk Services                                              |
       | Security Advisory Services                                              |
@@ -100,12 +110,17 @@ Feature: Facilities Management - RM6378 - Suppliers
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 1a |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance |
-      | Planned / Group re-lamping service                |
+      | Planned / Group Re-Lamping Service                |
       | Trolley service                                   |
     And the selected facilities management suppliers are:
       | BEIER INC                   |
@@ -125,10 +140,15 @@ Feature: Facilities Management - RM6378 - Suppliers
     Given I change the 'regions' from the selection summary
     Then I am on the 'Regions' page
     And I deselect the following items:
-      | Essex |
+      | Essex (TLH3) |
     And I check 'Cumbria'
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -154,6 +174,11 @@ Feature: Facilities Management - RM6378 - Suppliers
     Given I change the 'annual contract cost' from the selection summary
     Then I am on the 'Annual contract cost' page
     And I enter '123456789' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:

@@ -15,6 +15,6 @@ Feature: Facilities Management - RM6232 - Service specification
     Examples:
       | service_name                                      | page_title                                                   | service_name_and_code                                  | option  |
       | Mechanical and Electrical Engineering Maintenance | Work Package E - Maintenance Services                        | E1 - Mechanical and Electrical Engineering Maintenance | are     |
-      | Outside catering                                  | Work Package H - Catering Services                           | H7 - Outside Catering                                  | are     |
+      | Outside Catering                                  | Work Package H - Catering Services                           | H7 - Outside Catering                                  | are     |
       | Sports and leisure                                | Work Package N - Miscellaneous FM Services                   | N2 - Sports and Leisure                                | are not |
       | CAFM system                                       | Work Package Q - Computer-aided facilities management (CAFM) | Services Q1/Q2 – CAFM Services                         | are not |

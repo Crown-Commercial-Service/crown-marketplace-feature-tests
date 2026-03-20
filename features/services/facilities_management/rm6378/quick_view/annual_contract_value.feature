@@ -16,6 +16,11 @@ Feature: Facilities Management - RM6378 - Annual contract cost
     Then I am on the 'Annual contract cost' page
     And I enter '<value>' for the annual contract cost
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I should see the following 'annual contract cost' in the selection summary:
       | <results_value> |

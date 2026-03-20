@@ -8,7 +8,7 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
     And I click on 'Show all sections'
     Then I check the following items:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
       | Security Advisory Services                                              |
       | Risk Assessments                                                        |
@@ -17,7 +17,7 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)       |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
@@ -28,13 +28,13 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
       | 4d |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
       | Security Advisory Services                                              |
       | Risk Assessments                                                        |
     And I should see the following 'regions' in the selection summary:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)       |
     And I should see the following 'annual contract cost' in the selection summary:
       | £123,456 |
     Then I enter 'Hollow Nest' into the contract name field

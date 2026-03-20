@@ -19,7 +19,7 @@ Feature: Facilities Management - What do I do next
   @file-download @smoulder @production
   Scenario: Download the supplier spreadsheet
     And I click on 'Selected suppliers'
-    Then the facilities management file for 'Supplier shortlist (My WDIDN procurement)' is downloaded with the 'xlsx' extension
+    Then the facilities management file for 'My WDIDN procurement' is downloaded with the 'xlsx' extension
 
   Scenario: Back button link
     And I click on 'Return to saved searches'

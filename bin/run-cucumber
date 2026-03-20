@@ -58,26 +58,26 @@ cucumber_command = if options[:number_of_processes] == '1'
                      "parallel_cucumber -n #{options[:number_of_processes]} -o '-p parallel_#{options[:profile]} #{options[:additional_args]}'"
                    end
 
-result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
+system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
 
 # Re run tests if we get any failures
-unless result
-  # Clean up rerun file
-  rerun_file = 'reports/rerun.txt'
+# unless result
+#   # Clean up rerun file
+#   rerun_file = 'reports/rerun.txt'
 
-  new_rerun_content = File.readlines(rerun_file).map do |line|
-    line.scan(/(?::\d+features)/).map { |match_data| [match_data, "#{match_data[..-9]}\n#{match_data[-8..]}"] }.each do |find_arg, replace_arg|
-      line.gsub!(find_arg, replace_arg)
-    end
+#   new_rerun_content = File.readlines(rerun_file).map do |line|
+#     line.scan(/(?::\d+features)/).map { |match_data| [match_data, "#{match_data[..-9]}\n#{match_data[-8..]}"] }.each do |find_arg, replace_arg|
+#       line.gsub!(find_arg, replace_arg)
+#     end
 
-    line
-  end.join
+#     line
+#   end.join
 
-  File.write(rerun_file, new_rerun_content)
+#   File.write(rerun_file, new_rerun_content)
 
-  # Re run the failed tests
-  system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
-end
+#   # Re run the failed tests
+#   system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
+# end
 
 # Build the report
 system("bundle exec report_builder -s 'reports' -o 'reports/index' -f html -T 'Functional Test Results - #{options[:profile].capitalize}'")

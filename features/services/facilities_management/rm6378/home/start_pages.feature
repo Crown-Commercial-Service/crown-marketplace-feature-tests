@@ -44,4 +44,4 @@ Feature: Facilities Management - Start pages
       | Manage my details                                                        |
       | Update and edit your contact details                                     |
       | View further information about the Facilities Management and             |
-      | Workplace Services framework RM6378 (opens in a new tab)                 |
+      | Security Services framework RM6378 (opens in new tab)                     |
