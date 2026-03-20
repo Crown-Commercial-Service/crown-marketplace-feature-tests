@@ -24,10 +24,25 @@ module Pages
           element :selection, '.ccs-summary-box__content'
           element :change, 'a'
         end
-      end
+
+        section :'estimated contract start date', 'div.ccs-summary-box:nth-of-type(4)' do
+         element :selection, '.ccs-summary-box__content'
+         element :change, 'a'
+        end
+
+        section :'estimated contract duration', 'div.ccs-summary-box:nth-of-type(5)' do
+         element :selection, '.ccs-summary-box__content'
+         element :change, 'a'
+        end
+
+        section :'requirement linked to pfi', 'div.ccs-summary-box:nth-of-type(6)' do
+         element :selection, '.ccs-summary-box__content'
+         element :change, 'a'
+        end
 
       element :contract_name_field, '#facilities_management_rm6232_procurement_contract_name, #facilities_management_rm6378_procurement_contract_name'
-      elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li, #procurement-search-results > div:not(.govuk-tabs__panel--hidden) > ul > li'
+       elements :suppliers, 'div:nth-child(2) > div.govuk-grid-column-two-thirds > ul > li, #procurement-search-results > div:not(.govuk-tabs__panel--hidden) > ul > li'
+      end
     end
 
     section :service_specification, '#main-content' do
@@ -43,5 +58,13 @@ module Pages
       element :title, 'div.govuk-notification-banner__header > h2.govuk-notification-banner__title'
       element :message, 'div.govuk-notification-banner__content > p.govuk-notification-banner__heading'
     end
+
+    section :contract_start_date, '#contract_start_date-form-group' do
+      element :day, '#contract_start_date_dd'
+      element :month, '#contract_start_date_mm'
+      element :year, '#contract_start_date_yyyy'
+    end
+
+    element :estimated_contract_duration, '#estimated_contract_duration'
   end
 end
