@@ -72,6 +72,20 @@ Then('I enter {string} for the annual contract cost') do |value|
   facilities_management_page.quick_view.annual_contract_value.set(value)
 end
 
+Then('I enter {string} for the contract start date') do |date|
+  add_contract_start_date(*date_options(date))
+end
+
+Then('I enter {string} for the estimated contract duration') do |value|
+  facilities_management_page.estimated_contract_duration.set(value)
+end
+
+def add_contract_start_date(day, month, year)
+  facilities_management_page.contract_start_date.day.set(day)
+  facilities_management_page.contract_start_date.month.set(month)
+  facilities_management_page.contract_start_date.year.set(year)
+end
+
 Then('I should be in sub-lot {string}') do |sub_lot|
   expect(facilities_management_page.quick_view.sub_lot).to have_content("Sub-lot #{sub_lot}")
 end

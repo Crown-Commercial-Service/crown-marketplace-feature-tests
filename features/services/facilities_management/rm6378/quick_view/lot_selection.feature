@@ -11,16 +11,21 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     When I check the following items:
       | Mechanical and Electrical Engineering Maintenance |
       | Asbestos Management                               |
-      | Energy and utilities management bureau Services   |
+      | Energy and Utilities Management Bureau Services   |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '<estimated_annual_cost>' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -34,17 +39,22 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
   Scenario Outline: Select only soft services
     When I check the following items:
       | Hard Landscaping Services  |
-      | Deli / coffee bar          |
-      | Cleaning of external areas |
+      | Deli / Coffee bar          |
+      | Cleaning of External Areas |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '<estimated_annual_cost>' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -58,17 +68,22 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
   Scenario Outline: Select only total services
     When I check the following items:
       | End-User Accommodation Services       |
-      | Applications And Allocations Services |
+      | Applications and Allocations Services |
       | Third Party Claims                    |
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '<estimated_annual_cost>' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -90,10 +105,15 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -110,7 +130,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     When I check the following items:
       | Mechanical and Electrical Engineering Maintenance     |
       | Asbestos Management                                   |
-      | Energy and utilities management bureau Services       |
+      | Energy and utilities management Bureau Services       |
       | Security Officer Services                             |
       | Video Surveillance Systems (VSS) and Alarm Monitoring |
     And I click on 'Continue'
@@ -118,10 +138,15 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '2500000' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -140,10 +165,15 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex       |
+      | Essex (TLH3)|
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '2500000' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
