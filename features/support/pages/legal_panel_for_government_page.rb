@@ -20,6 +20,5 @@ module Pages
       element :'requirement being awarded', '#requirement_being_awarded-form-group'
       element :'GCA contact you', '#ccs_can_contact_you-form-group'
     end
-
   end
 end

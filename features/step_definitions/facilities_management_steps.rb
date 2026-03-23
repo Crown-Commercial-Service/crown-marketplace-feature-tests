@@ -167,9 +167,7 @@ end
 Given('I have a procurement with the name {string} for {string}') do |contract_name, framework|
   visit SEARCH_URLS[framework]
   step "I enter '#{contract_name}' into the contract name field"
-  if framework == 'RM6232'
-   step "I select 'Yes'"
-  end
+  step "I select 'Yes'" if framework == 'RM6232'
   step 'I click on "Save and continue"'
   step 'I am on the "What do I do next?" page'
 end
