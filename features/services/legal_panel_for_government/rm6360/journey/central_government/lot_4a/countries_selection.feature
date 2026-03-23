@@ -14,7 +14,6 @@ Feature: Legal Panel for Government - Non central governemnt - Lot 4a - Select c
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
     And I select 'Yes' for 'GCA contact you'
-    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'
