@@ -13,16 +13,20 @@ Feature: Facilities Management - RM6378 - Results validations
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Essex |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     Given I click on 'Save and continue'
     Then I should see the following error messages:
       | Enter your contract name                         |
-      | Select one option for requirements linked to PFI |
 
   @smoulder @production
   Scenario: Contract name is taken
@@ -36,14 +40,18 @@ Feature: Facilities Management - RM6378 - Results validations
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Essex |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I enter the taken contract name into the contract name field
-    And I select 'Yes'
     And I click on 'Save and continue'
     Then I should see the following error messages:
       | This contract name is already in use |

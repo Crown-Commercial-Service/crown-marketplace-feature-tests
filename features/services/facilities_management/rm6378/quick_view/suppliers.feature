@@ -7,7 +7,7 @@ Feature: Facilities Management - RM6378 - Suppliers
     And I click on 'Show all sections'
     Then I check the following items:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
     And I click on 'Continue'
     Then I am on the 'Regions' page
@@ -19,12 +19,17 @@ Feature: Facilities Management - RM6378 - Suppliers
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 2a |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
     And I should see the following 'regions' in the selection summary:
       | Tees Valley |
@@ -47,22 +52,27 @@ Feature: Facilities Management - RM6378 - Suppliers
   Scenario: Service selection changes the results
     Given I change the 'services' from the selection summary
     Then I am on the 'Services' page
-    And I check 'Security Helpdesk Services'
+    And I check 'Helpdesk Services'
     And I check 'Security Advisory Services'
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 2a |
-      | 4a |
+      | 4d |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
-      | Security Helpdesk Services                                              |
+      | Helpdesk Services                                                       |
       | Security Advisory Services                                              |
     And I click on 'Sub-lot 2a'
     And the selected facilities management suppliers are:
@@ -77,36 +87,40 @@ Feature: Facilities Management - RM6378 - Suppliers
       | PFANNERSTILL-DICKENS        |
       | SCHMITT, STANTON AND MAGGIO |
       | TORPHY AND SONS             |
-    And I click on 'Sub-lot 4a'
+    And I click on 'Sub-lot 4d'
     And the selected facilities management suppliers are:
-      | DONNELLY-KOHLER         |
-      | FEENEY AND SONS         |
-      | GLEASON INC             |
-      | HAYES, MURRAY AND PAGAC |
-      | HOWELL LLC              |
-      | KEMMER GROUP            |
-      | MAYER INC               |
-      | PFANNERSTILL-DICKENS    |
-      | TORPHY AND SONS         |
+      | DENESIK, REMPEL AND ORN      |
+      | GREEN-LEUSCHKE               |
+      | KREIGER, BORER AND ORN       |
+      | LABADIE-RYAN                 |
+      | LEUSCHKE INC                 |
+      | RENNER-RENNER                |
+      | SCHAEFER, DOOLEY AND BAYER   |
+      | WYMAN, ABSHIRE AND POWLOWSKI |
 
   Scenario: Secuirty service selection changes the results
     Given I change the 'services' from the selection summary
     Then I am on the 'Services' page
     And I deselect the following items:
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
-    And I check 'Trolley service'
+    And I check 'Trolley Service'
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 1a |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance |
-      | Planned / Group re-lamping service                |
-      | Trolley service                                   |
+      | Planned / Group Re-Lamping Service                |
+      | Trolley Service                                   |
     And the selected facilities management suppliers are:
       | BEIER INC                   |
       | DONNELLY-KOHLER             |
@@ -125,10 +139,15 @@ Feature: Facilities Management - RM6378 - Suppliers
     Given I change the 'regions' from the selection summary
     Then I am on the 'Regions' page
     And I deselect the following items:
-      | Essex |
+      | Essex (TLH3) |
     And I check 'Cumbria'
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -154,6 +173,11 @@ Feature: Facilities Management - RM6378 - Suppliers
     Given I change the 'annual contract cost' from the selection summary
     Then I am on the 'Annual contract cost' page
     And I enter '123456789' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:

@@ -117,6 +117,7 @@ Given('I change the {string} from the selection summary') do |option|
 end
 
 Then('I enter {string} into the contract name field') do |contract_name|
+  puts facilities_management_page.quick_view.contract_name_field
   @contract_name_id = SecureRandom.uuid
   facilities_management_page.quick_view.contract_name_field.set("#{contract_name} #{@contract_name_id}")
 end
@@ -166,7 +167,7 @@ end
 Given('I have a procurement with the name {string} for {string}') do |contract_name, framework|
   visit SEARCH_URLS[framework]
   step "I enter '#{contract_name}' into the contract name field"
-  step "I select 'Yes'"
+  step "I select 'Yes'" if framework == 'RM6232'
   step 'I click on "Save and continue"'
   step 'I am on the "What do I do next?" page'
 end
@@ -198,5 +199,5 @@ end
 
 SEARCH_URLS = {
   'RM6232' => '/facilities-management/RM6232/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=UKC1&service_codes%5B%5D=E.1',
-  'RM6378' => '/facilities-management/RM6378/procurements/new?journey=facilities-management&annual_contract_value=500000&region_codes%5B%5D=TLC3&service_codes%5B%5D=E1'
+  'RM6378' => '/facilities-management/RM6378/procurements/new?journey=facilities-management&annual_contract_value=65&contract_start_date_dd=3&contract_start_date_mm=5&contract_start_date_yyyy=2027&estimated_contract_duration=77&private_finance_initiative=yes&region_codes%5B%5D=TLC3&service_codes%5B%5D=C1'
 }.freeze

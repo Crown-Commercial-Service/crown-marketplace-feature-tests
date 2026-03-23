@@ -5,12 +5,12 @@ Feature: Facilities Management - RM6378 - Select regions
     And I click on 'Search for suppliers'
     Then I am on the 'Services' page
     And I click on 'Show all sections'
-    And I check 'Building Management System (BMS) maintenance'
+    And I check 'Building Management System (BMS) Maintenance'
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
 
-  Scenario: Region selection appears in basked
+  Scenario: Region selection appears in basket
     Then the facilities management basket should say 'No regions selected'
     And the remove all link should not be visible
     When I check 'Tees Valley'
@@ -64,8 +64,8 @@ Feature: Facilities Management - RM6378 - Select regions
       | Gwynedd (TLL32)                     |
       | East Lothian and Midlothian (TLM11) |
     When I remove the following items from the facilities management basket:
-      | Essex   |
-      | Gwynedd |
+      | Essex (TLH3)   |
+      | Gwynedd        |
     Then the facilities management basket should say '2 regions selected'
     And the remove all link should be visible
     And the following items should appear in the facilities management basket:
@@ -75,7 +75,7 @@ Feature: Facilities Management - RM6378 - Select regions
     Then the facilities management basket should say 'No regions selected'
 
   Scenario: Select all checkbox
-    When I select all for 'East of England'
+    When I select all for 'East (England)'
     Then the facilities management basket should say '5 regions selected'
     And the remove all link should be visible
     And the following items should appear in the facilities management basket:
@@ -86,9 +86,9 @@ Feature: Facilities Management - RM6378 - Select regions
       | Suffolk (TLH6)                         |
     When I remove the following items from the facilities management basket:
       | Bedfordshire and Hertfordshire |
-    Then select all 'should not' be checked for 'East of England'
+    Then select all 'should not' be checked for 'East (England)'
     When I check 'Bedfordshire and Hertfordshire'
-    Then select all 'should' be checked for 'East of England'
+    Then select all 'should' be checked for 'East (England)'
 
   Scenario: Go back from regions and change selection
     When I check the following items:

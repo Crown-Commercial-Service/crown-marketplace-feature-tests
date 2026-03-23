@@ -8,7 +8,7 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
     And I click on 'Show all sections'
     Then I check the following items:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
       | Security Advisory Services                                              |
       | Risk Assessments                                                        |
@@ -22,13 +22,18 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
     And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
+    And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
       | 2a |
       | 4d |
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance                       |
-      | Planned / Group re-lamping service                                      |
+      | Planned / Group Re-Lamping Service                                      |
       | Building Information Modelling (BIM) and Government Soft Landings (GSL) |
       | Security Advisory Services                                              |
       | Risk Assessments                                                        |
@@ -38,7 +43,6 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
     And I should see the following 'annual contract cost' in the selection summary:
       | £123,456 |
     Then I enter 'Hollow Nest' into the contract name field
-    And I select 'Yes'
     And I click on 'Save and continue'
     Then I am on the 'What do I do next?' page
     And the procurement name is shown to be 'Hollow Nest'

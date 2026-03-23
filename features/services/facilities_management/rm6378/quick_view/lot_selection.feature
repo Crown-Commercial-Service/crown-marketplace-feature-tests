@@ -130,7 +130,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     When I check the following items:
       | Mechanical and Electrical Engineering Maintenance     |
       | Asbestos Management                                   |
-      | Energy and utilities management Bureau Services       |
+      | Energy and Utilities Management Bureau Services       |
       | Security Officer Services                             |
       | Video Surveillance Systems (VSS) and Alarm Monitoring |
     And I click on 'Continue'
@@ -157,7 +157,7 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     When I check the following items:
       | Mechanical and Electrical Engineering Maintenance |
       | Asbestos Management                               |
-      | Energy and utilities management bureau Services   |
+      | Energy and Utilities Management Bureau Services   |
       | <service_1_name>                                  |
       | <service_2_name>                                  |
     And I click on 'Continue'

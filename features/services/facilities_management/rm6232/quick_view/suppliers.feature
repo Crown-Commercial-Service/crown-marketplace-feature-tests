@@ -60,7 +60,7 @@ Feature: Facilities Management - RM6232 - Suppliers
     And I should be in sub-lot '1a'
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance |
-      | Planned / Group re-lamping service                |
+      | Planned / Group re-lamping service              |
       | Outside catering                                  |
     And the selected facilities management suppliers are:
       | Dach Inc                        |

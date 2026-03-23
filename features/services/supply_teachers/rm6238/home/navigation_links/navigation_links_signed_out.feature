@@ -26,7 +26,7 @@ Feature: Supply Teachers - Navigation links when signed out
   Scenario: Sign in page
     And I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
-    And I click on 'Sign in with CCS'
+    And I click on 'Sign in with GCA'
     And I should see the following navigation links:
       | Back to start |
       | Sign in       |
