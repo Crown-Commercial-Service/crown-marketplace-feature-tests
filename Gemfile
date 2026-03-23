@@ -9,7 +9,7 @@ gem 'capybara', '~> 3.40.0'
 gem 'cucumber', '~> 10.2.0'
 gem 'rspec', '~> 3.13.2'
 gem 'selenium-webdriver', '~> 4.41.0'
-gem 'site_prism', '~> 5.2'
+gem 'site_prism', '~> 6.0'
 
 gem 'axe-core-capybara', '>= 4.2.1'
 gem 'axe-core-cucumber', '>= 4.2.1'
