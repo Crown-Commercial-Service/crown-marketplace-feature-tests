@@ -50,7 +50,7 @@ Feature: Facilities Management - RM6232 - Suppliers
     Then I am on the 'Services' page
     And I deselect the following items:
       | Building Information Modelling and Government Soft Landings |
-    And I check 'Outside Catering'
+    And I check 'Outside catering'
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Continue'
@@ -61,7 +61,7 @@ Feature: Facilities Management - RM6232 - Suppliers
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance |
       | Planned / Group re-lamping service              |
-      | Outside Catering                                  |
+      | Outside catering                                  |
     And the selected facilities management suppliers are:
       | Dach Inc                        |
       | Feest Group                     |

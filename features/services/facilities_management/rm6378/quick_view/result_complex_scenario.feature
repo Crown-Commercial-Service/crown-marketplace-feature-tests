@@ -17,10 +17,15 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
     And I click on 'Show all sections'
     Then I check the following items:
       | Tees Valley |
-      | Essex (TLH3)       |
+      | Essex       |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
+    And I click on 'Continue'
+    Then I am on the 'Information about your requirements' page
+    And I enter 'tomorrow' for the contract start date
+    And I enter '27' for the estimated contract duration
+    And I select 'Yes'
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I should be in the following sub-lots:
@@ -34,11 +39,10 @@ Feature: Facilities Management - RM6378 - Information appears correctly on resul
       | Risk Assessments                                                        |
     And I should see the following 'regions' in the selection summary:
       | Tees Valley |
-      | Essex (TLH3)       |
+      | Essex       |
     And I should see the following 'annual contract cost' in the selection summary:
       | £123,456 |
     Then I enter 'Hollow Nest' into the contract name field
-    And I select 'Yes'
     And I click on 'Save and continue'
     Then I am on the 'What do I do next?' page
     And the procurement name is shown to be 'Hollow Nest'

@@ -27,7 +27,6 @@ Feature: Facilities Management - RM6378 - Results validations
     Given I click on 'Save and continue'
     Then I should see the following error messages:
       | Enter your contract name                         |
-      | Select one option for requirements linked to PFI |
 
   @smoulder @production
   Scenario: Contract name is taken
@@ -53,7 +52,6 @@ Feature: Facilities Management - RM6378 - Results validations
     And I click on 'Continue'
     Then I am on the 'Results' page
     And I enter the taken contract name into the contract name field
-    And I select 'Yes'
     And I click on 'Save and continue'
     Then I should see the following error messages:
       | This contract name is already in use |

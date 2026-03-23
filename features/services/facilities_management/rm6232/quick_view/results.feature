@@ -36,7 +36,7 @@ Feature: Facilities Management - RM6232 - Information appears correctly on resul
     Then I am on the 'Services' page
     And I deselect the following items:
       | Building Information Modelling and Government Soft Landings |
-    And I check 'Outside Catering'
+    And I check 'Outside catering'
     And I click on 'Continue'
     Then I am on the 'Regions' page
     And I click on 'Continue'
@@ -47,7 +47,7 @@ Feature: Facilities Management - RM6232 - Information appears correctly on resul
     And I should see the following 'services' in the selection summary:
       | Mechanical and Electrical Engineering Maintenance |
       | Planned / Group re-lamping service                |
-      | Outside Catering                                  |
+      | Outside catering                                  |
 
   Scenario: I can change the regions from the results page
     Given I change the 'regions' from the selection summary

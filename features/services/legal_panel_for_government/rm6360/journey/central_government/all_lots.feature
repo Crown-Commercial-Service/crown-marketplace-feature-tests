@@ -14,7 +14,7 @@ Feature: Legal Panel for Government - Central governemnt - Results
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes'
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
 

@@ -18,6 +18,7 @@ module Pages
     section :questions, '#main-content' do
       element :'requirement replace an existing contract', '#replaces_existing_contract-form-group'
       element :'requirement being awarded', '#requirement_being_awarded-form-group'
+      element :'GCA contact you', '#ccs_can_contact_you-form-group'
     end
 
   end
