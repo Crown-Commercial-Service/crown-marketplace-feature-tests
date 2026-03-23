@@ -35,7 +35,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I should see the following error messages:
       | <error_message> |
@@ -56,7 +56,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I should see the following error messages:
       | <error_message> |
@@ -78,7 +78,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '<value>' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I should see the following error messages:
       | <error_message> |
@@ -100,7 +100,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-      And I select 'Yes' for 'GCA contact you
+      And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     When I click on 'Continue'
@@ -118,7 +118,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 1 - Core Legal Services'
@@ -139,7 +139,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'
@@ -160,7 +160,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'
@@ -183,7 +183,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'
@@ -207,7 +207,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 1 - Core Legal Services'
@@ -233,7 +233,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 1 - Core Legal Services'
@@ -261,7 +261,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 1 - Core Legal Services'
@@ -290,7 +290,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'
@@ -318,7 +318,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'
@@ -350,7 +350,7 @@ Feature: Legal Panel for Government - Jounrey validations
     And I enter '123456' for the 'requirement estimated total value'
     And I select 'Yes' for 'requirement replace an existing contract'
     And I select 'Likely' for 'requirement being awarded'
-    And I select 'Yes' for 'GCA contact you
+    And I select 'Yes' for 'GCA contact you'
     And I click on 'Continue'
     Then I am on the 'Select the lot you need' page
     And I select 'Lot 4a - Trade and Investment Negotiations'

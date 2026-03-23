@@ -89,15 +89,14 @@ Feature: Facilities Management - RM6378 - Suppliers
       | TORPHY AND SONS             |
     And I click on 'Sub-lot 4d'
     And the selected facilities management suppliers are:
-      | DONNELLY-KOHLER         |
-      | FEENEY AND SONS         |
-      | GLEASON INC             |
-      | HAYES, MURRAY AND PAGAC |
-      | HOWELL LLC              |
-      | KEMMER GROUP            |
-      | MAYER INC               |
-      | PFANNERSTILL-DICKENS    |
-      | TORPHY AND SONS         |
+      | DENESIK, REMPEL AND ORN      |
+      | GREEN-LEUSCHKE               |
+      | KREIGER, BORER AND ORN       |
+      | LABADIE-RYAN                 |
+      | LEUSCHKE INC                 |
+      | RENNER-RENNER                |
+      | SCHAEFER, DOOLEY AND BAYER   |
+      | WYMAN, ABSHIRE AND POWLOWSKI |
 
   Scenario: Secuirty service selection changes the results
     Given I change the 'services' from the selection summary
