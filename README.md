@@ -11,7 +11,7 @@ This is a ruby project which uses [Cucumber][] BDD framework and [Capybara][] to
 This guide assumes you have Homebrew installed.
 
 #### Check the Ruby version
-Ensure that a ruby version manager (e.g. rvm or rbenv) is installed and set up properly, using 3.4.7 as the Ruby version before trying anything else. 
+Ensure that a ruby version manager (e.g. rvm or rbenv) is installed and set up properly, using 4.0.2 as the Ruby version before trying anything else. 
 
 #### Software requirements
 
@@ -20,6 +20,12 @@ This project uses geckodriver, which requires the Firefox browser, as the web dr
 ```shell
 brew install --cask firefox
 brew install geckodriver
+```
+
+Install Bun, for generating the report
+
+```shell
+brew install bun
 ```
 
 ## Setting up the test environment
@@ -82,6 +88,12 @@ By default the test run in a headless browser, to see the browser, pass the head
 
 ```shell
 bin/run-cucumber <env> -h false
+```
+
+By default any tests that failed will be rerun, to prevent this, pass the rerun argument with a value of false
+
+```shell
+bin/run-cucumber <env> -r false
 ```
 
 To run the tests in parallel, pass the number of process you wish to use

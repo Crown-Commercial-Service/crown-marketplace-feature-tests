@@ -10,7 +10,8 @@ options = {
   profile: 'default',
   number_of_processes: '1',
   cucumber_format: 'progress',
-  headless: 'true'
+  headless: 'true',
+  rerun: true
 }
 
 OptionParser.new do |opts|
@@ -30,6 +31,10 @@ OptionParser.new do |opts|
 
   opts.on('-hHEADLESS', '--headless=HEADLESS', 'Set the headless mode to run the test in [default: true]') do |headless|
     options[:headless] = headless
+  end
+
+  opts.on('-rRERUN', '--rerun=RERUN', 'Set if failed tests should be rerun [default: true]') do |rerun|
+    options[:rerun] = rerun == 'true'
   end
 end.parse!
 
@@ -61,7 +66,7 @@ cucumber_command = if options[:number_of_processes] == '1'
 result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec #{cucumber_command}")
 
 # Re run tests if we get any failures
-unless result
+if !result && options[:rerun]
   # Clean up rerun file
   rerun_file = 'reports/rerun.txt'
 
@@ -80,4 +85,4 @@ unless result
 end
 
 # Build the report
-system("bundle exec report_builder -s 'reports' -o 'reports/index' -f html -T 'Functional Test Results - #{options[:profile].capitalize}'")
+system("bun report.ts --testEnv #{options[:env]} --reportName '#{options[:profile].capitalize}'")

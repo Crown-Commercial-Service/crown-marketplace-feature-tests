@@ -1,0 +1,11 @@
+{
+  "name": "crown-marketplace-feature-tests",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "multiple-cucumber-html-reporter": "^3.10.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
