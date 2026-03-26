@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.4.7'
+ruby '4.0.2'
 
 # Cucumber
 gem 'capybara', '~> 3.40.0'
@@ -27,4 +27,3 @@ gem 'rubocop-rspec', '~> 3.9'
 
 # For running tests in parallel
 gem 'parallel_tests', '~> 5.6.0'
-gem 'report_builder', '~> 1.9'
