@@ -6,7 +6,7 @@ ruby '4.0.2'
 
 # Cucumber
 gem 'capybara', '~> 3.40.0'
-gem 'cucumber', '~> 10.2.0'
+gem 'cucumber', '~> 11.0.0'
 gem 'rspec', '~> 3.13.2'
 gem 'selenium-webdriver', '~> 4.41.0'
 gem 'site_prism', '~> 6.0'
