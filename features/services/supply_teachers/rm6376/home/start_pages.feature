@@ -1,18 +1,18 @@
 Feature: Supply Teachers - Start pages
 
   Scenario: Buyer sees start page
-    When I go to the 'supply teachers' start page for 'RM6238'
+    When I go to the 'supply teachers' start page for 'RM6376'
     Then I am on the 'Find supply teachers and agency workers' page
 
   Scenario: Buyer navigates to sign in page
-    When I go to the 'supply teachers' start page for 'RM6238'
+    When I go to the 'supply teachers' start page for 'RM6376'
     Then I am on the 'Find supply teachers and agency workers' page
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
 
   @smoulder @production
   Scenario: Logging in
-    When I go to the 'supply teachers' start page for 'RM6238'
+    When I go to the 'supply teachers' start page for 'RM6376'
     Then I am on the 'Find supply teachers and agency workers' page
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page
@@ -22,7 +22,7 @@ Feature: Supply Teachers - Start pages
 
   @smoulder @production
   Scenario: I can reach the DfE Sign in Page
-    When I go to the 'supply teachers' start page for 'RM6238'
+    When I go to the 'supply teachers' start page for 'RM6376'
     Then I am on the 'Find supply teachers and agency workers' page
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page

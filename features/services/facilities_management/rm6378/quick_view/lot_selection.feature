@@ -16,8 +16,8 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley |
-      | Essex (TLH3)|
+      | Tees Valley  |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '<estimated_annual_cost>' for the annual contract cost
@@ -45,8 +45,8 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley |
-      | Essex (TLH3)|
+      | Tees Valley  |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '<estimated_annual_cost>' for the annual contract cost
@@ -74,8 +74,8 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley |
-      | Essex (TLH3)|
+      | Tees Valley  |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '<estimated_annual_cost>' for the annual contract cost
@@ -104,8 +104,8 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley |
-      | Essex (TLH3)|
+      | Tees Valley  |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '123456' for the annual contract cost
@@ -137,8 +137,8 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley |
-      | Essex (TLH3)|
+      | Tees Valley  |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '2500000' for the annual contract cost
@@ -164,8 +164,8 @@ Feature: Facilities Management - RM6378 - Service selection and annual contract 
     Then I am on the 'Regions' page
     And I click on 'Show all sections'
     Then I check the following items:
-      | Tees Valley |
-      | Essex (TLH3)|
+      | Tees Valley  |
+      | Essex (TLH3) |
     And I click on 'Continue'
     Then I am on the 'Annual contract cost' page
     And I enter '2500000' for the annual contract cost
