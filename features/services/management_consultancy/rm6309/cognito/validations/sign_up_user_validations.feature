@@ -6,7 +6,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
     When I click on 'Start now'
     Then I am on the 'Sign in to your management consultancy account' page
     And I click on 'Create an account'
-    Then I am on the 'Create a CCS account' page
+    Then I am on the 'Create a GCA account' page
 
   @smoulder @production
   Scenario Outline: Email validations - Email <email>
@@ -18,9 +18,9 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
       | <error_message> |
 
     Examples:
-      | email                       | error_message                                                       |
-      |                             | Enter an email address in the correct format, like name@example.com |
-      | Test@crowncommercial.gov.uk | Email address cannot contain any capital letters                    |
+      | email           | error_message                                                       |
+      |                 | Enter an email address in the correct format, like name@example.com |
+      | Test@gca.gov.uk | Email address cannot contain any capital letters                    |
 
   @smoulder @production
   Scenario: Not on allow list
@@ -31,7 +31,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
     Then I am on the 'You must use a public sector email address' page
 
   Scenario Outline: Password validations - Password <password>
-    Given I enter 'test@crowncommercial.gov.uk' for my email
+    Given I enter 'test@gca.gov.uk' for my email
     And I enter '<password>' for the password
     And I enter '<password>' for the password confirmation
     When I click on 'Create account'
@@ -46,7 +46,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
       | Password!  | Password must include a number            |
 
   Scenario: Password blank
-    Given I enter 'test@crowncommercial.gov.uk' for my email
+    Given I enter 'test@gca.gov.uk' for my email
     And I enter '' for the password
     And I enter '' for the password confirmation
     When I click on 'Create account'
@@ -55,7 +55,7 @@ Feature: Management Consultancy - RM6309 - Sign up user - Validations
       | Enter your password |
 
   Scenario: Password confirmation doesn't match
-    Given I enter 'test@crowncommercial.gov.uk' for my email
+    Given I enter 'test@gca.gov.uk' for my email
     And I enter 'Password1!' for the password
     And I enter 'ValidPassw0rd!' for the password confirmation
     When I click on 'Create account'

@@ -1,0 +1,92 @@
+Feature: Supply Teachers - Admin - Supplier data pages
+
+  Background: Navigate to supplier data page
+    Given I sign in as an admin for the 'RM6376' framework in 'supply teachers'
+    And I click on 'Manage supplier data'
+    Then I am on the 'Supplier data' page
+
+  Scenario: Supplier data page
+    Then I should see the following suppliers on the page:
+      | DANIEL AND SONS            |
+      | DARE-ROHAN                 |
+      | FRITSCH-HAHN               |
+      | GLOVER-ONDRICKA            |
+      | GRADY AND SONS             |
+      | GULGOWSKI-HUDSON           |
+      | HEANEY GROUP               |
+      | LANG INC                   |
+      | MORAR, SHIELDS AND GIBSON  |
+      | NADER, CONN AND REINGER    |
+      | ROHAN LLC                  |
+      | ROLFSON-COLLIER            |
+      | ROOB, CORWIN AND DICKI     |
+      | ROSENBAUM-HINTZ            |
+      | SATTERFIELD AND SONS       |
+      | SWANIAWSKI, CORWIN AND KUB |
+      | TILLMAN-EMMERICH           |
+      | TREMBLAY-WEST              |
+    And I enter "ha" for the supplier search
+    Then I should see the following suppliers on the page:
+      | DARE-ROHAN   |
+      | FRITSCH-HAHN |
+      | ROHAN LLC    |
+    And I enter "" for the supplier search
+    Then I should see the following suppliers on the page:
+      | DANIEL AND SONS            |
+      | DARE-ROHAN                 |
+      | FRITSCH-HAHN               |
+      | GLOVER-ONDRICKA            |
+      | GRADY AND SONS             |
+      | GULGOWSKI-HUDSON           |
+      | HEANEY GROUP               |
+      | LANG INC                   |
+      | MORAR, SHIELDS AND GIBSON  |
+      | NADER, CONN AND REINGER    |
+      | ROHAN LLC                  |
+      | ROLFSON-COLLIER            |
+      | ROOB, CORWIN AND DICKI     |
+      | ROSENBAUM-HINTZ            |
+      | SATTERFIELD AND SONS       |
+      | SWANIAWSKI, CORWIN AND KUB |
+      | TILLMAN-EMMERICH           |
+      | TREMBLAY-WEST              |
+
+  Scenario Outline: Supplier details page
+    And I click on 'View details' for "<supplier_name>"
+    Then I am on the 'Supplier details' page
+    And the caption is "<supplier_name>"
+    And I should see the following details in the 'Supplier information' summary:
+      | Name                  | <supplier_name>         |
+      | Trading name          | <trading_name>          |
+      | Additional identifier | <additional_identifier> |
+    And I should see the following details in the 'Additional information' summary:
+      | Managed service provider contact name             | <managed_service_provider_name>      |
+      | Managed service provider contact email            | <managed_service_provider_email>     |
+      | Managed service provider contact telephone number | <managed_service_provider_telephone> |
+
+    Examples:
+      | supplier_name             | trading_name              | additional_identifier                | managed_service_provider_name | managed_service_provider_email            | managed_service_provider_telephone |
+      | DARE-ROHAN                | DARE-ROHAN                | 8d80d95b-fb86-4daa-8d58-4b12f8d6dab6 | N/A                           | N/A                                       | N/A                                |
+      | MORAR, SHIELDS AND GIBSON | MORAR, SHIELDS AND GIBSON | c0565138-6335-40b5-a3ff-d208ae6425c6 | Dorothea Gottlieb             | shields_gibson_and_morar@dietrich.example | 229-779-1965                       |
+      | TILLMAN-EMMERICH          | CONN-MOEN                 | 85cde301-4305-4b5e-a973-f5e4bb851217 | N/A                           | N/A                                       | N/A                                |
+
+  Scenario: Lot status - Lot 1
+    And I click on 'View lot data' for 'DANIEL AND SONS'
+    Then I am on the 'Supplier lot data' page
+    And the caption is 'DANIEL AND SONS'
+    And I should see the following details in the summary for the lot 'Lot 1 - Direct provision':
+      | Lot status | Enabled       |
+      | Rates      | View rates    |
+      | Branches   | View branches |
+    And I should see the following details in the summary for the lot 'Lot 2 - Managed service provider':
+      | Lot status | Not on lot |
+
+  Scenario: Lot status - Lot 2
+    And I click on 'View lot data' for 'MORAR, SHIELDS AND GIBSON'
+    Then I am on the 'Supplier lot data' page
+    And the caption is 'MORAR, SHIELDS AND GIBSON'
+    And I should see the following details in the summary for the lot 'Lot 1 - Direct provision':
+      | Lot status | Not on lot |
+    And I should see the following details in the summary for the lot 'Lot 2 - Managed service provider':
+      | Lot status | Enabled    |
+      | Rates      | View rates |

@@ -1,7 +1,7 @@
-Feature: Supply Teachers - RM6238 - Sign in to my account - Validations
+Feature: Supply Teachers - RM6376 - Sign in to my account - Validations
 
   Background: Navigate to the sign in page
-    When I go to the 'supply teachers' start page for 'RM6238'
+    When I go to the 'supply teachers' start page for 'RM6376'
     Then I am on the 'Find supply teachers and agency workers' page
     When I click on 'Start now'
     Then I am on the 'Sign in to find supply teachers and agency workers' page

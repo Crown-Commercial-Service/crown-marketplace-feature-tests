@@ -13,7 +13,7 @@ Feature: Facilities Management - RM6378 - Buyer details
       | Organisation address               | 90 Old Hall Street, Liverpool L3 9PP |
       | Type of public sector organisation | Government Policy                    |
     And the following buyer details have been entered for 'Contact preferences':
-      | CCS can contact you about searches? | Yes |
+      | GCA can contact you about searches? | Yes |
 
   Scenario: I can change my address
     And I click on 'Change (Organisation details)'
@@ -45,7 +45,7 @@ Feature: Facilities Management - RM6378 - Buyer details
       | Organisation address               | 90 Old Hall Street, Liverpool L3 9PP |
       | Type of public sector organisation | Government Policy                    |
     And the following buyer details have been entered for 'Contact preferences':
-      | CCS can contact you about searches? | Yes |
+      | GCA can contact you about searches? | Yes |
 
   @smoulder @production
   Scenario: Changes are kept when adding address manually
