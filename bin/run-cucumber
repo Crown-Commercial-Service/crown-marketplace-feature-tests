@@ -81,8 +81,11 @@ if !result && options[:rerun]
   File.write(rerun_file, new_rerun_content)
 
   # Re run the failed tests
-  system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
+  result = system("CUCUMBER_FORMAT=#{options[:cucumber_format]} HEADLESS=#{options[:headless]} TEST_ENV=#{options[:env]} bundle exec cucumber -p rerun")
 end
 
 # Build the report
 system("bun report.ts --testEnv #{options[:env]} --reportName '#{options[:profile].capitalize}'")
+
+# Exit with error if re-run fails
+exit(result)
