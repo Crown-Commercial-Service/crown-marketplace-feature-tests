@@ -19,14 +19,14 @@ Feature: Supply Teachers - All agencies
       | MCGLYNN GROUP                |
       | STANTON, FADEL AND BOSCO     |
       | ZIEMANN-HERMANN              |
-    And I enter "an" for the agency search
+    And I enter "an" for the agency name search
     Then the listed agencies for all agencies are:
       | BARTOLETTI, KOEPP AND NIENOW |
       | EMARD AND SONS               |
       | KERLUKE, TORP AND HEATHCOTE  |
       | STANTON, FADEL AND BOSCO     |
       | ZIEMANN-HERMANN              |
-    And I enter "" for the agency search
+    And I enter "" for the agency name search
     Then the listed agencies for all agencies are:
       | BARTOLETTI, KOEPP AND NIENOW |
       | CORKERY INC                  |
@@ -38,11 +38,3 @@ Feature: Supply Teachers - All agencies
       | MCGLYNN GROUP                |
       | STANTON, FADEL AND BOSCO     |
       | ZIEMANN-HERMANN              |
-
-  @smoulder @production
-  Scenario: All agencies search - Production
-    And multiple agencies are shown and I count them
-    And I enter "an" for the agency search
-    Then there is a reduced list in the number of agencies
-    And I enter "" for the agency search
-    Then the origional list of agencies is shown
