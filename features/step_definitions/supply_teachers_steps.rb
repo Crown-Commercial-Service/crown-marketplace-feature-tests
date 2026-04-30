@@ -297,11 +297,20 @@ Then('the origional list of agencies is shown') do
   expect(supply_teachers_page.all_agencies.agencies.count).to eq @number_of_agencies_on_screen
 end
 
-Then('I enter {string} for the agency search') do |agency_name|
-  supply_teachers_page.supplier_search.input.fill_in with: "#{agency_name}\n"
+Then('I enter {string} for the agency name search') do |agency_name|
+  supply_teachers_page.supplier_search.agency_name_input.fill_in with: "#{agency_name}\n"
   supply_teachers_page.supplier_search.search.click
-
   sleep 0.1
+end
+
+Then('I enter {string} for the agency postcode search') do |agency_postcode|
+  supply_teachers_page.supplier_search.agency_postcode_input.fill_in with: "#{agency_postcode}\n"
+  supply_teachers_page.supplier_search.search.click
+  sleep 0.1
+end
+
+Then('I should see the following error message for the agency postcode {string}') do |error_message|
+  expect(supply_teachers_page.supplier_search.agency_postcode_error).to have_content(error_message)
 end
 
 Then('the listed agencies for agency results are:') do |raw_agency_name_and_branch|
@@ -472,17 +481,24 @@ Then('the agency has the following rates:') do |raw_rates|
     rate_row = rates_table.find('th', text: job_type).find(:xpath, '..')
 
     expect(rate_row.find(:xpath, './td[1]')).to have_content(rate[:one_week])
-    expect(rate_row.find(:xpath, './td[2]')).to have_content(rate[:twelve_weeks])
+    expect(rate_row.find(:xpath, './td[2]')).to have_content(rate[:twelve_weeks]) unless rate[:twelve_weeks].nil?
   end
 end
 
 Then('the the correct type of rates:') do |rate_heading_and_type|
   rates_table = supply_teachers_page.agency_details.agency_rates_table
 
+  row_numbers = case @framework
+                when 'RM6238'
+                  ['1', '2']
+                when 'RM6376'
+                  ['1']
+                end
+
   rate_heading_and_type.raw.each do |job_type, rate_type|
     rate_row = rates_table.find('th', text: job_type).find(:xpath, '..')
 
-    ['1', '2'].each do |row|
+    row_numbers.each do |row|
       check_rate_type(rate_row.find(:xpath, "./td[#{row}]").text, rate_type)
     end
   end

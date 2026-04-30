@@ -36,6 +36,11 @@ Feature: Supply Teachers - Admin - Create new upload
 
   Scenario: I can upload single successfully and cancel
     And I select the file 'data/supply_teachers/rm6238/Current accredited suppliers.xlsx' to upload for 'Current accredited suppliers'
+    And I select the file 'data/supply_teachers/rm6238/Geographical data all suppliers.xlsx' to upload for 'Geographical data all suppliers'
+    And I select the file 'data/supply_teachers/rm6238/Master vendor contacts.csv' to upload for 'Master vendor contacts'
+    And I select the file 'data/supply_teachers/rm6238/Education technology platform contacts.csv' to upload for 'Education technology platform contacts'
+    And I select the file 'data/supply_teachers/rm6238/Pricing for tool.xlsx' to upload for 'Pricing for tool'
+    And I select the file 'data/supply_teachers/rm6238/Supplier lookup.csv' to upload for 'Supplier lookup'
     And I click on 'Upload spreadsheets'
     Then I am on the 'Upload session' page
     And I click on 'Delete session'
