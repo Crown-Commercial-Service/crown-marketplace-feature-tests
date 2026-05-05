@@ -9,7 +9,7 @@ end
 # Quick view journey steps
 
 Then('the facilities management basket should say {string}') do |basket_text|
-  expect(facilities_management_page.quick_view.basket.selection_count).to have_content(basket_text)
+  expect(facilities_management_page.quick_view.basket.selection_count).to have_text(basket_text)
 end
 
 Then('the remove all link should not be visible') do
@@ -48,11 +48,11 @@ Given('I click on the service specification for {string}') do |service_name|
 end
 
 Then('the page sub title is {string}') do |sub_title|
-  expect(facilities_management_page.service_specification.sub_title).to have_content(sub_title)
+  expect(facilities_management_page.service_specification.sub_title).to have_text(sub_title)
 end
 
 Then('The service name and code is {string}') do |service_name_and_code|
-  expect(facilities_management_page.service_specification.service_name_and_code).to have_content(service_name_and_code)
+  expect(facilities_management_page.service_specification.service_name_and_code).to have_text(service_name_and_code)
 end
 
 Then('there {string} generic requirements') do |option|
@@ -87,7 +87,7 @@ def add_contract_start_date(day, month, year)
 end
 
 Then('I should be in sub-lot {string}') do |sub_lot|
-  expect(facilities_management_page.quick_view.sub_lot).to have_content("Sub-lot #{sub_lot}")
+  expect(facilities_management_page.quick_view.sub_lot).to have_text("Sub-lot #{sub_lot}")
 end
 
 Then('I should be in the following sub-lots:') do |sub_lots|
@@ -97,7 +97,7 @@ Then('I should be in the following sub-lots:') do |sub_lots|
   expect(sub_lot_elements.length).to eq(expected_sub_lots.length)
 
   sub_lot_elements.zip(expected_sub_lots).each do |sub_lot_element, expected_sublot|
-    expect(sub_lot_element).to have_content("Sub-lot #{expected_sublot}")
+    expect(sub_lot_element).to have_text("Sub-lot #{expected_sublot}")
   end
 end
 
@@ -105,10 +105,10 @@ Then('I should see the following {string} in the selection summary:') do |option
   case option
   when 'services', 'regions'
     facilities_management_page.quick_view.selection_summary.send(option.to_sym).selection.zip(selection_summary_table.raw.flatten).each do |element, expected_value|
-      expect(element).to have_content(expected_value)
+      expect(element).to have_text(expected_value)
     end
   when 'annual contract cost'
-    expect(facilities_management_page.quick_view.selection_summary.send(option.to_sym).selection).to have_content(selection_summary_table.raw.flatten.first)
+    expect(facilities_management_page.quick_view.selection_summary.send(option.to_sym).selection).to have_text(selection_summary_table.raw.flatten.first)
   end
 end
 
@@ -122,7 +122,7 @@ Then('I enter {string} into the contract name field') do |contract_name|
 end
 
 Then('the procurement name is shown to be {string}') do |contract_name|
-  expect(page.find_by_id('procurement-subtitle')).to have_content("#{contract_name} #{@contract_name_id}")
+  expect(page.find_by_id('procurement-subtitle')).to have_text("#{contract_name} #{@contract_name_id}")
 end
 
 Then('the procurement {string} is on the dashboard') do |contract_name|
@@ -157,8 +157,8 @@ Then('I enter the taken contract name into the contract name field') do
 end
 
 Then('there is a notification with the message for the saved security search for {string}') do |contract_name|
-  expect(facilities_management_page.notification_banner.title).to have_content('Important')
-  expect(facilities_management_page.notification_banner.message).to have_content("Your result which included security services was saved as #{contract_name} #{@contract_name_id} (Security)")
+  expect(facilities_management_page.notification_banner.title).to have_text('Important')
+  expect(facilities_management_page.notification_banner.message).to have_text("Your result which included security services was saved as #{contract_name} #{@contract_name_id} (Security)")
 end
 
 # Procurement journey steps
@@ -172,8 +172,8 @@ Given('I have a procurement with the name {string} for {string}') do |contract_n
 end
 
 When('the contract number is visible with the contract name {string} for {string}') do |contract_name, framework|
-  expect(page.find('#main-content > div:nth-child(1) > div > span')).to have_content("#{contract_name} #{@contract_name_id} - #{framework}")
-  expect(page.find('.ccs-panel__body')).to have_content(framework)
+  expect(page.find('#main-content > div:nth-child(1) > div > span')).to have_text("#{contract_name} #{@contract_name_id} - #{framework}")
+  expect(page.find('.ccs-panel__body')).to have_text(framework)
 end
 
 Then('the facilities management file for {string} is downloaded with the {string} extension') do |contract_name, file_extension|
@@ -192,7 +192,7 @@ Then('the selected facilities management suppliers are:') do |suppliers|
   expect(supplier_elements.length).to eq supplier_names.length
 
   supplier_elements.zip(supplier_names).each do |actual, expected|
-    expect(actual).to have_content expected
+    expect(actual).to have_text expected
   end
 end
 
