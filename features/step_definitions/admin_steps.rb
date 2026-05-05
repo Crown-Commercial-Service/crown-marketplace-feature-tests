@@ -21,15 +21,15 @@ Then('I wait no longer than {int} seconds for the report to generate') do |numbe
 end
 
 Then('the status of the upload is {string}') do |upload_status|
-  expect(admin_page.upload_status).to have_content(upload_status)
+  expect(admin_page.upload_status).to have_text(upload_status)
 end
 
 Then('the status of the supply teachers upload is {string}') do |upload_status|
-  expect(admin_page.supply_teachers.upload_status).to have_content(upload_status)
+  expect(admin_page.supply_teachers.upload_status).to have_text(upload_status)
 end
 
 Then('the status of the report is {string}') do |upload_status|
-  expect(admin_page.report_generation_status).to have_content(upload_status)
+  expect(admin_page.report_generation_status).to have_text(upload_status)
 end
 
 Then('the details for the failed upload are:') do |issues_and_details_table|
@@ -50,13 +50,13 @@ Then('the details for the failed upload are:') do |issues_and_details_table|
   expect(upload_issues_table.length).to eq issues_and_details.length
 
   issues_and_details.zip(upload_issues_table).each do |expected, actual|
-    expect(actual.issue).to have_content(expected[:issue])
-    expect(actual.detail).to have_content(expected[:detail].join(' '))
+    expect(actual.issue).to have_text(expected[:issue])
+    expect(actual.detail).to have_text(expected[:detail].join(' '))
   end
 end
 
 Then('the details for the failed supply teachers upload are:') do |fail_reason|
-  expect(admin_page.supply_teachers.fail_reason).to have_content(fail_reason.raw.flatten.first)
+  expect(admin_page.supply_teachers.fail_reason).to have_text(fail_reason.raw.flatten.first)
 end
 
 When('I download the {string} file') do |filename|
@@ -102,7 +102,7 @@ Then('I should see the following suppliers on the page:') do |supplier_names|
   expect(admin_page.suppliers.length).to eq(supplier_names.raw.flatten.length)
 
   admin_page.suppliers.map(&:supplier_name).zip(supplier_names.raw.flatten).each do |element, value|
-    expect(element).to have_content(value)
+    expect(element).to have_text(value)
   end
 end
 
@@ -116,8 +116,8 @@ Then('I should see the following details in the {string} summary:') do |summary,
   expect(summary_rows.length).to eq(supplier_data.raw.length)
 
   summary_rows.zip(supplier_data.raw).each do |section, (expected_key, expected_value)|
-    expect(section.key).to have_content(expected_key)
-    expect(section.value).to have_content(expected_value)
+    expect(section.key).to have_text(expected_key)
+    expect(section.value).to have_text(expected_value)
   end
 end
 
@@ -127,8 +127,8 @@ Then('I should see the following details in the summary for the lot {string}:') 
   expect(summary_rows.length).to eq(supplier_data.raw.length)
 
   summary_rows.zip(supplier_data.raw).each do |section, (expected_key, expected_value)|
-    expect(section.key).to have_content(expected_key)
-    expect(section.value).to have_content(expected_value)
+    expect(section.key).to have_text(expected_key)
+    expect(section.value).to have_text(expected_value)
   end
 end
 
@@ -151,7 +151,7 @@ Then('the supplier should be assigned to the {string} in {string} as follows:') 
 end
 
 Then('the supplier should not be assigned any {string} with the following message:') do |_section, empty_message|
-  expect(admin_page.supplier_section_summaries.first.empty_message).to have_content(empty_message.raw.flatten.first)
+  expect(admin_page.supplier_section_summaries.first.empty_message).to have_text(empty_message.raw.flatten.first)
 end
 
 Then('the rates in the table are:') do |rates|
@@ -186,7 +186,7 @@ Then('I should see rate tables for the following jurisdictions:') do |jurisdicti
   expect(admin_page.supplier_rates_tables.length).to eq(jurisdictions.raw.flatten.length)
 
   admin_page.supplier_rates_tables.zip(jurisdictions.raw.flatten).each do |table, jurisdiction|
-    expect(table.title).to have_content(jurisdiction)
+    expect(table.title).to have_text(jurisdiction)
   end
 end
 
@@ -197,7 +197,7 @@ def admin_check_table_headings(table, items)
   expect(table_headings.length).to eq(headings.length)
 
   table_headings.zip(headings).each do |element, expected_heading|
-    expect(element).to have_content(expected_heading)
+    expect(element).to have_text(expected_heading)
   end
 end
 
@@ -208,10 +208,10 @@ def admin_check_table_rows(table, items)
   expect(table_rows.length).to eq(rows.length)
 
   table_rows.zip(rows).each do |row, expected_items|
-    expect(row.row_head).to have_content(expected_items[0])
+    expect(row.row_head).to have_text(expected_items[0])
 
     row.row_items.zip(expected_items[1..]) do |row_item, expected_value|
-      expect(row_item).to have_content(expected_value)
+      expect(row_item).to have_text(expected_value)
     end
   end
 end
@@ -223,7 +223,7 @@ def admin_check_section_items(summary, section_items)
   expect(items.length).to eq(expected_items.length)
 
   items.zip(expected_items).each do |item, expected_value|
-    expect(item).to have_content(expected_value)
+    expect(item).to have_text(expected_value)
   end
 end
 
@@ -252,12 +252,12 @@ def admin_check_branches(summaries, branch_items)
   expect(summaries.length).to eq(branches.length)
 
   summaries.zip(branches).each do |summary, branch|
-    expect(summary.title).to have_content(branch['Branch'])
+    expect(summary.title).to have_text(branch['Branch'])
     expect(summary.rows.length).to eq(branch.length)
 
     summary.rows.zip(branch).each do |summary_row, (expected_key, expected_value)|
-      expect(summary_row.key).to have_content(expected_key)
-      expect(summary_row.value).to have_content(expected_value)
+      expect(summary_row.key).to have_text(expected_key)
+      expect(summary_row.value).to have_text(expected_value)
     end
   end
 end

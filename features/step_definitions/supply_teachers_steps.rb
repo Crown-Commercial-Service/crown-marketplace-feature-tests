@@ -40,14 +40,14 @@ Then('the date I need to wait until is six months after {int} months ago in the 
 
   case option
   when 'title'
-    expect(supply_teachers_page.find('h1')).to have_content("If you wait and do not employ until #{date_text}, you won't be charged a transfer fee.")
+    expect(supply_teachers_page.find('h1')).to have_text("If you wait and do not employ until #{date_text}, you won't be charged a transfer fee.")
   when 'panel'
-    expect(supply_teachers_page.panel.body).to have_content("if you choose to hire the worker before #{date_text}")
+    expect(supply_teachers_page.panel.body).to have_text("if you choose to hire the worker before #{date_text}")
   end
 end
 
 Then('there are {int} agencies') do |number_of_agencies|
-  expect(supply_teachers_page.agency_results.number_of_agencies).to have_content("#{number_of_agencies} #{'result'.pluralize(number_of_agencies)}")
+  expect(supply_teachers_page.agency_results.number_of_agencies).to have_text("#{number_of_agencies} #{'result'.pluralize(number_of_agencies)}")
 end
 
 Then('there are multiple agencies and I count them') do
@@ -165,14 +165,14 @@ end
 Then('I should see the error message {string} for {string}') do |error_message, agency_name|
   error_message_element = find_supplier_record(agency_name).find('.govuk-error-message')
 
-  expect(error_message_element).to have_content(error_message)
+  expect(error_message_element).to have_text(error_message)
   expect(error_message_element[:class]).not_to include('govuk-visually-hidden')
 end
 
 Then('I should see the error message {string} for supplier number {int}') do |error_message, agency_number|
   error_message_element = find_supplier_record_by_number(agency_number).find('.govuk-error-message')
 
-  expect(error_message_element).to have_content(error_message)
+  expect(error_message_element).to have_text(error_message)
   expect(error_message_element[:class]).not_to include('govuk-visually-hidden')
 end
 
@@ -199,7 +199,7 @@ Then('only the following suppliers should have errors:') do |permitted_agencies_
 end
 
 Then('there are {int} managed service provider agencies') do |number_of_agencies|
-  expect(supply_teachers_page.managed_service_providers.number_of_agencies).to have_content("#{number_of_agencies} agencies")
+  expect(supply_teachers_page.managed_service_providers.number_of_agencies).to have_text("#{number_of_agencies} agencies")
 end
 
 Then('there are multiple managed service provider agencies') do
@@ -213,7 +213,7 @@ Then('the managed service provider agencies are:') do |agencies|
   expect(agency_elements.length).to eq agency_names.length
 
   agency_elements.zip(agency_names).each do |actual, expected|
-    expect(actual.find('h2')).to have_content expected
+    expect(actual.find('h2')).to have_text expected
   end
 end
 
@@ -221,9 +221,9 @@ Then('the contact details for the managed service provider {string} are:') do |a
   agency_contact_details = supply_teachers_page.first('h2', text: agency_name).find(:xpath, '../p')
   expected_contact_details = contact_details.raw.flatten
 
-  expect(agency_contact_details.find('.managed-service-provider-contact-details__name')).to have_content expected_contact_details[0]
-  expect(agency_contact_details.find('.managed-service-provider-contact-details__telephone')).to have_content expected_contact_details[1]
-  expect(agency_contact_details.find('.managed-service-provider-contact-details__email')).to have_content expected_contact_details[2]
+  expect(agency_contact_details.find('.managed-service-provider-contact-details__name')).to have_text expected_contact_details[0]
+  expect(agency_contact_details.find('.managed-service-provider-contact-details__telephone')).to have_text expected_contact_details[1]
+  expect(agency_contact_details.find('.managed-service-provider-contact-details__email')).to have_text expected_contact_details[2]
 end
 
 Then('the first supplier has contact details') do
@@ -241,8 +241,8 @@ Then('the master vendor agency {string} has the following rates:') do |agency_na
   rates.each do |job_type, rate|
     rate_row = rates_table.find('th', text: job_type).find(:xpath, '..')
 
-    expect(rate_row.find(:xpath, './td[1]')).to have_content(rate[:one_week])
-    expect(rate_row.find(:xpath, './td[2]')).to have_content(rate[:twelve_weeks])
+    expect(rate_row.find(:xpath, './td[1]')).to have_text(rate[:one_week])
+    expect(rate_row.find(:xpath, './td[2]')).to have_text(rate[:twelve_weeks])
   end
 end
 
@@ -265,7 +265,7 @@ Then('the education technology platform agency {string} has the following rates:
   rates.each do |job_type, rate|
     rate_row = rates_table.find('th', text: job_type).find(:xpath, '..')
 
-    expect(rate_row.find(:xpath, './td[1]')).to have_content(rate)
+    expect(rate_row.find(:xpath, './td[1]')).to have_text(rate)
   end
 end
 
@@ -280,7 +280,7 @@ Then('the first education technology platform agency has the correct types of ra
 end
 
 Then('a list of {int} agencies are shown') do |number_of_agencies|
-  expect(supply_teachers_page.all_agencies.number_of_agencies).to have_content("There are #{number_of_agencies} agencies currently available")
+  expect(supply_teachers_page.all_agencies.number_of_agencies).to have_text("There are #{number_of_agencies} agencies currently available")
 end
 
 Then('multiple agencies are shown and I count them') do
@@ -310,7 +310,7 @@ Then('I enter {string} for the agency postcode search') do |agency_postcode|
 end
 
 Then('I should see the following error message for the agency postcode {string}') do |error_message|
-  expect(supply_teachers_page.supplier_search.agency_postcode_error).to have_content(error_message)
+  expect(supply_teachers_page.supplier_search.agency_postcode_error).to have_text(error_message)
 end
 
 Then('the listed agencies for agency results are:') do |raw_agency_name_and_branch|
@@ -321,8 +321,8 @@ Then('the listed agencies for agency results are:') do |raw_agency_name_and_bran
   expect(agencies.length).to eq agency_name_and_branch.length
 
   agencies.zip(agency_name_and_branch).each do |actual, expected|
-    expect(actual.find('h2')).to have_content expected[:name]
-    expect(actual.find('.supplier-record__branch-name')).to have_content expected[:branch]
+    expect(actual.find('h2')).to have_text expected[:name]
+    expect(actual.find('.supplier-record__branch-name')).to have_text expected[:branch]
   end
 end
 
@@ -334,7 +334,7 @@ Then('the listed agencies for all agencies are:') do |raw_agency_name|
   expect(agencies.length).to eq agency_names.length
 
   agencies.zip(agency_names).each do |actual, expected|
-    expect(actual.find('h2')).to have_content expected
+    expect(actual.find('h2')).to have_text expected
   end
 end
 
@@ -345,10 +345,10 @@ Then('the listed agencies with rates and distances are:') do |raw_agency_name_an
   expect(agencies.length).to eq agency_name_and_details.length
 
   agencies.zip(agency_name_and_details).each do |actual, expected|
-    expect(actual.find('h2')).to have_content expected[:name]
-    expect(actual.find('.supplier-record__branch-name')).to have_content expected[:branch]
-    expect(actual.find('.supplier-record__markup-rate')).to have_content expected[:mark_up]
-    expect(actual.find('.supplier-record__distance')).to have_content expected[:miles]
+    expect(actual.find('h2')).to have_text expected[:name]
+    expect(actual.find('.supplier-record__branch-name')).to have_text expected[:branch]
+    expect(actual.find('.supplier-record__markup-rate')).to have_text expected[:mark_up]
+    expect(actual.find('.supplier-record__distance')).to have_text expected[:miles]
   end
 end
 
@@ -369,19 +369,19 @@ Then('the listed agencies with distances, fees and lengths are:') do |raw_agency
   expect(agencies.length).to eq agency_name_and_details.length
 
   agencies.zip(agency_name_and_details).each do |actual, expected|
-    expect(actual.find('h2')).to have_content expected[:name]
-    expect(actual.find('.supplier-record__branch-name')).to have_content expected[:branch]
-    expect(actual.find('.supplier-record__distance')).to have_content expected[:miles]
+    expect(actual.find('h2')).to have_text expected[:name]
+    expect(actual.find('.supplier-record__branch-name')).to have_text expected[:branch]
+    expect(actual.find('.supplier-record__distance')).to have_text expected[:miles]
     expect(actual.find('.calculator-form__annual-salary-input').value).to eq expected[:annual_salary]
-    expect(actual.find('.supplier-record__fixed-term-length')).to have_content expected[:term]
-    expect(actual.find('.supplier-record__finders-fee')).to have_content expected[:finders_fee]
-    expect(actual.find('.supplier-record__finders-fee-percentage')).to have_content expected[:rate]
+    expect(actual.find('.supplier-record__fixed-term-length')).to have_text expected[:term]
+    expect(actual.find('.supplier-record__finders-fee')).to have_text expected[:finders_fee]
+    expect(actual.find('.supplier-record__finders-fee-percentage')).to have_text expected[:rate]
   end
 end
 
 Then('the number of months in the results is {string}') do |number_of_months|
   supply_teachers_page.agency_results.suppliers.each do |agency|
-    expect(agency.find('.supplier-record__fixed-term-length')).to have_content number_of_months
+    expect(agency.find('.supplier-record__fixed-term-length')).to have_text number_of_months
   end
 end
 
@@ -392,11 +392,11 @@ FIELD_TO_CLASS = {
 }.freeze
 
 Then('for the agency {string} I should see {string} for the {string}') do |agency_name, value, field|
-  expect(supply_teachers_page.find('h2', text: agency_name).find(:xpath, '../../..').find(FIELD_TO_CLASS[field])).to have_content(value)
+  expect(supply_teachers_page.find('h2', text: agency_name).find(:xpath, '../../..').find(FIELD_TO_CLASS[field])).to have_text(value)
 end
 
 Then('for the agency number {int} I should see {string} for the finders fee') do |agency_number, value|
-  expect(find_supplier_record_by_number(agency_number).find(FIELD_TO_CLASS['finders fee'])).to have_content(value)
+  expect(find_supplier_record_by_number(agency_number).find(FIELD_TO_CLASS['finders fee'])).to have_text(value)
 end
 
 Then('the results for {string} are muted') do |agency_name|
@@ -414,12 +414,12 @@ Then('the choices used to generate the list are:') do |choices_table|
   expect(choices_elements.length).to eq choices.length
 
   choices_elements.zip(choices).each do |actual, expected|
-    expect(actual).to have_content expected
+    expect(actual).to have_text expected
   end
 end
 
 Then('the sub title is Agency details') do
-  expect(supply_teachers_page.agency_details.sub_title).to have_content 'Agency details'
+  expect(supply_teachers_page.agency_details.sub_title).to have_text 'Agency details'
 end
 
 Then('I click on the first agency') do
@@ -433,7 +433,7 @@ Then('the branches are:') do |raw_branches|
   expect(branches_elements.length).to eq branches.length
 
   branches_elements.zip(branches).each do |actual, expected|
-    expect(actual).to have_content expected
+    expect(actual).to have_text expected
   end
 end
 
@@ -446,12 +446,12 @@ Then('the agency has at least one branch with the following table headings:') do
   expect(branches_table_heading_elements.length).to eq branches_table_headings.length
 
   branches_table_heading_elements.zip(branches_table_headings).each do |actual, expected|
-    expect(actual).to have_content expected
+    expect(actual).to have_text expected
   end
 end
 
 Then('the {string} is {string}') do |contact_detail, value|
-  expect(supply_teachers_page.agency_details.branch_details.send(contact_detail)).to have_content value
+  expect(supply_teachers_page.agency_details.branch_details.send(contact_detail)).to have_text value
 end
 
 Then('they have the branch and contact details for the following:') do |contact_detail_headings_table|
@@ -461,16 +461,16 @@ Then('they have the branch and contact details for the following:') do |contact_
   expect(contact_detail_heading_elements.length).to eq contact_detail_headings.length
 
   contact_detail_heading_elements.zip(contact_detail_headings).each do |actual, expected|
-    expect(actual).to have_content expected
+    expect(actual).to have_text expected
   end
 end
 
 Then('the {string} is {string} for the {string} branch') do |contact_detail, value, branch|
-  expect(supply_teachers_page.agency_details.branches_table.find { |branch_element| branch_element.Branch.text.include?(branch) }.send(contact_detail)).to have_content value
+  expect(supply_teachers_page.agency_details.branches_table.find { |branch_element| branch_element.Branch.text.include?(branch) }.send(contact_detail)).to have_text value
 end
 
 Then('the address for the {string} branch is:') do |branch, address|
-  expect(supply_teachers_page.agency_details.branches_table.find { |branch_element| branch_element.Branch.text.include?(branch) }.Address).to have_content address.raw.join
+  expect(supply_teachers_page.agency_details.branches_table.find { |branch_element| branch_element.Branch.text.include?(branch) }.Address).to have_text address.raw.join
 end
 
 Then('the agency has the following rates:') do |raw_rates|
@@ -480,8 +480,8 @@ Then('the agency has the following rates:') do |raw_rates|
   rates.each do |job_type, rate|
     rate_row = rates_table.find('th', text: job_type).find(:xpath, '..')
 
-    expect(rate_row.find(:xpath, './td[1]')).to have_content(rate[:one_week])
-    expect(rate_row.find(:xpath, './td[2]')).to have_content(rate[:twelve_weeks]) unless rate[:twelve_weeks].nil?
+    expect(rate_row.find(:xpath, './td[1]')).to have_text(rate[:one_week])
+    expect(rate_row.find(:xpath, './td[2]')).to have_text(rate[:twelve_weeks]) unless rate[:twelve_weeks].nil?
   end
 end
 
@@ -505,20 +505,20 @@ Then('the the correct type of rates:') do |rate_heading_and_type|
 end
 
 Then('the reason for no transfer fee is:') do |reason|
-  expect(supply_teachers_page.panel.body).to have_content reason.raw.flatten.first
+  expect(supply_teachers_page.panel.body).to have_text reason.raw.flatten.first
 end
 
 Then('my temp to perm fee is {string}') do |fee|
-  expect(supply_teachers_page.panel.body).to have_content fee
+  expect(supply_teachers_page.panel.body).to have_text fee
 end
 
 Then('my temp to perm fee is between {string} and {string}') do |min_fee, max_fee|
-  expect(supply_teachers_page.panel.body).to have_content "#{min_fee} and #{max_fee}"
+  expect(supply_teachers_page.panel.body).to have_text "#{min_fee} and #{max_fee}"
 end
 
 Then('the resultant information includes:') do |information|
   information.raw.flatten.each do |piece_of_info|
-    expect(supply_teachers_page.temp_to_perm_result.information).to have_content piece_of_info
+    expect(supply_teachers_page.temp_to_perm_result.information).to have_text piece_of_info
   end
 end
 
