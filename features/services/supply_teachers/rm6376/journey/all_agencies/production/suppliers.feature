@@ -19,7 +19,7 @@ Feature: Supply Teachers - All agencies - suppliers - Production
       | Admin & Clerical (Inc. Office Staff, Finance Support)                                                    | £ |
       | Other (Inc. Invigilators, cleaners)                                                                      | £ |
       | Over 12 Week Reduction                                                                                   | % |
-      | Nominated Workers                                                                                        | % |
+      | Nominated Workers                                                                                        | £ |
       | Fixed Term / Permanent Roles (on School Payroll)                                                         | % |
     And the agency has at least one branch with the following table headings:
       | Branch        |
