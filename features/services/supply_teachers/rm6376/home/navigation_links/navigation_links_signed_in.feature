@@ -16,7 +16,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find supply teachers and agency workers' page
+    Then I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Not permitted page - sign out
     And I go to the not permitted page for 'supply teachers'
@@ -24,7 +24,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Sign out'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Cookies policy - Back to start
     When I click on 'Cookie policy'
@@ -33,7 +33,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find supply teachers and agency workers' page
+    Then I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Cookies policy - Sign out
     When I click on 'Cookie policy'
@@ -42,7 +42,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Sign out'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Cookies settings - Back to start
     When I click on 'Cookie settings'
@@ -51,7 +51,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find supply teachers and agency workers' page
+    Then I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Cookies settings - Sign out
     When I click on 'Cookie settings'
@@ -60,7 +60,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Sign out'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Accessibility statement - Back to start
     When I click on 'Accessibility statement'
@@ -69,7 +69,7 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Back to start'
-    Then I am on the 'Find supply teachers and agency workers' page
+    Then I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Accessibility statement - Sign out
     When I click on 'Accessibility statement'
@@ -78,11 +78,11 @@ Feature: Supply Teachers - Navigation links when signed in
       | Back to start |
       | Sign out      |
     And I click on 'Sign out'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Home page - Sign out
     And I should see the following navigation links:
       | Back to start |
       | Sign out      |
     And I click on 'Sign out'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page

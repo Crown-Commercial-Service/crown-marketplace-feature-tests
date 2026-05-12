@@ -16,22 +16,22 @@ Feature: Supply Teachers - Navigation links when signed out
 
   Scenario: Gate way page
     And I click on 'Start now'
-    Then I am on the 'Sign in to find supply teachers and agency workers' page
+    Then I am on the 'Sign in for Supply Teachers and Education Recruitment' page
     And I should see the following navigation links:
       | Back to start |
       | Sign in       |
     And I click on 'Back to start'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Sign in page
     And I click on 'Start now'
-    Then I am on the 'Sign in to find supply teachers and agency workers' page
+    Then I am on the 'Sign in for Supply Teachers and Education Recruitment' page
     And I click on 'Sign in with GCA'
     And I should see the following navigation links:
       | Back to start |
       | Sign in       |
     And I click on 'Back to start'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Cookies policy
     When I click on 'Cookie policy'
@@ -40,7 +40,7 @@ Feature: Supply Teachers - Navigation links when signed out
       | Back to start |
       | Sign in       |
     And I click on 'Back to start'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Cookies settings
     When I click on 'Cookie settings'
@@ -49,7 +49,7 @@ Feature: Supply Teachers - Navigation links when signed out
       | Back to start |
       | Sign in       |
     And I click on 'Back to start'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
 
   Scenario: Accessibility statement
     When I click on 'Accessibility statement'
@@ -58,4 +58,4 @@ Feature: Supply Teachers - Navigation links when signed out
       | Back to start |
       | Sign in       |
     And I click on 'Back to start'
-    And I am on the 'Find supply teachers and agency workers' page
+    And I am on the 'Supply Teachers and Education Recruitment' page
