@@ -21,7 +21,7 @@ Feature: Supply Teachers - Admin - Supplier lot data - Lot 1 - View rates
       | Admin & Clerical (Inc. Office Staff, Finance Support)                                                    | £32.88         |
       | Other (Inc. Invigilators, cleaners)                                                                      | £21.92         |
       | Over 12 Week Reduction                                                                                   | 41.7%          |
-      | Nominated Workers                                                                                        | 46.0%          |
+      | Nominated Workers                                                                                        | £46.04         |
       | Fixed Term / Permanent Roles (on School Payroll)                                                         | 37.3%          |
     Given I click on 'Change (Rates for the supplier)'
     Then I am on the 'Edit rates' page

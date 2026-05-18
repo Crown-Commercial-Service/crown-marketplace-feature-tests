@@ -47,7 +47,7 @@ Feature: Supply Teachers - Agency results - Fixed term - Agencies - Production
       | Admin & Clerical (Inc. Office Staff, Finance Support)                                                    | £ |
       | Other (Inc. Invigilators, cleaners)                                                                      | £ |
       | Over 12 Week Reduction                                                                                   | % |
-      | Nominated Workers                                                                                        | % |
+      | Nominated Workers                                                                                        | £ |
       | Fixed Term / Permanent Roles (on School Payroll)                                                         | % |
 
   @file-download @smoulder @production
